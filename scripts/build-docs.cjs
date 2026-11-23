@@ -1,18 +1,18 @@
 // Source text was safely extracted with extract-docs.cjs; editorial summaries below
-// are independent TokenHub wording. Tables and code retain source technical facts.
+// are independent Velink wording. Tables and code retain source technical facts.
 const fs = require("fs");
-const docs = JSON.parse(fs.readFileSync("/tmp/tokenhub-extracted.json"));
+const docs = JSON.parse(fs.readFileSync("/tmp/velink-extracted.json"));
 const intro = {
   intro:
-    "TokenHub 文档按统一模型接入、调用治理、用量与费用三个方向组织。这里整理参考平台公开资料中的技术流程，帮助开发者理解接入与管理方法。",
+    "Velink 文档按统一模型接入、调用治理、用量与费用三个方向组织。这里整理参考平台公开资料中的技术流程，帮助开发者理解接入与管理方法。",
   "intro/advantages":
     "统一接口可以减少逐家对接的工作；路由、缓存和渠道回退则分别处理调用路径、重复上下文和上游故障。以下能力描述来自参考平台。",
   "intro/scenarios":
     "根据团队规模、交互时延和输入模态选择接入方式。模型替换前应确认协议、参数、权限和业务效果。",
   "intro/supported-models":
-    "以下模型清单来自参考平台公开文档，保留原始模型标识与能力信息。清单用于技术查阅，并不表示 TokenHub 已开通相应服务。",
+    "以下模型清单来自参考平台公开文档，保留原始模型标识与能力信息。清单用于技术查阅，并不表示 Velink 已开通相应服务。",
   "quick-access":
-    "接入分为准备凭证、配置基础地址、发送请求、检查响应四步。代码中的 __API_BASE_URL__ 是待配置的接口地址，TOKENHUB_API_KEY 是服务端环境变量。",
+    "接入分为准备凭证、配置基础地址、发送请求、检查响应四步。代码中的 __API_BASE_URL__ 是待配置的接口地址，VELINK_API_KEY 是服务端环境变量。",
   billing:
     "以下价格表记录参考平台国内站公开的模型调用原价，保留模型、计量条件与单位，供估算方法参考。活动价、折扣及最终费用由参考平台当期规则决定。",
   "billing-guide":
@@ -46,7 +46,7 @@ const intro = {
   "agent-guides/opencode":
     "OpenCode 可通过自定义 Provider 接入 OpenAI Chat Completions 兼容服务。配置需要同时指定模型、基础地址与认证来源，项目配置可能覆盖全局配置。",
   "about/caict-evaluation":
-    "参考平台公告称 DTMaaS 首批通过中国信通院“可信 AI-Token”服务质量评估。本页只记录该平台公告，不表示 TokenHub 获得相同评估或认证。",
+    "参考平台公告称 DTMaaS 首批通过中国信通院“可信 AI-Token”服务质量评估。本页只记录该平台公告，不表示 Velink 获得相同评估或认证。",
   "about/lingdt-decision-release":
     "参考平台在 10 月 22 日的发布材料中介绍 LingDT-Decision-1.0 的 4B、27B 版本及原生多选、按序决策能力。下列测试数据均属于该平台材料中的实验结果。",
 };
@@ -69,7 +69,7 @@ const rules = {
     ],
     [
       "智能路由",
-      "原平台描述了节点调度与故障切换，并公布 99.5% 可用性；该数字不是 TokenHub 的 SLA。",
+      "原平台描述了节点调度与故障切换，并公布 99.5% 可用性；该数字不是 Velink 的 SLA。",
     ],
     [
       "成本优化",
@@ -101,7 +101,7 @@ const rules = {
     ],
     [
       "发起第一个",
-      "下面分别保留 Python、JavaScript 和 cURL 请求结构；运行前从服务端环境读取 TOKENHUB_API_KEY。",
+      "下面分别保留 Python、JavaScript 和 cURL 请求结构；运行前从服务端环境读取 VELINK_API_KEY。",
     ],
     [
       "响应格式",
@@ -220,7 +220,7 @@ const rules = {
   "console/model-marketplace": [
     [
       "前提条件",
-      "参考平台需具备 Agent 套餐或按量付费服务。TokenHub 的购买与账户功能状态见 /service-status。",
+      "参考平台需具备 Agent 套餐或按量付费服务。Velink 的购买与账户功能状态见 /service-status。",
     ],
     [
       "操作步骤",
@@ -368,7 +368,7 @@ const rules = {
     ],
     [
       "请求示例",
-      "代码从 TOKENHUB_API_KEY 环境变量取凭证，基础地址需先替换配置。",
+      "代码从 VELINK_API_KEY 环境变量取凭证，基础地址需先替换配置。",
     ],
     [
       "获取下一页",
@@ -410,7 +410,7 @@ const rules = {
     ],
     [
       "引入 Java",
-      "在 pom.xml 加入原文 SDK 依赖；这是参考平台专用 SDK，不能据此视为已配置 TokenHub OpenAPI。",
+      "在 pom.xml 加入原文 SDK 依赖；这是参考平台专用 SDK，不能据此视为已配置 Velink OpenAPI。",
     ],
     [
       "准备调用",
@@ -567,11 +567,11 @@ const rules = {
     ],
     [
       "获取 MaaS",
-      "示例将原平台凭证名称适配为 TOKENHUB_API_KEY。真实凭证只在服务端或本地密钥环境保存。",
+      "示例将原平台凭证名称适配为 VELINK_API_KEY。真实凭证只在服务端或本地密钥环境保存。",
     ],
     [
       "配置 API",
-      "为当前终端配置 TOKENHUB_API_KEY；Unix 可加入 shell 配置并 source 重新加载，PowerShell 方式见代码。",
+      "为当前终端配置 VELINK_API_KEY；Unix 可加入 shell 配置并 source 重新加载，PowerShell 方式见代码。",
     ],
     [
       "配置 Codex",
@@ -599,7 +599,7 @@ const rules = {
     ],
     [
       "常见问题",
-      "先验证环境变量存在、Key 权限和余额，再检查 Responses 支持、模型 ID 与覆盖配置。env_key 只写变量名 TOKENHUB_API_KEY，不写真实密钥或带 $ 的表达式。",
+      "先验证环境变量存在、Key 权限和余额，再检查 Responses 支持、模型 ID 与覆盖配置。env_key 只写变量名 VELINK_API_KEY，不写真实密钥或带 $ 的表达式。",
       "配置不生效时核对 ~/.codex/config.toml、命令行覆盖、Provider 大小写与 TOML 表位置；模型目录必须为合法 JSON、有 models 数组且路径可读，必要时按 codex --version 匹配目录字段。",
     ],
   ],
@@ -618,7 +618,7 @@ const rules = {
     ],
     [
       "获取 MaaS",
-      "凭证适配为 TOKENHUB_API_KEY 环境变量，不把真实密钥提交到配置仓库。",
+      "凭证适配为 VELINK_API_KEY 环境变量，不把真实密钥提交到配置仓库。",
     ],
     [
       "配置 OpenCode",
@@ -650,7 +650,7 @@ const rules = {
     ],
     [
       "购买套餐",
-      "原文在套餐页选择档位并完成购买。TokenHub 未配置交易入口，相关状态见 /service-status。",
+      "原文在套餐页选择档位并完成购买。Velink 未配置交易入口，相关状态见 /service-status。",
     ],
     [
       "其他操作",
@@ -698,7 +698,7 @@ const rules = {
     ],
     [
       "新购套餐",
-      "原平台新购后检查 Credits、有效期和状态，再用 Agent 类型 API Key 调用套餐内模型。TokenHub 交易功能尚未配置，见 /service-status。",
+      "原平台新购后检查 Credits、有效期和状态，再用 Agent 类型 API Key 调用套餐内模型。Velink 交易功能尚未配置，见 /service-status。",
     ],
     [
       "加购套餐",
@@ -778,55 +778,55 @@ function adapt(s, code = false, language = "") {
     );
   s = s.replace(
     /MAAS_API_KEY|YOUR_MAAS_API_KEY|YOUR_API_KEY|DTMAAS_API_KEY/g,
-    "TOKENHUB_API_KEY",
+    "VELINK_API_KEY",
   );
   if (code) {
     s = s.replace(
       /'Authorization: Bearer <API_KEY>'/g,
-      '"Authorization: Bearer $TOKENHUB_API_KEY"',
+      '"Authorization: Bearer $VELINK_API_KEY"',
     );
     s = s.replace(
-      /TOKENHUB_API_KEY="TOKENHUB_API_KEY"/g,
-      'TOKENHUB_API_KEY="<your-api-key>"',
+      /VELINK_API_KEY="VELINK_API_KEY"/g,
+      'VELINK_API_KEY="<your-api-key>"',
     );
     s = s
-      .replace(/model_providers\.maas/g, "model_providers.tokenhub")
-      .replace(/model_provider\s*=\s*"maas"/g, 'model_provider = "tokenhub"')
-      .replace(/"maas"\s*:/g, '"tokenhub":')
-      .replace(/maas\//g, "tokenhub/")
-      .replace(/\(MaaS\)/g, "(TokenHub)")
-      .replace(/name = "MaaS"/g, 'name = "TokenHub"')
-      .replace(/"name":\s*"MaaS"/g, '"name": "TokenHub"');
+      .replace(/model_providers\.maas/g, "model_providers.velink")
+      .replace(/model_provider\s*=\s*"maas"/g, 'model_provider = "velink"')
+      .replace(/"maas"\s*:/g, '"velink":')
+      .replace(/maas\//g, "velink/")
+      .replace(/\(MaaS\)/g, "(Velink)")
+      .replace(/name = "MaaS"/g, 'name = "Velink"')
+      .replace(/"name":\s*"MaaS"/g, '"name": "Velink"');
     if (language === "json")
       s = s.replace(
-        /"apiKey":\s*"TOKENHUB_API_KEY"/g,
-        '"apiKey": "{env:TOKENHUB_API_KEY}"',
+        /"apiKey":\s*"VELINK_API_KEY"/g,
+        '"apiKey": "{env:VELINK_API_KEY}"',
       );
     if (/python/i.test(language)) {
       s = s
         .replace(
-          /api_key\s*=\s*"TOKENHUB_API_KEY"/g,
-          'api_key = os.environ["TOKENHUB_API_KEY"]',
+          /api_key\s*=\s*"VELINK_API_KEY"/g,
+          'api_key = os.environ["VELINK_API_KEY"]',
         )
         .replace(
-          /"Authorization":\s*"Bearer TOKENHUB_API_KEY"/g,
-          '"Authorization": f"Bearer {os.environ[\'TOKENHUB_API_KEY\']}"',
+          /"Authorization":\s*"Bearer VELINK_API_KEY"/g,
+          '"Authorization": f"Bearer {os.environ[\'VELINK_API_KEY\']}"',
         );
       if (s.includes("os.environ") && !/import os/.test(s))
         s = "import os\n" + s;
     }
     if (/javascript|typescript|node/i.test(language)) {
       s = s.replace(
-        /"Authorization":\s*"Bearer TOKENHUB_API_KEY"/g,
-        '"Authorization": `Bearer ${process.env.TOKENHUB_API_KEY}`',
+        /"Authorization":\s*"Bearer VELINK_API_KEY"/g,
+        '"Authorization": `Bearer ${process.env.VELINK_API_KEY}`',
       );
     }
     if (/bash|shell|sh/i.test(language))
       s = s
-        .replace(/Bearer TOKENHUB_API_KEY/g, "Bearer $TOKENHUB_API_KEY")
+        .replace(/Bearer VELINK_API_KEY/g, "Bearer $VELINK_API_KEY")
         .replace(
-          /'Authorization: Bearer <TOKENHUB_API_KEY>'/g,
-          '"Authorization: Bearer $TOKENHUB_API_KEY"',
+          /'Authorization: Bearer <VELINK_API_KEY>'/g,
+          '"Authorization: Bearer $VELINK_API_KEY"',
         );
   }
   return s;
@@ -905,7 +905,7 @@ for (const doc of docs) {
       sections
         .find((s) => s.title === "变更影响")
         ?.paragraphs.push(
-          "继续调用会进入按量结算，需重新估算预算并检查余额。此处为参考平台公告记录，不构成 TokenHub 的优惠或收费承诺。",
+          "继续调用会进入按量结算，需重新估算预算并检查余额。此处为参考平台公告记录，不构成 Velink 的优惠或收费承诺。",
         );
     }
     if (key === "atria-dawn-migration") {
@@ -976,7 +976,7 @@ for (const doc of docs) {
       );
   }
   sections[0].paragraphs.push(
-    "资料说明：本文依据参考平台公开文档整理。技术表格保留原字段与数值，每张表附原文地址；不代表 TokenHub 已提供对应模型、账户、交易或服务保障。",
+    "资料说明：本文依据参考平台公开文档整理。技术表格保留原字段与数值，每张表附原文地址；不代表 Velink 已提供对应模型、账户、交易或服务保障。",
   );
   result.push({
     slug: doc.slug,

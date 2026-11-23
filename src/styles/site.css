@@ -16,17 +16,17 @@ button {
 svg {
   flex-shrink: 0;
 }
-.tokenhub-site {
+.velink-site {
   --content: 1240px;
   --header: 76px;
   font-size: var(--text-sm);
   overflow-wrap: break-word;
 }
-.tokenhub-site h1,
-.tokenhub-site h2,
-.tokenhub-site h3,
-.tokenhub-site h4,
-.tokenhub-site p {
+.velink-site h1,
+.velink-site h2,
+.velink-site h3,
+.velink-site h4,
+.velink-site p {
   margin-top: 0;
 }
 .site-container {
@@ -36,22 +36,22 @@ svg {
   margin-left: auto;
   margin-right: auto;
 }
-.tokenhub-site h1 {
+.velink-site h1 {
   font-size: var(--text-display);
   line-height: 1.18;
   letter-spacing: -2px;
   font-weight: var(--weight-semibold);
 }
-.tokenhub-site h2 {
+.velink-site h2 {
   font-size: var(--text-xl);
   font-weight: var(--weight-semibold);
   line-height: var(--leading-heading);
 }
-.tokenhub-site h3 {
+.velink-site h3 {
   font-size: var(--text-base);
   font-weight: var(--weight-semibold);
 }
-.tokenhub-site .muted {
+.velink-site .muted {
   color: var(--ds-muted);
   font-size: var(--text-sm);
   line-height: 1.8;
@@ -637,7 +637,7 @@ svg {
   font-size: 11px;
   color: var(--ds-muted);
 }
-.tokenhub-site input[type="checkbox"] {
+.velink-site input[type="checkbox"] {
   accent-color: var(--ds-primary);
   width: 14px;
   height: 14px;
@@ -726,7 +726,7 @@ svg {
   font-size: 10px;
   color: var(--ds-muted);
 }
-.tokenhub-site select {
+.velink-site select {
   padding: 8px;
   border: 1px solid var(--ds-border);
   border-radius: 6px;
@@ -1028,25 +1028,25 @@ svg {
   border-radius: 9px;
   background: var(--ds-surface);
 }
-.tokenhub-site table {
+.velink-site table {
   width: 100%;
   border-collapse: collapse;
   font-size: 11px;
   text-align: left;
 }
-.tokenhub-site th {
+.velink-site th {
   background: var(--ds-subtle);
   font-weight: 500;
 }
-.tokenhub-site th,
-.tokenhub-site td {
+.velink-site th,
+.velink-site td {
   padding: 12px 14px;
   border-bottom: 1px solid var(--ds-border);
   min-width: 90px;
   line-height: 1.8;
   vertical-align: top;
 }
-.tokenhub-site tr:last-child > td {
+.velink-site tr:last-child > td {
   border-bottom: 0;
 }
 .compare-table {
@@ -1986,7 +1986,7 @@ svg {
   color: var(--ds-muted);
 }
 @media (min-width: 1600px) {
-  .tokenhub-site {
+  .velink-site {
     --content: 1360px;
   }
   .home-hero {
@@ -2113,7 +2113,7 @@ svg {
   }
 }
 @media (max-width: 768px) {
-  .tokenhub-site {
+  .velink-site {
     --header: 64px;
   }
   .site-container {
@@ -3116,7 +3116,7 @@ svg {
   html {
     scroll-behavior: auto;
   }
-  .tokenhub-site * {
+  .velink-site * {
     animation: none !important;
     transition: none !important;
   }

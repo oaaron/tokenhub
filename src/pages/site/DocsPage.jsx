@@ -128,16 +128,16 @@ export default function DocsPage() {
             (section) => section.codeExamples?.length > 0,
           ) && (
             <div className="notice-box">
-              服务地址尚未配置。代码中的 TOKENHUB_API_ROOT_URL（不含
-              /v1）、TOKENHUB_API_BASE_URL（含 /v1）及 TOKENHUB_API_KEY
-              需在运行环境中设置，JSON / TOML 中的 YOUR_TOKENHUB_HOST
+              服务地址尚未配置。代码中的 VELINK_API_ROOT_URL（不含
+              /v1）、VELINK_API_BASE_URL（含 /v1）及 VELINK_API_KEY
+              需在运行环境中设置，JSON / TOML 中的 YOUR_VELINK_HOST
               需手动替换，切勿将真实密钥写入网页。
             </div>
           )}
         {!article.slug.startsWith("updates/") &&
           !article.slug.startsWith("about/") && (
             <div className="notice-box">
-              TokenHub
+              Velink
               账户、交易与管理接口尚未开放。本文介绍配置方法与技术流程，实际可用功能、模型、计费规则和权限以服务开通配置为准。
             </div>
           )}

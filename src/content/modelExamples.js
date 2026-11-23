@@ -43,7 +43,7 @@ export function modelExampleGroups(model) {
               );
             if (/wss?:\/\/maas-api\.antdigital\.com/.test(raw))
               return unavailable(
-                "原站 WebSocket 地址尚未映射为 TokenHub 服务配置。",
+                "原站 WebSocket 地址尚未映射为 Velink 服务配置。",
               );
             if (/python/i.test(language)) {
               // Some source snippets share a two-space presentation indent.
@@ -60,8 +60,8 @@ export function modelExampleGroups(model) {
             let code = raw
               .replaceAll("https://maas-api.antdigital.com", "__API_BASE_URL__")
               .replaceAll("http://maas-api.antdigital.com", "__API_BASE_URL__")
-              .replaceAll("ANT_MAAS_API_KEY", "TOKENHUB_API_KEY")
-              .replaceAll("MAAS_API_KEY", "TOKENHUB_API_KEY");
+              .replaceAll("ANT_MAAS_API_KEY", "VELINK_API_KEY")
+              .replaceAll("MAAS_API_KEY", "VELINK_API_KEY");
             code = code
               .replace(
                 /(\bmodel\s*=\s*)["'][^"']+["']/g,
@@ -74,16 +74,16 @@ export function modelExampleGroups(model) {
             if (/python/i.test(language)) {
               code = code
                 .replace(
-                  /os\.environ\.get\(\s*["']TOKENHUB_API_KEY["']\s*,\s*["']<API_KEY>["']\s*,?\s*\)/g,
-                  'os.environ["TOKENHUB_API_KEY"]',
+                  /os\.environ\.get\(\s*["']VELINK_API_KEY["']\s*,\s*["']<API_KEY>["']\s*,?\s*\)/g,
+                  'os.environ["VELINK_API_KEY"]',
                 )
                 .replace(
                   /(["'])Bearer (?:YOUR_API_KEY|<[aA][pP][iI]_[kK][eE][yY]>|\$API_KEY)\1/g,
-                  '"Bearer " + os.environ["TOKENHUB_API_KEY"]',
+                  '"Bearer " + os.environ["VELINK_API_KEY"]',
                 )
                 .replace(
                   /(api_key\s*=\s*)(?:["'](?:YOUR_API_KEY|<[aA][pP][iI]_[kK][eE][yY]>)["']|<[aA][pP][iI]_[kK][eE][yY]>)/g,
-                  '$1os.environ["TOKENHUB_API_KEY"]',
+                  '$1os.environ["VELINK_API_KEY"]',
                 );
               if (code.includes("os.environ") && !/^import os\b/m.test(code))
                 code = "import os\n" + code;
@@ -91,7 +91,7 @@ export function modelExampleGroups(model) {
               code = code
                 .replace(
                   /\$API_KEY\b|YOUR_API_KEY|<api_key>/gi,
-                  "$TOKENHUB_API_KEY",
+                  "$VELINK_API_KEY",
                 )
                 .replace(
                   /'Authorization: Bearer ([^']+)'/g,
@@ -99,18 +99,18 @@ export function modelExampleGroups(model) {
                 );
               // Repair the source's missing closing quote on a header line only.
               code = code.replace(
-                /(-H\s+"Authorization: Bearer \$TOKENHUB_API_KEY)\s+(\\)$/gm,
+                /(-H\s+"Authorization: Bearer \$VELINK_API_KEY)\s+(\\)$/gm,
                 '$1" $2',
               );
             } else if (/javascript|node|typescript/i.test(language)) {
               code = code
                 .replace(
                   /(["'])Bearer (?:YOUR_API_KEY|<API_KEY>)\1/g,
-                  "`Bearer ${process.env.TOKENHUB_API_KEY}`",
+                  "`Bearer ${process.env.VELINK_API_KEY}`",
                 )
                 .replace(
                   /(apiKey\s*:\s*)["'](?:YOUR_API_KEY|<API_KEY>)["']/g,
-                  "$1process.env.TOKENHUB_API_KEY",
+                  "$1process.env.VELINK_API_KEY",
                 );
             }
             return {

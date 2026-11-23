@@ -1,3 +1,4 @@
+import BrandMark from "../../components/brand/BrandMark";
 import "../../styles/maker-loop.css";
 import LogoLoop from "../../components/LogoLoop/LogoLoop";
 import { useState } from "react";
@@ -8,7 +9,6 @@ import {
   ChevronLeft,
   ChevronRight,
   Code2,
-  Layers3,
   Network,
   ShieldCheck,
 } from "lucide-react";
@@ -46,17 +46,17 @@ export default function HomePage() {
             清晰的接入文档
           </div>
         </div>
-        <div className="product-visual" aria-label="TokenHub 统一模型网关示意">
+        <div className="product-visual" aria-label="Velink 统一模型网关示意">
           <div className="visual-top">
             <span className="visual-dot" /> 模型网关{" "}
-            <span className="visual-version">TokenHub / 01</span>
+            <span className="visual-version">Velink / 01</span>
           </div>
           <div className="visual-hub">
             <div className="visual-orbit orbit-one" />
             <div className="visual-orbit orbit-two" />
             <div className="visual-center">
-              <Layers3 size={38} />
-              <strong>TokenHub</strong>
+              <BrandMark size={48} />
+              <strong>Velink</strong>
               <small>统一模型入口</small>
             </div>
             <div className="orbit-chip chip-one">
@@ -158,7 +158,7 @@ export default function HomePage() {
         </div>
         <Link to={featured.to} className="news-featured">
           <span className="news-feature-icon">
-            <Layers3 size={28} />
+            <BrandMark size={36} />
           </span>
           <div>
             <span className="eyebrow">{featured.label}</span>

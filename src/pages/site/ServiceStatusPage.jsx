@@ -39,7 +39,7 @@ export default function ServiceStatusPage() {
           </LinkButton>
           {siteConfig.contactUrl && (
             <LinkButton to={siteConfig.contactUrl} variant="ghost">
-              联系 TokenHub
+              联系 Velink
             </LinkButton>
           )}
         </div>

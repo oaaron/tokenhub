@@ -71,22 +71,22 @@ export const planBenefits = [
   ["数据处理透明", "数据使用与隐私条款须以正式生效的服务协议为准。"],
   ["标准 API 接入", "通过服务端 API 集成现有系统，无需在前端暴露密钥。"],
 ];
-// Rewritten source rules. These describe the reference platform, not unconfigured TokenHub service terms.
+// Rewritten source rules. These describe the reference platform, not unconfigured Velink service terms.
 export const planFAQ = [
   {
     title: "购买",
     items: [
       [
         "可以同时购买多个套餐吗？",
-        "原站允许购买多个额度叠加包，合并使用其额度。TokenHub 的叠加购买能力与入口尚未开放。",
+        "原站允许购买多个额度叠加包，合并使用其额度。Velink 的叠加购买能力与入口尚未开放。",
       ],
       [
         "Token Plan for Agent 提供哪些套餐版本？",
-        "原站目前公开展示探索、构建、进阶和规模四档月付方案，区别主要为 Credits 额度。TokenHub 的价格与额度以正式发布为准。",
+        "原站目前公开展示探索、构建、进阶和规模四档月付方案，区别主要为 Credits 额度。Velink 的价格与额度以正式发布为准。",
       ],
       [
         "套餐是否支持退订？",
-        "原站的 Token Plan for Agent 规则为不支持退款。TokenHub 尚未开放交易，退订条件以未来正式服务条款为准。",
+        "原站的 Token Plan for Agent 规则为不支持退款。Velink 尚未开放交易，退订条件以未来正式服务条款为准。",
       ],
       [
         "套餐如何续订？",
@@ -149,7 +149,7 @@ export const planFAQ = [
     items: [
       [
         "Token Plan for Agent 可以生成多个 API Key 吗？",
-        "原站一个订阅允许创建多个共享额度的专属密钥，并支持单独重置泄漏的凭证；重置后原值失效。TokenHub 的账户接口尚未开放。",
+        "原站一个订阅允许创建多个共享额度的专属密钥，并支持单独重置泄漏的凭证；重置后原值失效。Velink 的账户接口尚未开放。",
       ],
       [
         "如何查看套餐用量？",

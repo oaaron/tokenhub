@@ -73,14 +73,14 @@ describe("source model examples", () => {
       examples.some(
         (example) =>
           /^python/.test(example.language) &&
-          example.code.includes('os.environ["TOKENHUB_API_KEY"]'),
+          example.code.includes('os.environ["VELINK_API_KEY"]'),
       ),
     ).toBe(true);
     expect(
       examples.some(
         (example) =>
           /^curl/.test(example.language) &&
-          example.code.includes("$TOKENHUB_API_KEY"),
+          example.code.includes("$VELINK_API_KEY"),
       ),
     ).toBe(true);
   });

@@ -6,13 +6,13 @@ it("generates language-aware environment expressions and preserves alternate end
       apiBaseUrl: null,
       apiRootUrl: null,
     }),
-  ).toContain('os.environ["TOKENHUB_API_ROOT_URL"]');
+  ).toContain('os.environ["VELINK_API_ROOT_URL"]');
   expect(
     configureCode("curl '__API_BASE_URL__/v1/models'", "bash", {
       apiBaseUrl: null,
       apiRootUrl: null,
     }),
-  ).toContain('"${TOKENHUB_API_ROOT_URL}/v1/models"');
+  ).toContain('"${VELINK_API_ROOT_URL}/v1/models"');
   expect(
     configureCode("curl '__API_BASE_URL__/compatible-mode/v1/models'", "bash", {
       apiBaseUrl: "https://test.local/v1",

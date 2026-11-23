@@ -10,8 +10,8 @@ const safeUrl = (value) => {
   }
 };
 export const siteConfig = {
-  name: "TokenHub",
-  subject: env.VITE_COMPANY_NAME || "TokenHub",
+  name: "Velink",
+  subject: env.VITE_COMPANY_NAME || "Velink",
   apiBaseUrl: safeUrl(env.VITE_API_BASE_URL)?.replace(/\/$/, "") || null,
   apiRootUrl:
     safeUrl(env.VITE_API_ROOT_URL)?.replace(/\/$/, "") ||

@@ -1,7 +1,7 @@
 """Read public source images only to measure intrinsic sizes for neutral placeholders."""
 import concurrent.futures, hashlib, json, pathlib, re, subprocess, urllib.request
-source = json.loads(pathlib.Path('/tmp/tokenhub-source-image-dimensions-unknown.json').read_text())
-cache = pathlib.Path('/tmp/tokenhub-source-images-metadata')
+source = json.loads(pathlib.Path('/tmp/velink-source-image-dimensions-unknown.json').read_text())
+cache = pathlib.Path('/tmp/velink-source-images-metadata')
 cache.mkdir(exist_ok=True)
 def measure(url):
     path = cache / hashlib.sha256(url.encode()).hexdigest()

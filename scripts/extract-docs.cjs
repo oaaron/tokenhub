@@ -1,6 +1,6 @@
 const fs = require("fs"),
   acorn = require("acorn");
-const entries = JSON.parse(fs.readFileSync("/tmp/tokenhub-doc-chunks.json"));
+const entries = JSON.parse(fs.readFileSync("/tmp/velink-doc-chunks.json"));
 const parse = (s) => acorn.parse(s, { ecmaVersion: "latest" });
 function walk(n, f) {
   if (!n || typeof n !== "object") return;
@@ -29,7 +29,7 @@ function val(n) {
 const mods = {},
   texts = {};
 for (const [id] of entries) {
-  const ast = parse(fs.readFileSync(`/tmp/tokenhub-doc-${id}.js`, "utf8"));
+  const ast = parse(fs.readFileSync(`/tmp/velink-doc-${id}.js`, "utf8"));
   walk(ast, (n) => {
     if (
       n.type === "Property" &&
@@ -51,7 +51,7 @@ for (const [id] of entries) {
     }
   });
 }
-const mast = parse(fs.readFileSync("/tmp/tokenhub-docs.js", "utf8")),
+const mast = parse(fs.readFileSync("/tmp/velink-docs.js", "utf8")),
   vars = {};
 walk(mast, (n) => {
   if (n.type === "VariableDeclarator" && n.id.type === "Identifier")
@@ -202,7 +202,7 @@ for (const [id, name] of entries) {
     continue;
   const filename = name.replaceAll("__", "/");
   const f = fronts[filename];
-  const ast = parse(fs.readFileSync(`/tmp/tokenhub-doc-${id}.js`, "utf8"));
+  const ast = parse(fs.readFileSync(`/tmp/velink-doc-${id}.js`, "utf8"));
   let first;
   walk(ast, (n) => {
     if (
@@ -228,7 +228,7 @@ for (const [id, name] of entries) {
   });
 }
 fs.writeFileSync(
-  "/tmp/tokenhub-extracted.json",
+  "/tmp/velink-extracted.json",
   JSON.stringify(output, null, 2),
 );
 console.log(

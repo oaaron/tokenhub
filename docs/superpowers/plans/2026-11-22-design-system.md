@@ -1,4 +1,4 @@
-# TokenHub Design System Implementation Plan
+# Velink Design System Implementation Plan
 
 **Goal:** Implement approved direction A and an interactive component gallery with a minimal App.jsx.
 **Architecture:** src/design-system owns semantic tokens, theme scope, reusable primitives and the responsive hook. src/pages owns showcase-only data, sections and styles. Token values are mapped to CSS custom properties by ThemeProvider.

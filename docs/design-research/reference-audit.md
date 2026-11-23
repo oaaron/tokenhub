@@ -1,4 +1,4 @@
-# TokenHub reference audit and proposed design
+# Velink reference audit and proposed design
 
 Research date: 2026-11-22. Sources are public HTML, CSS and JavaScript retrieved directly from the official hosts. This is a source inspection, not a completed visual/browser audit.
 
@@ -35,7 +35,7 @@ Confirmed semantic CSS variables:
 
 Font resources include PT Sans regular/bold, DIN Condensed bold and Noto Serif Display. CSS also contains Instrument Serif and native system/monospace stacks. These indicate multiple typographic contexts, not one uniform font across the entire site. Frequently declared corner radii include 8, 4, 16, 24, 6 and 12px. Explicit media queries include 520, 560, 768, 1024, 1280, 1536px and reduced-motion handling. Common transitions are 160–200ms for background, opacity, color and transform; some 300ms transitions also exist. Actual runtime behavior remains unverified.
 
-Design implications: neutral semantic surfaces, prominent content hierarchy, readable technical metadata, compact controls, provider/model discovery patterns, separate brand/display and data typography. The promotional palette and insurance/business claims belong to ZenMux and are not TokenHub requirements.
+Design implications: neutral semantic surfaces, prominent content hierarchy, readable technical metadata, compact controls, provider/model discovery patterns, separate brand/display and data typography. The promotional palette and insurance/business claims belong to ZenMux and are not Velink requirements.
 
 ## DTMaaS observations
 
@@ -49,7 +49,7 @@ Design implications: clear blue action hierarchy, Chinese-friendly typography, m
 
 ## Three proposed directions
 
-These are TokenHub design proposals, not extracted official specifications.
+These are Velink design proposals, not extracted official specifications.
 
 ### A — Enterprise clarity (recommended)
 

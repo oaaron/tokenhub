@@ -1,5 +1,5 @@
 /* Full-width announcement, independent of the compact legacy notice selectors. */
-.tokenhub-site .th-announcement {
+.velink-site .th-announcement {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -34,7 +34,7 @@
   line-height: 1.65;
   color: var(--ds-text);
 }
-.tokenhub-site .th-announcement-content a {
+.velink-site .th-announcement-content a {
   display: inline-flex;
   align-items: center;
   gap: 5px;
@@ -84,7 +84,7 @@
   width: 25px;
   opacity: 0.6;
 }
-.tokenhub-site .th-announcement > .th-announcement-close {
+.velink-site .th-announcement > .th-announcement-close {
   position: absolute;
   right: 14px;
   top: 50%;
@@ -100,7 +100,7 @@
   background: transparent;
   color: var(--ds-muted);
 }
-.tokenhub-site .th-announcement > .th-announcement-close:hover {
+.velink-site .th-announcement > .th-announcement-close:hover {
   background: color-mix(in srgb, var(--ds-primary) 8%, transparent);
   color: var(--ds-text);
 }
@@ -110,7 +110,7 @@
   outline-offset: 2px;
 }
 @media (min-width: 1500px) {
-  .tokenhub-site .th-announcement {
+  .velink-site .th-announcement {
     min-height: 60px;
   }
   .th-announcement-content p {
@@ -118,7 +118,7 @@
   }
 }
 @media (max-width: 600px) {
-  .tokenhub-site .th-announcement {
+  .velink-site .th-announcement {
     min-height: 80px;
     padding: 11px 46px 20px 18px;
   }
@@ -135,7 +135,7 @@
     font-size: 13px;
     line-height: 1.7;
   }
-  .tokenhub-site .th-announcement > .th-announcement-close {
+  .velink-site .th-announcement > .th-announcement-close {
     right: 5px;
     width: 36px;
     height: 40px;

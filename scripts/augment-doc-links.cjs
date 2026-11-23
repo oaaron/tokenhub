@@ -1,7 +1,7 @@
 // Add source-derived related links without regenerating editorial article content.
 const fs = require("fs"),
   acorn = require("acorn");
-const entries = JSON.parse(fs.readFileSync("/tmp/tokenhub-doc-chunks.json"));
+const entries = JSON.parse(fs.readFileSync("/tmp/velink-doc-chunks.json"));
 const parse = (s) => acorn.parse(s, { ecmaVersion: "latest" });
 function walk(n, f) {
   if (!n || typeof n !== "object") return;
@@ -29,7 +29,7 @@ const modules = {},
   texts = {},
   pages = {};
 for (const [id, name] of entries) {
-  const ast = parse(fs.readFileSync(`/tmp/tokenhub-doc-${id}.js`, "utf8"));
+  const ast = parse(fs.readFileSync(`/tmp/velink-doc-${id}.js`, "utf8"));
   let main;
   walk(ast, (n) => {
     if (
@@ -223,7 +223,7 @@ for (const doc of docs) {
 }
 fs.writeFileSync("src/content/docs.json", JSON.stringify(docs, null, 2) + "\n");
 fs.writeFileSync(
-  "/tmp/tokenhub-source-image-dimensions-unknown.json",
+  "/tmp/velink-source-image-dimensions-unknown.json",
   JSON.stringify(unknown, null, 2),
 );
 console.log(

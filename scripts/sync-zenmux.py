@@ -81,7 +81,7 @@ def pricing(raw):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--html', type=pathlib.Path)
-    parser.add_argument('--detail-cache', type=pathlib.Path, default=pathlib.Path('/tmp/tokenhub-zenmux-verified'))
+    parser.add_argument('--detail-cache', type=pathlib.Path, default=pathlib.Path('/tmp/velink-zenmux-verified'))
     args = parser.parse_args()
     catalog = flight(args.html.read_text() if args.html else fetch(BASE + '/models'))('models')
     summaries_zh = json.loads((ROOT / 'scripts/zenmux-descriptions-zh.json').read_text())

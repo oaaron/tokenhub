@@ -29,7 +29,7 @@ it("renders the complete page, changes theme and persists the preference", () =>
   expect(screen.getByRole("heading", { name: /让复杂/ })).toBeInTheDocument();
   fireEvent.click(screen.getByRole("button", { name: "切换深色主题" }));
   expect(container.firstChild).toHaveAttribute("data-theme", "dark");
-  expect(localStorage.getItem("tokenhub-theme")).toBe("dark");
+  expect(localStorage.getItem("velink-theme")).toBe("dark");
   expect(
     screen.getByRole("button", { name: "切换浅色主题" }),
   ).toBeInTheDocument();

@@ -1,6 +1,7 @@
+import BrandMark from "../brand/BrandMark";
 import { useState, useEffect } from "react";
 import { Link, NavLink, Outlet, useLocation } from "react-router-dom";
-import { ArrowUpRight, Layers3, Menu, X, Sun, Moon } from "lucide-react";
+import { ArrowUpRight, Menu, X, Sun, Moon } from "lucide-react";
 import { Button, ThemeProvider } from "../../design-system";
 import { navigation, siteConfig } from "../../config/site";
 import { LinkButton } from "./LinkButton";
@@ -9,12 +10,12 @@ import "../../styles/readability.css";
 import SiteAnnouncement from "./SiteAnnouncement";
 export function Brand() {
   return (
-    <Link className="th-brand" to="/" aria-label="TokenHub 首页">
+    <Link className="th-brand" to="/" aria-label="Velink 首页">
       <span>
-        <Layers3 size={25} />
+        <BrandMark size={32} />
       </span>
       <strong>
-        Token<span>Hub</span>
+        Ve<span>link</span>
         <i />
       </strong>
     </Link>
@@ -143,9 +144,7 @@ function SiteFooter() {
 export default function SiteLayout() {
   const [theme, setTheme] = useState(() => {
     try {
-      return localStorage.getItem("tokenhub-theme") === "dark"
-        ? "dark"
-        : "light";
+      return localStorage.getItem("velink-theme") === "dark" ? "dark" : "light";
     } catch {
       return "light";
     }
@@ -153,7 +152,7 @@ export default function SiteLayout() {
   const { pathname, hash } = useLocation();
   useEffect(() => {
     try {
-      localStorage.setItem("tokenhub-theme", theme);
+      localStorage.setItem("velink-theme", theme);
     } catch {
       /* Browser storage is optional. */
     }
@@ -172,7 +171,7 @@ export default function SiteLayout() {
     window.scrollTo(0, 0);
   }, [pathname, hash]);
   return (
-    <ThemeProvider theme={theme} className="tokenhub-site">
+    <ThemeProvider theme={theme} className="velink-site">
       <a href="#main" className="th-skip">
         跳到主要内容
       </a>

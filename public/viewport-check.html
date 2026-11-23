@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>TokenHub 视口验收</title>
+    <title>Velink 视口验收</title>
     <style>
       body {
         margin: 0;
@@ -47,7 +47,7 @@
   </head>
   <body>
     <header>
-      <strong>TokenHub 手机视口验收 · 390 × 844</strong>
+      <strong>Velink 手机视口验收 · 390 × 844</strong>
       <p>
         每个 iframe 具有独立的 390px
         布局视口；可在内部操作导航、筛选、套餐与文档。
@@ -81,7 +81,7 @@ document.querySelectorAll('main > section').forEach((section,index) => {
   section.style.width = width + 'px';
   section.querySelector('iframe').style.width = width + 'px';
 });
-document.querySelector('header strong').textContent = `TokenHub 视口验收 · ${width} × 844`;
+document.querySelector('header strong').textContent = `Velink 视口验收 · ${width} × 844`;
 for (const frame of document.querySelectorAll("iframe")) {
         const result = document.createElement("p");
         result.setAttribute("role", "status");

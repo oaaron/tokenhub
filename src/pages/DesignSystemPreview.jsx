@@ -1,3 +1,4 @@
+import BrandMark from "../components/brand/BrandMark";
 import { useEffect, useState } from "react";
 import {
   ArrowUpRight,
@@ -5,7 +6,6 @@ import {
   Check,
   ChevronRight,
   BookOpen,
-  Layers3,
   Menu,
   Moon,
   Sun,
@@ -27,9 +27,7 @@ import "./design-system/preview.css";
 export default function DesignSystemPreview() {
   const [theme, setTheme] = useState(() => {
     try {
-      return localStorage.getItem("tokenhub-theme") === "dark"
-        ? "dark"
-        : "light";
+      return localStorage.getItem("velink-theme") === "dark" ? "dark" : "light";
     } catch {
       return "light";
     }
@@ -40,7 +38,7 @@ export default function DesignSystemPreview() {
   const reducedMotion = useReducedMotion();
   useEffect(() => {
     try {
-      localStorage.setItem("tokenhub-theme", theme);
+      localStorage.setItem("velink-theme", theme);
     } catch {
       /* Theme remains usable without storage. */
     }
@@ -75,16 +73,12 @@ export default function DesignSystemPreview() {
         跳到主要内容
       </a>
       <header className="site-header">
-        <a
-          href="#overview"
-          className="brand"
-          aria-label="TokenHub 设计系统首页"
-        >
+        <a href="#overview" className="brand" aria-label="Velink 设计系统首页">
           <span className="brand-symbol">
-            <Layers3 size={22} strokeWidth={2.2} />
+            <BrandMark size={30} />
           </span>
           <span>
-            Token<span className="brand-light">Hub</span>
+            Ve<span className="brand-light">link</span>
             <span className="brand-dot" />
           </span>
         </a>
@@ -178,7 +172,7 @@ export default function DesignSystemPreview() {
       </aside>
       <main className="preview-main" id="main-content">
         <div className="page-breadcrumb">
-          <span>TokenHub</span>
+          <span>Velink</span>
           <ChevronRight size={12} />
           <span>设计系统</span>
           <span className="breadcrumb-end">
@@ -237,7 +231,7 @@ export default function DesignSystemPreview() {
         </section>
         <footer className="page-footer">
           <span>
-            <Layers3 size={15} /> TokenHub <small>设计系统</small>
+            <BrandMark size={20} /> Velink <small>设计系统</small>
           </span>
           <p>清晰的设计，连接每一个可能。</p>
           <a href="#usage" aria-label="查看使用指南">

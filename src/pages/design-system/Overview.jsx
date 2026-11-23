@@ -1,3 +1,4 @@
+import BrandMark from "../../components/brand/BrandMark";
 import {
   ArrowUpRight,
   Layers3,
@@ -11,7 +12,7 @@ export default function Overview() {
   return (
     <section id="overview" className="overview section-anchor">
       <div className="intro-eyebrow">
-        <span /> TokenHub 设计系统 <span className="eyebrow-line" /> V1.0
+        <span /> Velink 设计系统 <span className="eyebrow-line" /> V1.0
       </div>
       <div className="hero-layout">
         <div className="hero-copy">
@@ -42,7 +43,7 @@ export default function Overview() {
           <Card className="specimen-card">
             <CardHeader>
               <div className="specimen-icon">
-                <Layers3 size={23} />
+                <BrandMark size={30} />
               </div>
               <Tag tone="success">已连接 · 示例</Tag>
             </CardHeader>
@@ -51,7 +52,7 @@ export default function Overview() {
             <div className="specimen-flow">
               <span>应用</span>
               <i />
-              <span className="flow-hub">TokenHub</span>
+              <span className="flow-hub">Velink</span>
               <i />
               <span>模型</span>
             </div>

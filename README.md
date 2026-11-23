@@ -1,6 +1,6 @@
-# TokenHub
+# Velink
 
-基于 Vite、React、TailwindCSS v4 的企业模型服务网站。沿用项目已确定的设计系统，模型目录按 ZenMux 公开数据整理，界面使用 TokenHub 自有设计系统。
+基于 Vite、React、TailwindCSS v4 的企业模型服务网站。沿用项目已确定的设计系统，模型目录按 ZenMux 公开数据整理，界面使用 Velink 自有设计系统。
 
 ```sh
 npm install
@@ -26,7 +26,7 @@ npm run dev -- --host 127.0.0.1
 - `VITE_ACCOUNT_URL`、`VITE_PURCHASE_URL`、`VITE_CONTACT_URL`、`VITE_PRIVACY_URL`、`VITE_TERMS_URL`、`VITE_COMPANY_NAME`。
 - 正式套餐价格、额度与单独购买目标：`src/config/site.js` 的 `planOffers`。
 - 正式模型报价：同文件 `modelOffers`。目录价格用于选型，实际报价由业务配置提供。
-- 真正的模型密钥仅在调用方服务端/终端配置为 `TOKENHUB_API_KEY`，不要写入任何 `VITE_*` 变量。
+- 真正的模型密钥仅在调用方服务端/终端配置为 `VELINK_API_KEY`，不要写入任何 `VITE_*` 变量。
 
 当前无账户、购买、计费或推理后端。生产部署需要把非静态资源的深层 URL 重写到 `index.html`。
 
@@ -65,4 +65,4 @@ node scripts/augment-doc-links.cjs
 python3 scripts/measure-doc-images.py
 ```
 
-文档构建脚本包含人工整理的正文。原平台的交易、数据处理、SLA、促销和认证不自动成为 TokenHub 的服务承诺。
+文档构建脚本包含人工整理的正文。原平台的交易、数据处理、SLA、促销和认证不自动成为 Velink 的服务承诺。

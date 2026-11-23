@@ -86,7 +86,7 @@ export default function PricingPage() {
         </div>
       </div>
       <div className="notice-box pricing-notice">
-        TokenHub
+        Velink
         正式价格、额度及购买服务尚未发布。下方方案规格用于预算规划，最终权益以开通时的说明为准。
       </div>
       <div className="plan-announcement">
@@ -134,7 +134,7 @@ export default function PricingPage() {
                 <small>
                   {offer.creditAmount == null
                     ? "规划额度 · 待正式开通"
-                    : "TokenHub 套餐额度"}
+                    : "Velink 套餐额度"}
                 </small>
               </div>
               <button

@@ -4,7 +4,7 @@ import { ArrowRight, Sparkles, X } from "lucide-react";
 import { useReducedMotion } from "framer-motion";
 import notices from "../../content/notices.json";
 import "../../styles/announcement.css";
-const STORAGE_KEY = "tokenhub:announcement:v2:dismissed";
+const STORAGE_KEY = "velink:announcement:v2:dismissed";
 export default function SiteAnnouncement() {
   const [index, setIndex] = useState(0);
   const [paused, setPaused] = useState(false);

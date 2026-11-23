@@ -339,8 +339,8 @@ export default function ModelDetailPage() {
               </p>
               {!siteConfig.apiBaseUrl && (
                 <div className="notice-box">
-                  TokenHub 服务地址尚未配置。示例中的
-                  TOKENHUB_API_ROOT_URL（不含 /v1）及 TOKENHUB_API_BASE_URL（含
+                  Velink 服务地址尚未配置。示例中的
+                  VELINK_API_ROOT_URL（不含 /v1）及 VELINK_API_BASE_URL（含
                   /v1）需设置为实际开通地址；此页面不会发送推理请求。
                 </div>
               )}
@@ -389,7 +389,7 @@ export default function ModelDetailPage() {
               <dd>{formatContext(model.contextLength)} Token</dd>
               <dt>发布日期</dt>
               <dd>{model.publishedTime || "未公布"}</dd>
-              <dt>TokenHub 服务状态</dt>
+              <dt>Velink 服务状态</dt>
               <dd>等待开通配置</dd>
             </dl>
             <LinkButton

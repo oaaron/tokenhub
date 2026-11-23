@@ -1,4 +1,4 @@
-# TokenHub Design System
+# Velink Design System
 
 Direction A: neutral white/gray surfaces, clear blue actions, fine borders and restrained corners. Reference findings and inspection limits are documented in `docs/design-research/reference-audit.md`.
 

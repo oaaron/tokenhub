@@ -26,7 +26,7 @@ for m in models:
  row={k:m[k] for k in keys if k in m}
  row['sourceUrl']=base+'/models/'+m['uniqueId']
  row['slug']=m['uniqueId']
- # Public model descriptions are reference facts, not TokenHub availability promises.
+ # Public model descriptions are reference facts, not Velink availability promises.
  clean.append(row)
 (RAW/'models-full.json').write_text(json.dumps(clean,ensure_ascii=False,indent=2))
 (RAW/'model-detail-failures.json').write_text(json.dumps(failures,ensure_ascii=False,indent=2))
