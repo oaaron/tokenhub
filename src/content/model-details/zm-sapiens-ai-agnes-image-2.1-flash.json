@@ -1,0 +1,185 @@
+{
+  "slug": "zm-sapiens-ai-agnes-image-2.1-flash",
+  "uniqueId": "2633MOFIS70f14613912",
+  "name": "sapiens-ai/agnes-image-2.1-flash",
+  "displayName": "Sapiens AI: Agnes Image 2.1 Flash",
+  "provider": "Sapiens AI",
+  "manufacturerKey": "sapiens-ai",
+  "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2026/03/20/pCk0Yb7/Property-1Sapiens-Al.svg",
+  "zhDescription": "面向高信息密度视觉、复杂构图与多图合成，支持文生图与编辑，并注重保留原始构图和主体布局。",
+  "zhLongDescription": "面向高信息密度视觉、复杂构图与多图合成，支持文生图与编辑，并注重保留原始构图和主体布局。",
+  "description": "面向高信息密度视觉、复杂构图与多图合成，支持文生图与编辑，并注重保留原始构图和主体布局。",
+  "longDescription": "面向高信息密度视觉、复杂构图与多图合成，支持文生图与编辑，并注重保留原始构图和主体布局。",
+  "contextLength": 121233,
+  "maxCompletionTokens": null,
+  "currency": "USD",
+  "tagList": [
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    }
+  ],
+  "publishedTime": "2026-08-12",
+  "minDiscountRate": "1",
+  "supportedParams": [
+    "aspectRatio",
+    "negativePrompt",
+    "numberOfImages",
+    "referenceImages",
+    "sampleImageSize",
+    "seed"
+  ],
+  "supportedProtocols": [
+    "imagen"
+  ],
+  "reasoning": 0,
+  "reasoningModes": [
+    0
+  ],
+  "providerNames": [
+    "Sapiens AI"
+  ],
+  "providerDetails": [
+    {
+      "name": "Sapiens AI",
+      "slug": "sapiens-ai",
+      "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2026/03/20/pCk0Yb7/Property-1Sapiens-Al.svg",
+      "contextLength": 121233,
+      "maxCompletionTokens": null,
+      "supportsStreaming": false,
+      "apiProtocols": {
+        "imagen": {
+          "supported_parameters": [
+            "aspectRatio",
+            "sampleImageSize",
+            "seed",
+            "referenceImages"
+          ],
+          "supports_reasoning": 0
+        }
+      },
+      "pricingDiscount": "1",
+      "priceInfo": {
+        "prices": [
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE",
+                "priceNameZH": "图像处理或生成的费用(image)",
+                "priceValue": 0.003,
+                "unitCode": "COUNT",
+                "fixedNameZh": "次",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "image",
+                "constraints": []
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "modelProtocolCompatibility": {
+    "imagen": true
+  },
+  "supportedParametersDefaultValue": {
+    "aspectRatio": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "negativePrompt": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "numberOfImages": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "referenceImages": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "sampleImageSize": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "seed": {
+      "enable": true,
+      "defaultValue": null
+    }
+  },
+  "priceInfo": {
+    "prices": [
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "IMAGE",
+            "priceNameZH": "图像处理或生成的费用(image)",
+            "priceValue": 0.003,
+            "unitCode": "COUNT",
+            "fixedNameZh": "次",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "image",
+            "constraints": []
+          }
+        ]
+      }
+    ]
+  },
+  "pricingDetails": [
+    {
+      "feeItemCode": "image",
+      "feeItemName": "图像处理或生成的费用(image)",
+      "feeRecords": [
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "counts"
+            }
+          ],
+          "feeRate": 0.003
+        }
+      ],
+      "selectedConstraint": [
+        "chargeUnit"
+      ]
+    }
+  ],
+  "sourcePublishedPrices": {
+    "pricing_completion": "0",
+    "pricing_discount": "1",
+    "pricing_prompt": "0"
+  },
+  "exampleCodes": [],
+  "serviceConfiguration": "服务配置待开通；接入地址、鉴权和可用协议以开通后的服务配置为准。",
+  "sourceRegion": "global",
+  "sourceCatalog": "ZenMux",
+  "sourceUrl": "https://zenmux.ai/sapiens-ai/agnes-image-2.1-flash",
+  "detailVerified": true,
+  "aliases": [
+    "agnes-image-2.1-flash"
+  ],
+  "isFree": false
+}

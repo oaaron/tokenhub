@@ -1,0 +1,357 @@
+{
+  "uniqueId": "modelservice-1792585859611001253",
+  "name": "gemini-4-argon",
+  "displayName": "Gemini 4 Argon",
+  "provider": "Google",
+  "description": "Gemini 4 Argon is Google's flagship reasoning model, built for complex software engineering, deep mathematical and scientific problem solving, and autonomous multi-step agents. Google trained it to keep context across long, multi-step tasks and to turn long documents mixing text, tables, charts and images into a single grounded output. It leads the Vals Index across finance, legal, coding and tax work, and supports long decode of up to 1M output tokens in a single response.",
+  "zhDescription": "Gemini 4 Argon 是 Google 推出的旗舰推理模型，面向复杂软件工程、深度数学与科学问题求解，以及自主多步骤智能体任务。模型能够在长程、多步骤任务中持续保持上下文，并将融合文本、表格、图表与图像的长文档整合为统一且有依据的输出。其在 Vals Index 的金融、法律、编程和税务任务中位居首位，并支持单次响应最多生成 100 万个输出 Token。",
+  "longDescription": "Gemini 4 Argon is Google's flagship reasoning model, built for complex software engineering, deep mathematical and scientific problem solving, and autonomous multi-step agents. Google trained it to keep context across long, multi-step tasks and to turn long documents mixing text, tables, charts and images into a single grounded output. It leads the Vals Index across finance, legal, coding and tax work, and supports long decode of up to 1M output tokens in a single response.",
+  "zhLongDescription": "Gemini 4 Argon 是 Google 推出的旗舰推理模型，面向复杂软件工程、深度数学与科学问题求解，以及自主多步骤智能体任务。模型能够在长程、多步骤任务中持续保持上下文，并将融合文本、表格、图表与图像的长文档整合为统一且有依据的输出。其在 Vals Index 的金融、法律、编程和税务任务中位居首位，并支持单次响应最多生成 100 万个输出 Token。",
+  "contextLength": "1000000",
+  "maxCompletionTokens": 1000000,
+  "maxTokens": 1000000,
+  "currency": null,
+  "inputPrice": "$2.0000/M",
+  "outputPrice": "$10.0000/M",
+  "inPrice": null,
+  "outPrice": null,
+  "inPriceZh": "$2.0000/M",
+  "outPriceZh": "$10.0000/M",
+  "inHitCachePrice": "¥0.00/M",
+  "inHitCreatePrice": "$0.1000/M",
+  "tagList": [
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "AUDIO",
+      "value": "音频"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "VIDEO",
+      "value": "视频"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "FILE",
+      "value": "文件"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "MODEL_TYPE",
+      "key": "TEXT_GENERATE",
+      "value": "文本生成"
+    },
+    {
+      "type": "MODEL_TYPE",
+      "key": "CODE_GENERATE",
+      "value": "代码生成"
+    },
+    {
+      "type": "MODEL_TYPE",
+      "key": "VISUAL_UNDERSTANDING",
+      "value": "视觉理解"
+    }
+  ],
+  "type": "TEXT_GENERATE",
+  "typeList": [
+    "TEXT_GENERATE",
+    "CODE_GENERATE",
+    "VISUAL_UNDERSTANDING"
+  ],
+  "supportedParametersDefaultValue": {
+    "temperature": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "top_p": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "top_k": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "max_tokens": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "enable_search": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "enable_thinking": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "thinking_budget": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    }
+  },
+  "protocolParameters": [],
+  "modelProtocolCompatibility": {
+    "System One": false,
+    "google video": false,
+    "dashscope": false,
+    "google_gemini": false,
+    "anthropic_message": false,
+    "openai_responses": false,
+    "openai_chat_completions": false
+  },
+  "minDiscountRate": "0.500000",
+  "priceInfo": {
+    "lowestProviderPrice": {
+      "inputPrice": {
+        "priceCode": "INPUT",
+        "priceName": "Input",
+        "priceNameZH": "输入",
+        "priceValue": "2.000000",
+        "originalPrice": "4.000000",
+        "discountRate": "0.500000",
+        "unitCode": "M_TOKENS",
+        "unitName": "M",
+        "unitNameZh": "M",
+        "direction": "INPUT",
+        "fixedName": "M Tokens",
+        "fixedNameZh": "百万Tokens"
+      },
+      "outputPrice": {
+        "priceCode": "OUTPUT",
+        "priceName": "Output",
+        "priceNameZH": "输出",
+        "priceValue": "10.000000",
+        "originalPrice": "20.000000",
+        "discountRate": "0.500000",
+        "unitCode": "M_TOKENS",
+        "unitName": "M",
+        "unitNameZh": "M",
+        "direction": "OUTPUT",
+        "fixedName": "M Tokens",
+        "fixedNameZh": "百万Tokens"
+      }
+    },
+    "prices": [
+      {
+        "stage": "",
+        "stageText": "",
+        "type": null,
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "INPUT",
+            "priceName": "Input",
+            "priceNameZH": "输入",
+            "priceValue": "2.000000",
+            "originalPrice": "4.000000",
+            "discountRate": "0.500000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "OUTPUT",
+            "priceName": "Output",
+            "priceNameZH": "输出",
+            "priceValue": "10.000000",
+            "originalPrice": "20.000000",
+            "discountRate": "0.500000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "OUTPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "INPUT_CACHE_HIT",
+            "priceName": "Input (Cache Hit)",
+            "priceNameZH": "输入（命中缓存）",
+            "priceValue": "0.100000",
+            "originalPrice": "0.200000",
+            "discountRate": "0.500000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          }
+        ]
+      }
+    ]
+  },
+  "publishedTime": "2026-10-21 20:31:00",
+  "offShelfFlag": 0,
+  "offShelfDate": null,
+  "buyTypes": [
+    "BY_AMOUNT",
+    "BY_CREDIT"
+  ],
+  "specs": {
+    "inputPrice": "¥0.0000",
+    "inputPriceHint": "每 1K tokens",
+    "outputPrice": "¥0.0000",
+    "outputPriceHint": "每 1K tokens",
+    "contextLength": "1000000",
+    "contextLengthHint": "tokens",
+    "maxOutput": "0",
+    "maxOutputHint": "tokens"
+  },
+  "capabilities": [],
+  "languages": [
+    "文本",
+    "图像",
+    "音频",
+    "视频",
+    "文件"
+  ],
+  "scenarios": [
+    "文本"
+  ],
+  "modelParameters": [
+    {
+      "type": "slider",
+      "label": "Temperature",
+      "value": 0.3,
+      "min": 0,
+      "max": 2,
+      "step": 0.01,
+      "description": "控制输出的随机性，值越高越随机",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "label": "Presence Penalty",
+      "value": 0.1,
+      "min": -2,
+      "max": 2,
+      "step": 0.01,
+      "description": "存在惩罚，鼓励模型讨论新话题",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "label": "Top P",
+      "value": 0.95,
+      "min": 0,
+      "max": 1,
+      "step": 0.01,
+      "description": "核采样参数，控制候选词汇的范围",
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "label": "Max Tokens",
+      "value": 0,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "单次生成的最大 token 数量",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "label": "Frequency Penalty",
+      "value": 0.1,
+      "min": -2,
+      "max": 2,
+      "step": 0.01,
+      "description": "频率惩罚，减少重复内容的生成",
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "label": "Context Length",
+      "value": 64000,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "支持的最大上下文长度",
+      "thousands": true
+    }
+  ],
+  "usageGuide": {
+    "authIntro": "使用 API Key 进行认证，在请求头中添加 x-goog-api-key：",
+    "authBearerPlaceholder": "<api_key>",
+    "requestIntro": "使用 Gemini Generate Content 协议：",
+    "requestExample": "{\n  \"contents\": [\n    {\n      \"role\": \"user\",\n      \"parts\": [\n        {\n          \"text\": \"你好，请介绍一下自己\"\n        }\n      ]\n    }\n  ]\n}",
+    "responseExample": "{\n  \"candidates\": [\n    {\n      \"finishReason\": \"STOP\",\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"你好！我是 Gemini...\"\n          }\n        ]\n      }\n    }\n  ],\n  \"usageMetadata\": {\n    \"candidatesTokenCount\": 12,\n    \"totalTokenCount\": 21,\n    \"promptTokenCount\": 9\n  }\n}",
+    "docUrl": "https://ai.google.dev/api/generate-content",
+    "docLabel": "查看完整 API 文档"
+  },
+  "exampleCodes": {
+    "python": {
+      "sectionTitle": "Python 示例",
+      "installLine": "安装依赖：pip install google-genai",
+      "code": "# pip install google-genai\nfrom google import genai\nfrom google.genai import types\n\nclient = genai.Client(\n    api_key=\"<api_key>\",\n    http_options=types.HttpOptions(base_url=\"https://maas-api.computrix.ai\"),\n)\n\nresponse = client.models.generate_content(\n    model=\"gemini-4-argon\",\n    contents=\"What is the meaning of life?\",\n)\nprint(response.text)"
+    },
+    "javascript": {
+      "sectionTitle": "JavaScript 示例",
+      "installLine": "无需安装额外依赖（需 Node 18+ 或支持 fetch 的运行环境）",
+      "code": "const response = await fetch(\"https://maas-api.computrix.ai/v1beta/models/gemini-4-argon:generateContent\", {\n  method: \"POST\",\n  headers: {\n    \"x-goog-api-key\": \"<api_key>\",\n    \"Content-Type\": \"application/json\"\n  },\n  body: JSON.stringify({\n    contents: [{ role: \"user\", parts: [{ text: \"What is the meaning of life?\" }] }]\n  })\n});\nconst result = await response.json();\nconsole.log(result.candidates[0].content.parts[0].text);"
+    },
+    "curl": {
+      "sectionTitle": "Curl 示例",
+      "installLine": "说明：macOS / Linux 一般已预装 curl",
+      "code": "curl -X POST \"https://maas-api.computrix.ai/v1beta/models/gemini-4-argon:generateContent\" \\\n  -H \"x-goog-api-key: <api_key>\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"contents\":[{\"role\":\"user\",\"parts\":[{\"text\":\"What is the meaning of life?\"}]}]}'"
+    }
+  },
+  "agentIntegrations": [
+    {
+      "name": "Claude Code",
+      "description": "Use this model through the Anthropic-compatible endpoint.",
+      "zhDescription": "通过 Anthropic 兼容接口在 Claude Code 中使用当前模型。",
+      "fileLabel": "~/.claude/settings.json",
+      "language": "json",
+      "code": "{\n  \"env\": {\n    \"ANTHROPIC_AUTH_TOKEN\": \"YOUR_MAAS_API_KEY\",\n    \"ANTHROPIC_BASE_URL\": \"https://maas-api.computrix.ai/\",\n    \"ANTHROPIC_MODEL\": \"gemini-4-argon\"\n  }\n}",
+      "guideUrl": "/docs/agent-guides/claude-code"
+    },
+    {
+      "name": "Codex",
+      "description": "Configure MaaS as an OpenAI-compatible model provider.",
+      "zhDescription": "将 MaaS 配置为 Codex 的 OpenAI 兼容模型供应商。",
+      "fileLabel": "~/.codex/config.toml",
+      "language": "toml",
+      "code": "model = \"gemini-4-argon\"\nmodel_provider = \"maas\"\n\n[model_providers.maas]\nname = \"MaaS\"\nbase_url = \"https://maas-api.computrix.ai/v1\"\nenv_key = \"MAAS_API_KEY\"\nwire_api = \"responses\"",
+      "guideUrl": "/docs/agent-guides/codex"
+    },
+    {
+      "name": "OpenCode",
+      "description": "Add MaaS as a custom provider in OpenCode.",
+      "zhDescription": "在 OpenCode 中添加 MaaS 自定义模型供应商。",
+      "fileLabel": "~/.config/opencode/opencode.json",
+      "language": "json",
+      "code": "{\n  \"$schema\": \"https://opencode.ai/config.json\",\n  \"provider\": {\n    \"maas\": {\n      \"npm\": \"@ai-sdk/openai-compatible\",\n      \"name\": \"MaaS\",\n      \"options\": {\n        \"baseURL\": \"https://maas-api.computrix.ai/v1\",\n        \"apiKey\": \"YOUR_MAAS_API_KEY\"\n      },\n      \"models\": {\n        \"gemini-4-argon\": {\n          \"name\": \"gemini-4-argon\"\n        }\n      }\n    }\n  },\n  \"model\": \"maas/gemini-4-argon\"\n}",
+      "guideUrl": "/docs/agent-guides/opencode"
+    }
+  ],
+  "slug": "sg-modelservice-1792585859611001253",
+  "sourceRegion": "sg",
+  "sourceCatalog": "Computrix",
+  "sourceUrl": "https://computrix.ai/sg/models",
+  "detailVerified": true
+}

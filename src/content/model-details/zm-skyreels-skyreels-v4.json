@@ -1,0 +1,257 @@
+{
+  "slug": "zm-skyreels-skyreels-v4",
+  "uniqueId": "2614MOXAZyQT14613781",
+  "name": "skyreels/skyreels-v4",
+  "displayName": "SkyReels: V4",
+  "provider": "SkyReels",
+  "manufacturerKey": "skyreels",
+  "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2026/04/03/fotkvjo/Property-1Skyreels.svg",
+  "zhDescription": "统一音视频生成、编辑与局部修补模型，采用双流架构同时处理视频与音频，面向复杂多模态制作。",
+  "zhLongDescription": "统一音视频生成、编辑与局部修补模型，采用双流架构同时处理视频与音频，面向复杂多模态制作。",
+  "description": "统一音视频生成、编辑与局部修补模型，采用双流架构同时处理视频与音频，面向复杂多模态制作。",
+  "longDescription": "统一音视频生成、编辑与局部修补模型，采用双流架构同时处理视频与音频，面向复杂多模态制作。",
+  "contextLength": 1280,
+  "maxCompletionTokens": 1280,
+  "currency": "USD",
+  "tagList": [
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "VIDEO",
+      "value": "视频"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "AUDIO",
+      "value": "音频"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "VIDEO",
+      "value": "视频"
+    }
+  ],
+  "publishedTime": "2026-04-20",
+  "minDiscountRate": "1",
+  "supportedParams": [
+    "aspectRatio",
+    "compressionQuality",
+    "durationSeconds",
+    "enhancePrompt",
+    "generateAudio",
+    "lastFrame",
+    "referenceImages"
+  ],
+  "supportedProtocols": [
+    "veo"
+  ],
+  "reasoning": 0,
+  "reasoningModes": [
+    0
+  ],
+  "providerNames": [
+    "SkyReels"
+  ],
+  "providerDetails": [
+    {
+      "name": "SkyReels",
+      "slug": "skyreels",
+      "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2026/04/03/fotkvjo/Property-1Skyreels.svg",
+      "contextLength": 1280,
+      "maxCompletionTokens": 1280,
+      "supportsStreaming": false,
+      "apiProtocols": {
+        "veo": {
+          "supported_parameters": [
+            "durationSeconds",
+            "aspectRatio",
+            "generateAudio",
+            "referenceImages",
+            "lastFrame",
+            "enhancePrompt",
+            "compressionQuality"
+          ],
+          "supports_reasoning": 0
+        }
+      },
+      "pricingDiscount": "1",
+      "priceInfo": {
+        "prices": [
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "AUDIO_AND_VIDEO",
+                "priceNameZH": "音频和视频生成费用(audio_and_video)",
+                "priceValue": 0.14,
+                "unitCode": "SECOND",
+                "fixedNameZh": "秒",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "audio_and_video",
+                "constraints": []
+              }
+            ]
+          },
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "VIDEO",
+                "priceNameZH": "视频生成费用(video)",
+                "priceValue": 0.12,
+                "unitCode": "SECOND",
+                "fixedNameZh": "秒",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "video",
+                "constraints": []
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "modelProtocolCompatibility": {
+    "veo": true
+  },
+  "supportedParametersDefaultValue": {
+    "aspectRatio": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "compressionQuality": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "durationSeconds": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "enhancePrompt": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "generateAudio": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "lastFrame": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "referenceImages": {
+      "enable": true,
+      "defaultValue": null
+    }
+  },
+  "priceInfo": {
+    "prices": [
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "AUDIO_AND_VIDEO",
+            "priceNameZH": "音频和视频生成费用(audio_and_video)",
+            "priceValue": 0.14,
+            "unitCode": "SECOND",
+            "fixedNameZh": "秒",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "audio_and_video",
+            "constraints": []
+          }
+        ]
+      },
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "VIDEO",
+            "priceNameZH": "视频生成费用(video)",
+            "priceValue": 0.12,
+            "unitCode": "SECOND",
+            "fixedNameZh": "秒",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "video",
+            "constraints": []
+          }
+        ]
+      }
+    ]
+  },
+  "pricingDetails": [
+    {
+      "feeItemCode": "audio_and_video",
+      "feeItemName": "音频和视频生成费用(audio_and_video)",
+      "feeRecords": [
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "seconds"
+            }
+          ],
+          "feeRate": 0.14
+        }
+      ],
+      "selectedConstraint": [
+        "chargeUnit"
+      ]
+    },
+    {
+      "feeItemCode": "video",
+      "feeItemName": "视频生成费用(video)",
+      "feeRecords": [
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "seconds"
+            }
+          ],
+          "feeRate": 0.12
+        }
+      ],
+      "selectedConstraint": [
+        "chargeUnit"
+      ]
+    }
+  ],
+  "sourcePublishedPrices": {
+    "pricing_completion": "0",
+    "pricing_discount": "1",
+    "pricing_prompt": "0"
+  },
+  "exampleCodes": [],
+  "serviceConfiguration": "服务配置待开通；接入地址、鉴权和可用协议以开通后的服务配置为准。",
+  "sourceRegion": "global",
+  "sourceCatalog": "ZenMux",
+  "sourceUrl": "https://zenmux.ai/skyreels/skyreels-v4",
+  "detailVerified": true,
+  "aliases": [],
+  "isFree": false
+}

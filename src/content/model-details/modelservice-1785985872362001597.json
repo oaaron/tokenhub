@@ -1,0 +1,380 @@
+{
+  "uniqueId": "modelservice-1785985872362001597",
+  "name": "qwen-image-3.0-pro",
+  "displayName": "Qwen-Image-3.0-Pro",
+  "provider": "Qwen",
+  "description": "Qwen Image 3 Pro is an image generation and editing model from Qwen. It supports precise rendering of text and details as small as 10px, along with richer world knowledge compared to previous generations.",
+  "zhDescription": "内容丰实：支持最大 4.5k token 输入，支持图中图密集信息排版，让报纸、分镜、菜单、试卷等复杂版面一次生成。 细节真实：支持 10px 小字精准渲染，微表情、毛孔、发丝等细节生动还原，逼近真实摄影的质感。 知识厚实：支持 12 国语言、多种字体原生渲染，主流网页、游戏、直播等界面仿真，外部知识全纳入。 Qwen-Image-3.0-Pro 不只是在追求\"好看\"，更在追求“好用”——让图像生成真正成为可落地的生产力工具。",
+  "longDescription": "Qwen Image 3 Pro is an image generation and editing model from Qwen. It supports precise rendering of text and details as small as 10px, along with richer world knowledge compared to previous generations.",
+  "zhLongDescription": "内容丰实：支持最大 4.5k token 输入，支持图中图密集信息排版，让报纸、分镜、菜单、试卷等复杂版面一次生成。 细节真实：支持 10px 小字精准渲染，微表情、毛孔、发丝等细节生动还原，逼近真实摄影的质感。 知识厚实：支持 12 国语言、多种字体原生渲染，主流网页、游戏、直播等界面仿真，外部知识全纳入。 Qwen-Image-3.0-Pro 不只是在追求\"好看\"，更在追求“好用”——让图像生成真正成为可落地的生产力工具。",
+  "contextLength": null,
+  "maxCompletionTokens": null,
+  "maxTokens": null,
+  "currency": null,
+  "inPrice": null,
+  "outPrice": null,
+  "inPriceZh": null,
+  "outPriceZh": null,
+  "inHitCachePrice": "¥0.00/M",
+  "inHitCreatePrice": "¥0.00/M",
+  "tagList": [
+    {
+      "type": "MODEL_TYPE",
+      "key": "IMAGE_GENERATE",
+      "value": "图像生成"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    }
+  ],
+  "type": "IMAGE_GENERATE",
+  "typeList": [
+    "IMAGE_GENERATE"
+  ],
+  "supportedParametersDefaultValue": {
+    "n": {
+      "enable": true,
+      "defaultValue": 1,
+      "forbidDisable": null
+    },
+    "limit": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "size": {
+      "enable": true,
+      "defaultValue": "1280*1280",
+      "forbidDisable": null
+    },
+    "prompt_extend": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "uploadImage": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    }
+  },
+  "protocolParameters": [
+    {
+      "protocolName": "dashscope",
+      "displayName": "Dashscope",
+      "parameters": {
+        "result_format": false,
+        "top_p": false,
+        "top_logprobs": false,
+        "top_k": false,
+        "tools": false,
+        "tool_stream": false,
+        "tool_choice": false,
+        "thinking_budget": false,
+        "temperature": false,
+        "stream": false,
+        "seed": true,
+        "search_options": false,
+        "enable_code_interpreter": false,
+        "response_format": false,
+        "repetition_penalty": false,
+        "reasoning_effort": false,
+        "preserve_thinking": false,
+        "presence_penalty": false,
+        "parallel_tool_calls": false,
+        "n": true,
+        "logprobs": false,
+        "incremental_output": false,
+        "enable_thinking": true,
+        "enable_search": false
+      }
+    },
+    {
+      "protocolName": "openai_chat_completions",
+      "displayName": "OpenAI Chat Completions",
+      "parameters": {
+        "seed": true,
+        "web_search_options": false,
+        "user": false,
+        "top_p": false,
+        "top_logprobs": false,
+        "tools": false,
+        "tool_choice": false,
+        "temperature": false,
+        "stream_options": false,
+        "stream": false,
+        "store": false,
+        "service_tier": false,
+        "audio": false,
+        "response_format": false,
+        "reasoning_effort": false,
+        "presence_penalty": false,
+        "prediction": false,
+        "parallel_tool_calls": false,
+        "n": true,
+        "modalities": false,
+        "metadata": false,
+        "logprobs": false,
+        "logit_bias": false,
+        "frequency_penalty": false
+      }
+    }
+  ],
+  "modelProtocolCompatibility": {
+    "System One": false,
+    "google video": false,
+    "dashscope": true,
+    "google_gemini": false,
+    "anthropic_message": false,
+    "openai_responses": false,
+    "openai_chat_completions": true
+  },
+  "minDiscountRate": "1",
+  "priceInfo": {
+    "lowestProviderPrice": {
+      "inputPrice": {
+        "priceCode": "INPUT_IMAGE_PIECE",
+        "priceName": "Input（Image）",
+        "priceNameZH": "输入图片",
+        "priceValue": "0.020000",
+        "originalPrice": "0.020000",
+        "discountRate": "1.000000",
+        "unitCode": "PIECE",
+        "unitName": "PIECE",
+        "unitNameZh": "张",
+        "direction": "INPUT",
+        "fixedName": "Piece",
+        "fixedNameZh": "张"
+      },
+      "outputPrice": {
+        "priceCode": "GENERATED_COUNT",
+        "priceName": "Generated Count",
+        "priceNameZH": "图片生成",
+        "priceValue": "0.500000",
+        "originalPrice": "0.500000",
+        "discountRate": "1.000000",
+        "unitCode": "PIECE",
+        "unitName": "PIECE",
+        "unitNameZh": "张",
+        "direction": "OUTPUT",
+        "fixedName": "Piece",
+        "fixedNameZh": "张"
+      }
+    },
+    "prices": [
+      {
+        "stage": "输出图像分辨率=1k",
+        "stageText": "输出图像分辨率=1k",
+        "type": null,
+        "priceCurrency": "CNY",
+        "price": [
+          {
+            "priceCode": "INPUT_IMAGE_PIECE",
+            "priceName": "Input（Image）",
+            "priceNameZH": "输入图片",
+            "priceValue": "0.020000",
+            "originalPrice": "0.020000",
+            "discountRate": "1.000000",
+            "unitCode": "PIECE",
+            "unitName": "PIECE",
+            "unitNameZh": "张",
+            "direction": "INPUT",
+            "fixedName": "Piece",
+            "fixedNameZh": "张"
+          },
+          {
+            "priceCode": "GENERATED_COUNT",
+            "priceName": "Generated Count",
+            "priceNameZH": "图片生成",
+            "priceValue": "0.500000",
+            "originalPrice": "0.500000",
+            "discountRate": "1.000000",
+            "unitCode": "PIECE",
+            "unitName": "PIECE",
+            "unitNameZh": "张",
+            "direction": "OUTPUT",
+            "fixedName": "Piece",
+            "fixedNameZh": "张"
+          }
+        ]
+      },
+      {
+        "stage": "输出图像分辨率=2k",
+        "stageText": "输出图像分辨率=2k",
+        "type": null,
+        "priceCurrency": "CNY",
+        "price": [
+          {
+            "priceCode": "INPUT_IMAGE_PIECE",
+            "priceName": "Input（Image）",
+            "priceNameZH": "输入图片",
+            "priceValue": "0.020000",
+            "originalPrice": "0.020000",
+            "discountRate": "1.000000",
+            "unitCode": "PIECE",
+            "unitName": "PIECE",
+            "unitNameZh": "张",
+            "direction": "INPUT",
+            "fixedName": "Piece",
+            "fixedNameZh": "张"
+          },
+          {
+            "priceCode": "GENERATED_COUNT",
+            "priceName": "Generated Count",
+            "priceNameZH": "图片生成",
+            "priceValue": "0.500000",
+            "originalPrice": "0.500000",
+            "discountRate": "1.000000",
+            "unitCode": "PIECE",
+            "unitName": "PIECE",
+            "unitNameZh": "张",
+            "direction": "OUTPUT",
+            "fixedName": "Piece",
+            "fixedNameZh": "张"
+          }
+        ]
+      }
+    ]
+  },
+  "publishedTime": "2026-08-06 11:11:12",
+  "offShelfFlag": 0,
+  "offShelfDate": null,
+  "buyTypes": [
+    "BY_AMOUNT"
+  ],
+  "providers": [
+    {
+      "providerUid": "channel-1779290799108001040",
+      "providerName": "antdigital",
+      "providerDisplayName": "蚂蚁数字科技",
+      "providerLogo": "https://maas-public.oss-cn-shanghai.aliyuncs.com/maas-admin/image/2026-09-10/image-4cf4a41f-3ae4-42.png"
+    }
+  ],
+  "extInfo": "{\"exampleCodes\":{\"openAI\":[{\"code\":\"import os\\nfrom openai import OpenAI\\n\\nclient = OpenAI(\\n    api_key=os.getenv(\\\"API_KEY\\\"),\\n    base_url=\\\"https://maas-api.antdigital.com/v1\\\",\\n    timeout=600.0,\\n)\\n\\nresponse = client.images.generate(\\n    model=\\\"qwen-image-3.0-pro\\\",\\n    prompt=\\\"画面是一张竖幅户外人像摄影，整体从上到下呈现温暖的午后街景氛围。顶部左侧到上方大面积被深绿色藤蔓和橙色小花覆盖，花叶从建筑檐口自然垂落，受阳光照射的叶片呈黄绿色高光，阴影处则偏深绿，形成浓密而柔和的背景层次。左上至中上区域是一块深蓝色横向招牌，招牌表面较暗、略带磨砂质感，上面以白色哥特体大字写着 Il Messaggero，文字位于画面左侧偏上，部分被前景花叶轻微遮挡，字体高对比、带装饰性尖角和粗细变化。招牌下方是报刊亭或书报摊的玻璃展示窗，黑色金属框架将橱窗分隔成多个矩形区域，内部陈列着许多报纸、杂志和书刊封面，但大多因景深虚化和光线反射而难以辨读，形成浅色纸张与深色边框交错的背景纹理。画面右上方是强烈的逆光区域，阳光从街道尽头照入，背景建筑被虚化成米灰色块面，边缘柔和，呈现明显的浅景深效果。画面中部偏右是一名年轻成年女性的半身至膝上人像，她回头面向镜头微笑，身体略向右转，肩背朝向观者，姿态自然放松。她有长而浓密的黑色波浪卷发，发丝被逆光勾勒出金色轮廓光，发梢在右侧向外散开，显得轻盈蓬松。她肤色白皙，脸型柔和偏鹅蛋形，眉形细致，眼睛明亮，眼妆清透，睫毛明显，面部带有自然高光，唇部为柔和珊瑚红色，笑容露齿，表情亲切明朗。她佩戴小巧耳饰，身穿黑色细肩带露背连衣裙，面料颜色深黑、轮廓简洁，细肩带从肩部向背部延伸，背部线条清晰。画面下部偏左到中部，她双手抱着一束玫瑰花，花束体积较大，主要由橙色、杏色、粉色和浅桃色玫瑰组成，花瓣层层卷曲，边缘被阳光照亮，绿色叶片和长花茎从花束下方垂出，花束与黑色裙装形成鲜明色彩对比。右侧背景是一条被阳光照亮的城市街道，地面呈暖灰与金黄色调，远处建筑、街边设施和一个模糊的红色圆形交通标志位于右下远景，均因焦外虚化而只保留色块和轮廓。整张照片采用暖色胶片感处理，带有细腻颗粒、柔和对比和明显逆光边缘光，人物位于视觉焦点，背景报刊亭、花藤、街道和阳光共同营造出浪漫、明亮、都市漫步式的氛围。\\\",\\n    size=\\\"1024x1024\\\",\\n    n=1,\\n    # 以上均为OpenAI官方参数。image、prompt_extend等扩展字段需通过extra_body传入，参见图生图示例\\n)\\n\\nfor item in response.data:\\n    print(item.url)\\nprint(f\\\"request_id: {response._request_id}\\\")\",\"sectionTitle\":\"\",\"name\":\"python\"},{\"code\":\"curl --location 'https://maas-api.antdigital.com/v1/images/generations' \\\\\\n--header 'Content-Type: application/json' \\\\\\n--header \\\"Authorization: Bearer $API_KEY\\\" \\\\\\n--data '{\\n    \\\"model\\\": \\\"qwen-image-3.0-pro\\\",\\n    \\\"prompt\\\": \\\"画面是一张竖幅户外人像摄影，整体从上到下呈现温暖的午后街景氛围。顶部左侧到上方大面积被深绿色藤蔓和橙色小花覆盖，花叶从建筑檐口自然垂落，受阳光照射的叶片呈黄绿色高光，阴影处则偏深绿，形成浓密而柔和的背景层次。左上至中上区域是一块深蓝色横向招牌，招牌表面较暗、略带磨砂质感，上面以白色哥特体大字写着 Il Messaggero，文字位于画面左侧偏上，部分被前景花叶轻微遮挡，字体高对比、带装饰性尖角和粗细变化。招牌下方是报刊亭或书报摊的玻璃展示窗，黑色金属框架将橱窗分隔成多个矩形区域，内部陈列着许多报纸、杂志和书刊封面，但大多因景深虚化和光线反射而难以辨读，形成浅色纸张与深色边框交错的背景纹理。画面右上方是强烈的逆光区域，阳光从街道尽头照入，背景建筑被虚化成米灰色块面，边缘柔和，呈现明显的浅景深效果。画面中部偏右是一名年轻成年女性的半身至膝上人像，她回头面向镜头微笑，身体略向右转，肩背朝向观者，姿态自然放松。她有长而浓密的黑色波浪卷发，发丝被逆光勾勒出金色轮廓光，发梢在右侧向外散开，显得轻盈蓬松。她肤色白皙，脸型柔和偏鹅蛋形，眉形细致，眼睛明亮，眼妆清透，睫毛明显，面部带有自然高光，唇部为柔和珊瑚红色，笑容露齿，表情亲切明朗。她佩戴小巧耳饰，身穿黑色细肩带露背连衣裙，面料颜色深黑、轮廓简洁，细肩带从肩部向背部延伸，背部线条清晰。画面下部偏左到中部，她双手抱着一束玫瑰花，花束体积较大，主要由橙色、杏色、粉色和浅桃色玫瑰组成，花瓣层层卷曲，边缘被阳光照亮，绿色叶片和长花茎从花束下方垂出，花束与黑色裙装形成鲜明色彩对比。右侧背景是一条被阳光照亮的城市街道，地面呈暖灰与金黄色调，远处建筑、街边设施和一个模糊的红色圆形交通标志位于右下远景，均因焦外虚化而只保留色块和轮廓。整张照片采用暖色胶片感处理，带有细腻颗粒、柔和对比和明显逆光边缘光，人物位于视觉焦点，背景报刊亭、花藤、街道和阳光共同营造出浪漫、明亮、都市漫步式的氛围。\\\",\\n    \\\"size\\\": \\\"1024x1024\\\",\\n    \\\"n\\\": 1,\\n    \\\"prompt_extend\\\": true\\n}'\",\"sectionTitle\":\"\",\"name\":\"curl\"}],\"dashscope\":[{\"code\":\"import os\\nimport base64\\nimport mimetypes\\nimport dashscope\\nfrom dashscope import MultiModalConversation\\n\\ndashscope.base_http_api_url = 'https://maas-api.antdigital.com/api/v1'\\n\\ndef encode_file(file_path):\\n    mime_type, _ = mimetypes.guess_type(file_path)\\n    if not mime_type or not mime_type.startswith(\\\"image/\\\"):\\n        raise ValueError(\\\"Unsupported or unrecognized image format\\\")\\n    with open(file_path, \\\"rb\\\") as image_file:\\n        encoded_string = base64.b64encode(image_file.read()).decode('utf-8')\\n    return f\\\"data:{mime_type};base64,{encoded_string}\\\"\\n\\n# [方法一] 使用公网图像URL\\nimage_url = \\\"https://alidocs.oss-cn-zhangjiakou.aliyuncs.com/res/yBRq1ZPYEaXdyOdv/img/33a80a19-7ac7-4c64-b0fa-7d685b7046a0.png\\\"\\n\\n# [方法二] 使用Base64编码图像\\n# image_url = encode_file(\\\"./your_image.png\\\")\\n\\nresponse = MultiModalConversation.call(\\n    api_key=os.getenv(\\\"API_KEY\\\"),\\n    model=\\\"qwen-image-3.0-pro\\\",\\n    messages=[{\\n        \\\"role\\\": \\\"user\\\",\\n        \\\"content\\\": [\\n            {\\\"image\\\": image_url},\\n            {\\\"text\\\": \\\"帮我生成一张充满高级感的都市风格女性写真，画面中人物完美保留输入图片中这位年轻女性的面部特征与一头柔顺的黑色长发。人物换上一套彰显高雅气质的都市职场穿搭，场景设定在一家装修现代简约的高端咖啡店内。\\\"}\\n        ]\\n    }],\\n    prompt_extend=True\\n)\\n\\nprint(response)\\nif response.status_code == 200:\\n    url = response.output.choices[0].message.content[0][\\\"image\\\"]\\n    print(f\\\"Generated image URL: {url}\\\")\\nelse:\\n    print(f\\\"Error: {response.code} - {response.message}\\\")\",\"sectionTitle\":\"\",\"name\":\"python\"},{\"code\":\"curl --location 'https://maas-api.antdigital.com/api/v1/services/aigc/multimodal-generation/generation' \\\\\\n--header 'Content-Type: application/json' \\\\\\n--header \\\"Authorization: Bearer $API_KEY\\\" \\\\\\n--data '{\\n    \\\"model\\\": \\\"qwen-image-3.0-pro\\\",\\n    \\\"input\\\": {\\n        \\\"messages\\\": [\\n            {\\n                \\\"role\\\": \\\"user\\\",\\n                \\\"content\\\": [\\n                    {\\n                        \\\"text\\\": \\\"画面是一张竖幅户外人像摄影，整体从上到下呈现温暖的午后街景氛围。顶部左侧到上方大面积被深绿色藤蔓和橙色小花覆盖，花叶从建筑檐口自然垂落，受阳光照射的叶片呈黄绿色高光，阴影处则偏深绿，形成浓密而柔和的背景层次。左上至中上区域是一块深蓝色横向招牌，招牌表面较暗、略带磨砂质感，上面以白色哥特体大字写着 Il Messaggero，文字位于画面左侧偏上，部分被前景花叶轻微遮挡，字体高对比、带装饰性尖角和粗细变化。招牌下方是报刊亭或书报摊的玻璃展示窗，黑色金属框架将橱窗分隔成多个矩形区域，内部陈列着许多报纸、杂志和书刊封面，但大多因景深虚化和光线反射而难以辨读，形成浅色纸张与深色边框交错的背景纹理。画面右上方是强烈的逆光区域，阳光从街道尽头照入，背景建筑被虚化成米灰色块面，边缘柔和，呈现明显的浅景深效果。画面中部偏右是一名年轻成年女性的半身至膝上人像，她回头面向镜头微笑，身体略向右转，肩背朝向观者，姿态自然放松。她有长而浓密的黑色波浪卷发，发丝被逆光勾勒出金色轮廓光，发梢在右侧向外散开，显得轻盈蓬松。她肤色白皙，脸型柔和偏鹅蛋形，眉形细致，眼睛明亮，眼妆清透，睫毛明显，面部带有自然高光，唇部为柔和珊瑚红色，笑容露齿，表情亲切明朗。她佩戴小巧耳饰，身穿黑色细肩带露背连衣裙，面料颜色深黑、轮廓简洁，细肩带从肩部向背部延伸，背部线条清晰。画面下部偏左到中部，她双手抱着一束玫瑰花，花束体积较大，主要由橙色、杏色、粉色和浅桃色玫瑰组成，花瓣层层卷曲，边缘被阳光照亮，绿色叶片和长花茎从花束下方垂出，花束与黑色裙装形成鲜明色彩对比。右侧背景是一条被阳光照亮的城市街道，地面呈暖灰与金黄色调，远处建筑、街边设施和一个模糊的红色圆形交通标志位于右下远景，均因焦外虚化而只保留色块和轮廓。整张照片采用暖色胶片感处理，带有细腻颗粒、柔和对比和明显逆光边缘光，人物位于视觉焦点，背景报刊亭、花藤、街道和阳光共同营造出浪漫、明亮、都市漫步式的氛围。\\\"\\n                    }\\n                ]\\n            }\\n        ]\\n    },\\n    \\\"parameters\\\": {\\n        \\\"prompt_extend\\\": true\\n    }\\n}'\",\"sectionTitle\":\"\",\"name\":\"curl\"}]},\"supportedParametersDefaultValue\":\"\"}",
+  "specs": {
+    "inputPrice": "¥0.0000",
+    "inputPriceHint": "每 1K tokens",
+    "outputPrice": "¥0.0000",
+    "outputPriceHint": "每 1K tokens",
+    "contextLength": null,
+    "contextLengthHint": "tokens",
+    "maxOutput": "0",
+    "maxOutputHint": "tokens"
+  },
+  "capabilities": [],
+  "languages": [
+    "文本",
+    "图像"
+  ],
+  "scenarios": [
+    "图像"
+  ],
+  "modelParameters": [
+    {
+      "type": "slider",
+      "id": "seed",
+      "label": "seed",
+      "value": 1234,
+      "min": 0,
+      "max": 2147483647,
+      "step": 1,
+      "description": "随机数种子。用于确保在相同输入和参数下生成结果可复现",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "id": "n",
+      "label": "n",
+      "value": 1,
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "description": "生成响应的个数",
+      "thousands": null
+    },
+    {
+      "type": "switch",
+      "id": "enable_thinking",
+      "label": "enable_thinking",
+      "value": false,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "使用混合思考模型时，是否开启思考模式",
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "id": "size",
+      "label": "size",
+      "value": "1280*1280",
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": null,
+      "thousands": null
+    }
+  ],
+  "usageGuide": {
+    "authIntro": "使用 API Key 进行认证，在请求头中添加：",
+    "authBearerPlaceholder": "YOUR_API_KEY",
+    "requestIntro": "支持标准的 OpenAI 参数格式：",
+    "requestExample": "{\n  \"max_tokens\": 4096,\n  \"temperature\": 0.5,\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"你好，请介绍一下自己\"\n    }\n  ],\n  \"model\": \"qwen-image-3.0-pro\"\n}",
+    "responseExample": "{\n  \"created\": 1795353265,\n  \"usage\": {\n    \"completion_tokens\": 12,\n    \"prompt_tokens\": 9,\n    \"total_tokens\": 21\n  },\n  \"model\": \"qwen-image-3.0-pro\",\n  \"id\": \"chatcmpl-123\",\n  \"choices\": [\n    {\n      \"finish_reason\": \"stop\",\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"你好！我是 qwen-image-3.0-pro...\"\n      }\n    }\n  ],\n  \"object\": \"chat.completion\"\n}",
+    "docUrl": "https://api-docs.example.com/",
+    "docLabel": "查看完整 API 文档"
+  },
+  "exampleCodes": {
+    "python": {
+      "sectionTitle": "Python 示例",
+      "installLine": "安装依赖：pip install requests",
+      "code": "import requests\nimport json\n\nurl = \"https://api.example.com/v1/chat/completions\"\nheaders = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n}\n\ndata = {\n    \"model\": \"model-name\",\n    \"messages\": [\n        {\n            \"role\": \"user\",\n            \"content\": \"请写一个 Python 函数计算斐波那契数列\"\n        }\n    ],\n    \"temperature\": 0.7,\n    \"max_tokens\": 4096\n}\n\nresponse = requests.post(url, headers=headers, json=data)\nresult = response.json()\nprint(result[\"choices\"][0][\"message\"][\"content\"])"
+    },
+    "javascript": {
+      "sectionTitle": "JavaScript 示例",
+      "installLine": "无需安装额外依赖（需 Node 18+ 或支持 fetch 的运行环境）",
+      "code": "(async () => {\n  const url = \"https://api.example.com/v1/chat/completions\";\n  const headers = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n  };\n  const data = {\n    model: \"model-name\",\n    messages: [\n      {\n        role: \"user\",\n        content: \"请写一个 Python 函数计算斐波那契数列\"\n      }\n    ],\n    temperature: 0.7,\n    max_tokens: 4096\n  };\n  const response = await fetch(url, {\n    method: \"POST\",\n    headers,\n    body: JSON.stringify(data)\n  });\n  const result = await response.json();\n  console.log(result.choices[0].message.content);\n})();"
+    },
+    "curl": {
+      "sectionTitle": "Curl 示例",
+      "installLine": "说明：macOS / Linux 一般已预装 curl",
+      "code": "curl -X POST \"https://api.example.com/v1/chat/completions\" \\\n  -H \"Authorization: Bearer YOUR_API_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"model\":\"model-name\",\"messages\":[{\"role\":\"user\",\"content\":\"请写一个 Python 函数计算斐波那契数列\"}],\"temperature\":0.7,\"max_tokens\":4096}'"
+    }
+  },
+  "agentIntegrations": [
+    {
+      "id": "codex",
+      "name": "Codex",
+      "description": "Configure MaaS as an OpenAI-compatible model provider.",
+      "zhDescription": "将 MaaS 配置为 Codex 的 OpenAI 兼容模型供应商。",
+      "fileLabel": "~/.codex/config.toml",
+      "language": "toml",
+      "code": "model = \"qwen-image-3.0-pro\"\nmodel_provider = \"maas\"\n\n[model_providers.maas]\nname = \"MaaS\"\nbase_url = \"https://maas-api.antdigital.com/v1\"\nenv_key = \"MAAS_API_KEY\"\nwire_api = \"responses\"",
+      "guideUrl": "/docs/agent-guides/codex"
+    },
+    {
+      "id": "opencode",
+      "name": "OpenCode",
+      "description": "Add MaaS as a custom provider in OpenCode.",
+      "zhDescription": "在 OpenCode 中添加 MaaS 自定义模型供应商。",
+      "fileLabel": "~/.config/opencode/opencode.json",
+      "language": "json",
+      "code": "{\n  \"$schema\": \"https://opencode.ai/config.json\",\n  \"provider\": {\n    \"maas\": {\n      \"npm\": \"@ai-sdk/openai-compatible\",\n      \"name\": \"MaaS\",\n      \"options\": {\n        \"baseURL\": \"https://maas-api.antdigital.com/v1\",\n        \"apiKey\": \"YOUR_MAAS_API_KEY\"\n      },\n      \"models\": {\n        \"qwen-image-3.0-pro\": {\n          \"name\": \"qwen-image-3.0-pro\"\n        }\n      }\n    }\n  },\n  \"model\": \"maas/qwen-image-3.0-pro\"\n}",
+      "guideUrl": "/docs/agent-guides/opencode"
+    }
+  ],
+  "sourceUrl": "https://maas.antdigital.com/models/modelservice-1785985872362001597",
+  "slug": "modelservice-1785985872362001597"
+}

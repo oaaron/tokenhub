@@ -1,0 +1,428 @@
+{
+  "uniqueId": "modelservice-1793111537823001988",
+  "name": "glm-5.3-prime",
+  "displayName": "GLM-5.3-Prime",
+  "provider": "Zhipu",
+  "description": "GLM-5.3-Prime is the high-speed variant of GLM-5.3, with across-the-board improvements in coding and agentic capabilities, reaching SOTA performance among open-source models. It improves by 50% over the previous generation on internal coding benchmarks and can deliver production-grade results end to end. The model also demonstrates emergent cybersecurity capabilities, achieving the current best result on the CyberGym vulnerability discovery benchmark. It supports a 1M-token context window, up to 128K output tokens, and three levels of deep reasoning for complex, long-horizon tasks.",
+  "zhDescription": "GLM-5.3-Prime 是 GLM-5.3 的高速版本，编程与智能体能力全面进阶，达开源模型 SOTA 水平，内部编程基准较上代提升 50%，可端到端交付生产级成果。涌现网络安全能力，漏洞发现基准 CyberGym 创当前最佳。支持 1M 上下文、128K 输出与三档深度思考，胜任长程复杂任务。\n\n",
+  "longDescription": "GLM-5.3-Prime is the high-speed variant of GLM-5.3, with across-the-board improvements in coding and agentic capabilities, reaching SOTA performance among open-source models. It improves by 50% over the previous generation on internal coding benchmarks and can deliver production-grade results end to end. The model also demonstrates emergent cybersecurity capabilities, achieving the current best result on the CyberGym vulnerability discovery benchmark. It supports a 1M-token context window, up to 128K output tokens, and three levels of deep reasoning for complex, long-horizon tasks.",
+  "zhLongDescription": "GLM-5.3-Prime 是 GLM-5.3 的高速版本，编程与智能体能力全面进阶，达开源模型 SOTA 水平，内部编程基准较上代提升 50%，可端到端交付生产级成果。涌现网络安全能力，漏洞发现基准 CyberGym 创当前最佳。支持 1M 上下文、128K 输出与三档深度思考，胜任长程复杂任务。\n\n",
+  "contextLength": "1000000",
+  "maxCompletionTokens": 128000,
+  "maxTokens": 128000,
+  "currency": null,
+  "inPrice": null,
+  "outPrice": null,
+  "inPriceZh": null,
+  "outPriceZh": null,
+  "inHitCachePrice": "¥0.00/M",
+  "inHitCreatePrice": "¥4.000000/M",
+  "tagList": [
+    {
+      "type": "MODEL_TYPE",
+      "key": "TEXT_GENERATE",
+      "value": "文本生成"
+    },
+    {
+      "type": "MODEL_TYPE",
+      "key": "CODE_GENERATE",
+      "value": "代码生成"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    }
+  ],
+  "type": "TEXT_GENERATE",
+  "typeList": [
+    "TEXT_GENERATE",
+    "CODE_GENERATE"
+  ],
+  "supportedParametersDefaultValue": {
+    "temperature": {
+      "enable": true,
+      "defaultValue": 0.7,
+      "forbidDisable": null
+    },
+    "top_p": {
+      "enable": true,
+      "defaultValue": 0.9,
+      "forbidDisable": null
+    },
+    "top_k": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "max_tokens": {
+      "enable": true,
+      "defaultValue": 128000,
+      "forbidDisable": null
+    },
+    "enable_search": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "enable_thinking": {
+      "enable": true,
+      "defaultValue": true,
+      "forbidDisable": true
+    },
+    "thinking_budget": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    }
+  },
+  "protocolParameters": [
+    {
+      "protocolName": "dashscope",
+      "displayName": "Dashscope",
+      "parameters": {
+        "result_format": false,
+        "top_p": true,
+        "top_logprobs": false,
+        "top_k": true,
+        "tools": true,
+        "tool_stream": false,
+        "tool_choice": false,
+        "thinking_budget": false,
+        "temperature": false,
+        "stream": true,
+        "seed": false,
+        "search_options": false,
+        "enable_code_interpreter": false,
+        "response_format": false,
+        "repetition_penalty": false,
+        "reasoning_effort": false,
+        "preserve_thinking": false,
+        "presence_penalty": false,
+        "parallel_tool_calls": false,
+        "n": false,
+        "logprobs": false,
+        "incremental_output": false,
+        "enable_thinking": false,
+        "enable_search": false
+      }
+    },
+    {
+      "protocolName": "openai_responses",
+      "displayName": "OpenAI Responses",
+      "parameters": {
+        "service_tier": false,
+        "user": false,
+        "truncation": false,
+        "top_p": true,
+        "top_logprobs": false,
+        "tools": true,
+        "tool_choice": false,
+        "text": false,
+        "temperature": false,
+        "stream": true,
+        "store": false,
+        "background": false,
+        "reasoning": false,
+        "prompt": false,
+        "previous_response_id": false,
+        "parallel_tool_calls": false,
+        "metadata": false,
+        "max_tool_calls": false,
+        "max_output_tokens": false,
+        "include": false,
+        "conversation": false
+      }
+    },
+    {
+      "protocolName": "openai_chat_completions",
+      "displayName": "OpenAI Chat Completions",
+      "parameters": {
+        "seed": false,
+        "web_search_options": false,
+        "user": false,
+        "top_p": true,
+        "top_logprobs": false,
+        "tools": true,
+        "tool_choice": true,
+        "temperature": true,
+        "stream_options": false,
+        "stream": true,
+        "store": false,
+        "service_tier": false,
+        "audio": false,
+        "response_format": false,
+        "reasoning_effort": false,
+        "presence_penalty": false,
+        "prediction": false,
+        "parallel_tool_calls": false,
+        "n": false,
+        "modalities": false,
+        "metadata": false,
+        "logprobs": false,
+        "logit_bias": false,
+        "frequency_penalty": false
+      }
+    }
+  ],
+  "modelProtocolCompatibility": {
+    "System One": false,
+    "google video": false,
+    "dashscope": true,
+    "google_gemini": false,
+    "anthropic_message": false,
+    "openai_responses": true,
+    "openai_chat_completions": true
+  },
+  "minDiscountRate": "1",
+  "priceInfo": {
+    "lowestProviderPrice": {
+      "inputPrice": {
+        "priceCode": "INPUT",
+        "priceName": "Input",
+        "priceNameZH": "输入",
+        "priceValue": "16.000000",
+        "originalPrice": "16.000000",
+        "discountRate": "1.000000",
+        "unitCode": "M_TOKENS",
+        "unitName": "M",
+        "unitNameZh": "M",
+        "direction": "INPUT",
+        "fixedName": "M Tokens",
+        "fixedNameZh": "百万Tokens"
+      },
+      "outputPrice": {
+        "priceCode": "OUTPUT",
+        "priceName": "Output",
+        "priceNameZH": "输出",
+        "priceValue": "56.000000",
+        "originalPrice": "56.000000",
+        "discountRate": "1.000000",
+        "unitCode": "M_TOKENS",
+        "unitName": "M",
+        "unitNameZh": "M",
+        "direction": "OUTPUT",
+        "fixedName": "M Tokens",
+        "fixedNameZh": "百万Tokens"
+      }
+    },
+    "prices": [
+      {
+        "stage": "",
+        "stageText": "",
+        "type": null,
+        "priceCurrency": "CNY",
+        "price": [
+          {
+            "priceCode": "INPUT",
+            "priceName": "Input",
+            "priceNameZH": "输入",
+            "priceValue": "16.000000",
+            "originalPrice": "16.000000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "OUTPUT",
+            "priceName": "Output",
+            "priceNameZH": "输出",
+            "priceValue": "56.000000",
+            "originalPrice": "56.000000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "OUTPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "INPUT_CACHE_HIT",
+            "priceName": "Input (Cache Hit)",
+            "priceNameZH": "输入（命中缓存）",
+            "priceValue": "4.000000",
+            "originalPrice": "4.000000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          }
+        ]
+      }
+    ]
+  },
+  "publishedTime": "2026-10-27 22:32:18",
+  "offShelfFlag": 0,
+  "offShelfDate": null,
+  "buyTypes": [
+    "BY_AMOUNT"
+  ],
+  "providers": [
+    {
+      "providerUid": "channel-1779290799108001040",
+      "providerName": "antdigital",
+      "providerDisplayName": "蚂蚁数字科技",
+      "providerLogo": "https://maas-public.oss-cn-shanghai.aliyuncs.com/maas-admin/image/2026-09-10/image-4cf4a41f-3ae4-42.png"
+    }
+  ],
+  "extInfo": "{\"contextLength\":\"1000000\",\"supportedParametersDefaultValue\":\"\",\"exampleCodes\":{\"openAI\":[{\"code\":\"from openai import OpenAI\\nimport os\\n\\nclient = OpenAI(\\n    # 如果没有配置环境变量，请用Key替换：api_key=\\\"sk-xxx\\\"\\n    api_key=os.getenv(\\\"API_KEY\\\"),\\n    base_url=\\\"https://maas-api.antdigital.com/compatible-mode/v1\\\",\\n)\\n\\nmessages = [{\\\"role\\\": \\\"user\\\", \\\"content\\\": \\\"你是谁\\\"}]\\ncompletion = client.chat.completions.create(\\n    model=\\\"glm-5.3-prime\\\",  # 您可以按需更换为其它深度思考模型\\n    messages=messages,\\n    extra_body={\\\"enable_thinking\\\": True},\\n    stream=True\\n)\\nis_answering = False  # 是否进入回复阶段\\nprint(\\\"\\\\n\\\" + \\\"=\\\" * 20 + \\\"思考过程\\\" + \\\"=\\\" * 20)\\nfor chunk in completion:\\n    if not chunk.choices:\\n        continue\\n    delta = chunk.choices[0].delta\\n    if hasattr(delta, \\\"reasoning_content\\\") and delta.reasoning_content is not None:\\n        if not is_answering:\\n            print(delta.reasoning_content, end=\\\"\\\", flush=True)\\n    if hasattr(delta, \\\"content\\\") and delta.content:\\n        if not is_answering:\\n            print(\\\"\\\\n\\\" + \\\"=\\\" * 20 + \\\"完整回复\\\" + \\\"=\\\" * 20)\\n            is_answering = True\\n        print(delta.content, end=\\\"\\\", flush=True)\",\"sectionTitle\":\"\",\"name\":\"python\"},{\"code\":\"curl https://maas-api.antdigital.com/compatible-mode/v1/chat/completions \\\\\\n  -H \\\"Authorization: Bearer ${API_KEY}\\\" \\\\\\n  -H \\\"Content-Type: application/json\\\" \\\\\\n  -d '{\\n    \\\"model\\\": \\\"glm-5.3-prime\\\",\\n    \\\"messages\\\": [\\n      {\\\"role\\\": \\\"user\\\", \\\"content\\\": \\\"你是谁\\\"}\\n    ],\\n    \\\"stream\\\": true,\\n    \\\"enable_thinking\\\": true\\n  }'\\n\",\"sectionTitle\":\"\",\"name\":\"curl\"}],\"dashscope\":[{\"code\":\"import os\\nfrom dashscope import Generation\\nimport dashscope\\ndashscope.base_http_api_url = 'https://maas-api.antdigital.com/api/v1'\\n\\nmessages = [\\n    {\\\"role\\\": \\\"system\\\", \\\"content\\\": \\\"You are a helpful assistant.\\\"},\\n    {\\\"role\\\": \\\"user\\\", \\\"content\\\": \\\"你是谁？\\\"},\\n]\\nresponse = Generation.call(\\n    # 若没有配置环境变量，请用Key将下行替换为：api_key = \\\"sk-xxx\\\",\\n    api_key=os.getenv(\\\"API_KEY\\\"),\\n    model=\\\"glm-5.3-prime\\\",\\n    messages=messages,\\n    result_format=\\\"message\\\",\\n    # 开启深度思考\\n    enable_thinking=True,\\n)\\n\\nif response.status_code == 200:\\n    # 打印思考过程\\n    print(\\\"=\\\" * 20 + \\\"思考过程\\\" + \\\"=\\\" * 20)\\n    print(response.output.choices[0].message.reasoning_content)\\n    \\n    # 打印回复\\n    print(\\\"=\\\" * 20 + \\\"完整回复\\\" + \\\"=\\\" * 20)\\n    print(response.output.choices[0].message.content)\\nelse:\\n    print(f\\\"HTTP返回码：{response.status_code}\\\")\\n    print(f\\\"错误码：{response.code}\\\")\\n    print(f\\\"错误信息：{response.message}\\\")\",\"sectionTitle\":\"\",\"name\":\"python\"},{\"code\":\"curl -X POST \\\"https://maas-api.antdigital.com/api/v1/services/aigc/text-generation/generation\\\" \\\\\\n-H \\\"Authorization: Bearer ${API_KEY}\\\" \\\\\\n-H \\\"Content-Type: application/json\\\" \\\\\\n-d '{\\n    \\\"model\\\": \\\"glm-5.3-prime\\\",\\n    \\\"input\\\": {\\n        \\\"messages\\\": [\\n            {\\\"role\\\": \\\"system\\\", \\\"content\\\": \\\"You are a helpful assistant.\\\"},\\n            {\\\"role\\\": \\\"user\\\", \\\"content\\\": \\\"你是谁？\\\"}\\n        ]\\n    },\\n    \\\"parameters\\\": {\\n        \\\"result_format\\\": \\\"message\\\",\\n        \\\"enable_thinking\\\": true\\n    }\\n}'\\n\",\"sectionTitle\":\"\",\"name\":\"curl\"}]}}",
+  "specs": {
+    "inputPrice": "¥0.0000",
+    "inputPriceHint": "每 1K tokens",
+    "outputPrice": "¥0.0000",
+    "outputPriceHint": "每 1K tokens",
+    "contextLength": "1000000",
+    "contextLengthHint": "tokens",
+    "maxOutput": "0",
+    "maxOutputHint": "tokens"
+  },
+  "capabilities": [],
+  "languages": [
+    "文本"
+  ],
+  "scenarios": [
+    "文本"
+  ],
+  "modelParameters": [
+    {
+      "type": "slider",
+      "id": "top_p",
+      "label": "top_p",
+      "value": 0.9,
+      "min": 0,
+      "max": 1,
+      "step": 0.1,
+      "description": "核采样的概率阈值，控制模型生成文本的多样性。",
+      "thousands": null
+    },
+    {
+      "type": "text",
+      "id": "tools",
+      "label": "tools",
+      "value": " ",
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "包含一个或多个工具对象的数组，供模型在 Function Calling 中调用",
+      "thousands": null
+    },
+    {
+      "type": "switch",
+      "id": "stream",
+      "label": "stream",
+      "value": false,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "是否流式输出回复",
+      "thousands": null
+    },
+    {
+      "type": "switch",
+      "id": "tool_choice",
+      "label": "tool_choice",
+      "value": true,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "id": "temperature",
+      "label": "temperature",
+      "value": 0.7,
+      "min": 0,
+      "max": 1,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "id": "max_tokens",
+      "label": "max_tokens",
+      "value": 128000,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": null,
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "id": "enable_thinking",
+      "label": "enable_thinking",
+      "value": true,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": null,
+      "thousands": null
+    }
+  ],
+  "usageGuide": {
+    "authIntro": "使用 API Key 进行认证，在请求头中添加：",
+    "authBearerPlaceholder": "YOUR_API_KEY",
+    "requestIntro": "支持标准的 OpenAI 参数格式：",
+    "requestExample": "{\n  \"max_tokens\": 4096,\n  \"temperature\": 0.5,\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"你好，请介绍一下自己\"\n    }\n  ],\n  \"model\": \"glm-5.3-prime\"\n}",
+    "responseExample": "{\n  \"created\": 1795353264,\n  \"usage\": {\n    \"completion_tokens\": 12,\n    \"prompt_tokens\": 9,\n    \"total_tokens\": 21\n  },\n  \"model\": \"glm-5.3-prime\",\n  \"id\": \"chatcmpl-123\",\n  \"choices\": [\n    {\n      \"finish_reason\": \"stop\",\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"你好！我是 glm-5.3-prime...\"\n      }\n    }\n  ],\n  \"object\": \"chat.completion\"\n}",
+    "docUrl": "https://api-docs.example.com/",
+    "docLabel": "查看完整 API 文档"
+  },
+  "exampleCodes": {
+    "python": {
+      "sectionTitle": "Python 示例",
+      "installLine": "安装依赖：pip install requests",
+      "code": "import requests\nimport json\n\nurl = \"https://api.example.com/v1/chat/completions\"\nheaders = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n}\n\ndata = {\n    \"model\": \"model-name\",\n    \"messages\": [\n        {\n            \"role\": \"user\",\n            \"content\": \"请写一个 Python 函数计算斐波那契数列\"\n        }\n    ],\n    \"temperature\": 0.7,\n    \"max_tokens\": 4096\n}\n\nresponse = requests.post(url, headers=headers, json=data)\nresult = response.json()\nprint(result[\"choices\"][0][\"message\"][\"content\"])"
+    },
+    "javascript": {
+      "sectionTitle": "JavaScript 示例",
+      "installLine": "无需安装额外依赖（需 Node 18+ 或支持 fetch 的运行环境）",
+      "code": "(async () => {\n  const url = \"https://api.example.com/v1/chat/completions\";\n  const headers = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n  };\n  const data = {\n    model: \"model-name\",\n    messages: [\n      {\n        role: \"user\",\n        content: \"请写一个 Python 函数计算斐波那契数列\"\n      }\n    ],\n    temperature: 0.7,\n    max_tokens: 4096\n  };\n  const response = await fetch(url, {\n    method: \"POST\",\n    headers,\n    body: JSON.stringify(data)\n  });\n  const result = await response.json();\n  console.log(result.choices[0].message.content);\n})();"
+    },
+    "curl": {
+      "sectionTitle": "Curl 示例",
+      "installLine": "说明：macOS / Linux 一般已预装 curl",
+      "code": "curl -X POST \"https://api.example.com/v1/chat/completions\" \\\n  -H \"Authorization: Bearer YOUR_API_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"model\":\"model-name\",\"messages\":[{\"role\":\"user\",\"content\":\"请写一个 Python 函数计算斐波那契数列\"}],\"temperature\":0.7,\"max_tokens\":4096}'"
+    }
+  },
+  "agentIntegrations": [
+    {
+      "id": "codex",
+      "name": "Codex",
+      "description": "Configure MaaS as an OpenAI-compatible model provider.",
+      "zhDescription": "将 MaaS 配置为 Codex 的 OpenAI 兼容模型供应商。",
+      "fileLabel": "~/.codex/config.toml",
+      "language": "toml",
+      "code": "model = \"glm-5.3-prime\"\nmodel_provider = \"maas\"\n\n[model_providers.maas]\nname = \"MaaS\"\nbase_url = \"https://maas-api.antdigital.com/v1\"\nenv_key = \"MAAS_API_KEY\"\nwire_api = \"responses\"",
+      "guideUrl": "/docs/agent-guides/codex"
+    },
+    {
+      "id": "opencode",
+      "name": "OpenCode",
+      "description": "Add MaaS as a custom provider in OpenCode.",
+      "zhDescription": "在 OpenCode 中添加 MaaS 自定义模型供应商。",
+      "fileLabel": "~/.config/opencode/opencode.json",
+      "language": "json",
+      "code": "{\n  \"$schema\": \"https://opencode.ai/config.json\",\n  \"provider\": {\n    \"maas\": {\n      \"npm\": \"@ai-sdk/openai-compatible\",\n      \"name\": \"MaaS\",\n      \"options\": {\n        \"baseURL\": \"https://maas-api.antdigital.com/v1\",\n        \"apiKey\": \"YOUR_MAAS_API_KEY\"\n      },\n      \"models\": {\n        \"glm-5.3-prime\": {\n          \"name\": \"glm-5.3-prime\"\n        }\n      }\n    }\n  },\n  \"model\": \"maas/glm-5.3-prime\"\n}",
+      "guideUrl": "/docs/agent-guides/opencode"
+    }
+  ],
+  "sourceUrl": "https://maas.antdigital.com/models/modelservice-1793111537823001988",
+  "slug": "modelservice-1793111537823001988"
+}

@@ -1,0 +1,474 @@
+{
+  "uniqueId": "modelservice-1789788812528001456",
+  "name": "qwen3.5-omni-plus",
+  "displayName": "Qwen3.5-Omni-Plus",
+  "provider": "Qwen",
+  "description": "Qwen3.5-Omni is Qwen’s latest-generation omnimodal model, supporting understanding and interaction across text, images, audio, and audiovisual content. As a comprehensive evolution of Qwen3-Omni, it supports over 10 hours of audio understanding and more than 400 seconds of 720p audiovisual understanding and interaction at 1 FPS. It also expands language coverage to 60+ languages for audio input and 30+ languages for speech output, with strong structured audiovisual understanding. The model is well suited for text creation, voice assistants, multimedia analysis, and other scenarios, delivering natural and fluid multimodal interactions.",
+  "zhDescription": "Qwen3.5-Omni是Qwen最新一代全模态大模型，支持文本，图片，音频，音视频理解与交互。作为 Qwen3-Omni 的全面进化版本， 支持超过 10 小时的音频理解及超过 400 秒的 720P（1 FPS）音视频理解与对话，并进一步拓展语言范围，支持60+种语言音频输入，30+语言语音输出，并且具备强大的结构化音视频理解能力，广泛应用于文本创作、语音助手、多媒体分析等场景，提供自然流畅的多模态理解与交互体验。",
+  "longDescription": "Qwen3.5-Omni is Qwen’s latest-generation omnimodal model, supporting understanding and interaction across text, images, audio, and audiovisual content. As a comprehensive evolution of Qwen3-Omni, it supports over 10 hours of audio understanding and more than 400 seconds of 720p audiovisual understanding and interaction at 1 FPS. It also expands language coverage to 60+ languages for audio input and 30+ languages for speech output, with strong structured audiovisual understanding. The model is well suited for text creation, voice assistants, multimedia analysis, and other scenarios, delivering natural and fluid multimodal interactions.",
+  "zhLongDescription": "Qwen3.5-Omni是Qwen最新一代全模态大模型，支持文本，图片，音频，音视频理解与交互。作为 Qwen3-Omni 的全面进化版本， 支持超过 10 小时的音频理解及超过 400 秒的 720P（1 FPS）音视频理解与对话，并进一步拓展语言范围，支持60+种语言音频输入，30+语言语音输出，并且具备强大的结构化音视频理解能力，广泛应用于文本创作、语音助手、多媒体分析等场景，提供自然流畅的多模态理解与交互体验。",
+  "contextLength": "256000",
+  "maxCompletionTokens": 64000,
+  "maxTokens": 64000,
+  "currency": null,
+  "inPrice": null,
+  "outPrice": null,
+  "inPriceZh": null,
+  "outPriceZh": null,
+  "inHitCachePrice": "¥0.00/M",
+  "inHitCreatePrice": "¥0.00/M",
+  "tagList": [
+    {
+      "type": "MODEL_TYPE",
+      "key": "TEXT_GENERATE",
+      "value": "文本生成"
+    },
+    {
+      "type": "MODEL_TYPE",
+      "key": "AUDIO_GENERATE",
+      "value": "音频生成"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "AUDIO",
+      "value": "音频"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "VIDEO",
+      "value": "视频"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "AUDIO",
+      "value": "音频"
+    },
+    {
+      "type": "MODEL_TYPE",
+      "key": "VISUAL_UNDERSTANDING",
+      "value": "视觉理解"
+    }
+  ],
+  "type": "TEXT_GENERATE",
+  "typeList": [
+    "TEXT_GENERATE",
+    "AUDIO_GENERATE",
+    "VISUAL_UNDERSTANDING"
+  ],
+  "supportedParametersDefaultValue": {
+    "temperature": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "top_p": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "top_k": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "max_tokens": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "enable_search": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "enable_thinking": {
+      "enable": true,
+      "defaultValue": true,
+      "forbidDisable": null
+    },
+    "thinking_budget": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    }
+  },
+  "protocolParameters": [
+    {
+      "protocolName": "openai_chat_completions",
+      "displayName": "OpenAI Chat Completions",
+      "parameters": {
+        "seed": false,
+        "web_search_options": false,
+        "user": false,
+        "top_p": true,
+        "top_logprobs": false,
+        "tools": true,
+        "tool_choice": true,
+        "temperature": true,
+        "stream_options": false,
+        "stream": true,
+        "store": false,
+        "service_tier": false,
+        "audio": false,
+        "response_format": false,
+        "reasoning_effort": false,
+        "presence_penalty": false,
+        "prediction": false,
+        "parallel_tool_calls": false,
+        "n": false,
+        "modalities": false,
+        "metadata": false,
+        "logprobs": false,
+        "logit_bias": false,
+        "frequency_penalty": false
+      }
+    }
+  ],
+  "modelProtocolCompatibility": {
+    "System One": false,
+    "google video": false,
+    "dashscope": false,
+    "google_gemini": false,
+    "anthropic_message": false,
+    "openai_responses": false,
+    "openai_chat_completions": true
+  },
+  "minDiscountRate": "1",
+  "priceInfo": {
+    "lowestProviderPrice": {
+      "inputPrice": {
+        "priceCode": "INPUT_TEXT",
+        "priceName": "Input (Text)",
+        "priceNameZH": "输入（文本）",
+        "priceValue": "7.000000",
+        "originalPrice": "7.000000",
+        "discountRate": "1.000000",
+        "unitCode": "M_TOKENS",
+        "unitName": "M",
+        "unitNameZh": "M",
+        "direction": "INPUT",
+        "fixedName": "M Tokens",
+        "fixedNameZh": "百万Tokens"
+      },
+      "outputPrice": {
+        "priceCode": "OUTPUT_TEXT_TOKENS",
+        "priceName": "Text Output",
+        "priceNameZH": "输出（文本）",
+        "priceValue": "40.000000",
+        "originalPrice": "40.000000",
+        "discountRate": "1.000000",
+        "unitCode": "M_TOKENS",
+        "unitName": "M",
+        "unitNameZh": "M",
+        "direction": "OUTPUT",
+        "fixedName": "M Tokens",
+        "fixedNameZh": "百万Tokens"
+      }
+    },
+    "prices": [
+      {
+        "stage": "输出仅文本",
+        "stageText": "输出仅文本",
+        "type": null,
+        "priceCurrency": "CNY",
+        "price": [
+          {
+            "priceCode": "INPUT_TEXT",
+            "priceName": "Input (Text)",
+            "priceNameZH": "输入（文本）",
+            "priceValue": "7.000000",
+            "originalPrice": "7.000000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": " INPUT_VIDEO",
+            "priceName": "Input（vedio）",
+            "priceNameZH": "输入（视频）",
+            "priceValue": "7.000000",
+            "originalPrice": "7.000000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "INPUT_IMAGE",
+            "priceName": "Input（Image）",
+            "priceNameZH": "输入（图片）",
+            "priceValue": "7.000000",
+            "originalPrice": "7.000000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "OUTPUT_TEXT_TOKENS",
+            "priceName": "Text Output",
+            "priceNameZH": "输出（文本）",
+            "priceValue": "40.000000",
+            "originalPrice": "40.000000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "OUTPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "INPUT_AUDIO",
+            "priceName": "Audio Input",
+            "priceNameZH": "输入（音频）",
+            "priceValue": "53.000000",
+            "originalPrice": "53.000000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          }
+        ]
+      },
+      {
+        "stage": "输出文本+音频",
+        "stageText": "输出文本+音频",
+        "type": null,
+        "priceCurrency": "CNY",
+        "price": [
+          {
+            "priceCode": "INPUT_TEXT",
+            "priceName": "Input (Text)",
+            "priceNameZH": "输入（文本）",
+            "priceValue": "7.000000",
+            "originalPrice": "7.000000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": " INPUT_VIDEO",
+            "priceName": "Input（vedio）",
+            "priceNameZH": "输入（视频）",
+            "priceValue": "7.000000",
+            "originalPrice": "7.000000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "INPUT_IMAGE",
+            "priceName": "Input（Image）",
+            "priceNameZH": "输入（图片）",
+            "priceValue": "7.000000",
+            "originalPrice": "7.000000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "OUTPUT_AUDIO_TOKENS",
+            "priceName": "Audio Output",
+            "priceNameZH": "输出（音频）",
+            "priceValue": "213.000000",
+            "originalPrice": "213.000000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "OUTPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "INPUT_AUDIO",
+            "priceName": "Audio Input",
+            "priceNameZH": "输入（音频）",
+            "priceValue": "53.000000",
+            "originalPrice": "53.000000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          }
+        ]
+      }
+    ]
+  },
+  "publishedTime": "2026-09-19 11:33:33",
+  "offShelfFlag": 0,
+  "offShelfDate": null,
+  "buyTypes": [
+    "BY_AMOUNT"
+  ],
+  "providers": [
+    {
+      "providerUid": "channel-1779290799108001040",
+      "providerName": "antdigital",
+      "providerDisplayName": "蚂蚁数字科技",
+      "providerLogo": "https://maas-public.oss-cn-shanghai.aliyuncs.com/maas-admin/image/2026-09-10/image-4cf4a41f-3ae4-42.png"
+    }
+  ],
+  "extInfo": "{\"contextLength\":\"256000\",\"exampleCodes\":{\"openAI\":[{\"code\":\"import os\\nfrom openai import OpenAI\\n\\nclient = OpenAI(\\n    api_key=os.getenv(\\\"API_KEY\\\"),\\n    base_url=\\\"https://maas-api.antdigital.com/v1\\\",\\n)\\n\\ncompletion = client.chat.completions.create(\\n    model=\\\"qwen3.5-omni-plus\\\",\\n    messages=[{\\\"role\\\": \\\"user\\\", \\\"content\\\": \\\"你是谁\\\"}],\\n    # 设置输出数据的模态，当前支持两种：[\\\"text\\\",\\\"audio\\\"]、[\\\"text\\\"]\\n    modalities=[\\\"text\\\", \\\"audio\\\"],\\n    audio={\\\"voice\\\": \\\"Ethan\\\", \\\"format\\\": \\\"wav\\\"},\\n    # stream 必须设置为 True，否则会报错\\n    stream=True,\\n    stream_options={\\\"include_usage\\\": True},\\n)\\n\\nfor chunk in completion:\\n    if chunk.choices:\\n        print(chunk.choices[0].delta)\\n    else:\\n        print(chunk.usage)\",\"sectionTitle\":\"\",\"name\":\"python\"},{\"code\":\"curl https://maas-api.antdigital.com/v1/chat/completions \\\\\\n  -H \\\"Authorization: Bearer $API_KEY\\\" \\\\\\n  -H \\\"Content-Type: application/json\\\" \\\\\\n  -d '{\\n    \\\"model\\\":\\\"qwen3.5-omni-plus\\\",\\n    \\\"messages\\\":[{\\\"role\\\":\\\"user\\\",\\\"content\\\":\\\"你是谁\\\"}],\\n    \\\"modalities\\\":[\\\"text\\\",\\\"audio\\\"],\\n    \\\"audio\\\":{\\\"voice\\\":\\\"Ethan\\\",\\\"format\\\":\\\"wav\\\"},\\n    \\\"stream\\\":true,\\n    \\\"stream_options\\\":{\\\"include_usage\\\":true}\\n  }'\\n\",\"sectionTitle\":\"\",\"name\":\"curl\"}]},\"supportedParametersDefaultValue\":\"\"}",
+  "specs": {
+    "inputPrice": "¥0.0000",
+    "inputPriceHint": "每 1K tokens",
+    "outputPrice": "¥0.0000",
+    "outputPriceHint": "每 1K tokens",
+    "contextLength": "256000",
+    "contextLengthHint": "tokens",
+    "maxOutput": "0",
+    "maxOutputHint": "tokens"
+  },
+  "capabilities": [],
+  "languages": [
+    "文本",
+    "图像",
+    "音频",
+    "视频"
+  ],
+  "scenarios": [
+    "文本",
+    "音频"
+  ],
+  "modelParameters": [
+    {
+      "type": "switch",
+      "id": "tools",
+      "label": "tools",
+      "value": true,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "switch",
+      "id": "tool_choice",
+      "label": "tool_choice",
+      "value": true,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "switch",
+      "id": "stream",
+      "label": "stream",
+      "value": true,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "id": "enable_thinking",
+      "label": "enable_thinking",
+      "value": true,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": null,
+      "thousands": null
+    }
+  ],
+  "usageGuide": {
+    "authIntro": "使用 API Key 进行认证，在请求头中添加：",
+    "authBearerPlaceholder": "YOUR_API_KEY",
+    "requestIntro": "支持标准的 OpenAI 参数格式：",
+    "requestExample": "{\n  \"max_tokens\": 4096,\n  \"temperature\": 0.5,\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"你好，请介绍一下自己\"\n    }\n  ],\n  \"model\": \"qwen3.5-omni-plus\"\n}",
+    "responseExample": "{\n  \"created\": 1795353268,\n  \"usage\": {\n    \"completion_tokens\": 12,\n    \"prompt_tokens\": 9,\n    \"total_tokens\": 21\n  },\n  \"model\": \"qwen3.5-omni-plus\",\n  \"id\": \"chatcmpl-123\",\n  \"choices\": [\n    {\n      \"finish_reason\": \"stop\",\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"你好！我是 qwen3.5-omni-plus...\"\n      }\n    }\n  ],\n  \"object\": \"chat.completion\"\n}",
+    "docUrl": "https://api-docs.example.com/",
+    "docLabel": "查看完整 API 文档"
+  },
+  "exampleCodes": {
+    "python": {
+      "sectionTitle": "Python 示例",
+      "installLine": "安装依赖：pip install requests",
+      "code": "import requests\nimport json\n\nurl = \"https://api.example.com/v1/chat/completions\"\nheaders = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n}\n\ndata = {\n    \"model\": \"model-name\",\n    \"messages\": [\n        {\n            \"role\": \"user\",\n            \"content\": \"请写一个 Python 函数计算斐波那契数列\"\n        }\n    ],\n    \"temperature\": 0.7,\n    \"max_tokens\": 4096\n}\n\nresponse = requests.post(url, headers=headers, json=data)\nresult = response.json()\nprint(result[\"choices\"][0][\"message\"][\"content\"])"
+    },
+    "javascript": {
+      "sectionTitle": "JavaScript 示例",
+      "installLine": "无需安装额外依赖（需 Node 18+ 或支持 fetch 的运行环境）",
+      "code": "(async () => {\n  const url = \"https://api.example.com/v1/chat/completions\";\n  const headers = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n  };\n  const data = {\n    model: \"model-name\",\n    messages: [\n      {\n        role: \"user\",\n        content: \"请写一个 Python 函数计算斐波那契数列\"\n      }\n    ],\n    temperature: 0.7,\n    max_tokens: 4096\n  };\n  const response = await fetch(url, {\n    method: \"POST\",\n    headers,\n    body: JSON.stringify(data)\n  });\n  const result = await response.json();\n  console.log(result.choices[0].message.content);\n})();"
+    },
+    "curl": {
+      "sectionTitle": "Curl 示例",
+      "installLine": "说明：macOS / Linux 一般已预装 curl",
+      "code": "curl -X POST \"https://api.example.com/v1/chat/completions\" \\\n  -H \"Authorization: Bearer YOUR_API_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"model\":\"model-name\",\"messages\":[{\"role\":\"user\",\"content\":\"请写一个 Python 函数计算斐波那契数列\"}],\"temperature\":0.7,\"max_tokens\":4096}'"
+    }
+  },
+  "agentIntegrations": [
+    {
+      "id": "codex",
+      "name": "Codex",
+      "description": "Configure MaaS as an OpenAI-compatible model provider.",
+      "zhDescription": "将 MaaS 配置为 Codex 的 OpenAI 兼容模型供应商。",
+      "fileLabel": "~/.codex/config.toml",
+      "language": "toml",
+      "code": "model = \"qwen3.5-omni-plus\"\nmodel_provider = \"maas\"\n\n[model_providers.maas]\nname = \"MaaS\"\nbase_url = \"https://maas-api.antdigital.com/v1\"\nenv_key = \"MAAS_API_KEY\"\nwire_api = \"responses\"",
+      "guideUrl": "/docs/agent-guides/codex"
+    },
+    {
+      "id": "opencode",
+      "name": "OpenCode",
+      "description": "Add MaaS as a custom provider in OpenCode.",
+      "zhDescription": "在 OpenCode 中添加 MaaS 自定义模型供应商。",
+      "fileLabel": "~/.config/opencode/opencode.json",
+      "language": "json",
+      "code": "{\n  \"$schema\": \"https://opencode.ai/config.json\",\n  \"provider\": {\n    \"maas\": {\n      \"npm\": \"@ai-sdk/openai-compatible\",\n      \"name\": \"MaaS\",\n      \"options\": {\n        \"baseURL\": \"https://maas-api.antdigital.com/v1\",\n        \"apiKey\": \"YOUR_MAAS_API_KEY\"\n      },\n      \"models\": {\n        \"qwen3.5-omni-plus\": {\n          \"name\": \"qwen3.5-omni-plus\"\n        }\n      }\n    }\n  },\n  \"model\": \"maas/qwen3.5-omni-plus\"\n}",
+      "guideUrl": "/docs/agent-guides/opencode"
+    }
+  ],
+  "sourceUrl": "https://maas.antdigital.com/models/modelservice-1789788812528001456",
+  "slug": "modelservice-1789788812528001456"
+}

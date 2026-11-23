@@ -1,0 +1,308 @@
+{
+  "uniqueId": "modelservice-1790521330337001407",
+  "name": "jev-1.13",
+  "displayName": "Jev 1.13",
+  "provider": "TypeSafe",
+  "description": "Jev is a structured decision model from TypeSafe, and the first of its System One models. System One models make fast, structured decisions for software, returning a typed choice rather than free-form text. It is suited for routing, classification, and other decision points inside an application where a fast, predictable answer matters more than generated prose.",
+  "zhDescription": "Jev 是 TypeSafe 推出的结构化决策模型，也是其首款 System One（系统一）模型。该系列面向软件系统快速完成结构化判断，输出类型化的选择结果，而非自由文本。适用于应用内的路由、分类及其他决策节点，尤其适合注重响应速度和结果可预测性的场景。",
+  "longDescription": "Jev is a structured decision model from TypeSafe, and the first of its System One models. System One models make fast, structured decisions for software, returning a typed choice rather than free-form text. It is suited for routing, classification, and other decision points inside an application where a fast, predictable answer matters more than generated prose.",
+  "zhLongDescription": "Jev 是 TypeSafe 推出的结构化决策模型，也是其首款 System One（系统一）模型。该系列面向软件系统快速完成结构化判断，输出类型化的选择结果，而非自由文本。适用于应用内的路由、分类及其他决策节点，尤其适合注重响应速度和结果可预测性的场景。",
+  "contextLength": "32000",
+  "maxCompletionTokens": 32000,
+  "maxTokens": 32000,
+  "currency": null,
+  "inPrice": null,
+  "outPrice": null,
+  "inPriceZh": null,
+  "outPriceZh": null,
+  "inHitCachePrice": "¥0.00/M",
+  "inHitCreatePrice": "¥0.00/M",
+  "tagList": [
+    {
+      "type": "MODEL_TYPE",
+      "key": "TEXT_GENERATE",
+      "value": "文本生成"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    }
+  ],
+  "type": "TEXT_GENERATE",
+  "typeList": [
+    "TEXT_GENERATE"
+  ],
+  "supportedParametersDefaultValue": {
+    "temperature": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "top_p": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "top_k": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "max_tokens": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "enable_search": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "enable_thinking": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "thinking_budget": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    }
+  },
+  "protocolParameters": [],
+  "modelProtocolCompatibility": {
+    "google video": false,
+    "dashscope": false,
+    "google_gemini": false,
+    "anthropic_message": false,
+    "openai_responses": false,
+    "openai_chat_completions": false
+  },
+  "minDiscountRate": "1",
+  "priceInfo": {
+    "lowestProviderPrice": {
+      "inputPrice": {
+        "priceCode": "INPUT",
+        "priceName": "Input",
+        "priceNameZH": "输入",
+        "priceValue": "0.294000",
+        "originalPrice": "0.294000",
+        "discountRate": "1.000000",
+        "unitCode": "M_TOKENS",
+        "unitName": "M",
+        "unitNameZh": "M",
+        "direction": "INPUT",
+        "fixedName": "M Tokens",
+        "fixedNameZh": "百万Tokens"
+      },
+      "outputPrice": {
+        "priceCode": "OUTPUT",
+        "priceName": "Output",
+        "priceNameZH": "输出",
+        "priceValue": "0.000000",
+        "originalPrice": "0.000000",
+        "discountRate": "1.000000",
+        "unitCode": "M_TOKENS",
+        "unitName": "M",
+        "unitNameZh": "M",
+        "direction": "OUTPUT",
+        "fixedName": "M Tokens",
+        "fixedNameZh": "百万Tokens"
+      }
+    },
+    "prices": [
+      {
+        "stage": "",
+        "stageText": "",
+        "type": null,
+        "priceCurrency": "CNY",
+        "price": [
+          {
+            "priceCode": "INPUT",
+            "priceName": "Input",
+            "priceNameZH": "输入",
+            "priceValue": "0.294000",
+            "originalPrice": "0.294000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "OUTPUT",
+            "priceName": "Output",
+            "priceNameZH": "输出",
+            "priceValue": "0.000000",
+            "originalPrice": "0.000000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "OUTPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          }
+        ]
+      }
+    ]
+  },
+  "publishedTime": "2026-09-27 23:02:10",
+  "offShelfFlag": 0,
+  "offShelfDate": null,
+  "buyTypes": [
+    "BY_AMOUNT"
+  ],
+  "providers": [
+    {
+      "providerUid": "channel-1791553619122001301",
+      "providerName": "typesafe",
+      "providerDisplayName": "TypeSafe",
+      "providerLogo": "https://maas-public.oss-cn-shanghai.aliyuncs.com/maas-admin/image/2026-10-09/image-42d83e66-ee32-4e.png"
+    }
+  ],
+  "extInfo": "{\"contextLength\":\"32000\",\"exampleCodes\":{\"openAI\":[{\"code\":\"curl --location 'https://maas-api.antdigital.com/v1/systemone' \\\\\\n--header 'Content-Type: application/json' \\\\\\n--header 'Authorization: Bearer $API_KEY' \\\\\\n--data '{\\n  \\\"model\\\": \\\"jev-1.13\\\",\\n  \\\"state\\\": \\\"用户连续三天付款失败。\\\",\\n  \\\"questions\\\": {\\n    \\\"department\\\": {\\n      \\\"type\\\": \\\"choice\\\",\\n      \\\"instructions\\\": \\\"判断应由哪个团队处理。\\\",\\n      \\\"criteria\\\": {\\n        \\\"billing\\\": \\\"支付或账单问题\\\",\\n        \\\"technical\\\": \\\"技术故障\\\"\\n      }\\n    }\\n  }\\n}'\",\"sectionTitle\":\"\",\"name\":\"curl\"}]}}",
+  "specs": {
+    "inputPrice": "¥0.0000",
+    "inputPriceHint": "每 1K tokens",
+    "outputPrice": "¥0.0000",
+    "outputPriceHint": "每 1K tokens",
+    "contextLength": "32000",
+    "contextLengthHint": "tokens",
+    "maxOutput": "0",
+    "maxOutputHint": "tokens"
+  },
+  "capabilities": [],
+  "languages": [
+    "文本"
+  ],
+  "scenarios": [
+    "文本"
+  ],
+  "modelParameters": [
+    {
+      "type": "slider",
+      "id": "temperature",
+      "label": "Temperature",
+      "value": 0.3,
+      "min": 0,
+      "max": 2,
+      "step": 0.01,
+      "description": "控制输出的随机性，值越高越随机",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "id": "presence_penalty",
+      "label": "Presence Penalty",
+      "value": 0.1,
+      "min": -2,
+      "max": 2,
+      "step": 0.01,
+      "description": "存在惩罚，鼓励模型讨论新话题",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "id": "top_p",
+      "label": "Top P",
+      "value": 0.95,
+      "min": 0,
+      "max": 1,
+      "step": 0.01,
+      "description": "核采样参数，控制候选词汇的范围",
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "id": "max_tokens",
+      "label": "Max Tokens",
+      "value": 0,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "单次生成的最大 token 数量",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "id": "frequency_penalty",
+      "label": "Frequency Penalty",
+      "value": 0.1,
+      "min": -2,
+      "max": 2,
+      "step": 0.01,
+      "description": "频率惩罚，减少重复内容的生成",
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "id": "context_length",
+      "label": "Context Length",
+      "value": 64000,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "支持的最大上下文长度",
+      "thousands": true
+    }
+  ],
+  "usageGuide": {
+    "authIntro": "使用 API Key 进行认证，在请求头中添加：",
+    "authBearerPlaceholder": "YOUR_API_KEY",
+    "requestIntro": "支持标准的 OpenAI 参数格式：",
+    "requestExample": "{\n  \"max_tokens\": 4096,\n  \"temperature\": 0.5,\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"你好，请介绍一下自己\"\n    }\n  ],\n  \"model\": \"jev-1.13\"\n}",
+    "responseExample": "{\n  \"created\": 1795353265,\n  \"usage\": {\n    \"completion_tokens\": 12,\n    \"prompt_tokens\": 9,\n    \"total_tokens\": 21\n  },\n  \"model\": \"jev-1.13\",\n  \"id\": \"chatcmpl-123\",\n  \"choices\": [\n    {\n      \"finish_reason\": \"stop\",\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"你好！我是 jev-1.13...\"\n      }\n    }\n  ],\n  \"object\": \"chat.completion\"\n}",
+    "docUrl": "https://api-docs.example.com/",
+    "docLabel": "查看完整 API 文档"
+  },
+  "exampleCodes": {
+    "python": {
+      "sectionTitle": "Python 示例",
+      "installLine": "安装依赖：pip install requests",
+      "code": "import requests\nimport json\n\nurl = \"https://api.example.com/v1/chat/completions\"\nheaders = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n}\n\ndata = {\n    \"model\": \"model-name\",\n    \"messages\": [\n        {\n            \"role\": \"user\",\n            \"content\": \"请写一个 Python 函数计算斐波那契数列\"\n        }\n    ],\n    \"temperature\": 0.7,\n    \"max_tokens\": 4096\n}\n\nresponse = requests.post(url, headers=headers, json=data)\nresult = response.json()\nprint(result[\"choices\"][0][\"message\"][\"content\"])"
+    },
+    "javascript": {
+      "sectionTitle": "JavaScript 示例",
+      "installLine": "无需安装额外依赖（需 Node 18+ 或支持 fetch 的运行环境）",
+      "code": "(async () => {\n  const url = \"https://api.example.com/v1/chat/completions\";\n  const headers = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n  };\n  const data = {\n    model: \"model-name\",\n    messages: [\n      {\n        role: \"user\",\n        content: \"请写一个 Python 函数计算斐波那契数列\"\n      }\n    ],\n    temperature: 0.7,\n    max_tokens: 4096\n  };\n  const response = await fetch(url, {\n    method: \"POST\",\n    headers,\n    body: JSON.stringify(data)\n  });\n  const result = await response.json();\n  console.log(result.choices[0].message.content);\n})();"
+    },
+    "curl": {
+      "sectionTitle": "Curl 示例",
+      "installLine": "说明：macOS / Linux 一般已预装 curl",
+      "code": "curl -X POST \"https://api.example.com/v1/chat/completions\" \\\n  -H \"Authorization: Bearer YOUR_API_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"model\":\"model-name\",\"messages\":[{\"role\":\"user\",\"content\":\"请写一个 Python 函数计算斐波那契数列\"}],\"temperature\":0.7,\"max_tokens\":4096}'"
+    }
+  },
+  "agentIntegrations": [
+    {
+      "id": "codex",
+      "name": "Codex",
+      "description": "Configure MaaS as an OpenAI-compatible model provider.",
+      "zhDescription": "将 MaaS 配置为 Codex 的 OpenAI 兼容模型供应商。",
+      "fileLabel": "~/.codex/config.toml",
+      "language": "toml",
+      "code": "model = \"jev-1.13\"\nmodel_provider = \"maas\"\n\n[model_providers.maas]\nname = \"MaaS\"\nbase_url = \"https://maas-api.antdigital.com/v1\"\nenv_key = \"MAAS_API_KEY\"\nwire_api = \"responses\"",
+      "guideUrl": "/docs/agent-guides/codex"
+    },
+    {
+      "id": "opencode",
+      "name": "OpenCode",
+      "description": "Add MaaS as a custom provider in OpenCode.",
+      "zhDescription": "在 OpenCode 中添加 MaaS 自定义模型供应商。",
+      "fileLabel": "~/.config/opencode/opencode.json",
+      "language": "json",
+      "code": "{\n  \"$schema\": \"https://opencode.ai/config.json\",\n  \"provider\": {\n    \"maas\": {\n      \"npm\": \"@ai-sdk/openai-compatible\",\n      \"name\": \"MaaS\",\n      \"options\": {\n        \"baseURL\": \"https://maas-api.antdigital.com/v1\",\n        \"apiKey\": \"YOUR_MAAS_API_KEY\"\n      },\n      \"models\": {\n        \"jev-1.13\": {\n          \"name\": \"jev-1.13\"\n        }\n      }\n    }\n  },\n  \"model\": \"maas/jev-1.13\"\n}",
+      "guideUrl": "/docs/agent-guides/opencode"
+    }
+  ],
+  "sourceUrl": "https://maas.antdigital.com/models/modelservice-1790521330337001407",
+  "slug": "modelservice-1790521330337001407"
+}

@@ -1,0 +1,402 @@
+{
+  "slug": "zm-meta-llama-3.3-70b-instruct",
+  "uniqueId": "2548MOzYCQD814671815",
+  "name": "meta/llama-3.3-70b-instruct",
+  "displayName": "Meta: Llama 3.3 70B Instruct",
+  "provider": "Meta",
+  "manufacturerKey": "meta",
+  "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2025/11/27/peG8J09/Property-1Meta.svg",
+  "zhDescription": "70B指令微调文本模型，面向多语言对话，仅支持文本输入与输出。",
+  "zhLongDescription": "70B指令微调文本模型，面向多语言对话，仅支持文本输入与输出。",
+  "description": "70B指令微调文本模型，面向多语言对话，仅支持文本输入与输出。",
+  "longDescription": "70B指令微调文本模型，面向多语言对话，仅支持文本输入与输出。",
+  "contextLength": 128000,
+  "maxCompletionTokens": 4096,
+  "currency": "USD",
+  "tagList": [
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    }
+  ],
+  "publishedTime": "2024-12-06",
+  "minDiscountRate": "1",
+  "supportedParams": [
+    "chat_template_kwargs",
+    "do_sample",
+    "frequency_penalty",
+    "input",
+    "logit_bias",
+    "logprobs",
+    "max_completion_tokens",
+    "max_output_tokens",
+    "max_tokens",
+    "messages",
+    "model",
+    "output_config",
+    "parallel_tool_calls",
+    "presence_penalty",
+    "reasoning_effort",
+    "response_format",
+    "seed",
+    "stop",
+    "stop_sequences",
+    "stream",
+    "stream_options",
+    "temperature",
+    "text",
+    "tool_choice",
+    "tools",
+    "top_k",
+    "top_logprobs",
+    "top_p"
+  ],
+  "supportedProtocols": [
+    "chat.completions",
+    "messages",
+    "responses"
+  ],
+  "reasoning": 0,
+  "reasoningModes": [
+    0
+  ],
+  "providerNames": [
+    "SambaNova"
+  ],
+  "providerDetails": [
+    {
+      "name": "SambaNova",
+      "slug": "sambanova",
+      "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2025/11/27/6sx8YSc/Property-1sambanova.svg",
+      "contextLength": 128000,
+      "maxCompletionTokens": 4096,
+      "supportsStreaming": true,
+      "apiProtocols": {
+        "chat.completions": {
+          "supported_parameters": [
+            "model",
+            "messages",
+            "max_tokens",
+            "max_completion_tokens",
+            "temperature",
+            "top_p",
+            "top_k",
+            "presence_penalty",
+            "frequency_penalty",
+            "do_sample",
+            "stop",
+            "stream",
+            "stream_options",
+            "response_format",
+            "reasoning_effort",
+            "tool_choice",
+            "tools",
+            "chat_template_kwargs",
+            "logprobs",
+            "top_logprobs"
+          ],
+          "supports_reasoning": 0
+        },
+        "responses": {
+          "supported_parameters": [
+            "model",
+            "input",
+            "max_output_tokens",
+            "temperature",
+            "top_p",
+            "top_k",
+            "stop",
+            "stream",
+            "text",
+            "reasoning_effort",
+            "tool_choice",
+            "tools",
+            "parallel_tool_calls",
+            "top_logprobs"
+          ],
+          "supports_reasoning": 0
+        },
+        "messages": {
+          "supported_parameters": [
+            "model",
+            "messages",
+            "max_tokens",
+            "temperature",
+            "top_p",
+            "top_k",
+            "stop_sequences",
+            "stream",
+            "output_config",
+            "reasoning_effort",
+            "tool_choice",
+            "tools"
+          ],
+          "supports_reasoning": 0
+        }
+      },
+      "pricingDiscount": "1",
+      "priceInfo": {
+        "prices": [
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "OUTPUT",
+                "priceNameZH": "模型生成输出内容的费用(completion)",
+                "priceValue": 1.2,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "completion",
+                "constraints": []
+              }
+            ]
+          },
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "INPUT",
+                "priceNameZH": "输入提示词的处理费用(prompt)",
+                "priceValue": 0.6,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "prompt",
+                "constraints": []
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "modelProtocolCompatibility": {
+    "chat.completions": true,
+    "messages": true,
+    "responses": true
+  },
+  "supportedParametersDefaultValue": {
+    "chat_template_kwargs": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "do_sample": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "frequency_penalty": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "input": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "logit_bias": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "logprobs": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "max_completion_tokens": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "max_output_tokens": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "max_tokens": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "messages": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "model": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "output_config": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "parallel_tool_calls": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "presence_penalty": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "reasoning_effort": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "response_format": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "seed": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "stop": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "stop_sequences": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "stream": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "stream_options": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "temperature": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "text": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "tool_choice": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "tools": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "top_k": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "top_logprobs": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "top_p": {
+      "enable": true,
+      "defaultValue": null
+    }
+  },
+  "priceInfo": {
+    "prices": [
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "OUTPUT",
+            "priceNameZH": "模型生成输出内容的费用(completion)",
+            "priceValue": 1.2,
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "completion",
+            "constraints": []
+          }
+        ]
+      },
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "INPUT",
+            "priceNameZH": "输入提示词的处理费用(prompt)",
+            "priceValue": 0.6,
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "INPUT",
+            "sourceFeeCode": "prompt",
+            "constraints": []
+          }
+        ]
+      }
+    ]
+  },
+  "pricingDetails": [
+    {
+      "feeItemCode": "completion",
+      "feeItemName": "模型生成输出内容的费用(completion)",
+      "feeRecords": [
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            }
+          ],
+          "feeRate": 1.2
+        }
+      ],
+      "selectedConstraint": [
+        "chargeUnit"
+      ]
+    },
+    {
+      "feeItemCode": "prompt",
+      "feeItemName": "输入提示词的处理费用(prompt)",
+      "feeRecords": [
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            }
+          ],
+          "feeRate": 0.6
+        }
+      ],
+      "selectedConstraint": [
+        "chargeUnit"
+      ]
+    }
+  ],
+  "sourcePublishedPrices": {
+    "pricing_completion": "1.2",
+    "pricing_discount": "1",
+    "pricing_prompt": "0.6"
+  },
+  "exampleCodes": [],
+  "serviceConfiguration": "服务配置待开通；接入地址、鉴权和可用协议以开通后的服务配置为准。",
+  "sourceRegion": "global",
+  "sourceCatalog": "ZenMux",
+  "sourceUrl": "https://zenmux.ai/meta/llama-3.3-70b-instruct",
+  "detailVerified": true,
+  "aliases": [
+    "Meta-Llama-3.3-70B-Instruct"
+  ],
+  "isFree": false
+}

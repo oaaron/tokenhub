@@ -1,0 +1,372 @@
+{
+  "uniqueId": "modelservice-1789715354383001462",
+  "name": "glm-5.3-flashx",
+  "displayName": "GLM-5.3-FlashX",
+  "provider": "Zhipu",
+  "description": "GLM-5.3-FlashX is a faster and smoother version of GLM-5.3-Flash, delivering inference speeds of up to 200 tokens/s. GLM-5.3-FlashX is a native multimodal model from Z.ai. It is suited for efficient coding and long-horizon agent tasks. Its hybrid sparse and linear attention architecture maintains accurate long-context behavior while reducing compute overhead.",
+  "zhDescription": "GLM-5.3-FlashX 是 GLM-5.3-Flash 更快、更流畅的版本，推理速度最高可达 200 tokens/s。作为 Z.ai 推出的原生多模态模型，它适用于高效编程与长程智能体任务。其稀疏注意力与线性注意力混合架构，可在降低计算开销的同时保持准确的长上下文处理能力。",
+  "longDescription": "GLM-5.3-FlashX is a faster and smoother version of GLM-5.3-Flash, delivering inference speeds of up to 200 tokens/s. GLM-5.3-FlashX is a native multimodal model from Z.ai. It is suited for efficient coding and long-horizon agent tasks. Its hybrid sparse and linear attention architecture maintains accurate long-context behavior while reducing compute overhead.",
+  "zhLongDescription": "GLM-5.3-FlashX 是 GLM-5.3-Flash 更快、更流畅的版本，推理速度最高可达 200 tokens/s。作为 Z.ai 推出的原生多模态模型，它适用于高效编程与长程智能体任务。其稀疏注意力与线性注意力混合架构，可在降低计算开销的同时保持准确的长上下文处理能力。",
+  "contextLength": "1000000",
+  "maxCompletionTokens": 128000,
+  "maxTokens": 128000,
+  "currency": null,
+  "inPrice": null,
+  "outPrice": null,
+  "inPriceZh": null,
+  "outPriceZh": null,
+  "inHitCachePrice": "¥0.00/M",
+  "inHitCreatePrice": "¥0.570000/M",
+  "tagList": [
+    {
+      "type": "MODEL_TYPE",
+      "key": "VISUAL_UNDERSTANDING",
+      "value": "视觉理解"
+    },
+    {
+      "type": "MODEL_TYPE",
+      "key": "TEXT_GENERATE",
+      "value": "文本生成"
+    },
+    {
+      "type": "MODEL_TYPE",
+      "key": "CODE_GENERATE",
+      "value": "代码生成"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "VIDEO",
+      "value": "视频"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "FILE",
+      "value": "文件"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    }
+  ],
+  "type": "VISUAL_UNDERSTANDING",
+  "typeList": [
+    "TEXT_GENERATE",
+    "CODE_GENERATE",
+    "VISUAL_UNDERSTANDING"
+  ],
+  "supportedParametersDefaultValue": {
+    "temperature": {
+      "enable": true,
+      "defaultValue": 0.7,
+      "forbidDisable": null
+    },
+    "top_p": {
+      "enable": true,
+      "defaultValue": 0.9,
+      "forbidDisable": null
+    },
+    "top_k": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "max_tokens": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "enable_search": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "enable_thinking": {
+      "enable": true,
+      "defaultValue": true,
+      "forbidDisable": null
+    },
+    "thinking_budget": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    }
+  },
+  "protocolParameters": [
+    {
+      "protocolName": "openai_chat_completions",
+      "displayName": "OpenAI Chat Completions",
+      "parameters": {
+        "seed": false,
+        "web_search_options": false,
+        "user": false,
+        "top_p": true,
+        "top_logprobs": false,
+        "tools": true,
+        "tool_choice": false,
+        "temperature": true,
+        "stream_options": false,
+        "stream": false,
+        "store": false,
+        "service_tier": false,
+        "audio": false,
+        "response_format": false,
+        "reasoning_effort": true,
+        "presence_penalty": false,
+        "prediction": false,
+        "parallel_tool_calls": false,
+        "n": false,
+        "modalities": false,
+        "metadata": false,
+        "logprobs": false,
+        "logit_bias": false,
+        "frequency_penalty": false
+      }
+    }
+  ],
+  "modelProtocolCompatibility": {
+    "google video": false,
+    "dashscope": false,
+    "google_gemini": false,
+    "anthropic_message": false,
+    "openai_responses": false,
+    "openai_chat_completions": true
+  },
+  "minDiscountRate": "1",
+  "priceInfo": {
+    "lowestProviderPrice": {
+      "inputPrice": {
+        "priceCode": "INPUT",
+        "priceName": "Input",
+        "priceNameZH": "输入",
+        "priceValue": "2.000000",
+        "originalPrice": "2.000000",
+        "discountRate": "1.000000",
+        "unitCode": "M_TOKENS",
+        "unitName": "M",
+        "unitNameZh": "M",
+        "direction": "INPUT",
+        "fixedName": "M Tokens",
+        "fixedNameZh": "百万Tokens"
+      },
+      "outputPrice": {
+        "priceCode": "OUTPUT",
+        "priceName": "Output",
+        "priceNameZH": "输出",
+        "priceValue": "7.000000",
+        "originalPrice": "7.000000",
+        "discountRate": "1.000000",
+        "unitCode": "M_TOKENS",
+        "unitName": "M",
+        "unitNameZh": "M",
+        "direction": "OUTPUT",
+        "fixedName": "M Tokens",
+        "fixedNameZh": "百万Tokens"
+      }
+    },
+    "prices": [
+      {
+        "stage": "",
+        "stageText": "",
+        "type": null,
+        "priceCurrency": "CNY",
+        "price": [
+          {
+            "priceCode": "INPUT",
+            "priceName": "Input",
+            "priceNameZH": "输入",
+            "priceValue": "2.000000",
+            "originalPrice": "2.000000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "OUTPUT",
+            "priceName": "Output",
+            "priceNameZH": "输出",
+            "priceValue": "7.000000",
+            "originalPrice": "7.000000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "OUTPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "INPUT_CACHE_HIT",
+            "priceName": "Input (Cache Hit)",
+            "priceNameZH": "输入（命中缓存）",
+            "priceValue": "0.570000",
+            "originalPrice": "0.570000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          }
+        ]
+      }
+    ]
+  },
+  "publishedTime": "2026-09-18 15:09:14",
+  "offShelfFlag": 0,
+  "offShelfDate": null,
+  "buyTypes": [
+    "BY_AMOUNT"
+  ],
+  "providers": [
+    {
+      "providerUid": "channel-1787397507715001522",
+      "providerName": "bigmodel",
+      "providerDisplayName": "Z.ai",
+      "providerLogo": "https://maas-public.oss-cn-shanghai.aliyuncs.com/maas-admin/image/2026-09-10/image-301f28be-dc5a-47.png"
+    }
+  ],
+  "extInfo": "{\"contextLength\":\"1000000\",\"exampleCodes\":{\"openAI\":[{\"code\":\"from openai import OpenAI\\nimport os\\n\\n# 初始化OpenAI客户端\\nclient = OpenAI(\\n    # 如果没有配置环境变量，请用API Key替换：api_key=\\\"sk-xxx\\\"\\n    api_key=os.getenv(\\\"API_KEY\\\"),\\n    base_url=\\\"https://maas-api.antdigital.com/v1\\\",\\n)\\n\\nmessages = [{\\\"role\\\": \\\"user\\\", \\\"content\\\": \\\"你是谁\\\"}]\\ncompletion = client.chat.completions.create(\\n    model=\\\"glm-5.3-flashx\\\",\\n    messages=messages,\\n    # 通过 extra_body 设置 enable_thinking 开启思考模式\\n    # reasoning_effort 控制思考深度，可选值：max（默认）、high、low\\n    extra_body={\\\"enable_thinking\\\": True, \\\"reasoning_effort\\\": \\\"max\\\"},\\n    stream=True,\\n    stream_options={\\n        \\\"include_usage\\\": True\\n    },\\n)\\n\\nreasoning_content = \\\"\\\"  # 完整思考过程\\nanswer_content = \\\"\\\"  # 完整回复\\nis_answering = False  # 是否进入回复阶段\\nprint(\\\"\\\\n\\\" + \\\"=\\\" * 20 + \\\"思考过程\\\" + \\\"=\\\" * 20 + \\\"\\\\n\\\")\\n\\nfor chunk in completion:\\n    if not chunk.choices:\\n        print(\\\"\\\\n\\\" + \\\"=\\\" * 20 + \\\"Token 消耗\\\" + \\\"=\\\" * 20 + \\\"\\\\n\\\")\\n        print(chunk.usage)\\n        continue\\n\\n    delta = chunk.choices[0].delta\\n\\n    # 只收集思考内容\\n    if hasattr(delta, \\\"reasoning_content\\\") and delta.reasoning_content is not None:\\n        if not is_answering:\\n            print(delta.reasoning_content, end=\\\"\\\", flush=True)\\n        reasoning_content += delta.reasoning_content\\n\\n    # 收到content，开始进行回复\\n    if hasattr(delta, \\\"content\\\") and delta.content:\\n        if not is_answering:\\n            print(\\\"\\\\n\\\" + \\\"=\\\" * 20 + \\\"完整回复\\\" + \\\"=\\\" * 20 + \\\"\\\\n\\\")\\n            is_answering = True\\n        print(delta.content, end=\\\"\\\", flush=True)\\n        answer_content += delta.content\",\"sectionTitle\":\"\",\"name\":\"python\"},{\"code\":\"curl -X POST https://maas-api.antdigital.com/v1/chat/completions \\\\\\n-H \\\"Authorization: Bearer $API_KEY\\\" \\\\\\n-H \\\"Content-Type: application/json\\\" \\\\\\n-d '{\\n    \\\"model\\\": \\\"glm-5.3-flashx\\\",\\n    \\\"messages\\\": [\\n        {\\n            \\\"role\\\": \\\"user\\\",\\n            \\\"content\\\": \\\"你是谁\\\"\\n        }\\n    ],\\n    \\\"stream\\\": true,\\n    \\\"stream_options\\\": {\\n        \\\"include_usage\\\": true\\n    },\\n    \\\"enable_thinking\\\": true,\\n    \\\"reasoning_effort\\\": \\\"max\\\"\\n}'\",\"sectionTitle\":\"\",\"name\":\"curl\"}]}}",
+  "specs": {
+    "inputPrice": "¥0.0000",
+    "inputPriceHint": "每 1K tokens",
+    "outputPrice": "¥0.0000",
+    "outputPriceHint": "每 1K tokens",
+    "contextLength": "1000000",
+    "contextLengthHint": "tokens",
+    "maxOutput": "0",
+    "maxOutputHint": "tokens"
+  },
+  "capabilities": [],
+  "languages": [
+    "文本",
+    "图像",
+    "视频",
+    "文件"
+  ],
+  "scenarios": [
+    "文本"
+  ],
+  "modelParameters": [
+    {
+      "type": "slider",
+      "id": "top_p",
+      "label": "top_p",
+      "value": 0.9,
+      "min": 0,
+      "max": 1,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "switch",
+      "id": "tools",
+      "label": "tools",
+      "value": true,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "id": "temperature",
+      "label": "temperature",
+      "value": 0.7,
+      "min": 0,
+      "max": 1,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "select",
+      "id": "reasoning_effort",
+      "label": "reasoning_effort",
+      "value": "medium",
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "id": "enable_thinking",
+      "label": "enable_thinking",
+      "value": true,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": null,
+      "thousands": null
+    }
+  ],
+  "usageGuide": {
+    "authIntro": "使用 API Key 进行认证，在请求头中添加：",
+    "authBearerPlaceholder": "YOUR_API_KEY",
+    "requestIntro": "支持标准的 OpenAI 参数格式：",
+    "requestExample": "{\n  \"max_tokens\": 4096,\n  \"temperature\": 0.5,\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"你好，请介绍一下自己\"\n    }\n  ],\n  \"model\": \"glm-5.3-flashx\"\n}",
+    "responseExample": "{\n  \"created\": 1795353265,\n  \"usage\": {\n    \"completion_tokens\": 12,\n    \"prompt_tokens\": 9,\n    \"total_tokens\": 21\n  },\n  \"model\": \"glm-5.3-flashx\",\n  \"id\": \"chatcmpl-123\",\n  \"choices\": [\n    {\n      \"finish_reason\": \"stop\",\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"你好！我是 glm-5.3-flashx...\"\n      }\n    }\n  ],\n  \"object\": \"chat.completion\"\n}",
+    "docUrl": "https://api-docs.example.com/",
+    "docLabel": "查看完整 API 文档"
+  },
+  "exampleCodes": {
+    "python": {
+      "sectionTitle": "Python 示例",
+      "installLine": "安装依赖：pip install requests",
+      "code": "import requests\nimport json\n\nurl = \"https://api.example.com/v1/chat/completions\"\nheaders = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n}\n\ndata = {\n    \"model\": \"model-name\",\n    \"messages\": [\n        {\n            \"role\": \"user\",\n            \"content\": \"请写一个 Python 函数计算斐波那契数列\"\n        }\n    ],\n    \"temperature\": 0.7,\n    \"max_tokens\": 4096\n}\n\nresponse = requests.post(url, headers=headers, json=data)\nresult = response.json()\nprint(result[\"choices\"][0][\"message\"][\"content\"])"
+    },
+    "javascript": {
+      "sectionTitle": "JavaScript 示例",
+      "installLine": "无需安装额外依赖（需 Node 18+ 或支持 fetch 的运行环境）",
+      "code": "(async () => {\n  const url = \"https://api.example.com/v1/chat/completions\";\n  const headers = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n  };\n  const data = {\n    model: \"model-name\",\n    messages: [\n      {\n        role: \"user\",\n        content: \"请写一个 Python 函数计算斐波那契数列\"\n      }\n    ],\n    temperature: 0.7,\n    max_tokens: 4096\n  };\n  const response = await fetch(url, {\n    method: \"POST\",\n    headers,\n    body: JSON.stringify(data)\n  });\n  const result = await response.json();\n  console.log(result.choices[0].message.content);\n})();"
+    },
+    "curl": {
+      "sectionTitle": "Curl 示例",
+      "installLine": "说明：macOS / Linux 一般已预装 curl",
+      "code": "curl -X POST \"https://api.example.com/v1/chat/completions\" \\\n  -H \"Authorization: Bearer YOUR_API_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"model\":\"model-name\",\"messages\":[{\"role\":\"user\",\"content\":\"请写一个 Python 函数计算斐波那契数列\"}],\"temperature\":0.7,\"max_tokens\":4096}'"
+    }
+  },
+  "agentIntegrations": [
+    {
+      "id": "codex",
+      "name": "Codex",
+      "description": "Configure MaaS as an OpenAI-compatible model provider.",
+      "zhDescription": "将 MaaS 配置为 Codex 的 OpenAI 兼容模型供应商。",
+      "fileLabel": "~/.codex/config.toml",
+      "language": "toml",
+      "code": "model = \"glm-5.3-flashx\"\nmodel_provider = \"maas\"\n\n[model_providers.maas]\nname = \"MaaS\"\nbase_url = \"https://maas-api.antdigital.com/v1\"\nenv_key = \"MAAS_API_KEY\"\nwire_api = \"responses\"",
+      "guideUrl": "/docs/agent-guides/codex"
+    },
+    {
+      "id": "opencode",
+      "name": "OpenCode",
+      "description": "Add MaaS as a custom provider in OpenCode.",
+      "zhDescription": "在 OpenCode 中添加 MaaS 自定义模型供应商。",
+      "fileLabel": "~/.config/opencode/opencode.json",
+      "language": "json",
+      "code": "{\n  \"$schema\": \"https://opencode.ai/config.json\",\n  \"provider\": {\n    \"maas\": {\n      \"npm\": \"@ai-sdk/openai-compatible\",\n      \"name\": \"MaaS\",\n      \"options\": {\n        \"baseURL\": \"https://maas-api.antdigital.com/v1\",\n        \"apiKey\": \"YOUR_MAAS_API_KEY\"\n      },\n      \"models\": {\n        \"glm-5.3-flashx\": {\n          \"name\": \"glm-5.3-flashx\"\n        }\n      }\n    }\n  },\n  \"model\": \"maas/glm-5.3-flashx\"\n}",
+      "guideUrl": "/docs/agent-guides/opencode"
+    }
+  ],
+  "sourceUrl": "https://maas.antdigital.com/models/modelservice-1789715354383001462",
+  "slug": "modelservice-1789715354383001462"
+}

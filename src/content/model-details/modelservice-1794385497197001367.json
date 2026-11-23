@@ -1,0 +1,298 @@
+{
+  "uniqueId": "modelservice-1794385497197001367",
+  "name": "minimax-h3-image",
+  "displayName": "MiniMax-H3-Image",
+  "provider": "MiniMax",
+  "description": "MiniMax H3 Image is MiniMax's image generation and editing model. It creates images from text prompts and edits or composes images from 1 to 16 reference images, with output up to 20 megapixels and aspect ratios from 1:3 to 3:1.\n\n",
+  "zhDescription": "MiniMax H3 Image 是 MiniMax 推出的图像生成与编辑模型，支持根据文本提示生成图像，也可基于 1 至 16 张参考图进行编辑或合成。输出图像最高可达 2000 万像素，支持 1:3 至 3:1 的宽高比。",
+  "longDescription": "MiniMax H3 Image is MiniMax's image generation and editing model. It creates images from text prompts and edits or composes images from 1 to 16 reference images, with output up to 20 megapixels and aspect ratios from 1:3 to 3:1.\n\n",
+  "zhLongDescription": "MiniMax H3 Image 是 MiniMax 推出的图像生成与编辑模型，支持根据文本提示生成图像，也可基于 1 至 16 张参考图进行编辑或合成。输出图像最高可达 2000 万像素，支持 1:3 至 3:1 的宽高比。",
+  "contextLength": null,
+  "maxCompletionTokens": null,
+  "maxTokens": null,
+  "currency": null,
+  "inPrice": null,
+  "outPrice": null,
+  "inPriceZh": null,
+  "outPriceZh": null,
+  "inHitCachePrice": "¥0.00/M",
+  "inHitCreatePrice": "¥0.00/M",
+  "tagList": [
+    {
+      "type": "MODEL_TYPE",
+      "key": "VISUAL_UNDERSTANDING",
+      "value": "视觉理解"
+    },
+    {
+      "type": "MODEL_TYPE",
+      "key": "IMAGE_GENERATE",
+      "value": "图像生成"
+    },
+    {
+      "type": "MODEL_TYPE",
+      "key": "MULTIMODAL",
+      "value": "多模态"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    }
+  ],
+  "type": "VISUAL_UNDERSTANDING",
+  "typeList": [
+    "IMAGE_GENERATE",
+    "MULTIMODAL",
+    "VISUAL_UNDERSTANDING"
+  ],
+  "supportedParametersDefaultValue": {
+    "n": {
+      "enable": true,
+      "defaultValue": 1,
+      "forbidDisable": null
+    },
+    "limit": {
+      "enable": true,
+      "defaultValue": 10,
+      "forbidDisable": null
+    },
+    "size": {
+      "enable": true,
+      "defaultValue": "1024x1024,1360x768,768x1360,1184x880,880x1184",
+      "forbidDisable": null
+    },
+    "prompt_extend": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "uploadImage": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    }
+  },
+  "protocolParameters": [],
+  "modelProtocolCompatibility": {
+    "System One": false,
+    "google video": false,
+    "dashscope": false,
+    "google_gemini": false,
+    "anthropic_message": false,
+    "openai_responses": false,
+    "openai_chat_completions": false
+  },
+  "minDiscountRate": "1",
+  "priceInfo": {
+    "lowestProviderPrice": {
+      "inputPrice": {
+        "priceCode": "INPUT_IMAGE",
+        "priceName": "Input（Image）",
+        "priceNameZH": "输入（图片）",
+        "priceValue": "10.000000",
+        "originalPrice": "10.000000",
+        "discountRate": "1.000000",
+        "unitCode": "M_TOKENS",
+        "unitName": "M",
+        "unitNameZh": "M",
+        "direction": "INPUT",
+        "fixedName": "M Tokens",
+        "fixedNameZh": "百万Tokens"
+      },
+      "outputPrice": {
+        "priceCode": "OUTPUT_IMAGE_TOKENS",
+        "priceName": "Image Output",
+        "priceNameZH": "图片输出",
+        "priceValue": "25.000000",
+        "originalPrice": "25.000000",
+        "discountRate": "1.000000",
+        "unitCode": "M_TOKENS",
+        "unitName": "M",
+        "unitNameZh": "M",
+        "direction": "OUTPUT",
+        "fixedName": "M Tokens",
+        "fixedNameZh": "百万Tokens"
+      }
+    },
+    "prices": [
+      {
+        "stage": "",
+        "stageText": "",
+        "type": null,
+        "priceCurrency": "CNY",
+        "price": [
+          {
+            "priceCode": "INPUT_TEXT",
+            "priceName": "Input (Text)",
+            "priceNameZH": "输入（文本）",
+            "priceValue": "15.000000",
+            "originalPrice": "15.000000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "INPUT_IMAGE",
+            "priceName": "Input（Image）",
+            "priceNameZH": "输入（图片）",
+            "priceValue": "10.000000",
+            "originalPrice": "10.000000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "OUTPUT_IMAGE_TOKENS",
+            "priceName": "Image Output",
+            "priceNameZH": "图片输出",
+            "priceValue": "25.000000",
+            "originalPrice": "25.000000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "OUTPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          }
+        ]
+      }
+    ]
+  },
+  "publishedTime": "2026-11-11 16:24:57",
+  "offShelfFlag": 0,
+  "offShelfDate": null,
+  "buyTypes": [
+    "BY_AMOUNT"
+  ],
+  "providers": [
+    {
+      "providerUid": "channel-1780500414271001961",
+      "providerName": "minimax",
+      "providerDisplayName": "MiniMax",
+      "providerLogo": "https://maas-public.oss-cn-shanghai.aliyuncs.com/maas-admin/image/2026-09-10/image-96c73dd0-5e2b-45.png"
+    }
+  ],
+  "extInfo": "{\"supportedParametersDefaultValue\":\"\",\"exampleCodes\":{\"openAI\":[{\"code\":\"curl 'https://maas-api.antdigital.com/v1/images/generations' \\\\\\n  --max-time 660 \\\\\\n  --header 'Content-Type: application/json' \\\\\\n  --header \\\"Authorization: Bearer $API_KEY\\\" \\\\\\n  --data '{\\\"model\\\":\\\"minimax-h3-image\\\",\\\"prompt\\\":\\\"一只坐在窗边的橘猫。\\\",\\\"n\\\":1,\\\"size\\\":\\\"1024x1024\\\",\\\"response_format\\\":\\\"url\\\",\\\"stream\\\":false}'\",\"sectionTitle\":\"文生图\",\"name\":\"curl\"},{\"code\":\"import os\\nfrom openai import OpenAI\\n\\nclient = OpenAI(\\n    api_key=os.environ[\\\"API_KEY\\\"],\\n    base_url=\\\"https://maas-api.antdigital.com/v1\\\",\\n    max_retries=0,\\n    timeout=660.0,\\n)\\nresponse = client.images.generate(\\n    model=\\\"minimax-h3-image\\\",\\n    prompt=\\\"一只坐在窗边的橘猫。\\\",\\n    n=1,\\n    size=\\\"1024x1024\\\",\\n    response_format=\\\"url\\\",\\n)\\nfor item in response.data:\\n    if item.url:\\n        print(item.url)\",\"sectionTitle\":\"文生图\",\"name\":\"python\"}]}}",
+  "specs": {
+    "inputPrice": "¥0.0000",
+    "inputPriceHint": "每 1K tokens",
+    "outputPrice": "¥0.0000",
+    "outputPriceHint": "每 1K tokens",
+    "contextLength": null,
+    "contextLengthHint": "tokens",
+    "maxOutput": "0",
+    "maxOutputHint": "tokens"
+  },
+  "capabilities": [],
+  "languages": [
+    "文本",
+    "图像"
+  ],
+  "scenarios": [
+    "图像"
+  ],
+  "modelParameters": [
+    {
+      "type": "number",
+      "id": "n",
+      "label": "n",
+      "value": 1,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": null,
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "id": "limit",
+      "label": "limit",
+      "value": 10,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": null,
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "id": "size",
+      "label": "size",
+      "value": "1024x1024,1360x768,768x1360,1184x880,880x1184",
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": null,
+      "thousands": null
+    }
+  ],
+  "usageGuide": {
+    "authIntro": "使用 API Key 进行认证，在请求头中添加：",
+    "authBearerPlaceholder": "YOUR_API_KEY",
+    "requestIntro": "支持标准的 OpenAI 参数格式：",
+    "requestExample": "{\n  \"max_tokens\": 4096,\n  \"temperature\": 0.5,\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"你好，请介绍一下自己\"\n    }\n  ],\n  \"model\": \"minimax-h3-image\"\n}",
+    "responseExample": "{\n  \"created\": 1795353264,\n  \"usage\": {\n    \"completion_tokens\": 12,\n    \"prompt_tokens\": 9,\n    \"total_tokens\": 21\n  },\n  \"model\": \"minimax-h3-image\",\n  \"id\": \"chatcmpl-123\",\n  \"choices\": [\n    {\n      \"finish_reason\": \"stop\",\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"你好！我是 minimax-h3-image...\"\n      }\n    }\n  ],\n  \"object\": \"chat.completion\"\n}",
+    "docUrl": "https://api-docs.example.com/",
+    "docLabel": "查看完整 API 文档"
+  },
+  "exampleCodes": {
+    "python": {
+      "sectionTitle": "Python 示例",
+      "installLine": "安装依赖：pip install requests",
+      "code": "import requests\nimport json\n\nurl = \"https://api.example.com/v1/chat/completions\"\nheaders = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n}\n\ndata = {\n    \"model\": \"model-name\",\n    \"messages\": [\n        {\n            \"role\": \"user\",\n            \"content\": \"请写一个 Python 函数计算斐波那契数列\"\n        }\n    ],\n    \"temperature\": 0.7,\n    \"max_tokens\": 4096\n}\n\nresponse = requests.post(url, headers=headers, json=data)\nresult = response.json()\nprint(result[\"choices\"][0][\"message\"][\"content\"])"
+    },
+    "javascript": {
+      "sectionTitle": "JavaScript 示例",
+      "installLine": "无需安装额外依赖（需 Node 18+ 或支持 fetch 的运行环境）",
+      "code": "(async () => {\n  const url = \"https://api.example.com/v1/chat/completions\";\n  const headers = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n  };\n  const data = {\n    model: \"model-name\",\n    messages: [\n      {\n        role: \"user\",\n        content: \"请写一个 Python 函数计算斐波那契数列\"\n      }\n    ],\n    temperature: 0.7,\n    max_tokens: 4096\n  };\n  const response = await fetch(url, {\n    method: \"POST\",\n    headers,\n    body: JSON.stringify(data)\n  });\n  const result = await response.json();\n  console.log(result.choices[0].message.content);\n})();"
+    },
+    "curl": {
+      "sectionTitle": "Curl 示例",
+      "installLine": "说明：macOS / Linux 一般已预装 curl",
+      "code": "curl -X POST \"https://api.example.com/v1/chat/completions\" \\\n  -H \"Authorization: Bearer YOUR_API_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"model\":\"model-name\",\"messages\":[{\"role\":\"user\",\"content\":\"请写一个 Python 函数计算斐波那契数列\"}],\"temperature\":0.7,\"max_tokens\":4096}'"
+    }
+  },
+  "agentIntegrations": [
+    {
+      "id": "codex",
+      "name": "Codex",
+      "description": "Configure MaaS as an OpenAI-compatible model provider.",
+      "zhDescription": "将 MaaS 配置为 Codex 的 OpenAI 兼容模型供应商。",
+      "fileLabel": "~/.codex/config.toml",
+      "language": "toml",
+      "code": "model = \"minimax-h3-image\"\nmodel_provider = \"maas\"\n\n[model_providers.maas]\nname = \"MaaS\"\nbase_url = \"https://maas-api.antdigital.com/v1\"\nenv_key = \"MAAS_API_KEY\"\nwire_api = \"responses\"",
+      "guideUrl": "/docs/agent-guides/codex"
+    },
+    {
+      "id": "opencode",
+      "name": "OpenCode",
+      "description": "Add MaaS as a custom provider in OpenCode.",
+      "zhDescription": "在 OpenCode 中添加 MaaS 自定义模型供应商。",
+      "fileLabel": "~/.config/opencode/opencode.json",
+      "language": "json",
+      "code": "{\n  \"$schema\": \"https://opencode.ai/config.json\",\n  \"provider\": {\n    \"maas\": {\n      \"npm\": \"@ai-sdk/openai-compatible\",\n      \"name\": \"MaaS\",\n      \"options\": {\n        \"baseURL\": \"https://maas-api.antdigital.com/v1\",\n        \"apiKey\": \"YOUR_MAAS_API_KEY\"\n      },\n      \"models\": {\n        \"minimax-h3-image\": {\n          \"name\": \"minimax-h3-image\"\n        }\n      }\n    }\n  },\n  \"model\": \"maas/minimax-h3-image\"\n}",
+      "guideUrl": "/docs/agent-guides/opencode"
+    }
+  ],
+  "sourceUrl": "https://maas.antdigital.com/models/modelservice-1794385497197001367",
+  "slug": "modelservice-1794385497197001367"
+}

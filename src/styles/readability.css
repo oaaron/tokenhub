@@ -1,0 +1,132 @@
+/* Reading typography overrides shared desktop and narrow-screen styles. */
+.tokenhub-site .docs-article {
+  min-width: 0;
+}
+.tokenhub-site .docs-article .doc-section p,
+.tokenhub-site .docs-article .doc-section li {
+  font-size: 16px;
+  line-height: 1.9;
+}
+.tokenhub-site .docs-article h1 {
+  font-size: clamp(28px, 3vw, 38px);
+  line-height: 1.35;
+}
+.tokenhub-site .docs-article .doc-section h2 {
+  font-size: 25px;
+  line-height: 1.5;
+  margin-top: 36px;
+}
+.tokenhub-site .docs-article .doc-section h3 {
+  font-size: 20px;
+  line-height: 1.55;
+  margin-top: 28px;
+}
+.tokenhub-site .docs-navigation nav a,
+.tokenhub-site .docs-navigation summary,
+.tokenhub-site .docs-toc,
+.tokenhub-site .docs-toc nav a,
+.tokenhub-site .inline-toc,
+.tokenhub-site .inline-toc a {
+  font-size: 14px;
+  line-height: 1.75;
+}
+.tokenhub-site .docs-article .article-meta,
+.tokenhub-site .docs-breadcrumb,
+.tokenhub-site .doc-illustration figcaption {
+  font-size: 13px;
+  line-height: 1.7;
+}
+.tokenhub-site .docs-article .notice-box {
+  font-size: 14px;
+  line-height: 1.8;
+}
+.tokenhub-site .docs-article table {
+  font-size: 14px;
+  line-height: 1.7;
+}
+.tokenhub-site .docs-article pre,
+.tokenhub-site .docs-article pre code {
+  font-size: 13px;
+  line-height: 1.7;
+}
+.tokenhub-site .docs-navigation .docs-nav-title strong,
+.tokenhub-site .docs-toc > strong {
+  font-size: 15px;
+}
+.tokenhub-site .news-card {
+  min-width: 0;
+}
+.tokenhub-site .news-card h3 {
+  overflow-wrap: anywhere;
+}
+@media (max-width: 760px) {
+  .tokenhub-site .docs-article .doc-section h2 {
+    font-size: 23px;
+  }
+  .tokenhub-site .docs-article .doc-section h3 {
+    font-size: 19px;
+  }
+  .tokenhub-site .docs-mobile-bar,
+  .tokenhub-site .docs-mobile-bar .ds-button {
+    font-size: 14px;
+  }
+  .tokenhub-site .docs-pagination strong {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .tokenhub-site .docs-pagination small {
+    font-size: 12px;
+  }
+}
+.provider-pricing {
+  margin: 16px 0;
+  border: 1px solid var(--ds-border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.provider-pricing > summary {
+  padding: 15px 18px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  background: var(--ds-surface);
+}
+.provider-pricing p {
+  padding: 0 18px;
+}
+.provider-pricing th,
+.provider-pricing td {
+  font-size: 13px;
+  line-height: 1.7;
+  white-space: normal;
+  min-width: 90px;
+  max-width: 380px;
+  overflow-wrap: anywhere;
+}
+.provider-pricing .numeric-price {
+  font-family: var(--font-mono);
+  white-space: nowrap;
+}
+.model-long-description p {
+  font-size: 16px;
+  line-height: 1.9;
+}
+.technical-facts > span {
+  font-size: 13px;
+}
+.technical-facts strong {
+  font-size: 15px;
+}
+.tokenhub-site .plan-topline,
+.tokenhub-site .selected-badge {
+  font-size: 11px;
+}
+.tokenhub-site .plan-card > p,
+.tokenhub-site .plan-card li {
+  font-size: 13px;
+  line-height: 1.8;
+}
+.tokenhub-site .provider-grid .ds-card {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}

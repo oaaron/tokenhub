@@ -1,0 +1,289 @@
+{
+  "uniqueId": "modelservice-1782962418569001859",
+  "name": "fun-asr",
+  "displayName": "Fun-ASR语音识别",
+  "provider": "Qwen",
+  "description": "Bailing’s large-model ASR version updated in April 2026 provides comprehensive support for the seven major traditional Chinese dialect groups, including Mandarin, Wu, Xiang, Gan, Hakka, Min, and Cantonese, and is also adapted to 20+ regional Mandarin accents.",
+  "zhDescription": "百聆2026年4月更新的大模型ASR版本，全面支持汉语传统七大方言体系（官话/吴/湘/赣/客/闽/粤），并适配 20+ 地区口音官话。针对中文古诗词的韵律、节奏与文言表达特点进行专项优化，提升对古诗词内容的识别准确率，适用于文化传承、教育讲解、有声读物等场景。优化标点预测与文本归一化能力，使输出文本更符合书面表达习惯，数字、日期、金额等信息自动转换为标准格式，增强内容的可读性与专业性。同时语种扩展至英语、日语、韩语、越南语、泰语、印尼语、马来语、菲律宾语、印地语、阿拉伯语、法语、德语、西班牙语、葡萄牙语、俄语、意大利语、荷兰语、瑞典语、丹麦语、芬兰语、挪威语、希腊语、波兰语、捷克语、匈牙利语、罗马尼亚、保加利亚语、克罗地亚语、斯洛伐克语等，共计30个语种。",
+  "longDescription": "Bailing’s large-model ASR version updated in April 2026 provides comprehensive support for the seven major traditional Chinese dialect groups, including Mandarin, Wu, Xiang, Gan, Hakka, Min, and Cantonese, and is also adapted to 20+ regional Mandarin accents.",
+  "zhLongDescription": "百聆2026年4月更新的大模型ASR版本，全面支持汉语传统七大方言体系（官话/吴/湘/赣/客/闽/粤），并适配 20+ 地区口音官话。针对中文古诗词的韵律、节奏与文言表达特点进行专项优化，提升对古诗词内容的识别准确率，适用于文化传承、教育讲解、有声读物等场景。优化标点预测与文本归一化能力，使输出文本更符合书面表达习惯，数字、日期、金额等信息自动转换为标准格式，增强内容的可读性与专业性。同时语种扩展至英语、日语、韩语、越南语、泰语、印尼语、马来语、菲律宾语、印地语、阿拉伯语、法语、德语、西班牙语、葡萄牙语、俄语、意大利语、荷兰语、瑞典语、丹麦语、芬兰语、挪威语、希腊语、波兰语、捷克语、匈牙利语、罗马尼亚、保加利亚语、克罗地亚语、斯洛伐克语等，共计30个语种。",
+  "contextLength": null,
+  "maxCompletionTokens": null,
+  "maxTokens": null,
+  "currency": null,
+  "inPrice": null,
+  "outPrice": null,
+  "inPriceZh": null,
+  "outPriceZh": null,
+  "inHitCachePrice": "¥0.00/M",
+  "inHitCreatePrice": "¥0.00/M",
+  "tagList": [
+    {
+      "type": "INPUT_TYPE",
+      "key": "AUDIO",
+      "value": "音频"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "TRANSCRIPTION",
+      "value": "语音转写"
+    }
+  ],
+  "type": null,
+  "typeList": [],
+  "supportedParametersDefaultValue": {
+    "temperature": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "top_p": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "top_k": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "max_tokens": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "enable_search": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "enable_thinking": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "thinking_budget": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    }
+  },
+  "protocolParameters": [
+    {
+      "protocolName": "dashscope",
+      "displayName": "Dashscope",
+      "parameters": {
+        "result_format": false,
+        "top_p": false,
+        "top_logprobs": false,
+        "top_k": false,
+        "tools": false,
+        "tool_stream": false,
+        "tool_choice": false,
+        "thinking_budget": false,
+        "temperature": false,
+        "stream": false,
+        "seed": false,
+        "search_options": false,
+        "enable_code_interpreter": false,
+        "response_format": false,
+        "repetition_penalty": false,
+        "reasoning_effort": false,
+        "preserve_thinking": false,
+        "presence_penalty": false,
+        "parallel_tool_calls": false,
+        "n": false,
+        "logprobs": false,
+        "incremental_output": false,
+        "enable_thinking": false,
+        "enable_search": false
+      }
+    }
+  ],
+  "modelProtocolCompatibility": {
+    "google video": false,
+    "dashscope": true,
+    "google_gemini": false,
+    "anthropic_message": false,
+    "openai_responses": false,
+    "openai_chat_completions": false
+  },
+  "minDiscountRate": "1",
+  "priceInfo": {
+    "lowestProviderPrice": null,
+    "prices": [
+      {
+        "stage": null,
+        "stageText": null,
+        "type": null,
+        "priceCurrency": "CNY",
+        "price": [
+          {
+            "priceCode": "AUDIO_DURATION",
+            "priceName": "Audio Duration",
+            "priceNameZH": "输出音频时长",
+            "priceValue": "0.000200",
+            "originalPrice": "0.000200",
+            "discountRate": "1.000000",
+            "unitCode": "S",
+            "unitName": "s",
+            "unitNameZh": "秒",
+            "direction": "OUTPUT",
+            "fixedName": "Second",
+            "fixedNameZh": "秒"
+          }
+        ]
+      }
+    ]
+  },
+  "publishedTime": "2026-07-02 11:20:19",
+  "offShelfFlag": 0,
+  "offShelfDate": null,
+  "buyTypes": [
+    "BY_AMOUNT"
+  ],
+  "providers": [
+    {
+      "providerUid": "channel-1779290799108001040",
+      "providerName": "antdigital",
+      "providerDisplayName": "蚂蚁数字科技",
+      "providerLogo": "https://maas-public.oss-cn-shanghai.aliyuncs.com/maas-admin/image/2026-09-10/image-4cf4a41f-3ae4-42.png"
+    }
+  ],
+  "extInfo": "{\"exampleCodes\":{\"dashscope\":[{\"code\":\"curl --location --request POST 'https://maas-api.antdigital.com/api/v1/services/aigc/multimodal-generation/generation' \\\\\\n     --header \\\"Authorization: Bearer $API_KEY\\\" \\\\\\n     --header \\\"Content-Type: application/json\\\" \\\\\\n     --header \\\"X-DashScope-SSE: disable\\\" \\\\\\n     --data '{\\n    \\\"model\\\": \\\"fun-asr\\\",\\n    \\\"input\\\": {\\n        \\\"messages\\\": [\\n            {\\n                \\\"role\\\": \\\"user\\\",\\n                \\\"content\\\": [\\n                    {\\n                        \\\"type\\\": \\\"input_audio\\\",\\n                        \\\"input_audio\\\": {\\n                            \\\"data\\\": \\\"{YOUR_AUDIO_URL}\\\"\\n                        }\\n                    }\\n                ]\\n            }\\n        ]\\n    },\\n    \\\"parameters\\\": {\\n        \\\"format\\\": \\\"wav\\\",\\n        \\\"sample_rate\\\": \\\"16000\\\"\\n    }\\n}'\",\"sectionTitle\":\"\",\"name\":\"curl\"}]}}",
+  "specs": {
+    "inputPrice": "¥0.0000",
+    "inputPriceHint": "每 1K tokens",
+    "outputPrice": "¥0.0000",
+    "outputPriceHint": "每 1K tokens",
+    "contextLength": null,
+    "contextLengthHint": "tokens",
+    "maxOutput": "0",
+    "maxOutputHint": "tokens"
+  },
+  "capabilities": [],
+  "languages": [
+    "音频"
+  ],
+  "scenarios": [
+    "语音转写"
+  ],
+  "modelParameters": [
+    {
+      "type": "slider",
+      "id": "temperature",
+      "label": "Temperature",
+      "value": 0.3,
+      "min": 0,
+      "max": 2,
+      "step": 0.01,
+      "description": "控制输出的随机性，值越高越随机",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "id": "presence_penalty",
+      "label": "Presence Penalty",
+      "value": 0.1,
+      "min": -2,
+      "max": 2,
+      "step": 0.01,
+      "description": "存在惩罚，鼓励模型讨论新话题",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "id": "top_p",
+      "label": "Top P",
+      "value": 0.95,
+      "min": 0,
+      "max": 1,
+      "step": 0.01,
+      "description": "核采样参数，控制候选词汇的范围",
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "id": "max_tokens",
+      "label": "Max Tokens",
+      "value": 0,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "单次生成的最大 token 数量",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "id": "frequency_penalty",
+      "label": "Frequency Penalty",
+      "value": 0.1,
+      "min": -2,
+      "max": 2,
+      "step": 0.01,
+      "description": "频率惩罚，减少重复内容的生成",
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "id": "context_length",
+      "label": "Context Length",
+      "value": 64000,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "支持的最大上下文长度",
+      "thousands": true
+    }
+  ],
+  "usageGuide": {
+    "authIntro": "使用 API Key 进行认证，在请求头中添加：",
+    "authBearerPlaceholder": "YOUR_API_KEY",
+    "requestIntro": "支持标准的 OpenAI 参数格式：",
+    "requestExample": "{\n  \"max_tokens\": 4096,\n  \"temperature\": 0.5,\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"你好，请介绍一下自己\"\n    }\n  ],\n  \"model\": \"fun-asr\"\n}",
+    "responseExample": "{\n  \"created\": 1795353267,\n  \"usage\": {\n    \"completion_tokens\": 12,\n    \"prompt_tokens\": 9,\n    \"total_tokens\": 21\n  },\n  \"model\": \"fun-asr\",\n  \"id\": \"chatcmpl-123\",\n  \"choices\": [\n    {\n      \"finish_reason\": \"stop\",\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"你好！我是 fun-asr...\"\n      }\n    }\n  ],\n  \"object\": \"chat.completion\"\n}",
+    "docUrl": "https://api-docs.example.com/",
+    "docLabel": "查看完整 API 文档"
+  },
+  "exampleCodes": {
+    "python": {
+      "sectionTitle": "Python 示例",
+      "installLine": "安装依赖：pip install requests",
+      "code": "import requests\nimport json\n\nurl = \"https://api.example.com/v1/chat/completions\"\nheaders = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n}\n\ndata = {\n    \"model\": \"model-name\",\n    \"messages\": [\n        {\n            \"role\": \"user\",\n            \"content\": \"请写一个 Python 函数计算斐波那契数列\"\n        }\n    ],\n    \"temperature\": 0.7,\n    \"max_tokens\": 4096\n}\n\nresponse = requests.post(url, headers=headers, json=data)\nresult = response.json()\nprint(result[\"choices\"][0][\"message\"][\"content\"])"
+    },
+    "javascript": {
+      "sectionTitle": "JavaScript 示例",
+      "installLine": "无需安装额外依赖（需 Node 18+ 或支持 fetch 的运行环境）",
+      "code": "(async () => {\n  const url = \"https://api.example.com/v1/chat/completions\";\n  const headers = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n  };\n  const data = {\n    model: \"model-name\",\n    messages: [\n      {\n        role: \"user\",\n        content: \"请写一个 Python 函数计算斐波那契数列\"\n      }\n    ],\n    temperature: 0.7,\n    max_tokens: 4096\n  };\n  const response = await fetch(url, {\n    method: \"POST\",\n    headers,\n    body: JSON.stringify(data)\n  });\n  const result = await response.json();\n  console.log(result.choices[0].message.content);\n})();"
+    },
+    "curl": {
+      "sectionTitle": "Curl 示例",
+      "installLine": "说明：macOS / Linux 一般已预装 curl",
+      "code": "curl -X POST \"https://api.example.com/v1/chat/completions\" \\\n  -H \"Authorization: Bearer YOUR_API_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"model\":\"model-name\",\"messages\":[{\"role\":\"user\",\"content\":\"请写一个 Python 函数计算斐波那契数列\"}],\"temperature\":0.7,\"max_tokens\":4096}'"
+    }
+  },
+  "agentIntegrations": [
+    {
+      "id": "codex",
+      "name": "Codex",
+      "description": "Configure MaaS as an OpenAI-compatible model provider.",
+      "zhDescription": "将 MaaS 配置为 Codex 的 OpenAI 兼容模型供应商。",
+      "fileLabel": "~/.codex/config.toml",
+      "language": "toml",
+      "code": "model = \"fun-asr\"\nmodel_provider = \"maas\"\n\n[model_providers.maas]\nname = \"MaaS\"\nbase_url = \"https://maas-api.antdigital.com/v1\"\nenv_key = \"MAAS_API_KEY\"\nwire_api = \"responses\"",
+      "guideUrl": "/docs/agent-guides/codex"
+    },
+    {
+      "id": "opencode",
+      "name": "OpenCode",
+      "description": "Add MaaS as a custom provider in OpenCode.",
+      "zhDescription": "在 OpenCode 中添加 MaaS 自定义模型供应商。",
+      "fileLabel": "~/.config/opencode/opencode.json",
+      "language": "json",
+      "code": "{\n  \"$schema\": \"https://opencode.ai/config.json\",\n  \"provider\": {\n    \"maas\": {\n      \"npm\": \"@ai-sdk/openai-compatible\",\n      \"name\": \"MaaS\",\n      \"options\": {\n        \"baseURL\": \"https://maas-api.antdigital.com/v1\",\n        \"apiKey\": \"YOUR_MAAS_API_KEY\"\n      },\n      \"models\": {\n        \"fun-asr\": {\n          \"name\": \"fun-asr\"\n        }\n      }\n    }\n  },\n  \"model\": \"maas/fun-asr\"\n}",
+      "guideUrl": "/docs/agent-guides/opencode"
+    }
+  ],
+  "sourceUrl": "https://maas.antdigital.com/models/modelservice-1782962418569001859",
+  "slug": "modelservice-1782962418569001859"
+}

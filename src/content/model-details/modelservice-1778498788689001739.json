@@ -1,0 +1,318 @@
+{
+  "uniqueId": "modelservice-1778498788689001739",
+  "name": "happyhorse-1.0-video-edit",
+  "displayName": "HappyHorse-1.0-video-edit",
+  "provider": "HappyHorse",
+  "description": "HappyHorse 1.0 Video Edit is an AI video editing model for intelligent transformation and enhancement of existing videos. It supports style transfer, object replacement, frame completion, defect repair, and automatic subtitle or voice-over generation while preserving the original motion, composition, and temporal consistency. The model helps simplify post-production workflows and is suitable for video remixing, creative editing, style conversion, and professional content refinement.",
+  "zhDescription": "happyhorse-1.0-video-edit 是面向已有视频的 AI 智能编辑模型，支持风格迁移、物体替换、画面补全、瑕疵修复、字幕与配音生成等视频二次创作能力。模型的核心优势是在编辑过程中尽量保留原始视频的运动轨迹、画面构图和时序连贯性，适合视频风格化、内容改写、素材修复、营销视频再创作和后期制作效率提升场景。",
+  "longDescription": "HappyHorse 1.0 Video Edit is an AI video editing model for intelligent transformation and enhancement of existing videos. It supports style transfer, object replacement, frame completion, defect repair, and automatic subtitle or voice-over generation while preserving the original motion, composition, and temporal consistency. The model helps simplify post-production workflows and is suitable for video remixing, creative editing, style conversion, and professional content refinement.",
+  "zhLongDescription": "happyhorse-1.0-video-edit 是面向已有视频的 AI 智能编辑模型，支持风格迁移、物体替换、画面补全、瑕疵修复、字幕与配音生成等视频二次创作能力。模型的核心优势是在编辑过程中尽量保留原始视频的运动轨迹、画面构图和时序连贯性，适合视频风格化、内容改写、素材修复、营销视频再创作和后期制作效率提升场景。",
+  "contextLength": "0",
+  "maxCompletionTokens": null,
+  "maxTokens": null,
+  "currency": null,
+  "inPrice": null,
+  "outPrice": null,
+  "inPriceZh": null,
+  "outPriceZh": null,
+  "inHitCachePrice": "¥0.72/s",
+  "inHitCreatePrice": "¥0.72/s",
+  "tagList": [
+    {
+      "type": "MODEL_TYPE",
+      "key": "VIDEO_GENERATE",
+      "value": "视频生成"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "VIDEO",
+      "value": "视频"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "VIDEO",
+      "value": "视频"
+    }
+  ],
+  "type": "VIDEO_GENERATE",
+  "typeList": [
+    "VIDEO_GENERATE"
+  ],
+  "supportedParametersDefaultValue": {
+    "temperature": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "top_p": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "top_k": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "max_tokens": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "enable_search": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "enable_thinking": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "thinking_budget": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    }
+  },
+  "protocolParameters": [
+    {
+      "protocolName": "google video",
+      "displayName": "Google Video",
+      "parameters": {
+        "aspectRatio": true,
+        "compressionQuality": false,
+        "durationSeconds": true,
+        "enhancePrompt": false,
+        "fps": false,
+        "generateAudio": false,
+        "lastFrame": false,
+        "mask": true,
+        "negativePrompt": false,
+        "numberOfVideos": false,
+        "personGeneration": false,
+        "referenceImages": true,
+        "resolution": false,
+        "seed": true
+      }
+    }
+  ],
+  "modelProtocolCompatibility": {
+    "google video": true,
+    "dashscope": false,
+    "google_gemini": false,
+    "anthropic_message": false,
+    "openai_responses": false,
+    "openai_chat_completions": false
+  },
+  "minDiscountRate": "0.800000",
+  "priceInfo": {
+    "lowestProviderPrice": {
+      "inputPrice": null,
+      "outputPrice": {
+        "priceCode": "VIDEO_720",
+        "priceName": "Video 720P",
+        "priceNameZH": "视频生成（720P）",
+        "priceValue": "0.720000",
+        "originalPrice": "0.900000",
+        "discountRate": "0.800000",
+        "unitCode": "S",
+        "unitName": "s",
+        "unitNameZh": "秒",
+        "direction": "OUTPUT",
+        "fixedName": "Second",
+        "fixedNameZh": "秒"
+      }
+    },
+    "prices": [
+      {
+        "stage": null,
+        "stageText": "",
+        "type": null,
+        "priceCurrency": "CNY",
+        "price": [
+          {
+            "priceCode": "VIDEO_720",
+            "priceName": "Video 720P",
+            "priceNameZH": "视频生成（720P）",
+            "priceValue": "0.720000",
+            "originalPrice": "0.900000",
+            "discountRate": "0.800000",
+            "unitCode": "S",
+            "unitName": "s",
+            "unitNameZh": "秒",
+            "direction": "OUTPUT",
+            "fixedName": "Second",
+            "fixedNameZh": "秒"
+          },
+          {
+            "priceCode": "VIDEO_1080",
+            "priceName": "Video 1080P",
+            "priceNameZH": "视频生成（1080P）",
+            "priceValue": "1.280000",
+            "originalPrice": "1.600000",
+            "discountRate": "0.800000",
+            "unitCode": "S",
+            "unitName": "s",
+            "unitNameZh": "秒",
+            "direction": "OUTPUT",
+            "fixedName": "Second",
+            "fixedNameZh": "秒"
+          }
+        ]
+      }
+    ]
+  },
+  "publishedTime": "2026-05-11 19:26:29",
+  "offShelfFlag": 0,
+  "offShelfDate": null,
+  "buyTypes": [
+    "BY_AMOUNT",
+    "BY_CREDIT"
+  ],
+  "providers": [
+    {
+      "providerUid": "channel-1779290799108001040",
+      "providerName": "antdigital",
+      "providerDisplayName": "蚂蚁数字科技",
+      "providerLogo": "https://maas-public.oss-cn-shanghai.aliyuncs.com/maas-admin/image/2026-09-10/image-4cf4a41f-3ae4-42.png"
+    }
+  ],
+  "extInfo": "{\"exampleCodes\": {\"dashscope\": [{\"code\": \"# 发起视频生成的任务\\ncurl --location --request POST 'https://maas-api.antdigital.com/api/v1/services/aigc/video-generation/video-synthesis' \\\\\\n--header 'X-DashScope-Async: enable' \\\\\\n--header 'Authorization: Bearer $API_KEY' \\\\\\n--header 'Content-Type: application/json' \\\\\\n--data-raw '{\\n    \\\"model\\\": \\\"happyhorse-1.0-video-edit\\\",\\n    \\\"input\\\": {\\n        \\\"prompt\\\": \\\"让视频中的马头人身角色穿上图片中的条纹毛衣\\\",\\n        \\\"media\\\": [\\n            {\\n                \\\"type\\\": \\\"video\\\",\\n                \\\"url\\\": \\\"https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/zh-CN/20260409/dozxak/Wan_Video_Edit_33_1.mp4\\\"\\n            },\\n            {\\n                \\\"type\\\": \\\"reference_image\\\",\\n                \\\"url\\\": \\\"https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/zh-CN/20260415/hynnff/wan-video-edit-clothes.webp\\\"\\n            }\\n        ]\\n    },\\n    \\\"parameters\\\": {\\n        \\\"resolution\\\": \\\"720P\\\"\\n    }\\n}'\\n\\n# 查询任务状态\\ncurl --location --request GET 'https://maas-api.antdigital.com/api/v1/tasks/{任务ID}' \\\\\\n--header 'Authorization: Bearer $API_KEY'\", \"name\": \"curl\", \"sectionTitle\": \"\"}]}, \"contextLength\": \"0\", \"supportedParameters\": {}, \"modelProtocolCompatibility\": {}, \"supportedParametersDefaultValue\": {\"desc\": \"1. 模式说明\\n   - 支持视频编辑: 参考视频 + 参考图片\\n2. 输入素材\\n   - 必须且仅需 1 个视频\\n   - 视频格式: MP4/MOV (建议 H.264 编码)\\n   - 视频大小 <= 100 MB\\n   - 视频时长 3-60 秒\\n   - 视频分辨率: 长边 <= 2160 px, 短边 >= 320 px\\n   - 视频宽高比 1:2.5-2.5:1\\n3. 可选参考图片\\n   - 数量 0-5 张\\n   - 格式 JPEG/JPG/PNG/WEBP\\n   - 尺寸 >= 300 px\\n   - 宽高比 1:2.5-2.5:1\\n   - 单张 <= 20 MB\\n4. 生成视频配置\\n   - 输出分辨率: 720P/1080P (默认 1080P)\\n   - 输出时长: 3-15 秒 (单位: 秒)\", \"mode\": {\"example\": {\"enable\": true, \"attachments\": {\"image\": {\"formats\": [\"JPEG\", \"JPG\", \"PNG\", \"WEBP\"], \"maxCount\": 5, \"minCount\": 0, \"required\": {\"resolution\": {\"minHeigh\": 300, \"minWidth\": 300}, \"aspectRatio\": {\"max\": 2.5, \"min\": 0.4}}, \"roleType\": \"reference_image\", \"maxSizeMB\": 20}, \"video\": {\"formats\": [\"MP4\", \"MOV\"], \"maxCount\": 1, \"minCount\": 1, \"required\": {\"fps\": {\"min\": 8}, \"resolution\": {\"maxHeigh\": 2160, \"maxWidth\": 2160, \"minHeigh\": 320, \"minWidth\": 320}, \"aspectRatio\": {\"max\": 2.5, \"min\": 0.4}, \"durationLimit\": {\"max\": 60, \"min\": 3}}, \"roleType\": \"video\", \"maxSizeMB\": 100}}}}, \"ratio\": {\"supported\": false}, \"descEn\": \"1. Mode Description\\n   - Supports video editing: Reference Video + Reference Images\\n2. Input Material\\n   - Required: 1 Video\\n   - Format: MP4/MOV\\n   - Max Size: 100 MB\\n   - Duration: 3-60s\\n   - Aspect Ratio: 1:2.5 to 2.5:1\\n3. Reference Images (Optional)\\n   - Count: 0-5 images\\n   - Format: JPEG/JPG/PNG/WEBP\\n   - Max Size: 20 MB\\n4. Output Configuration\\n   - Resolution: 720P/1080P (default 1080P)\\n   - Duration: 3-15s\", \"duration\": {\"max\": 15, \"min\": 3, \"default\": 5, \"supported\": true}, \"resolution\": {\"default\": \"1080P\", \"options\": [\"720P\", \"1080P\"], \"supported\": true}, \"generate_audio\": {\"supported\": false}}}",
+  "specs": {
+    "inputPrice": "¥0.0000",
+    "inputPriceHint": "每 1K tokens",
+    "outputPrice": "¥0.0000",
+    "outputPriceHint": "每 1K tokens",
+    "contextLength": "0",
+    "contextLengthHint": "tokens",
+    "maxOutput": "0",
+    "maxOutputHint": "tokens"
+  },
+  "capabilities": [],
+  "languages": [
+    "文本",
+    "图像",
+    "视频"
+  ],
+  "scenarios": [
+    "视频"
+  ],
+  "modelParameters": [
+    {
+      "type": "text",
+      "id": "aspectRatio",
+      "label": "aspectRatio",
+      "value": "1",
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "text",
+      "id": "durationSeconds",
+      "label": "durationSeconds",
+      "value": "1",
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "text",
+      "id": "mask",
+      "label": "mask",
+      "value": "1",
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "text",
+      "id": "referenceImages",
+      "label": "referenceImages",
+      "value": "1",
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "text",
+      "id": "seed",
+      "label": "seed",
+      "value": "1",
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    }
+  ],
+  "usageGuide": {
+    "authIntro": "使用 API Key 进行认证，在请求头中添加：",
+    "authBearerPlaceholder": "YOUR_API_KEY",
+    "requestIntro": "支持标准的 OpenAI 参数格式：",
+    "requestExample": "{\n  \"max_tokens\": 4096,\n  \"temperature\": 0.5,\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"你好，请介绍一下自己\"\n    }\n  ],\n  \"model\": \"happyhorse-1.0-video-edit\"\n}",
+    "responseExample": "{\n  \"created\": 1795353266,\n  \"usage\": {\n    \"completion_tokens\": 12,\n    \"prompt_tokens\": 9,\n    \"total_tokens\": 21\n  },\n  \"model\": \"happyhorse-1.0-video-edit\",\n  \"id\": \"chatcmpl-123\",\n  \"choices\": [\n    {\n      \"finish_reason\": \"stop\",\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"你好！我是 happyhorse-1.0-video-edit...\"\n      }\n    }\n  ],\n  \"object\": \"chat.completion\"\n}",
+    "docUrl": "https://api-docs.example.com/",
+    "docLabel": "查看完整 API 文档"
+  },
+  "exampleCodes": {
+    "python": {
+      "sectionTitle": "Python 示例",
+      "installLine": "安装依赖：pip install requests",
+      "code": "import requests\nimport json\n\nurl = \"https://api.example.com/v1/chat/completions\"\nheaders = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n}\n\ndata = {\n    \"model\": \"model-name\",\n    \"messages\": [\n        {\n            \"role\": \"user\",\n            \"content\": \"请写一个 Python 函数计算斐波那契数列\"\n        }\n    ],\n    \"temperature\": 0.7,\n    \"max_tokens\": 4096\n}\n\nresponse = requests.post(url, headers=headers, json=data)\nresult = response.json()\nprint(result[\"choices\"][0][\"message\"][\"content\"])"
+    },
+    "javascript": {
+      "sectionTitle": "JavaScript 示例",
+      "installLine": "无需安装额外依赖（需 Node 18+ 或支持 fetch 的运行环境）",
+      "code": "(async () => {\n  const url = \"https://api.example.com/v1/chat/completions\";\n  const headers = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n  };\n  const data = {\n    model: \"model-name\",\n    messages: [\n      {\n        role: \"user\",\n        content: \"请写一个 Python 函数计算斐波那契数列\"\n      }\n    ],\n    temperature: 0.7,\n    max_tokens: 4096\n  };\n  const response = await fetch(url, {\n    method: \"POST\",\n    headers,\n    body: JSON.stringify(data)\n  });\n  const result = await response.json();\n  console.log(result.choices[0].message.content);\n})();"
+    },
+    "curl": {
+      "sectionTitle": "Curl 示例",
+      "installLine": "说明：macOS / Linux 一般已预装 curl",
+      "code": "curl -X POST \"https://api.example.com/v1/chat/completions\" \\\n  -H \"Authorization: Bearer YOUR_API_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"model\":\"model-name\",\"messages\":[{\"role\":\"user\",\"content\":\"请写一个 Python 函数计算斐波那契数列\"}],\"temperature\":0.7,\"max_tokens\":4096}'"
+    }
+  },
+  "agentIntegrations": [
+    {
+      "id": "codex",
+      "name": "Codex",
+      "description": "Configure MaaS as an OpenAI-compatible model provider.",
+      "zhDescription": "将 MaaS 配置为 Codex 的 OpenAI 兼容模型供应商。",
+      "fileLabel": "~/.codex/config.toml",
+      "language": "toml",
+      "code": "model = \"happyhorse-1.0-video-edit\"\nmodel_provider = \"maas\"\n\n[model_providers.maas]\nname = \"MaaS\"\nbase_url = \"https://maas-api.antdigital.com/v1\"\nenv_key = \"MAAS_API_KEY\"\nwire_api = \"responses\"",
+      "guideUrl": "/docs/agent-guides/codex"
+    },
+    {
+      "id": "opencode",
+      "name": "OpenCode",
+      "description": "Add MaaS as a custom provider in OpenCode.",
+      "zhDescription": "在 OpenCode 中添加 MaaS 自定义模型供应商。",
+      "fileLabel": "~/.config/opencode/opencode.json",
+      "language": "json",
+      "code": "{\n  \"$schema\": \"https://opencode.ai/config.json\",\n  \"provider\": {\n    \"maas\": {\n      \"npm\": \"@ai-sdk/openai-compatible\",\n      \"name\": \"MaaS\",\n      \"options\": {\n        \"baseURL\": \"https://maas-api.antdigital.com/v1\",\n        \"apiKey\": \"YOUR_MAAS_API_KEY\"\n      },\n      \"models\": {\n        \"happyhorse-1.0-video-edit\": {\n          \"name\": \"happyhorse-1.0-video-edit\"\n        }\n      }\n    }\n  },\n  \"model\": \"maas/happyhorse-1.0-video-edit\"\n}",
+      "guideUrl": "/docs/agent-guides/opencode"
+    }
+  ],
+  "sourceUrl": "https://maas.antdigital.com/models/modelservice-1778498788689001739",
+  "slug": "modelservice-1778498788689001739"
+}

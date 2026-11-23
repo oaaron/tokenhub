@@ -1,0 +1,235 @@
+{
+  "slug": "zm-inclusionai-ming-image-0.1-design-layer",
+  "uniqueId": "2639MOyNs2qq14613969",
+  "name": "inclusionai/ming-image-0.1-design-layer",
+  "displayName": "inclusionAI: Ming Image 0.1 Design Layer",
+  "provider": "inclusionAI",
+  "manufacturerKey": "inclusionai",
+  "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2026/05/13/aUnfeJ9/Property-1inclusionAI.svg",
+  "zhDescription": "将单张平面设计图分解为背景和前景等RGBA图层，需要恰好一张参考图与分层说明，输出尺寸跟随输入。",
+  "zhLongDescription": "将单张平面设计图分解为背景和前景等RGBA图层，需要恰好一张参考图与分层说明，输出尺寸跟随输入。",
+  "description": "将单张平面设计图分解为背景和前景等RGBA图层，需要恰好一张参考图与分层说明，输出尺寸跟随输入。",
+  "longDescription": "将单张平面设计图分解为背景和前景等RGBA图层，需要恰好一张参考图与分层说明，输出尺寸跟随输入。",
+  "contextLength": 8000,
+  "maxCompletionTokens": 100000,
+  "currency": "USD",
+  "tagList": [
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    }
+  ],
+  "publishedTime": "2026-09-22",
+  "minDiscountRate": "1",
+  "supportedParams": [
+    "output_format",
+    "prompt",
+    "response_format",
+    "size",
+    "watermark"
+  ],
+  "supportedProtocols": [
+    "images"
+  ],
+  "reasoning": 0,
+  "reasoningModes": [
+    0
+  ],
+  "providerNames": [
+    "NovitaAI"
+  ],
+  "providerDetails": [
+    {
+      "name": "NovitaAI",
+      "slug": "novita",
+      "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2025/12/04/p5JAWDQ/Property-1Novita.svg",
+      "contextLength": 8000,
+      "maxCompletionTokens": 100000,
+      "supportsStreaming": false,
+      "apiProtocols": {
+        "images": {
+          "supported_parameters": [
+            "prompt",
+            "output_format",
+            "response_format",
+            "size",
+            "watermark"
+          ],
+          "supports_reasoning": 0
+        }
+      },
+      "pricingDiscount": "1",
+      "priceInfo": {
+        "prices": [
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "OUTPUT",
+                "priceNameZH": "模型生成输出内容的费用(completion)",
+                "priceValue": 0,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "completion",
+                "constraints": []
+              }
+            ]
+          },
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "INPUT",
+                "priceNameZH": "输入提示词的处理费用(prompt)",
+                "priceValue": 0,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "prompt",
+                "constraints": []
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "modelProtocolCompatibility": {
+    "images": true
+  },
+  "supportedParametersDefaultValue": {
+    "output_format": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "prompt": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "response_format": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "size": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "watermark": {
+      "enable": true,
+      "defaultValue": null
+    }
+  },
+  "priceInfo": {
+    "prices": [
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "OUTPUT",
+            "priceNameZH": "模型生成输出内容的费用(completion)",
+            "priceValue": 0,
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "completion",
+            "constraints": []
+          }
+        ]
+      },
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "INPUT",
+            "priceNameZH": "输入提示词的处理费用(prompt)",
+            "priceValue": 0,
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "INPUT",
+            "sourceFeeCode": "prompt",
+            "constraints": []
+          }
+        ]
+      }
+    ]
+  },
+  "pricingDetails": [
+    {
+      "feeItemCode": "completion",
+      "feeItemName": "模型生成输出内容的费用(completion)",
+      "selectedConstraint": [
+        "chargeUnit"
+      ],
+      "feeRecords": [
+        {
+          "feeRate": 0,
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "feeItemCode": "prompt",
+      "feeItemName": "输入提示词的处理费用(prompt)",
+      "selectedConstraint": [
+        "chargeUnit"
+      ],
+      "feeRecords": [
+        {
+          "feeRate": 0,
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sourcePublishedPrices": {
+    "pricing_completion": "0",
+    "pricing_discount": "1",
+    "pricing_prompt": "0"
+  },
+  "exampleCodes": [],
+  "serviceConfiguration": "服务配置待开通；接入地址、鉴权和可用协议以开通后的服务配置为准。",
+  "sourceRegion": "global",
+  "sourceCatalog": "ZenMux",
+  "sourceUrl": "https://zenmux.ai/inclusionai/ming-image-0.1-design-layer",
+  "detailVerified": true,
+  "aliases": [],
+  "isFree": false
+}

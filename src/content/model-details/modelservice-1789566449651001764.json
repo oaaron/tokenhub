@@ -1,0 +1,442 @@
+{
+  "uniqueId": "modelservice-1789566449651001764",
+  "name": "atria-dawn-preview",
+  "displayName": "Atria Dawn Preview",
+  "provider": "Atria",
+  "description": "Atria Dawn Preview is a preview version of a new-generation agentic model developed by the Shanghai Artificial Intelligence Laboratory. Trained on a 744B-parameter MoE foundation model, it is designed for research and engineering scenarios that require continuous environmental understanding, tool use, and multi-step task completion. The model helps users drive open-ended problems toward executable, verifiable, and reproducible results. It can support problem analysis, solution design, tool use, code implementation, experiment execution, result analysis, and failure recovery by combining task objectives with environmental feedback.\n\nAtria Dawn Preview empowers agentic tasks across four dimensions, with a particular focus on end-to-end delivery in real-world productivity scenarios such as scientific automation and office work: Discovery: Retrieving and organizing evidence, conducting deep research, and turning research questions into executable experimental plans. Creation: Building software, interactive applications, games, data visualizations, and machine learning systems. Delivery: Transforming documents, data, and design requirements into reports, presentations, and other structured deliverables. Cybersecurity: Analyzing security issues, validating vulnerabilities, applying fixes, and performing re-validation in authorized environments.",
+  "zhDescription": "Atria Dawn Preview 是上海人工智能实验室研发的新一代智能体模型预览版，基于 744B 参数的 MoE 基座模型训练，面向需要持续感知环境、调用工具并完成多步骤任务的科研与工程场景。模型结合任务目标与环境反馈，支持问题分析、方案设计、工具调用、代码实现、实验执行、结果分析与失败恢复，推动开放式问题转化为可执行、可验证、可复现的成果。\n模型覆盖四类核心智能体能力，重点支持科研自动化与办公等真实生产力场景的端到端交付：探索，包括证据检索与整理、深度研究及实验方案设计；创造，包括软件、交互式应用、游戏、数据可视化与机器学习系统开发；交付，将文档、数据和设计需求转化为报告、演示文稿等结构化成果；网络安全，在授权环境中分析安全问题、验证漏洞、实施修复并进行复测。",
+  "longDescription": "Atria Dawn Preview is a preview version of a new-generation agentic model developed by the Shanghai Artificial Intelligence Laboratory. Trained on a 744B-parameter MoE foundation model, it is designed for research and engineering scenarios that require continuous environmental understanding, tool use, and multi-step task completion. The model helps users drive open-ended problems toward executable, verifiable, and reproducible results. It can support problem analysis, solution design, tool use, code implementation, experiment execution, result analysis, and failure recovery by combining task objectives with environmental feedback.\n\nAtria Dawn Preview empowers agentic tasks across four dimensions, with a particular focus on end-to-end delivery in real-world productivity scenarios such as scientific automation and office work: Discovery: Retrieving and organizing evidence, conducting deep research, and turning research questions into executable experimental plans. Creation: Building software, interactive applications, games, data visualizations, and machine learning systems. Delivery: Transforming documents, data, and design requirements into reports, presentations, and other structured deliverables. Cybersecurity: Analyzing security issues, validating vulnerabilities, applying fixes, and performing re-validation in authorized environments.",
+  "zhLongDescription": "Atria Dawn Preview 是上海人工智能实验室研发的新一代智能体模型预览版，基于 744B 参数的 MoE 基座模型训练，面向需要持续感知环境、调用工具并完成多步骤任务的科研与工程场景。模型结合任务目标与环境反馈，支持问题分析、方案设计、工具调用、代码实现、实验执行、结果分析与失败恢复，推动开放式问题转化为可执行、可验证、可复现的成果。\n模型覆盖四类核心智能体能力，重点支持科研自动化与办公等真实生产力场景的端到端交付：探索，包括证据检索与整理、深度研究及实验方案设计；创造，包括软件、交互式应用、游戏、数据可视化与机器学习系统开发；交付，将文档、数据和设计需求转化为报告、演示文稿等结构化成果；网络安全，在授权环境中分析安全问题、验证漏洞、实施修复并进行复测。",
+  "contextLength": "256000",
+  "maxCompletionTokens": 64000,
+  "maxTokens": 64000,
+  "currency": null,
+  "inPrice": null,
+  "outPrice": null,
+  "inPriceZh": null,
+  "outPriceZh": null,
+  "inHitCachePrice": "¥0.00/M",
+  "inHitCreatePrice": "¥0.020000/M",
+  "tagList": [
+    {
+      "type": "MODEL_TYPE",
+      "key": "TEXT_GENERATE",
+      "value": "文本生成"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    }
+  ],
+  "type": "TEXT_GENERATE",
+  "typeList": [
+    "TEXT_GENERATE"
+  ],
+  "supportedParametersDefaultValue": {
+    "temperature": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "top_p": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "top_k": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "max_tokens": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "enable_search": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "enable_thinking": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "thinking_budget": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    }
+  },
+  "protocolParameters": [
+    {
+      "protocolName": "anthropic_message",
+      "displayName": "Anthropic Message",
+      "parameters": {
+        "metadata": false,
+        "service_tier": false,
+        "stop_sequences": true,
+        "stream": false,
+        "system": true,
+        "temperature": true,
+        "thinking": false,
+        "tool_choice": true,
+        "tools": false,
+        "top_k": true,
+        "top_p": true
+      }
+    },
+    {
+      "protocolName": "openai_responses",
+      "displayName": "OpenAI Responses",
+      "parameters": {
+        "service_tier": false,
+        "user": false,
+        "truncation": false,
+        "top_p": true,
+        "top_logprobs": false,
+        "tools": true,
+        "tool_choice": true,
+        "text": true,
+        "temperature": true,
+        "stream": false,
+        "store": false,
+        "background": false,
+        "reasoning": false,
+        "prompt": false,
+        "previous_response_id": false,
+        "parallel_tool_calls": false,
+        "metadata": false,
+        "max_tool_calls": false,
+        "max_output_tokens": true,
+        "include": true,
+        "conversation": true
+      }
+    },
+    {
+      "protocolName": "openai_chat_completions",
+      "displayName": "OpenAI Chat Completions",
+      "parameters": {
+        "seed": false,
+        "web_search_options": false,
+        "user": false,
+        "top_p": true,
+        "top_logprobs": true,
+        "tools": true,
+        "tool_choice": true,
+        "temperature": true,
+        "stream_options": false,
+        "stream": false,
+        "store": false,
+        "service_tier": false,
+        "audio": false,
+        "response_format": true,
+        "reasoning_effort": false,
+        "presence_penalty": false,
+        "prediction": false,
+        "parallel_tool_calls": false,
+        "n": false,
+        "modalities": false,
+        "metadata": false,
+        "logprobs": false,
+        "logit_bias": false,
+        "frequency_penalty": false
+      }
+    }
+  ],
+  "modelProtocolCompatibility": {
+    "System One": false,
+    "google video": false,
+    "dashscope": false,
+    "google_gemini": false,
+    "anthropic_message": true,
+    "openai_responses": true,
+    "openai_chat_completions": true
+  },
+  "minDiscountRate": "0.010000",
+  "priceInfo": {
+    "lowestProviderPrice": {
+      "inputPrice": {
+        "priceCode": "INPUT",
+        "priceName": "Input",
+        "priceNameZH": "输入",
+        "priceValue": "0.080000",
+        "originalPrice": "8.000000",
+        "discountRate": "0.010000",
+        "unitCode": "M_TOKENS",
+        "unitName": "M",
+        "unitNameZh": "M",
+        "direction": "INPUT",
+        "fixedName": "M Tokens",
+        "fixedNameZh": "百万Tokens"
+      },
+      "outputPrice": {
+        "priceCode": "OUTPUT",
+        "priceName": "Output",
+        "priceNameZH": "输出",
+        "priceValue": "0.280000",
+        "originalPrice": "28.000000",
+        "discountRate": "0.010000",
+        "unitCode": "M_TOKENS",
+        "unitName": "M",
+        "unitNameZh": "M",
+        "direction": "OUTPUT",
+        "fixedName": "M Tokens",
+        "fixedNameZh": "百万Tokens"
+      }
+    },
+    "prices": [
+      {
+        "stage": "",
+        "stageText": "",
+        "type": null,
+        "priceCurrency": "CNY",
+        "price": [
+          {
+            "priceCode": "INPUT",
+            "priceName": "Input",
+            "priceNameZH": "输入",
+            "priceValue": "0.080000",
+            "originalPrice": "8.000000",
+            "discountRate": "0.010000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "OUTPUT",
+            "priceName": "Output",
+            "priceNameZH": "输出",
+            "priceValue": "0.280000",
+            "originalPrice": "28.000000",
+            "discountRate": "0.010000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "OUTPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "INPUT_CACHE_HIT",
+            "priceName": "Input (Cache Hit)",
+            "priceNameZH": "输入（命中缓存）",
+            "priceValue": "0.020000",
+            "originalPrice": "2.000000",
+            "discountRate": "0.010000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          }
+        ]
+      }
+    ]
+  },
+  "publishedTime": "2026-09-16 21:47:30",
+  "offShelfFlag": 0,
+  "offShelfDate": null,
+  "buyTypes": [
+    "BY_AMOUNT"
+  ],
+  "providers": [
+    {
+      "providerUid": "channel-1789566616200001345",
+      "providerName": "atom-infinite",
+      "providerDisplayName": "ATOM INFINITE",
+      "providerLogo": "https://maas-public.oss-cn-shanghai.aliyuncs.com/maas-admin/image/2026-09-17/image-db5907a9-a7c3-40.png"
+    }
+  ],
+  "extInfo": "{\"contextLength\":\"256000\",\"exampleCodes\":{\"openAI\":[{\"code\":\"from openai import OpenAI\\n\\nclient = OpenAI(\\n  base_url=\\\"https://maas-api.antdigital.com/v1\\\",\\n  api_key=\\\"<API_KEY>\\\",\\n)\\n\\ncompletion = client.chat.completions.create(\\n  model=\\\"atria-dawn-preview\\\",\\n  messages=[\\n    {\\n      \\\"role\\\": \\\"user\\\",\\n      \\\"content\\\": \\\"What is the meaning of life?\\\"\\n    }\\n  ]\\n)\\nprint(completion.choices[0].message.content)\",\"sectionTitle\":\"\",\"name\":\"python\"},{\"code\":\"curl https://maas-api.antdigital.com/v1/chat/completions \\\\\\n  -H \\\"Content-Type: application/json\\\" \\\\\\n  -H \\\"Authorization: Bearer $API_KEY\\\" \\\\\\n  -d '{\\n    \\\"model\\\": \\\"atria-dawn-preview\\\",\\n    \\\"messages\\\": [ \\n      { \\n        \\\"role\\\": \\\"user\\\",\\n        \\\"content\\\": \\\"What is the meaning of life?\\\"\\n      }\\n    ]\\n  }'\\n\\n\",\"sectionTitle\":\"\",\"name\":\"curl\"}],\"anthropic\":[{\"code\":\"import anthropic\\nclient = anthropic.Anthropic(\\n    api_key=\\\"<API_KEY>\\\", \\n    base_url=\\\"https://maas-api.antdigital.com\\\"\\n)\\nmessage = client.messages.create(\\n    model=\\\"atria-dawn-preview\\\",\\n    max_tokens=1024,\\n    messages=[\\n      {\\\"role\\\": \\\"user\\\", \\\"content\\\": \\\"What is the meaning of life?\\\"}\\n    ]\\n)\\nprint(message.content)\",\"sectionTitle\":\"\",\"name\":\"python\"},{\"code\":\"curl https://maas-api.antdigital.com/v1/messages \\\\\\n--header \\\"x-api-key: $API_KEY\\\" \\\\\\n--header \\\"content-type: application/json\\\" \\\\\\n-d '{ \\n  \\\"model\\\": \\\"atria-dawn-preview\\\", \\n  \\\"messages\\\": [ \\n    {\\\"role\\\": \\\"user\\\", \\\"content\\\": \\\"What is the meaning of life?\\\"} \\n  ] \\n}'\",\"sectionTitle\":\"\",\"name\":\"curl\"}]},\"supportedParametersDefaultValue\":\"\"}",
+  "specs": {
+    "inputPrice": "¥0.0000",
+    "inputPriceHint": "每 1K tokens",
+    "outputPrice": "¥0.0000",
+    "outputPriceHint": "每 1K tokens",
+    "contextLength": "256000",
+    "contextLengthHint": "tokens",
+    "maxOutput": "0",
+    "maxOutputHint": "tokens"
+  },
+  "capabilities": [],
+  "languages": [
+    "文本"
+  ],
+  "scenarios": [
+    "文本"
+  ],
+  "modelParameters": [
+    {
+      "type": "text",
+      "id": "stop_sequences",
+      "label": "stop_sequences",
+      "value": "NULL",
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "text",
+      "id": "system",
+      "label": "system",
+      "value": "NULL",
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "text",
+      "id": "tool_choice",
+      "label": "tool_choice",
+      "value": "NULL",
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "switch",
+      "id": "tools",
+      "label": "tools",
+      "value": true,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "text",
+      "value": "null",
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "id": "max_output_tokens",
+      "label": "max_output_tokens",
+      "value": null,
+      "min": 1,
+      "max": 1000000,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "text",
+      "id": "include",
+      "label": "include",
+      "value": "null",
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "text",
+      "id": "conversation",
+      "label": "conversation",
+      "value": "null",
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "id": "top_logprobs",
+      "label": "top_logprobs",
+      "value": null,
+      "min": 0,
+      "max": 20,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "text",
+      "id": "response_format",
+      "label": "response_format",
+      "value": "text",
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "text / json_object / json_schema",
+      "thousands": null
+    }
+  ],
+  "usageGuide": {
+    "authIntro": "使用 API Key 进行认证，在请求头中添加：",
+    "authBearerPlaceholder": "YOUR_API_KEY",
+    "requestIntro": "支持标准的 OpenAI 参数格式：",
+    "requestExample": "{\n  \"max_tokens\": 4096,\n  \"temperature\": 0.5,\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"你好，请介绍一下自己\"\n    }\n  ],\n  \"model\": \"atria-dawn-preview\"\n}",
+    "responseExample": "{\n  \"created\": 1795353268,\n  \"usage\": {\n    \"completion_tokens\": 12,\n    \"prompt_tokens\": 9,\n    \"total_tokens\": 21\n  },\n  \"model\": \"atria-dawn-preview\",\n  \"id\": \"chatcmpl-123\",\n  \"choices\": [\n    {\n      \"finish_reason\": \"stop\",\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"你好！我是 atria-dawn-preview...\"\n      }\n    }\n  ],\n  \"object\": \"chat.completion\"\n}",
+    "docUrl": "https://api-docs.example.com/",
+    "docLabel": "查看完整 API 文档"
+  },
+  "exampleCodes": {
+    "python": {
+      "sectionTitle": "Python 示例",
+      "installLine": "安装依赖：pip install requests",
+      "code": "import requests\nimport json\n\nurl = \"https://api.example.com/v1/chat/completions\"\nheaders = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n}\n\ndata = {\n    \"model\": \"model-name\",\n    \"messages\": [\n        {\n            \"role\": \"user\",\n            \"content\": \"请写一个 Python 函数计算斐波那契数列\"\n        }\n    ],\n    \"temperature\": 0.7,\n    \"max_tokens\": 4096\n}\n\nresponse = requests.post(url, headers=headers, json=data)\nresult = response.json()\nprint(result[\"choices\"][0][\"message\"][\"content\"])"
+    },
+    "javascript": {
+      "sectionTitle": "JavaScript 示例",
+      "installLine": "无需安装额外依赖（需 Node 18+ 或支持 fetch 的运行环境）",
+      "code": "(async () => {\n  const url = \"https://api.example.com/v1/chat/completions\";\n  const headers = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n  };\n  const data = {\n    model: \"model-name\",\n    messages: [\n      {\n        role: \"user\",\n        content: \"请写一个 Python 函数计算斐波那契数列\"\n      }\n    ],\n    temperature: 0.7,\n    max_tokens: 4096\n  };\n  const response = await fetch(url, {\n    method: \"POST\",\n    headers,\n    body: JSON.stringify(data)\n  });\n  const result = await response.json();\n  console.log(result.choices[0].message.content);\n})();"
+    },
+    "curl": {
+      "sectionTitle": "Curl 示例",
+      "installLine": "说明：macOS / Linux 一般已预装 curl",
+      "code": "curl -X POST \"https://api.example.com/v1/chat/completions\" \\\n  -H \"Authorization: Bearer YOUR_API_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"model\":\"model-name\",\"messages\":[{\"role\":\"user\",\"content\":\"请写一个 Python 函数计算斐波那契数列\"}],\"temperature\":0.7,\"max_tokens\":4096}'"
+    }
+  },
+  "agentIntegrations": [
+    {
+      "id": "codex",
+      "name": "Codex",
+      "description": "Configure MaaS as an OpenAI-compatible model provider.",
+      "zhDescription": "将 MaaS 配置为 Codex 的 OpenAI 兼容模型供应商。",
+      "fileLabel": "~/.codex/config.toml",
+      "language": "toml",
+      "code": "model = \"atria-dawn-preview\"\nmodel_provider = \"maas\"\n\n[model_providers.maas]\nname = \"MaaS\"\nbase_url = \"https://maas-api.antdigital.com/v1\"\nenv_key = \"MAAS_API_KEY\"\nwire_api = \"responses\"",
+      "guideUrl": "/docs/agent-guides/codex"
+    },
+    {
+      "id": "opencode",
+      "name": "OpenCode",
+      "description": "Add MaaS as a custom provider in OpenCode.",
+      "zhDescription": "在 OpenCode 中添加 MaaS 自定义模型供应商。",
+      "fileLabel": "~/.config/opencode/opencode.json",
+      "language": "json",
+      "code": "{\n  \"$schema\": \"https://opencode.ai/config.json\",\n  \"provider\": {\n    \"maas\": {\n      \"npm\": \"@ai-sdk/openai-compatible\",\n      \"name\": \"MaaS\",\n      \"options\": {\n        \"baseURL\": \"https://maas-api.antdigital.com/v1\",\n        \"apiKey\": \"YOUR_MAAS_API_KEY\"\n      },\n      \"models\": {\n        \"atria-dawn-preview\": {\n          \"name\": \"atria-dawn-preview\"\n        }\n      }\n    }\n  },\n  \"model\": \"maas/atria-dawn-preview\"\n}",
+      "guideUrl": "/docs/agent-guides/opencode"
+    }
+  ],
+  "sourceUrl": "https://maas.antdigital.com/models/modelservice-1789566449651001764",
+  "slug": "modelservice-1789566449651001764"
+}

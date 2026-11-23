@@ -1,0 +1,401 @@
+{
+  "slug": "zm-inclusionai-ling-3.0-flash-fin",
+  "uniqueId": "2639MOqyGlR114613959",
+  "name": "inclusionai/ling-3.0-flash-fin",
+  "displayName": "inclusionAI: Ling-3.0-flash-Fin",
+  "provider": "inclusionAI",
+  "manufacturerKey": "inclusionai",
+  "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2026/05/13/aUnfeJ9/Property-1inclusionAI.svg",
+  "zhDescription": "在Ling-3.0-Flash上进行金融增强，面向投资研究中的复杂多步骤任务、长期规划与执行。",
+  "zhLongDescription": "在Ling-3.0-Flash上进行金融增强，面向投资研究中的复杂多步骤任务、长期规划与执行。",
+  "description": "在Ling-3.0-Flash上进行金融增强，面向投资研究中的复杂多步骤任务、长期规划与执行。",
+  "longDescription": "在Ling-3.0-Flash上进行金融增强，面向投资研究中的复杂多步骤任务、长期规划与执行。",
+  "contextLength": 262144,
+  "maxCompletionTokens": 32768,
+  "currency": "USD",
+  "tagList": [
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    }
+  ],
+  "publishedTime": "2026-08-27",
+  "minDiscountRate": "1",
+  "supportedParams": [
+    "frequency_penalty",
+    "instructions",
+    "logprobs",
+    "max_completion_tokens",
+    "max_output_tokens",
+    "max_tokens",
+    "parallel_tool_calls",
+    "presence_penalty",
+    "response_format",
+    "stop",
+    "stop_sequences",
+    "system",
+    "temperature",
+    "text",
+    "thinking",
+    "tool_choice",
+    "tools",
+    "top_k",
+    "top_logprobs",
+    "top_p"
+  ],
+  "supportedProtocols": [
+    "chat.completions",
+    "messages",
+    "responses"
+  ],
+  "reasoning": 3,
+  "reasoningModes": [
+    3
+  ],
+  "providerNames": [
+    "NovitaAI"
+  ],
+  "providerDetails": [
+    {
+      "name": "NovitaAI",
+      "slug": "novita",
+      "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2025/12/04/p5JAWDQ/Property-1Novita.svg",
+      "contextLength": 262144,
+      "maxCompletionTokens": 32768,
+      "supportsStreaming": true,
+      "apiProtocols": {
+        "messages": {
+          "supported_parameters": [
+            "max_tokens",
+            "stop_sequences",
+            "system",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p"
+          ],
+          "supports_reasoning": 3
+        },
+        "responses": {
+          "supported_parameters": [
+            "max_output_tokens",
+            "text",
+            "instructions",
+            "temperature",
+            "tools",
+            "top_p",
+            "tool_choice",
+            "parallel_tool_calls"
+          ],
+          "supports_reasoning": 3
+        },
+        "chat.completions": {
+          "supported_parameters": [
+            "tools",
+            "temperature",
+            "top_p",
+            "presence_penalty",
+            "frequency_penalty",
+            "max_completion_tokens",
+            "stop",
+            "tool_choice",
+            "response_format",
+            "logprobs",
+            "top_logprobs",
+            "parallel_tool_calls",
+            "thinking"
+          ],
+          "supports_reasoning": 3
+        }
+      },
+      "pricingDiscount": "1",
+      "priceInfo": {
+        "prices": [
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "OUTPUT",
+                "priceNameZH": "模型生成输出内容的费用(completion)",
+                "priceValue": "0.2200000000",
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "completion",
+                "constraints": []
+              }
+            ]
+          },
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "INPUT_CACHE_READ",
+                "priceNameZH": "缓存读取操作费用(input_cache_read)",
+                "priceValue": "0.0150000000",
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "input_cache_read",
+                "constraints": []
+              }
+            ]
+          },
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "INPUT",
+                "priceNameZH": "输入提示词的处理费用(prompt)",
+                "priceValue": "0.0750000000",
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "prompt",
+                "constraints": []
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "modelProtocolCompatibility": {
+    "chat.completions": true,
+    "messages": true,
+    "responses": true
+  },
+  "supportedParametersDefaultValue": {
+    "frequency_penalty": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "instructions": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "logprobs": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "max_completion_tokens": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "max_output_tokens": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "max_tokens": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "parallel_tool_calls": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "presence_penalty": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "response_format": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "stop": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "stop_sequences": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "system": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "temperature": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "text": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "thinking": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "tool_choice": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "tools": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "top_k": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "top_logprobs": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "top_p": {
+      "enable": true,
+      "defaultValue": null
+    }
+  },
+  "priceInfo": {
+    "prices": [
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "OUTPUT",
+            "priceNameZH": "模型生成输出内容的费用(completion)",
+            "priceValue": "0.2200000000",
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "completion",
+            "constraints": []
+          }
+        ]
+      },
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "INPUT_CACHE_READ",
+            "priceNameZH": "缓存读取操作费用(input_cache_read)",
+            "priceValue": "0.0150000000",
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "INPUT",
+            "sourceFeeCode": "input_cache_read",
+            "constraints": []
+          }
+        ]
+      },
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "INPUT",
+            "priceNameZH": "输入提示词的处理费用(prompt)",
+            "priceValue": "0.0750000000",
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "INPUT",
+            "sourceFeeCode": "prompt",
+            "constraints": []
+          }
+        ]
+      }
+    ]
+  },
+  "pricingDetails": [
+    {
+      "feeItemCode": "completion",
+      "feeItemName": "模型生成输出内容的费用(completion)",
+      "feeRecords": [
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            }
+          ],
+          "feeRate": "0.2200000000"
+        }
+      ],
+      "selectedConstraint": [
+        "chargeUnit"
+      ]
+    },
+    {
+      "feeItemCode": "input_cache_read",
+      "feeItemName": "缓存读取操作费用(input_cache_read)",
+      "feeRecords": [
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            }
+          ],
+          "feeRate": "0.0150000000"
+        }
+      ],
+      "selectedConstraint": [
+        "chargeUnit"
+      ]
+    },
+    {
+      "feeItemCode": "prompt",
+      "feeItemName": "输入提示词的处理费用(prompt)",
+      "feeRecords": [
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            }
+          ],
+          "feeRate": "0.0750000000"
+        }
+      ],
+      "selectedConstraint": [
+        "chargeUnit"
+      ]
+    }
+  ],
+  "sourcePublishedPrices": {
+    "pricing_completion": "0.22",
+    "pricing_discount": "1",
+    "pricing_prompt": "0.075"
+  },
+  "exampleCodes": [],
+  "serviceConfiguration": "服务配置待开通；接入地址、鉴权和可用协议以开通后的服务配置为准。",
+  "sourceRegion": "global",
+  "sourceCatalog": "ZenMux",
+  "sourceUrl": "https://zenmux.ai/inclusionai/ling-3.0-flash-fin",
+  "detailVerified": true,
+  "aliases": [
+    "ling-3.0-flash-fin"
+  ],
+  "isFree": false
+}

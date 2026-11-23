@@ -1,0 +1,446 @@
+{
+  "uniqueId": "modelservice-1786686156006001910",
+  "name": "kimi-k3",
+  "displayName": "Kimi K3",
+  "provider": "Moonshot",
+  "description": "Kimi K3 is Kimi’s most capable flagship model to date. With 2.8 trillion parameters, it is built on Kimi Delta Attention (KDA), a hybrid linear attention architecture, and Attention Residuals. The model natively supports visual understanding and features a 1-million-token context window. As the world’s first open-source model in the 3-trillion-parameter class, Kimi K3 is designed for frontier workloads such as long-horizon coding, knowledge work, and reasoning.",
+  "zhDescription": "Kimi K3 是 Kimi 迄今能力最强的旗舰模型，拥有 2.8 万亿参数，基于 KDA 混合线性注意力机制（Kimi Delta Attention）和注意力残差（Attention Residuals）技术构建，原生支持视觉理解，并拥有 100 万 token 上下文窗口。它是全球首个开源的 3 万亿级别模型，面向长程编程、知识工作和推理等前沿智能场景而设计。",
+  "longDescription": "Kimi K3 is Kimi’s most capable flagship model to date. With 2.8 trillion parameters, it is built on Kimi Delta Attention (KDA), a hybrid linear attention architecture, and Attention Residuals. The model natively supports visual understanding and features a 1-million-token context window. As the world’s first open-source model in the 3-trillion-parameter class, Kimi K3 is designed for frontier workloads such as long-horizon coding, knowledge work, and reasoning.",
+  "zhLongDescription": "Kimi K3 是 Kimi 迄今能力最强的旗舰模型，拥有 2.8 万亿参数，基于 KDA 混合线性注意力机制（Kimi Delta Attention）和注意力残差（Attention Residuals）技术构建，原生支持视觉理解，并拥有 100 万 token 上下文窗口。它是全球首个开源的 3 万亿级别模型，面向长程编程、知识工作和推理等前沿智能场景而设计。",
+  "contextLength": "1000000",
+  "maxCompletionTokens": 1000000,
+  "maxTokens": 1000000,
+  "currency": null,
+  "inPrice": null,
+  "outPrice": null,
+  "inPriceZh": null,
+  "outPriceZh": null,
+  "inHitCachePrice": "¥0.00/M",
+  "inHitCreatePrice": "¥2.000000/M",
+  "tagList": [
+    {
+      "type": "MODEL_TYPE",
+      "key": "VISUAL_UNDERSTANDING",
+      "value": "视觉理解"
+    },
+    {
+      "type": "MODEL_TYPE",
+      "key": "TEXT_GENERATE",
+      "value": "文本生成"
+    },
+    {
+      "type": "MODEL_TYPE",
+      "key": "CODE_GENERATE",
+      "value": "代码生成"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "VIDEO",
+      "value": "视频"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    }
+  ],
+  "type": "VISUAL_UNDERSTANDING",
+  "typeList": [
+    "TEXT_GENERATE",
+    "CODE_GENERATE",
+    "VISUAL_UNDERSTANDING"
+  ],
+  "supportedParametersDefaultValue": {
+    "temperature": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "top_p": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "top_k": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "max_tokens": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "enable_search": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "enable_thinking": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "thinking_budget": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    }
+  },
+  "protocolParameters": [
+    {
+      "protocolName": "anthropic_message",
+      "displayName": "Anthropic Message",
+      "parameters": {
+        "metadata": false,
+        "service_tier": false,
+        "stop_sequences": false,
+        "stream": true,
+        "system": true,
+        "temperature": false,
+        "thinking": false,
+        "tool_choice": true,
+        "tools": true,
+        "top_k": false,
+        "top_p": false
+      }
+    },
+    {
+      "protocolName": "openai_chat_completions",
+      "displayName": "OpenAI Chat Completions",
+      "parameters": {
+        "seed": false,
+        "web_search_options": false,
+        "user": false,
+        "top_p": false,
+        "top_logprobs": true,
+        "tools": true,
+        "tool_choice": true,
+        "temperature": false,
+        "stream_options": true,
+        "stream": true,
+        "store": false,
+        "service_tier": false,
+        "audio": false,
+        "response_format": true,
+        "reasoning_effort": true,
+        "presence_penalty": false,
+        "prediction": true,
+        "parallel_tool_calls": false,
+        "n": false,
+        "modalities": false,
+        "metadata": false,
+        "logprobs": true,
+        "logit_bias": false,
+        "frequency_penalty": false
+      }
+    }
+  ],
+  "modelProtocolCompatibility": {
+    "System One": false,
+    "google video": false,
+    "dashscope": false,
+    "google_gemini": false,
+    "anthropic_message": true,
+    "openai_responses": false,
+    "openai_chat_completions": true
+  },
+  "minDiscountRate": "0.850000",
+  "priceInfo": {
+    "lowestProviderPrice": {
+      "inputPrice": {
+        "priceCode": "INPUT",
+        "priceName": "Input",
+        "priceNameZH": "输入",
+        "priceValue": "20.000000",
+        "originalPrice": "20.000000",
+        "discountRate": "1.000000",
+        "unitCode": "M_TOKENS",
+        "unitName": "M",
+        "unitNameZh": "M",
+        "direction": "INPUT",
+        "fixedName": "M Tokens",
+        "fixedNameZh": "百万Tokens"
+      },
+      "outputPrice": {
+        "priceCode": "OUTPUT",
+        "priceName": "Output",
+        "priceNameZH": "输出",
+        "priceValue": "100.000000",
+        "originalPrice": "100.000000",
+        "discountRate": "1.000000",
+        "unitCode": "M_TOKENS",
+        "unitName": "M",
+        "unitNameZh": "M",
+        "direction": "OUTPUT",
+        "fixedName": "M Tokens",
+        "fixedNameZh": "百万Tokens"
+      }
+    },
+    "prices": [
+      {
+        "stage": "",
+        "stageText": "",
+        "type": null,
+        "priceCurrency": "CNY",
+        "price": [
+          {
+            "priceCode": "INPUT",
+            "priceName": "Input",
+            "priceNameZH": "输入",
+            "priceValue": "17.000000",
+            "originalPrice": "20.000000",
+            "discountRate": "0.850000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "OUTPUT",
+            "priceName": "Output",
+            "priceNameZH": "输出",
+            "priceValue": "85.000000",
+            "originalPrice": "100.000000",
+            "discountRate": "0.850000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "OUTPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "INPUT_CACHE_HIT",
+            "priceName": "Input (Cache Hit)",
+            "priceNameZH": "输入（命中缓存）",
+            "priceValue": "1.700000",
+            "originalPrice": "2.000000",
+            "discountRate": "0.850000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          }
+        ]
+      }
+    ]
+  },
+  "publishedTime": "2026-08-14 13:42:36",
+  "offShelfFlag": 0,
+  "offShelfDate": null,
+  "buyTypes": [
+    "BY_AMOUNT",
+    "BY_CREDIT"
+  ],
+  "providers": [
+    {
+      "providerUid": "channel-1779290799108001040",
+      "providerName": "antdigital",
+      "providerDisplayName": "蚂蚁数字科技",
+      "providerLogo": "https://maas-public.oss-cn-shanghai.aliyuncs.com/maas-admin/image/2026-09-10/image-4cf4a41f-3ae4-42.png"
+    },
+    {
+      "providerUid": "channel-1782442637324001236",
+      "providerName": "moonshot",
+      "providerDisplayName": "Moonshot AI",
+      "providerLogo": "https://maas-public.oss-cn-shanghai.aliyuncs.com/maas-admin/image/2026-09-10/image-6f16fb0b-d25f-4e.png"
+    }
+  ],
+  "extInfo": "{\"contextLength\":\"1000000\",\"exampleCodes\":{\"openAI\":[{\"code\":\"from openai import OpenAI\\n\\nclient = OpenAI(\\n  base_url=\\\"https://maas-api.antdigital.com/v1\\\",\\n  api_key=\\\"<API_KEY>\\\",\\n)\\n\\n# Chat Completion\\ncompletion = client.chat.completions.create(\\n  model=\\\"kimi-k3\\\",\\n  messages=[\\n    {\\n      \\\"role\\\": \\\"user\\\",\\n      \\\"content\\\": \\\"What is the meaning of life?\\\"\\n    }\\n  ]\\n)\\nprint(completion.choices[0].message.content)\",\"sectionTitle\":\"\",\"name\":\"python\"},{\"code\":\"# Chat Completion\\ncurl https://maas-api.antdigital.com/v1/chat/completions \\\\\\n-H \\\"Content-Type: application/json\\\" \\\\\\n-H \\\"Authorization: Bearer $API_KEY\\\" \\\\\\n-d '{\\n  \\\"model\\\": \\\"kimi-k3\\\",\\n  \\\"messages\\\": [ \\n    { \\n      \\\"role\\\": \\\"user\\\",\\n      \\\"content\\\": \\\"What is the meaning of life?\\\"\\n    }\\n  ]\\n}'\",\"sectionTitle\":\"\",\"name\":\"curl\"}],\"dashscope\":[{\"code\":\"import os\\nfrom dashscope import MultiModalConversation\\nimport dashscope\\ndashscope.base_http_api_url = 'https://maas-api.antdigital.com/api/v1'\\n\\nmessages = [\\n    {\\\"role\\\": \\\"system\\\", \\\"content\\\": [{\\\"text\\\": \\\"You are a helpful assistant.\\\"}]},\\n    {\\\"role\\\": \\\"user\\\", \\\"content\\\": [{\\\"text\\\": \\\"你是谁？\\\"}]},\\n]\\nresponse = MultiModalConversation.call(\\n    api_key=\\\"<API_KEY>\\\",\\n    model=\\\"kimi-k3\\\",\\n    messages=messages,\\n)\\n\\nif response.status_code == 200:\\n    # 打印思考过程\\n    print(\\\"=\\\" * 20 + \\\"思考过程\\\" + \\\"=\\\" * 20)\\n    print(response.output.choices[0].message.content[0].get(\\\"reasoning\\\", \\\"\\\"))\\n\\n    # 打印回复\\n    print(\\\"=\\\" * 20 + \\\"完整回复\\\" + \\\"=\\\" * 20)\\n    print(response.output.choices[0].message.content[0][\\\"text\\\"])\\nelse:\\n    print(f\\\"HTTP返回码：{response.status_code}\\\")\\n    print(f\\\"错误码：{response.code}\\\")\\n    print(f\\\"错误信息：{response.message}\\\")\",\"sectionTitle\":\"\",\"name\":\"python\"},{\"code\":\"curl -X POST 'https://maas-api.antdigital.com/api/v1/services/aigc/multimodal-generation/generation' \\\\\\n  -H 'Content-Type: application/json' \\\\\\n  -H 'Authorization: Bearer $API_KEY' \\\\\\n  -d '{\\n    \\\"model\\\": \\\"kimi-k3\\\",\\n    \\\"input\\\": {\\n        \\\"messages\\\": [\\n            {\\n                \\\"role\\\": \\\"system\\\",\\n                \\\"content\\\": [{\\\"text\\\": \\\"You are a helpful assistant.\\\"}]\\n            },\\n            {\\n                \\\"role\\\": \\\"user\\\",\\n                \\\"content\\\": [{\\\"text\\\": \\\"你是谁？\\\"}]\\n            }\\n        ]\\n    }\\n}'\",\"sectionTitle\":\"\",\"name\":\"curl\"}],\"anthropic\":[{\"code\":\"import anthropic\\nclient = anthropic.Anthropic(\\n    api_key=\\\"<API_KEY>\\\", \\n    base_url=\\\"https://maas-api.antdigital.com/v1\\\"\\n)\\nmessage = client.messages.create(\\n    model=\\\"kimi-k3\\\",\\n    max_tokens=1024,\\n    messages=[\\n      {\\\"role\\\": \\\"user\\\", \\\"content\\\": \\\"Hello, Claude\\\"}\\n    ]\\n)\\nprint(message.content)\\n\",\"sectionTitle\":\"\",\"name\":\"python\"},{\"code\":\"curl https://maas-api.antdigital.com/v1/messages \\\\\\n  --header \\\"x-api-key: $API_KEY\\\" \\\\\\n  --header \\\"anthropic-version: 2023-06-01\\\" \\\\\\n  --header \\\"content-type: application/json\\\" \\\\\\n  -d '{ \\n    \\\"model\\\": \\\"kimi-k3\\\", \\n    \\\"max_tokens\\\": 1024,\\n    \\\"messages\\\": [\\n      {\\\"role\\\": \\\"user\\\", \\\"content\\\": \\\"Hello, world\\\"}\\n    ]\\n  }'\\n\",\"sectionTitle\":\"\",\"name\":\"curl\"}]},\"supportedParametersDefaultValue\":\"\"}",
+  "specs": {
+    "inputPrice": "¥0.0000",
+    "inputPriceHint": "每 1K tokens",
+    "outputPrice": "¥0.0000",
+    "outputPriceHint": "每 1K tokens",
+    "contextLength": "1000000",
+    "contextLengthHint": "tokens",
+    "maxOutput": "0",
+    "maxOutputHint": "tokens"
+  },
+  "capabilities": [],
+  "languages": [
+    "文本",
+    "图像",
+    "视频"
+  ],
+  "scenarios": [
+    "文本"
+  ],
+  "modelParameters": [
+    {
+      "type": "switch",
+      "id": "stream",
+      "label": "stream",
+      "value": true,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "text",
+      "id": "system",
+      "label": "system",
+      "value": "NULL",
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "text",
+      "id": "tool_choice",
+      "label": "tool_choice",
+      "value": "NULL",
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "text",
+      "id": "tools",
+      "label": "tools",
+      "value": "NULL",
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "id": "top_logprobs",
+      "label": "top_logprobs",
+      "value": null,
+      "min": 0,
+      "max": 20,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "switch",
+      "id": "stream_options",
+      "label": "stream_options",
+      "value": true,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "text",
+      "id": "response_format",
+      "label": "response_format",
+      "value": "text",
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "text / json_object / json_schema",
+      "thousands": null
+    },
+    {
+      "type": "select",
+      "id": "reasoning_effort",
+      "label": "reasoning_effort",
+      "value": "medium",
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "text",
+      "id": "prediction",
+      "label": "prediction",
+      "value": "null",
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "switch",
+      "id": "logprobs",
+      "label": "logprobs",
+      "value": true,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    }
+  ],
+  "usageGuide": {
+    "authIntro": "使用 API Key 进行认证，在请求头中添加：",
+    "authBearerPlaceholder": "YOUR_API_KEY",
+    "requestIntro": "支持标准的 OpenAI 参数格式：",
+    "requestExample": "{\n  \"max_tokens\": 4096,\n  \"temperature\": 0.5,\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"你好，请介绍一下自己\"\n    }\n  ],\n  \"model\": \"kimi-k3\"\n}",
+    "responseExample": "{\n  \"created\": 1795353265,\n  \"usage\": {\n    \"completion_tokens\": 12,\n    \"prompt_tokens\": 9,\n    \"total_tokens\": 21\n  },\n  \"model\": \"kimi-k3\",\n  \"id\": \"chatcmpl-123\",\n  \"choices\": [\n    {\n      \"finish_reason\": \"stop\",\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"你好！我是 kimi-k3...\"\n      }\n    }\n  ],\n  \"object\": \"chat.completion\"\n}",
+    "docUrl": "https://api-docs.example.com/",
+    "docLabel": "查看完整 API 文档"
+  },
+  "exampleCodes": {
+    "python": {
+      "sectionTitle": "Python 示例",
+      "installLine": "安装依赖：pip install requests",
+      "code": "import requests\nimport json\n\nurl = \"https://api.example.com/v1/chat/completions\"\nheaders = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n}\n\ndata = {\n    \"model\": \"model-name\",\n    \"messages\": [\n        {\n            \"role\": \"user\",\n            \"content\": \"请写一个 Python 函数计算斐波那契数列\"\n        }\n    ],\n    \"temperature\": 0.7,\n    \"max_tokens\": 4096\n}\n\nresponse = requests.post(url, headers=headers, json=data)\nresult = response.json()\nprint(result[\"choices\"][0][\"message\"][\"content\"])"
+    },
+    "javascript": {
+      "sectionTitle": "JavaScript 示例",
+      "installLine": "无需安装额外依赖（需 Node 18+ 或支持 fetch 的运行环境）",
+      "code": "(async () => {\n  const url = \"https://api.example.com/v1/chat/completions\";\n  const headers = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n  };\n  const data = {\n    model: \"model-name\",\n    messages: [\n      {\n        role: \"user\",\n        content: \"请写一个 Python 函数计算斐波那契数列\"\n      }\n    ],\n    temperature: 0.7,\n    max_tokens: 4096\n  };\n  const response = await fetch(url, {\n    method: \"POST\",\n    headers,\n    body: JSON.stringify(data)\n  });\n  const result = await response.json();\n  console.log(result.choices[0].message.content);\n})();"
+    },
+    "curl": {
+      "sectionTitle": "Curl 示例",
+      "installLine": "说明：macOS / Linux 一般已预装 curl",
+      "code": "curl -X POST \"https://api.example.com/v1/chat/completions\" \\\n  -H \"Authorization: Bearer YOUR_API_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"model\":\"model-name\",\"messages\":[{\"role\":\"user\",\"content\":\"请写一个 Python 函数计算斐波那契数列\"}],\"temperature\":0.7,\"max_tokens\":4096}'"
+    }
+  },
+  "agentIntegrations": [
+    {
+      "id": "codex",
+      "name": "Codex",
+      "description": "Configure MaaS as an OpenAI-compatible model provider.",
+      "zhDescription": "将 MaaS 配置为 Codex 的 OpenAI 兼容模型供应商。",
+      "fileLabel": "~/.codex/config.toml",
+      "language": "toml",
+      "code": "model = \"kimi-k3\"\nmodel_provider = \"maas\"\n\n[model_providers.maas]\nname = \"MaaS\"\nbase_url = \"https://maas-api.antdigital.com/v1\"\nenv_key = \"MAAS_API_KEY\"\nwire_api = \"responses\"",
+      "guideUrl": "/docs/agent-guides/codex"
+    },
+    {
+      "id": "opencode",
+      "name": "OpenCode",
+      "description": "Add MaaS as a custom provider in OpenCode.",
+      "zhDescription": "在 OpenCode 中添加 MaaS 自定义模型供应商。",
+      "fileLabel": "~/.config/opencode/opencode.json",
+      "language": "json",
+      "code": "{\n  \"$schema\": \"https://opencode.ai/config.json\",\n  \"provider\": {\n    \"maas\": {\n      \"npm\": \"@ai-sdk/openai-compatible\",\n      \"name\": \"MaaS\",\n      \"options\": {\n        \"baseURL\": \"https://maas-api.antdigital.com/v1\",\n        \"apiKey\": \"YOUR_MAAS_API_KEY\"\n      },\n      \"models\": {\n        \"kimi-k3\": {\n          \"name\": \"kimi-k3\"\n        }\n      }\n    }\n  },\n  \"model\": \"maas/kimi-k3\"\n}",
+      "guideUrl": "/docs/agent-guides/opencode"
+    }
+  ],
+  "sourceUrl": "https://maas.antdigital.com/models/modelservice-1786686156006001910",
+  "slug": "modelservice-1786686156006001910"
+}

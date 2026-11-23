@@ -1,0 +1,333 @@
+{
+  "slug": "zm-google-gemma-4-31b-it",
+  "uniqueId": "2635MOqM8amy14613927",
+  "name": "google/gemma-4-31b-it",
+  "displayName": "Google: Gemma 4 31B IT",
+  "provider": "Google",
+  "manufacturerKey": "google",
+  "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2026/04/13/QgpuHH0/Property-1Gemini.svg",
+  "zhDescription": "31B开源指令微调多模态模型，支持256K上下文、工具调用与可配置思考，面向代码、Agent及图像理解。",
+  "zhLongDescription": "31B开源指令微调多模态模型，支持256K上下文、工具调用与可配置思考，面向代码、Agent及图像理解。",
+  "description": "31B开源指令微调多模态模型，支持256K上下文、工具调用与可配置思考，面向代码、Agent及图像理解。",
+  "longDescription": "31B开源指令微调多模态模型，支持256K上下文、工具调用与可配置思考，面向代码、Agent及图像理解。",
+  "contextLength": 262144,
+  "maxCompletionTokens": 65535,
+  "currency": "USD",
+  "tagList": [
+    {
+      "type": "INPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "VIDEO",
+      "value": "视频"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    }
+  ],
+  "publishedTime": "2026-04-02",
+  "minDiscountRate": "1",
+  "supportedParams": [
+    "frequency_penalty",
+    "logprobs",
+    "max_completion_tokens",
+    "max_output_tokens",
+    "max_tokens",
+    "output_config",
+    "presence_penalty",
+    "response_format",
+    "seed",
+    "stop",
+    "stop_sequences",
+    "temperature",
+    "text",
+    "tools",
+    "top_k",
+    "top_p"
+  ],
+  "supportedProtocols": [
+    "chat.completions",
+    "gemini",
+    "messages",
+    "responses"
+  ],
+  "reasoning": 1,
+  "reasoningModes": [
+    1
+  ],
+  "providerNames": [
+    "NovitaAI"
+  ],
+  "providerDetails": [
+    {
+      "name": "NovitaAI",
+      "slug": "novita",
+      "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2025/12/04/p5JAWDQ/Property-1Novita.svg",
+      "contextLength": 262144,
+      "maxCompletionTokens": 65535,
+      "supportsStreaming": true,
+      "apiProtocols": {
+        "chat.completions": {
+          "supported_parameters": [
+            "temperature",
+            "top_p",
+            "top_k",
+            "max_completion_tokens",
+            "stop",
+            "logprobs",
+            "presence_penalty",
+            "frequency_penalty",
+            "seed",
+            "response_format",
+            "tools"
+          ],
+          "supports_reasoning": 1
+        },
+        "messages": {
+          "supported_parameters": [
+            "max_tokens",
+            "temperature",
+            "top_p",
+            "top_k",
+            "stop_sequences",
+            "output_config",
+            "tools"
+          ],
+          "supports_reasoning": 1
+        },
+        "responses": {
+          "supported_parameters": [
+            "temperature",
+            "top_p",
+            "top_k",
+            "max_output_tokens",
+            "stop",
+            "text",
+            "tools"
+          ],
+          "supports_reasoning": 1
+        }
+      },
+      "pricingDiscount": "1",
+      "priceInfo": {
+        "prices": [
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "OUTPUT",
+                "priceNameZH": "模型生成输出内容的费用(completion)",
+                "priceValue": 0.4,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "completion",
+                "constraints": []
+              }
+            ]
+          },
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "INPUT",
+                "priceNameZH": "输入提示词的处理费用(prompt)",
+                "priceValue": 0.14,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "prompt",
+                "constraints": []
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "modelProtocolCompatibility": {
+    "chat.completions": true,
+    "gemini": true,
+    "messages": true,
+    "responses": true
+  },
+  "supportedParametersDefaultValue": {
+    "frequency_penalty": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "logprobs": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "max_completion_tokens": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "max_output_tokens": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "max_tokens": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "output_config": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "presence_penalty": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "response_format": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "seed": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "stop": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "stop_sequences": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "temperature": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "text": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "tools": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "top_k": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "top_p": {
+      "enable": true,
+      "defaultValue": null
+    }
+  },
+  "priceInfo": {
+    "prices": [
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "OUTPUT",
+            "priceNameZH": "模型生成输出内容的费用(completion)",
+            "priceValue": 0.4,
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "completion",
+            "constraints": []
+          }
+        ]
+      },
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "INPUT",
+            "priceNameZH": "输入提示词的处理费用(prompt)",
+            "priceValue": 0.14,
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "INPUT",
+            "sourceFeeCode": "prompt",
+            "constraints": []
+          }
+        ]
+      }
+    ]
+  },
+  "pricingDetails": [
+    {
+      "feeItemCode": "completion",
+      "feeItemName": "模型生成输出内容的费用(completion)",
+      "feeRecords": [
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            }
+          ],
+          "feeRate": 0.4
+        }
+      ],
+      "selectedConstraint": [
+        "chargeUnit"
+      ]
+    },
+    {
+      "feeItemCode": "prompt",
+      "feeItemName": "输入提示词的处理费用(prompt)",
+      "feeRecords": [
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            }
+          ],
+          "feeRate": 0.14
+        }
+      ],
+      "selectedConstraint": [
+        "chargeUnit"
+      ]
+    }
+  ],
+  "sourcePublishedPrices": {
+    "pricing_completion": "0.4",
+    "pricing_discount": "1",
+    "pricing_prompt": "0.14"
+  },
+  "exampleCodes": [],
+  "serviceConfiguration": "服务配置待开通；接入地址、鉴权和可用协议以开通后的服务配置为准。",
+  "sourceRegion": "global",
+  "sourceCatalog": "ZenMux",
+  "sourceUrl": "https://zenmux.ai/google/gemma-4-31b-it",
+  "detailVerified": true,
+  "aliases": [
+    "gemma-4-31B-it"
+  ],
+  "isFree": false
+}

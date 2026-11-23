@@ -1,0 +1,494 @@
+{
+  "slug": "zm-meta-muse-spark-1.3-contributor",
+  "uniqueId": "2636MOG51ZLq14613945",
+  "name": "meta/muse-spark-1.3-contributor",
+  "displayName": "Meta: Muse Spark 1.3 Contributor",
+  "provider": "Meta",
+  "manufacturerKey": "meta",
+  "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2025/11/27/peG8J09/Property-1Meta.svg",
+  "zhDescription": "Muse Spark 1.3的经济贡献者档，适合实验、学习和早期Agent开发，支持长期任务中的信息跟踪与多Agent协作。",
+  "zhLongDescription": "Muse Spark 1.3的经济贡献者档，适合实验、学习和早期Agent开发，支持长期任务中的信息跟踪与多Agent协作。",
+  "description": "Muse Spark 1.3的经济贡献者档，适合实验、学习和早期Agent开发，支持长期任务中的信息跟踪与多Agent协作。",
+  "longDescription": "Muse Spark 1.3的经济贡献者档，适合实验、学习和早期Agent开发，支持长期任务中的信息跟踪与多Agent协作。",
+  "contextLength": 1048576,
+  "maxCompletionTokens": 128000,
+  "currency": "USD",
+  "tagList": [
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "FILE",
+      "value": "文件"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "AUDIO",
+      "value": "音频"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "VIDEO",
+      "value": "视频"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    }
+  ],
+  "publishedTime": "2026-09-03",
+  "minDiscountRate": "1",
+  "supportedParams": [
+    "conversation",
+    "include",
+    "instructions",
+    "max_completion_tokens",
+    "max_output_tokens",
+    "max_tokens",
+    "max_tool_calls",
+    "output_config",
+    "parallel_tool_calls",
+    "previous_response_id",
+    "prompt",
+    "prompt_cache_key",
+    "prompt_cache_retention",
+    "response_format",
+    "safety_identifier",
+    "system",
+    "temperature",
+    "text",
+    "tool_choice",
+    "tools",
+    "top_logprobs",
+    "top_p",
+    "truncation"
+  ],
+  "supportedProtocols": [
+    "chat.completions",
+    "messages",
+    "responses"
+  ],
+  "reasoning": 2,
+  "reasoningModes": [
+    2
+  ],
+  "providerNames": [
+    "Meta"
+  ],
+  "providerDetails": [
+    {
+      "name": "Meta",
+      "slug": "meta",
+      "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2025/11/27/peG8J09/Property-1Meta.svg",
+      "contextLength": 1048576,
+      "maxCompletionTokens": 128000,
+      "supportsStreaming": true,
+      "apiProtocols": {
+        "messages": {
+          "supported_parameters": [
+            "system",
+            "max_tokens",
+            "temperature",
+            "output_config",
+            "top_p",
+            "tools",
+            "tool_choice"
+          ],
+          "supports_reasoning": 2
+        },
+        "responses": {
+          "supported_parameters": [
+            "conversation",
+            "include",
+            "instructions",
+            "max_output_tokens",
+            "max_tool_calls",
+            "previous_response_id",
+            "prompt",
+            "prompt_cache_key",
+            "prompt_cache_retention",
+            "safety_identifier",
+            "temperature",
+            "text",
+            "top_p",
+            "top_logprobs",
+            "truncation",
+            "tools",
+            "tool_choice",
+            "parallel_tool_calls"
+          ],
+          "supports_reasoning": 2
+        },
+        "chat.completions": {
+          "supported_parameters": [
+            "response_format",
+            "tools",
+            "tool_choice",
+            "max_completion_tokens",
+            "prompt_cache_key",
+            "prompt_cache_retention"
+          ],
+          "supports_reasoning": 2
+        }
+      },
+      "pricingDiscount": "1",
+      "priceInfo": {
+        "prices": [
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "OUTPUT",
+                "priceNameZH": "模型生成输出内容的费用(completion)",
+                "priceValue": 0.2,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "completion",
+                "constraints": []
+              }
+            ]
+          },
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "INPUT_CACHE_READ",
+                "priceNameZH": "缓存读取操作费用(input_cache_read)",
+                "priceValue": 0.002,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "input_cache_read",
+                "constraints": []
+              }
+            ]
+          },
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "INPUT",
+                "priceNameZH": "输入提示词的处理费用(prompt)",
+                "priceValue": 0.1,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "prompt",
+                "constraints": []
+              }
+            ]
+          },
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "WEB_SEARCH",
+                "priceNameZH": "网络搜索功能调用费用(web_search)",
+                "priceValue": 0.0025,
+                "unitCode": "COUNT",
+                "fixedNameZh": "次",
+                "priceCurrency": "USD",
+                "direction": "OTHER",
+                "sourceFeeCode": "web_search",
+                "constraints": []
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "modelProtocolCompatibility": {
+    "chat.completions": true,
+    "messages": true,
+    "responses": true
+  },
+  "supportedParametersDefaultValue": {
+    "conversation": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "include": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "instructions": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "max_completion_tokens": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "max_output_tokens": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "max_tokens": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "max_tool_calls": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "output_config": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "parallel_tool_calls": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "previous_response_id": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "prompt": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "prompt_cache_key": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "prompt_cache_retention": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "response_format": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "safety_identifier": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "system": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "temperature": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "text": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "tool_choice": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "tools": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "top_logprobs": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "top_p": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "truncation": {
+      "enable": true,
+      "defaultValue": null
+    }
+  },
+  "priceInfo": {
+    "prices": [
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "OUTPUT",
+            "priceNameZH": "模型生成输出内容的费用(completion)",
+            "priceValue": 0.2,
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "completion",
+            "constraints": []
+          }
+        ]
+      },
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "INPUT_CACHE_READ",
+            "priceNameZH": "缓存读取操作费用(input_cache_read)",
+            "priceValue": 0.002,
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "INPUT",
+            "sourceFeeCode": "input_cache_read",
+            "constraints": []
+          }
+        ]
+      },
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "INPUT",
+            "priceNameZH": "输入提示词的处理费用(prompt)",
+            "priceValue": 0.1,
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "INPUT",
+            "sourceFeeCode": "prompt",
+            "constraints": []
+          }
+        ]
+      },
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "WEB_SEARCH",
+            "priceNameZH": "网络搜索功能调用费用(web_search)",
+            "priceValue": 0.0025,
+            "unitCode": "COUNT",
+            "fixedNameZh": "次",
+            "priceCurrency": "USD",
+            "direction": "OTHER",
+            "sourceFeeCode": "web_search",
+            "constraints": []
+          }
+        ]
+      }
+    ]
+  },
+  "pricingDetails": [
+    {
+      "feeItemCode": "completion",
+      "feeItemName": "模型生成输出内容的费用(completion)",
+      "feeRecords": [
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            }
+          ],
+          "feeRate": 0.2
+        }
+      ],
+      "selectedConstraint": [
+        "chargeUnit"
+      ]
+    },
+    {
+      "feeItemCode": "input_cache_read",
+      "feeItemName": "缓存读取操作费用(input_cache_read)",
+      "feeRecords": [
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            }
+          ],
+          "feeRate": 0.002
+        }
+      ],
+      "selectedConstraint": [
+        "chargeUnit"
+      ]
+    },
+    {
+      "feeItemCode": "prompt",
+      "feeItemName": "输入提示词的处理费用(prompt)",
+      "feeRecords": [
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            }
+          ],
+          "feeRate": 0.1
+        }
+      ],
+      "selectedConstraint": [
+        "chargeUnit"
+      ]
+    },
+    {
+      "feeItemCode": "web_search",
+      "feeItemName": "网络搜索功能调用费用(web_search)",
+      "feeRecords": [
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "counts"
+            }
+          ],
+          "feeRate": 0.0025
+        }
+      ],
+      "selectedConstraint": [
+        "chargeUnit"
+      ]
+    }
+  ],
+  "sourcePublishedPrices": {
+    "pricing_completion": "0.2",
+    "pricing_discount": "1",
+    "pricing_prompt": "0.1"
+  },
+  "exampleCodes": [],
+  "serviceConfiguration": "服务配置待开通；接入地址、鉴权和可用协议以开通后的服务配置为准。",
+  "sourceRegion": "global",
+  "sourceCatalog": "ZenMux",
+  "sourceUrl": "https://zenmux.ai/meta/muse-spark-1.3-contributor",
+  "detailVerified": true,
+  "aliases": [
+    "muse-spark-1.3-contributor"
+  ],
+  "isFree": false
+}

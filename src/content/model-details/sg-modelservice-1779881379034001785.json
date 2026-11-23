@@ -1,0 +1,467 @@
+{
+  "uniqueId": "modelservice-1779881379034001785",
+  "name": "gpt-4o-mini",
+  "displayName": "GPT-4o-mini",
+  "provider": "OpenAI",
+  "description": "GPT-4o mini is OpenAI's newest small model, supporting both text and image inputs with text output. Provides cost-effective responses for high-volume, low-latency scenarios.",
+  "zhDescription": "GPT-4o mini是OpenAI的最新小型模型，支持文本和图像输入，输出文本。提供经济高效的响应，适用于高容量、低延迟场景。",
+  "longDescription": "GPT-4o mini is OpenAI's newest small model, supporting both text and image inputs with text output. Provides cost-effective responses for high-volume, low-latency scenarios.",
+  "zhLongDescription": "GPT-4o mini是OpenAI的最新小型模型，支持文本和图像输入，输出文本。提供经济高效的响应，适用于高容量、低延迟场景。",
+  "contextLength": "128000",
+  "maxCompletionTokens": 16400,
+  "maxTokens": 16400,
+  "currency": null,
+  "inputPrice": "$0.15/M",
+  "outputPrice": "$0.6/M",
+  "inPrice": null,
+  "outPrice": null,
+  "inPriceZh": "$0.15/M",
+  "outPriceZh": "$0.6/M",
+  "inHitCachePrice": "¥0.00/M",
+  "inHitCreatePrice": "$0.075/M",
+  "tagList": [
+    {
+      "type": "MODEL_TYPE",
+      "key": "TEXT_GENERATE",
+      "value": "文本生成"
+    },
+    {
+      "type": "MODEL_TYPE",
+      "key": "CODE_GENERATE",
+      "value": "代码生成"
+    },
+    {
+      "type": "MODEL_TYPE",
+      "key": "VISUAL_UNDERSTANDING",
+      "value": "视觉理解"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    }
+  ],
+  "type": "TEXT_GENERATE",
+  "typeList": [
+    "TEXT_GENERATE",
+    "CODE_GENERATE",
+    "VISUAL_UNDERSTANDING"
+  ],
+  "supportedParametersDefaultValue": {
+    "temperature": {
+      "enable": true,
+      "defaultValue": 0.7,
+      "forbidDisable": null
+    },
+    "top_p": {
+      "enable": true,
+      "defaultValue": 0.9,
+      "forbidDisable": null
+    },
+    "top_k": {
+      "enable": true,
+      "defaultValue": 50,
+      "forbidDisable": null
+    },
+    "max_tokens": {
+      "enable": true,
+      "defaultValue": 16400,
+      "forbidDisable": null
+    },
+    "enable_search": {
+      "enable": true,
+      "defaultValue": true,
+      "forbidDisable": null
+    },
+    "enable_thinking": {
+      "enable": true,
+      "defaultValue": true,
+      "forbidDisable": null
+    },
+    "thinking_budget": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    }
+  },
+  "protocolParameters": [
+    {
+      "protocolName": "openai_chat_completions",
+      "displayName": "OpenAI Chat Completions",
+      "parameters": {
+        "seed": true,
+        "web_search_options": true,
+        "user": false,
+        "top_p": true,
+        "top_logprobs": true,
+        "tools": true,
+        "tool_choice": true,
+        "temperature": true,
+        "stream_options": false,
+        "stream": false,
+        "store": false,
+        "service_tier": false,
+        "audio": false,
+        "response_format": true,
+        "reasoning_effort": false,
+        "presence_penalty": true,
+        "prediction": false,
+        "parallel_tool_calls": false,
+        "n": false,
+        "modalities": false,
+        "metadata": false,
+        "logprobs": true,
+        "logit_bias": true,
+        "frequency_penalty": true
+      }
+    }
+  ],
+  "modelProtocolCompatibility": {
+    "dashscope": false,
+    "google_gemini": false,
+    "anthropic_message": false,
+    "openai_responses": false,
+    "openai_chat_completions": true
+  },
+  "minDiscountRate": "1",
+  "priceInfo": {
+    "lowestProviderPrice": {
+      "inputPrice": {
+        "priceCode": "INPUT",
+        "priceName": "Input",
+        "priceNameZH": "输入",
+        "priceValue": "0.15",
+        "originalPrice": "0.15",
+        "discountRate": "1",
+        "unitCode": "M_TOKENS",
+        "unitName": "M",
+        "unitNameZh": "M",
+        "direction": "INPUT",
+        "fixedName": "M Tokens",
+        "fixedNameZh": "百万Tokens"
+      },
+      "outputPrice": {
+        "priceCode": "OUTPUT",
+        "priceName": "Output",
+        "priceNameZH": "输出",
+        "priceValue": "0.6",
+        "originalPrice": "0.6",
+        "discountRate": "1",
+        "unitCode": "M_TOKENS",
+        "unitName": "M",
+        "unitNameZh": "M",
+        "direction": "OUTPUT",
+        "fixedName": "M Tokens",
+        "fixedNameZh": "百万Tokens"
+      }
+    },
+    "prices": [
+      {
+        "stage": "输入≤128K",
+        "stageText": "输入≤128K",
+        "type": "TEXT",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "INPUT",
+            "priceName": "Input",
+            "priceNameZH": "输入",
+            "priceValue": "0.15",
+            "originalPrice": "0.15",
+            "discountRate": "1",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "OUTPUT",
+            "priceName": "Output",
+            "priceNameZH": "输出",
+            "priceValue": "0.6",
+            "originalPrice": "0.6",
+            "discountRate": "1",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "OUTPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "INPUT_CACHE_HIT",
+            "priceName": "Input (Cache Hit)",
+            "priceNameZH": "输入（命中缓存）",
+            "priceValue": "0.075",
+            "originalPrice": "0.075",
+            "discountRate": "1",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          }
+        ]
+      }
+    ]
+  },
+  "publishedTime": "2026-05-27 19:29:39",
+  "offShelfFlag": 0,
+  "offShelfDate": null,
+  "buyTypes": [
+    "BY_AMOUNT"
+  ],
+  "specs": {
+    "inputPrice": "¥0.0000",
+    "inputPriceHint": "每 1K tokens",
+    "outputPrice": "¥0.0000",
+    "outputPriceHint": "每 1K tokens",
+    "contextLength": "128000",
+    "contextLengthHint": "tokens",
+    "maxOutput": "0",
+    "maxOutputHint": "tokens"
+  },
+  "capabilities": [],
+  "languages": [
+    "文本",
+    "图像"
+  ],
+  "scenarios": [
+    "文本"
+  ],
+  "modelParameters": [
+    {
+      "type": "slider",
+      "label": "seed",
+      "value": null,
+      "min": 0,
+      "max": 1000000,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "switch",
+      "label": "web_search_options",
+      "value": true,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "label": "top_p",
+      "value": 0.9,
+      "min": 0,
+      "max": 1,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "label": "top_logprobs",
+      "value": null,
+      "min": 0,
+      "max": 20,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "switch",
+      "label": "tools",
+      "value": true,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "switch",
+      "label": "tool_choice",
+      "value": true,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "label": "temperature",
+      "value": 0.7,
+      "min": 0,
+      "max": 1,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "text",
+      "label": "response_format",
+      "value": "text",
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "text / json_object / json_schema",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "label": "presence_penalty",
+      "value": 0,
+      "min": -2,
+      "max": 2,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "switch",
+      "label": "logprobs",
+      "value": true,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "label": "logit_bias",
+      "value": null,
+      "min": -100,
+      "max": 100,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "label": "frequency_penalty",
+      "value": null,
+      "min": -2,
+      "max": 2,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "label": "top_k",
+      "value": 50,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": null,
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "label": "max_tokens",
+      "value": 16400,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": null,
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "label": "enable_search",
+      "value": true,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": null,
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "label": "enable_thinking",
+      "value": true,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": null,
+      "thousands": null
+    }
+  ],
+  "usageGuide": {
+    "authIntro": "使用 API Key 进行认证，在请求头中添加 Authorization Bearer：",
+    "authBearerPlaceholder": "<api_key>",
+    "requestIntro": "使用 OpenAI Responses API 参数格式：",
+    "requestExample": "{\n  \"instructions\": \"你是一个有帮助的助手\",\n  \"input\": \"你好，请介绍一下自己\",\n  \"temperature\": 0.5,\n  \"model\": \"gpt-4o-mini\",\n  \"max_output_tokens\": 4096\n}",
+    "responseExample": "{\n  \"output\": [\n    {\n      \"role\": \"assistant\",\n      \"type\": \"message\",\n      \"content\": [\n        {\n          \"text\": \"你好！我是 gpt-4o-mini...\",\n          \"type\": \"output_text\"\n        }\n      ]\n    }\n  ],\n  \"output_text\": \"你好！我是 gpt-4o-mini...\",\n  \"usage\": {\n    \"total_tokens\": 21,\n    \"output_tokens\": 12,\n    \"input_tokens\": 9\n  },\n  \"created_at\": 1778240000,\n  \"model\": \"gpt-4o-mini\",\n  \"id\": \"resp_123\",\n  \"object\": \"response\",\n  \"status\": \"completed\"\n}",
+    "docUrl": "https://platform.openai.com/docs/api-reference/responses",
+    "docLabel": "查看完整 API 文档"
+  },
+  "exampleCodes": {
+    "python": {
+      "sectionTitle": "Python 示例",
+      "installLine": "安装依赖：pip install requests",
+      "code": "import requests\n\nurl = \"http://10.191.0.202/v1/responses\"\nheaders = {\n    \"Authorization\": \"Bearer <api_key>\",\n    \"Content-Type\": \"application/json\"\n}\ndata = {\n    \"model\": \"gpt-4o-mini\",\n    \"instructions\": \"You are a helpful assistant.\",\n    \"input\": \"What is the meaning of life?\",\n    \"max_output_tokens\": 1024\n}\nresponse = requests.post(url, headers=headers, json=data)\nprint(response.json()[\"output_text\"])"
+    },
+    "javascript": {
+      "sectionTitle": "JavaScript 示例",
+      "installLine": "无需安装额外依赖（需 Node 18+ 或支持 fetch 的运行环境）",
+      "code": "const response = await fetch(\"http://10.191.0.202/v1/responses\", {\n  method: \"POST\",\n  headers: {\n    \"Authorization\": \"Bearer <api_key>\",\n    \"Content-Type\": \"application/json\"\n  },\n  body: JSON.stringify({\n    model: \"gpt-4o-mini\",\n    instructions: \"You are a helpful assistant.\",\n    input: \"What is the meaning of life?\",\n    max_output_tokens: 1024\n  })\n});\nconst result = await response.json();\nconsole.log(result.output_text);"
+    },
+    "curl": {
+      "sectionTitle": "Curl 示例",
+      "installLine": "说明：macOS / Linux 一般已预装 curl",
+      "code": "curl -X POST \"http://10.191.0.202/v1/responses\" \\\n  -H \"Authorization: Bearer <api_key>\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"model\":\"gpt-4o-mini\",\"instructions\":\"You are a helpful assistant.\",\"input\":\"What is the meaning of life?\",\"max_output_tokens\":1024}'"
+    }
+  },
+  "agentIntegrations": [
+    {
+      "name": "Claude Code",
+      "description": "Use this model through the Anthropic-compatible endpoint.",
+      "zhDescription": "通过 Anthropic 兼容接口在 Claude Code 中使用当前模型。",
+      "fileLabel": "~/.claude/settings.json",
+      "language": "json",
+      "code": "{\n  \"env\": {\n    \"ANTHROPIC_AUTH_TOKEN\": \"YOUR_MAAS_API_KEY\",\n    \"ANTHROPIC_BASE_URL\": \"https://maas-api.computrix.ai/\",\n    \"ANTHROPIC_MODEL\": \"gpt-4o-mini\"\n  }\n}",
+      "guideUrl": "/docs/agent-guides/claude-code"
+    },
+    {
+      "name": "Codex",
+      "description": "Configure MaaS as an OpenAI-compatible model provider.",
+      "zhDescription": "将 MaaS 配置为 Codex 的 OpenAI 兼容模型供应商。",
+      "fileLabel": "~/.codex/config.toml",
+      "language": "toml",
+      "code": "model = \"gpt-4o-mini\"\nmodel_provider = \"maas\"\n\n[model_providers.maas]\nname = \"MaaS\"\nbase_url = \"https://maas-api.computrix.ai/v1\"\nenv_key = \"MAAS_API_KEY\"\nwire_api = \"responses\"",
+      "guideUrl": "/docs/agent-guides/codex"
+    },
+    {
+      "name": "OpenCode",
+      "description": "Add MaaS as a custom provider in OpenCode.",
+      "zhDescription": "在 OpenCode 中添加 MaaS 自定义模型供应商。",
+      "fileLabel": "~/.config/opencode/opencode.json",
+      "language": "json",
+      "code": "{\n  \"$schema\": \"https://opencode.ai/config.json\",\n  \"provider\": {\n    \"maas\": {\n      \"npm\": \"@ai-sdk/openai-compatible\",\n      \"name\": \"MaaS\",\n      \"options\": {\n        \"baseURL\": \"https://maas-api.computrix.ai/v1\",\n        \"apiKey\": \"YOUR_MAAS_API_KEY\"\n      },\n      \"models\": {\n        \"gpt-4o-mini\": {\n          \"name\": \"gpt-4o-mini\"\n        }\n      }\n    }\n  },\n  \"model\": \"maas/gpt-4o-mini\"\n}",
+      "guideUrl": "/docs/agent-guides/opencode"
+    }
+  ],
+  "slug": "sg-modelservice-1779881379034001785",
+  "sourceRegion": "sg",
+  "sourceCatalog": "Computrix",
+  "sourceUrl": "https://computrix.ai/sg/models",
+  "detailVerified": true
+}

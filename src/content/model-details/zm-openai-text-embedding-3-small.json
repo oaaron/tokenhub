@@ -1,0 +1,287 @@
+{
+  "slug": "zm-openai-text-embedding-3-small",
+  "uniqueId": "2616MOwJyDNV14613799",
+  "name": "openai/text-embedding-3-small",
+  "displayName": "OpenAI: Text Embedding 3 Small",
+  "provider": "OpenAI",
+  "manufacturerKey": "openai",
+  "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2025/10/15/Mm7IePA/Property-1GPT.svg",
+  "zhDescription": "小型高效文本向量模型，将文本转换为语义向量，适合搜索、聚类、推荐与分类等检索应用。",
+  "zhLongDescription": "小型高效文本向量模型，将文本转换为语义向量，适合搜索、聚类、推荐与分类等检索应用。",
+  "description": "小型高效文本向量模型，将文本转换为语义向量，适合搜索、聚类、推荐与分类等检索应用。",
+  "longDescription": "小型高效文本向量模型，将文本转换为语义向量，适合搜索、聚类、推荐与分类等检索应用。",
+  "contextLength": 8192,
+  "maxCompletionTokens": 8192,
+  "currency": "USD",
+  "tagList": [
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "EMBEDDINGS",
+      "value": "向量嵌入"
+    }
+  ],
+  "publishedTime": "2025-10-31",
+  "minDiscountRate": "1",
+  "supportedParams": [
+    "dimensions",
+    "encoding_format",
+    "input",
+    "user"
+  ],
+  "supportedProtocols": [
+    "embeddings"
+  ],
+  "reasoning": 0,
+  "reasoningModes": [
+    0
+  ],
+  "providerNames": [
+    "OpenAI",
+    "Azure"
+  ],
+  "providerDetails": [
+    {
+      "name": "OpenAI",
+      "slug": "openai",
+      "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2025/10/15/Mm7IePA/Property-1GPT.svg",
+      "contextLength": 8192,
+      "maxCompletionTokens": 8192,
+      "supportsStreaming": false,
+      "apiProtocols": {
+        "embeddings": {
+          "supported_parameters": [
+            "input",
+            "dimensions",
+            "encoding_format",
+            "user"
+          ],
+          "supports_reasoning": 0
+        }
+      },
+      "pricingDiscount": "1",
+      "priceInfo": {
+        "prices": [
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "OUTPUT",
+                "priceNameZH": "模型生成输出内容的费用(completion)",
+                "priceValue": 0.0,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "completion",
+                "constraints": []
+              }
+            ]
+          },
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "INPUT",
+                "priceNameZH": "输入提示词的处理费用(prompt)",
+                "priceValue": 0.02,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "prompt",
+                "constraints": []
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Azure",
+      "slug": "azure",
+      "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2025/10/15/thDKBiW/Property-1Azure.svg",
+      "contextLength": 8192,
+      "maxCompletionTokens": 8192,
+      "supportsStreaming": false,
+      "apiProtocols": {
+        "embeddings": {
+          "supported_parameters": [
+            "input",
+            "dimensions",
+            "encoding_format",
+            "user"
+          ],
+          "supports_reasoning": 0
+        }
+      },
+      "pricingDiscount": "1",
+      "priceInfo": {
+        "prices": [
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "OUTPUT",
+                "priceNameZH": "模型生成输出内容的费用(completion)",
+                "priceValue": 0.0,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "completion",
+                "constraints": []
+              }
+            ]
+          },
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "INPUT",
+                "priceNameZH": "输入提示词的处理费用(prompt)",
+                "priceValue": 0.022,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "prompt",
+                "constraints": []
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "modelProtocolCompatibility": {
+    "embeddings": true
+  },
+  "supportedParametersDefaultValue": {
+    "dimensions": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "encoding_format": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "input": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "user": {
+      "enable": true,
+      "defaultValue": null
+    }
+  },
+  "priceInfo": {
+    "prices": [
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "OUTPUT",
+            "priceNameZH": "模型生成输出内容的费用(completion)",
+            "priceValue": 0.0,
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "completion",
+            "constraints": []
+          }
+        ]
+      },
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "INPUT",
+            "priceNameZH": "输入提示词的处理费用(prompt)",
+            "priceValue": 0.02,
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "INPUT",
+            "sourceFeeCode": "prompt",
+            "constraints": []
+          }
+        ]
+      }
+    ]
+  },
+  "pricingDetails": [
+    {
+      "feeItemCode": "completion",
+      "feeItemName": "模型生成输出内容的费用(completion)",
+      "feeRecords": [
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            }
+          ],
+          "feeRate": 0.0
+        }
+      ],
+      "selectedConstraint": [
+        "chargeUnit"
+      ]
+    },
+    {
+      "feeItemCode": "prompt",
+      "feeItemName": "输入提示词的处理费用(prompt)",
+      "feeRecords": [
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            }
+          ],
+          "feeRate": 0.02
+        }
+      ],
+      "selectedConstraint": [
+        "chargeUnit"
+      ]
+    }
+  ],
+  "sourcePublishedPrices": {
+    "pricing_completion": "0",
+    "pricing_discount": "1",
+    "pricing_prompt": "0.02"
+  },
+  "exampleCodes": [],
+  "serviceConfiguration": "服务配置待开通；接入地址、鉴权和可用协议以开通后的服务配置为准。",
+  "sourceRegion": "global",
+  "sourceCatalog": "ZenMux",
+  "sourceUrl": "https://zenmux.ai/openai/text-embedding-3-small",
+  "detailVerified": true,
+  "aliases": [
+    "text-embedding-3-small"
+  ],
+  "isFree": false
+}

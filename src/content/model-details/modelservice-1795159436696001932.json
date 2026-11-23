@@ -1,0 +1,367 @@
+{
+  "uniqueId": "modelservice-1795159436696001932",
+  "name": "lingsante-3.1-air-vl",
+  "displayName": "LingSante-3.1-air-VL",
+  "provider": "InclusionAI",
+  "description": "We are officially introducing LingSante-3.1-air-VL, a lightweight native multimodal model designed for real-world healthcare applications. Built on Ling-3.0-flash-VL, it has 124B total parameters with only 5.5B activated during inference. It natively supports text, image, and video inputs and a context window of up to 256K tokens, balancing medical multimodal understanding, medical text reasoning, and deployment efficiency.\n\nLing-3.1-air-VL-Sante excels in core medical scenarios. It ranks first on imaging report evaluations including CheXpert_Plus, IU_XRAY, and mimic_cxr, and first overall on application-specific evaluations involving photos of skin, food, and medical reports. It also ranks first on medical multimodal benchmarks including OmniMedVQA, PATH-VQA, and SLAKE, and places in the top tier on complex reasoning benchmarks such as MedXpertQA-MM, while delivering strong medical text capabilities. Beyond healthcare, the model maintains strong performance in general multimodal tasks, document and chart understanding, and tool-based tasks such as multimodal search and GUI agents—extending its capabilities from understanding to explanation and action.",
+  "zhDescription": "我们正式推出 LingSante-3.1-air-VL，这是一款面向真实医疗场景的轻量级原生多模态模型。模型基于 Ling-3.0-flash-VL 构建，总参数 124B，单次推理仅激活 5.5B，原生支持文本、图像与视频输入，上下文窗口最高 256K Token，在医疗多模理解、医疗文本推理和部署效率之间取得平衡。\nLing-3.1-air-VL-Sante 在核心医疗场景中表现突出：CheXpert_Plus、IU_XRAY、mimic_cxr 等影像报告评测均位列第一；拍皮肤、拍食物、拍医疗报告等业务评测整体位列第一；OmniMedVQA、PATH-VQA、SLAKE 等医疗多模态评测位列第一，MedXpertQA-MM 等复杂推理评测进入第一梯队；医疗文本能力同样表现优异。除医疗外，模型在通用多模、文档/图表理解，以及多模态搜索、GUI Agent 等工具类任务上保持强劲表现，能够从“看懂”进一步走向“解释”和“操作”。",
+  "longDescription": "We are officially introducing LingSante-3.1-air-VL, a lightweight native multimodal model designed for real-world healthcare applications. Built on Ling-3.0-flash-VL, it has 124B total parameters with only 5.5B activated during inference. It natively supports text, image, and video inputs and a context window of up to 256K tokens, balancing medical multimodal understanding, medical text reasoning, and deployment efficiency.\n\nLing-3.1-air-VL-Sante excels in core medical scenarios. It ranks first on imaging report evaluations including CheXpert_Plus, IU_XRAY, and mimic_cxr, and first overall on application-specific evaluations involving photos of skin, food, and medical reports. It also ranks first on medical multimodal benchmarks including OmniMedVQA, PATH-VQA, and SLAKE, and places in the top tier on complex reasoning benchmarks such as MedXpertQA-MM, while delivering strong medical text capabilities. Beyond healthcare, the model maintains strong performance in general multimodal tasks, document and chart understanding, and tool-based tasks such as multimodal search and GUI agents—extending its capabilities from understanding to explanation and action.",
+  "zhLongDescription": "我们正式推出 LingSante-3.1-air-VL，这是一款面向真实医疗场景的轻量级原生多模态模型。模型基于 Ling-3.0-flash-VL 构建，总参数 124B，单次推理仅激活 5.5B，原生支持文本、图像与视频输入，上下文窗口最高 256K Token，在医疗多模理解、医疗文本推理和部署效率之间取得平衡。\nLing-3.1-air-VL-Sante 在核心医疗场景中表现突出：CheXpert_Plus、IU_XRAY、mimic_cxr 等影像报告评测均位列第一；拍皮肤、拍食物、拍医疗报告等业务评测整体位列第一；OmniMedVQA、PATH-VQA、SLAKE 等医疗多模态评测位列第一，MedXpertQA-MM 等复杂推理评测进入第一梯队；医疗文本能力同样表现优异。除医疗外，模型在通用多模、文档/图表理解，以及多模态搜索、GUI Agent 等工具类任务上保持强劲表现，能够从“看懂”进一步走向“解释”和“操作”。",
+  "contextLength": "256000",
+  "maxCompletionTokens": 32000,
+  "maxTokens": 32000,
+  "currency": null,
+  "inPrice": null,
+  "outPrice": null,
+  "inPriceZh": null,
+  "outPriceZh": null,
+  "inHitCachePrice": "¥0.00/M",
+  "inHitCreatePrice": "¥0.000000/M",
+  "tagList": [
+    {
+      "type": "MODEL_TYPE",
+      "key": "VISUAL_UNDERSTANDING",
+      "value": "视觉理解"
+    },
+    {
+      "type": "MODEL_TYPE",
+      "key": "TEXT_GENERATE",
+      "value": "文本生成"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    }
+  ],
+  "type": "VISUAL_UNDERSTANDING",
+  "typeList": [
+    "TEXT_GENERATE",
+    "VISUAL_UNDERSTANDING"
+  ],
+  "supportedParametersDefaultValue": {
+    "temperature": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "top_p": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "top_k": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "max_tokens": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "enable_search": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "enable_thinking": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "thinking_budget": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    }
+  },
+  "protocolParameters": [
+    {
+      "protocolName": "openai_chat_completions",
+      "displayName": "OpenAI Chat Completions",
+      "parameters": {
+        "seed": false,
+        "web_search_options": false,
+        "user": false,
+        "top_p": true,
+        "top_logprobs": false,
+        "tools": false,
+        "tool_choice": false,
+        "temperature": false,
+        "stream_options": false,
+        "stream": false,
+        "store": false,
+        "service_tier": false,
+        "audio": false,
+        "response_format": false,
+        "reasoning_effort": false,
+        "presence_penalty": false,
+        "prediction": false,
+        "parallel_tool_calls": false,
+        "n": false,
+        "modalities": false,
+        "metadata": false,
+        "logprobs": false,
+        "logit_bias": false,
+        "frequency_penalty": false
+      }
+    }
+  ],
+  "modelProtocolCompatibility": {
+    "System One": false,
+    "google video": false,
+    "dashscope": false,
+    "google_gemini": false,
+    "anthropic_message": false,
+    "openai_responses": false,
+    "openai_chat_completions": true
+  },
+  "minDiscountRate": "0.000000",
+  "priceInfo": {
+    "lowestProviderPrice": {
+      "inputPrice": {
+        "priceCode": "INPUT",
+        "priceName": "Input",
+        "priceNameZH": "输入",
+        "priceValue": "0.000000",
+        "originalPrice": "0.000000",
+        "discountRate": "0.000000",
+        "unitCode": "M_TOKENS",
+        "unitName": "M",
+        "unitNameZh": "M",
+        "direction": "INPUT",
+        "fixedName": "M Tokens",
+        "fixedNameZh": "百万Tokens"
+      },
+      "outputPrice": {
+        "priceCode": "OUTPUT",
+        "priceName": "Output",
+        "priceNameZH": "输出",
+        "priceValue": "0.000000",
+        "originalPrice": "0.000000",
+        "discountRate": "0.000000",
+        "unitCode": "M_TOKENS",
+        "unitName": "M",
+        "unitNameZh": "M",
+        "direction": "OUTPUT",
+        "fixedName": "M Tokens",
+        "fixedNameZh": "百万Tokens"
+      }
+    },
+    "prices": [
+      {
+        "stage": "",
+        "stageText": "",
+        "type": null,
+        "priceCurrency": "CNY",
+        "price": [
+          {
+            "priceCode": "INPUT",
+            "priceName": "Input",
+            "priceNameZH": "输入",
+            "priceValue": "0.000000",
+            "originalPrice": "0.000000",
+            "discountRate": "0.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "OUTPUT",
+            "priceName": "Output",
+            "priceNameZH": "输出",
+            "priceValue": "0.000000",
+            "originalPrice": "0.000000",
+            "discountRate": "0.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "OUTPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "INPUT_CACHE_HIT",
+            "priceName": "Input (Cache Hit)",
+            "priceNameZH": "输入（命中缓存）",
+            "priceValue": "0.000000",
+            "originalPrice": "0.000000",
+            "discountRate": "0.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          }
+        ]
+      }
+    ]
+  },
+  "publishedTime": "2026-11-20 15:23:57",
+  "offShelfFlag": 0,
+  "offShelfDate": null,
+  "buyTypes": [
+    "BY_AMOUNT",
+    "BY_CREDIT"
+  ],
+  "providers": [
+    {
+      "providerUid": "channel-1779290799108001040",
+      "providerName": "antdigital",
+      "providerDisplayName": "蚂蚁数字科技",
+      "providerLogo": "https://maas-public.oss-cn-shanghai.aliyuncs.com/maas-admin/image/2026-09-10/image-4cf4a41f-3ae4-42.png"
+    }
+  ],
+  "extInfo": "{\"contextLength\":\"256000\",\"exampleCodes\":{\"openAI\":[{\"code\":\"from openai import OpenAI\\n\\nclient = OpenAI(\\n    base_url=\\\"https://maas-api.antdigital.com/v1\\\",\\n    api_key=<API_KEY>,\\n)\\n\\n# Chat Completion\\ncompletion = client.chat.completions.create(\\n  model=\\\"ling-3.1-air-vl-sante\\\",\\n  messages=[\\n    {\\n      \\\"role\\\": \\\"user\\\",\\n      \\\"content\\\": \\\"What is the meaning of life?\\\"\\n    }\\n  ]\\n)\\nprint(completion.choices[0].message.content)\",\"sectionTitle\":\"\",\"name\":\"python\"},{\"code\":\"curl https://maas-api.antdigital.com/v1/chat/completions \\\\\\n-H \\\"Content-Type: application/json\\\" \\\\\\n-H \\\"Authorization: Bearer $API_KEY \\\\\\n-d '{\\n  \\\"model\\\": \\\"ling-3.1-air-vl-sante\\\",\\n  \\\"messages\\\": [ \\n    { \\n      \\\"role\\\": \\\"user\\\",\\n      \\\"content\\\": \\\"What is the meaning of life?\\\"\\n    }\\n  ],\\n  \\\"stream\\\": true,\\n  \\\"enable_thinking\\\": false\\n}'\",\"sectionTitle\":\"\",\"name\":\"curl\"}]},\"supportedParametersDefaultValue\":\"\"}",
+  "specs": {
+    "inputPrice": "¥0.0000",
+    "inputPriceHint": "每 1K tokens",
+    "outputPrice": "¥0.0000",
+    "outputPriceHint": "每 1K tokens",
+    "contextLength": "256000",
+    "contextLengthHint": "tokens",
+    "maxOutput": "0",
+    "maxOutputHint": "tokens"
+  },
+  "capabilities": [],
+  "languages": [
+    "文本",
+    "图像"
+  ],
+  "scenarios": [
+    "文本"
+  ],
+  "modelParameters": [
+    {
+      "type": "slider",
+      "id": "temperature",
+      "label": "Temperature",
+      "value": 0.3,
+      "min": 0,
+      "max": 2,
+      "step": 0.01,
+      "description": "控制输出的随机性，值越高越随机",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "id": "presence_penalty",
+      "label": "Presence Penalty",
+      "value": 0.1,
+      "min": -2,
+      "max": 2,
+      "step": 0.01,
+      "description": "存在惩罚，鼓励模型讨论新话题",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "id": "top_p",
+      "label": "Top P",
+      "value": 0.95,
+      "min": 0,
+      "max": 1,
+      "step": 0.01,
+      "description": "核采样参数，控制候选词汇的范围",
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "id": "max_tokens",
+      "label": "Max Tokens",
+      "value": 0,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "单次生成的最大 token 数量",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "id": "frequency_penalty",
+      "label": "Frequency Penalty",
+      "value": 0.1,
+      "min": -2,
+      "max": 2,
+      "step": 0.01,
+      "description": "频率惩罚，减少重复内容的生成",
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "id": "context_length",
+      "label": "Context Length",
+      "value": 64000,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "支持的最大上下文长度",
+      "thousands": true
+    }
+  ],
+  "usageGuide": {
+    "authIntro": "使用 API Key 进行认证，在请求头中添加：",
+    "authBearerPlaceholder": "YOUR_API_KEY",
+    "requestIntro": "支持标准的 OpenAI 参数格式：",
+    "requestExample": "{\n  \"max_tokens\": 4096,\n  \"temperature\": 0.5,\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"你好，请介绍一下自己\"\n    }\n  ],\n  \"model\": \"lingsante-3.1-air-vl\"\n}",
+    "responseExample": "{\n  \"created\": 1795353264,\n  \"usage\": {\n    \"completion_tokens\": 12,\n    \"prompt_tokens\": 9,\n    \"total_tokens\": 21\n  },\n  \"model\": \"lingsante-3.1-air-vl\",\n  \"id\": \"chatcmpl-123\",\n  \"choices\": [\n    {\n      \"finish_reason\": \"stop\",\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"你好！我是 lingsante-3.1-air-vl...\"\n      }\n    }\n  ],\n  \"object\": \"chat.completion\"\n}",
+    "docUrl": "https://api-docs.example.com/",
+    "docLabel": "查看完整 API 文档"
+  },
+  "exampleCodes": {
+    "python": {
+      "sectionTitle": "Python 示例",
+      "installLine": "安装依赖：pip install requests",
+      "code": "import requests\nimport json\n\nurl = \"https://api.example.com/v1/chat/completions\"\nheaders = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n}\n\ndata = {\n    \"model\": \"model-name\",\n    \"messages\": [\n        {\n            \"role\": \"user\",\n            \"content\": \"请写一个 Python 函数计算斐波那契数列\"\n        }\n    ],\n    \"temperature\": 0.7,\n    \"max_tokens\": 4096\n}\n\nresponse = requests.post(url, headers=headers, json=data)\nresult = response.json()\nprint(result[\"choices\"][0][\"message\"][\"content\"])"
+    },
+    "javascript": {
+      "sectionTitle": "JavaScript 示例",
+      "installLine": "无需安装额外依赖（需 Node 18+ 或支持 fetch 的运行环境）",
+      "code": "(async () => {\n  const url = \"https://api.example.com/v1/chat/completions\";\n  const headers = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n  };\n  const data = {\n    model: \"model-name\",\n    messages: [\n      {\n        role: \"user\",\n        content: \"请写一个 Python 函数计算斐波那契数列\"\n      }\n    ],\n    temperature: 0.7,\n    max_tokens: 4096\n  };\n  const response = await fetch(url, {\n    method: \"POST\",\n    headers,\n    body: JSON.stringify(data)\n  });\n  const result = await response.json();\n  console.log(result.choices[0].message.content);\n})();"
+    },
+    "curl": {
+      "sectionTitle": "Curl 示例",
+      "installLine": "说明：macOS / Linux 一般已预装 curl",
+      "code": "curl -X POST \"https://api.example.com/v1/chat/completions\" \\\n  -H \"Authorization: Bearer YOUR_API_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"model\":\"model-name\",\"messages\":[{\"role\":\"user\",\"content\":\"请写一个 Python 函数计算斐波那契数列\"}],\"temperature\":0.7,\"max_tokens\":4096}'"
+    }
+  },
+  "agentIntegrations": [
+    {
+      "id": "codex",
+      "name": "Codex",
+      "description": "Configure MaaS as an OpenAI-compatible model provider.",
+      "zhDescription": "将 MaaS 配置为 Codex 的 OpenAI 兼容模型供应商。",
+      "fileLabel": "~/.codex/config.toml",
+      "language": "toml",
+      "code": "model = \"lingsante-3.1-air-vl\"\nmodel_provider = \"maas\"\n\n[model_providers.maas]\nname = \"MaaS\"\nbase_url = \"https://maas-api.antdigital.com/v1\"\nenv_key = \"MAAS_API_KEY\"\nwire_api = \"responses\"",
+      "guideUrl": "/docs/agent-guides/codex"
+    },
+    {
+      "id": "opencode",
+      "name": "OpenCode",
+      "description": "Add MaaS as a custom provider in OpenCode.",
+      "zhDescription": "在 OpenCode 中添加 MaaS 自定义模型供应商。",
+      "fileLabel": "~/.config/opencode/opencode.json",
+      "language": "json",
+      "code": "{\n  \"$schema\": \"https://opencode.ai/config.json\",\n  \"provider\": {\n    \"maas\": {\n      \"npm\": \"@ai-sdk/openai-compatible\",\n      \"name\": \"MaaS\",\n      \"options\": {\n        \"baseURL\": \"https://maas-api.antdigital.com/v1\",\n        \"apiKey\": \"YOUR_MAAS_API_KEY\"\n      },\n      \"models\": {\n        \"lingsante-3.1-air-vl\": {\n          \"name\": \"lingsante-3.1-air-vl\"\n        }\n      }\n    }\n  },\n  \"model\": \"maas/lingsante-3.1-air-vl\"\n}",
+      "guideUrl": "/docs/agent-guides/opencode"
+    }
+  ],
+  "sourceUrl": "https://maas.antdigital.com/models/modelservice-1795159436696001932",
+  "slug": "modelservice-1795159436696001932"
+}

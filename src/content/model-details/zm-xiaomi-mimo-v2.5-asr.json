@@ -1,0 +1,164 @@
+{
+  "slug": "zm-xiaomi-mimo-v2.5-asr",
+  "uniqueId": "2628MO3to1ms14613872",
+  "name": "xiaomi/mimo-v2.5-asr",
+  "displayName": "Xiaomi: MiMo-V2.5-ASR",
+  "provider": "Xiaomi",
+  "manufacturerKey": "xiaomi",
+  "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2025/12/17/pDj8XwY/Property-1xiaomi.svg",
+  "zhDescription": "小米开源语音识别模型，支持中英混说、多种中文方言、歌词、噪声和多说话人等复杂声学场景。",
+  "zhLongDescription": "小米开源语音识别模型，支持中英混说、多种中文方言、歌词、噪声和多说话人等复杂声学场景。",
+  "description": "小米开源语音识别模型，支持中英混说、多种中文方言、歌词、噪声和多说话人等复杂声学场景。",
+  "longDescription": "小米开源语音识别模型，支持中英混说、多种中文方言、歌词、噪声和多说话人等复杂声学场景。",
+  "contextLength": 1024,
+  "maxCompletionTokens": 1024,
+  "currency": "USD",
+  "tagList": [
+    {
+      "type": "INPUT_TYPE",
+      "key": "AUDIO",
+      "value": "音频"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "TRANSCRIPTION",
+      "value": "transcription"
+    }
+  ],
+  "publishedTime": "2026-07-07",
+  "minDiscountRate": "1",
+  "supportedParams": [
+    "enable_itn",
+    "input_audio",
+    "language"
+  ],
+  "supportedProtocols": [
+    "audio.transcriptions"
+  ],
+  "reasoning": 0,
+  "reasoningModes": [
+    0
+  ],
+  "providerNames": [
+    "Xiaomi"
+  ],
+  "providerDetails": [
+    {
+      "name": "Xiaomi",
+      "slug": "xiaomi",
+      "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2025/12/17/pDj8XwY/Property-1xiaomi.svg",
+      "contextLength": 1024,
+      "maxCompletionTokens": 1024,
+      "supportsStreaming": true,
+      "apiProtocols": {
+        "audio.transcriptions": {
+          "supported_parameters": [
+            "input_audio",
+            "language",
+            "enable_itn"
+          ],
+          "supports_reasoning": 0
+        }
+      },
+      "pricingDiscount": "1",
+      "priceInfo": {
+        "prices": [
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "AUDIO_INPUT",
+                "priceNameZH": "音频输入费用(audio_input)",
+                "priceValue": 0.0002,
+                "unitCode": "SECOND",
+                "fixedNameZh": "秒",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "audio_input",
+                "constraints": []
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "modelProtocolCompatibility": {
+    "audio.transcriptions": true
+  },
+  "supportedParametersDefaultValue": {
+    "enable_itn": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "input_audio": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "language": {
+      "enable": true,
+      "defaultValue": null
+    }
+  },
+  "priceInfo": {
+    "prices": [
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "AUDIO_INPUT",
+            "priceNameZH": "音频输入费用(audio_input)",
+            "priceValue": 0.0002,
+            "unitCode": "SECOND",
+            "fixedNameZh": "秒",
+            "priceCurrency": "USD",
+            "direction": "INPUT",
+            "sourceFeeCode": "audio_input",
+            "constraints": []
+          }
+        ]
+      }
+    ]
+  },
+  "pricingDetails": [
+    {
+      "feeItemCode": "audio_input",
+      "feeItemName": "音频输入费用(audio_input)",
+      "feeRecords": [
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "seconds"
+            }
+          ],
+          "feeRate": 0.0002
+        }
+      ],
+      "selectedConstraint": [
+        "chargeUnit"
+      ]
+    }
+  ],
+  "sourcePublishedPrices": {
+    "pricing_completion": "0",
+    "pricing_discount": "1",
+    "pricing_prompt": "0"
+  },
+  "exampleCodes": [],
+  "serviceConfiguration": "服务配置待开通；接入地址、鉴权和可用协议以开通后的服务配置为准。",
+  "sourceRegion": "global",
+  "sourceCatalog": "ZenMux",
+  "sourceUrl": "https://zenmux.ai/xiaomi/mimo-v2.5-asr",
+  "detailVerified": true,
+  "aliases": [
+    "MiMo-V2.5-ASR"
+  ],
+  "isFree": false
+}

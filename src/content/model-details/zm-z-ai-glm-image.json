@@ -1,0 +1,199 @@
+{
+  "slug": "zm-z-ai-glm-image",
+  "uniqueId": "2606MOvWg36g14613710",
+  "name": "z-ai/glm-image",
+  "displayName": "Z.AI: GLM-Image",
+  "provider": "Z.ai",
+  "manufacturerKey": "z-ai",
+  "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2025/10/15/bkWpB0o/Property-1Zai.svg",
+  "zhDescription": "结合自回归与扩散解码的图像模型，突出文字渲染和知识密集型创作，适合需要精确语义理解的视觉任务。",
+  "zhLongDescription": "结合自回归与扩散解码的图像模型，突出文字渲染和知识密集型创作，适合需要精确语义理解的视觉任务。",
+  "description": "结合自回归与扩散解码的图像模型，突出文字渲染和知识密集型创作，适合需要精确语义理解的视觉任务。",
+  "longDescription": "结合自回归与扩散解码的图像模型，突出文字渲染和知识密集型创作，适合需要精确语义理解的视觉任务。",
+  "contextLength": 10240,
+  "maxCompletionTokens": null,
+  "currency": "USD",
+  "tagList": [
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    }
+  ],
+  "publishedTime": "2026-01-19",
+  "minDiscountRate": "1",
+  "supportedParams": [
+    "addWatermark",
+    "aspectRatio"
+  ],
+  "supportedProtocols": [
+    "imagen"
+  ],
+  "reasoning": 0,
+  "reasoningModes": [
+    0
+  ],
+  "providerNames": [
+    "Z.ai",
+    "BigModel"
+  ],
+  "providerDetails": [
+    {
+      "name": "Z.ai",
+      "slug": "z-ai",
+      "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2025/10/15/bkWpB0o/Property-1Zai.svg",
+      "contextLength": 10240,
+      "maxCompletionTokens": null,
+      "supportsStreaming": false,
+      "apiProtocols": {
+        "imagen": {
+          "supported_parameters": [
+            "aspectRatio",
+            "addWatermark"
+          ],
+          "supports_reasoning": 0
+        }
+      },
+      "pricingDiscount": "1",
+      "priceInfo": {
+        "prices": [
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE",
+                "priceNameZH": "图像处理或生成的费用(image)",
+                "priceValue": 0.0146,
+                "unitCode": "COUNT",
+                "fixedNameZh": "次",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "image",
+                "constraints": []
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "BigModel",
+      "slug": "bigmodel",
+      "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2026/03/16/egV2mHv/Property-1Big-model.svg",
+      "contextLength": 10240,
+      "maxCompletionTokens": null,
+      "supportsStreaming": false,
+      "apiProtocols": {
+        "imagen": {
+          "supported_parameters": [
+            "aspectRatio",
+            "addWatermark"
+          ],
+          "supports_reasoning": 0
+        }
+      },
+      "pricingDiscount": "1",
+      "priceInfo": {
+        "prices": [
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE",
+                "priceNameZH": "图像处理或生成的费用(image)",
+                "priceValue": 0.0146,
+                "unitCode": "COUNT",
+                "fixedNameZh": "次",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "image",
+                "constraints": []
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "modelProtocolCompatibility": {
+    "imagen": true
+  },
+  "supportedParametersDefaultValue": {
+    "addWatermark": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "aspectRatio": {
+      "enable": true,
+      "defaultValue": null
+    }
+  },
+  "priceInfo": {
+    "prices": [
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "IMAGE",
+            "priceNameZH": "图像处理或生成的费用(image)",
+            "priceValue": 0.0146,
+            "unitCode": "COUNT",
+            "fixedNameZh": "次",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "image",
+            "constraints": []
+          }
+        ]
+      }
+    ]
+  },
+  "pricingDetails": [
+    {
+      "feeItemCode": "image",
+      "feeItemName": "图像处理或生成的费用(image)",
+      "selectedConstraint": [
+        "chargeUnit"
+      ],
+      "feeRecords": [
+        {
+          "feeRate": 0.0146,
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "counts"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sourcePublishedPrices": {
+    "pricing_completion": "0",
+    "pricing_discount": "1",
+    "pricing_prompt": "0"
+  },
+  "exampleCodes": [],
+  "serviceConfiguration": "服务配置待开通；接入地址、鉴权和可用协议以开通后的服务配置为准。",
+  "sourceRegion": "global",
+  "sourceCatalog": "ZenMux",
+  "sourceUrl": "https://zenmux.ai/z-ai/glm-image",
+  "detailVerified": true,
+  "aliases": [
+    "glm-image"
+  ],
+  "isFree": false
+}

@@ -1,0 +1,360 @@
+{
+  "uniqueId": "modelservice-1794366738678001887",
+  "name": "claude-fable-5-2",
+  "displayName": "Claude Fable5.2",
+  "provider": "Anthropic",
+  "description": "Claude Fable 5.2 is Anthropic's most capable model for the most demanding technical work, with gains over Fable 5.1 in coding, reasoning, and vision. In prerelease testing it completed otherwise-infeasible software migrations, designed working electronic devices from scratch, and made progress on open problems in physics and mathematics. It communicates more clearly than earlier Fable models and generates output up to 30% faster than Fable 5.1. Adaptive extended thinking is always on, with reasoning effort levels from low to max (default high) and preserved thinking across turns. Anthropic recommends Opus 5.5 as the daily driver for most coding and knowledge work, with Fable 5.2 for the most ambitious, open-ended problems.\n\n",
+  "zhDescription": "Claude Fable 5.2 是 Anthropic 面向高难度技术工作的能力最强模型，相较 Fable 5.1 在编程、推理与视觉能力方面均有提升。在预发布测试中，它完成了此前难以实现的软件迁移任务，从零设计出可运行的电子设备，并在物理和数学开放性难题上取得进展。模型表达较早期 Fable 系列更加清晰，输出速度最高比 Fable 5.1 提升 30%。\n\n模型始终启用自适应扩展思考，推理强度支持从 low 到 max，默认为 high，并可跨轮次保留思考过程。Anthropic 建议大多数日常编程与知识工作优先使用 Opus 5.5，而将 Fable 5.2 用于更具挑战性、开放性更强的问题。",
+  "longDescription": "Claude Fable 5.2 is Anthropic's most capable model for the most demanding technical work, with gains over Fable 5.1 in coding, reasoning, and vision. In prerelease testing it completed otherwise-infeasible software migrations, designed working electronic devices from scratch, and made progress on open problems in physics and mathematics. It communicates more clearly than earlier Fable models and generates output up to 30% faster than Fable 5.1. Adaptive extended thinking is always on, with reasoning effort levels from low to max (default high) and preserved thinking across turns. Anthropic recommends Opus 5.5 as the daily driver for most coding and knowledge work, with Fable 5.2 for the most ambitious, open-ended problems.\n\n",
+  "zhLongDescription": "Claude Fable 5.2 是 Anthropic 面向高难度技术工作的能力最强模型，相较 Fable 5.1 在编程、推理与视觉能力方面均有提升。在预发布测试中，它完成了此前难以实现的软件迁移任务，从零设计出可运行的电子设备，并在物理和数学开放性难题上取得进展。模型表达较早期 Fable 系列更加清晰，输出速度最高比 Fable 5.1 提升 30%。\n\n模型始终启用自适应扩展思考，推理强度支持从 low 到 max，默认为 high，并可跨轮次保留思考过程。Anthropic 建议大多数日常编程与知识工作优先使用 Opus 5.5，而将 Fable 5.2 用于更具挑战性、开放性更强的问题。",
+  "contextLength": "1000000",
+  "maxCompletionTokens": 128000,
+  "maxTokens": 128000,
+  "currency": null,
+  "inputPrice": "¥8.000000/M",
+  "outputPrice": "¥40.000000/M",
+  "inPrice": null,
+  "outPrice": null,
+  "inPriceZh": "¥8.000000/M",
+  "outPriceZh": "¥40.000000/M",
+  "inHitCachePrice": "¥0.00/M",
+  "inHitCreatePrice": "¥0.200000/M",
+  "tagList": [
+    {
+      "type": "MODEL_TYPE",
+      "key": "TEXT_GENERATE",
+      "value": "文本生成"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "FILE",
+      "value": "文件"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    }
+  ],
+  "type": "TEXT_GENERATE",
+  "typeList": [
+    "TEXT_GENERATE"
+  ],
+  "supportedParametersDefaultValue": {
+    "temperature": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "top_p": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "top_k": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "max_tokens": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "enable_search": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "enable_thinking": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "thinking_budget": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    }
+  },
+  "protocolParameters": [],
+  "modelProtocolCompatibility": {
+    "System One": false,
+    "google video": false,
+    "dashscope": false,
+    "google_gemini": false,
+    "anthropic_message": false,
+    "openai_responses": false,
+    "openai_chat_completions": false
+  },
+  "minDiscountRate": "1",
+  "priceInfo": {
+    "lowestProviderPrice": {
+      "inputPrice": {
+        "priceCode": "INPUT",
+        "priceName": "Input",
+        "priceNameZH": "输入",
+        "priceValue": "8.000000",
+        "originalPrice": "8.000000",
+        "discountRate": "1.000000",
+        "unitCode": "M_TOKENS",
+        "unitName": "M",
+        "unitNameZh": "M",
+        "direction": "INPUT",
+        "fixedName": "M Tokens",
+        "fixedNameZh": "百万Tokens"
+      },
+      "outputPrice": {
+        "priceCode": "OUTPUT",
+        "priceName": "Output",
+        "priceNameZH": "输出",
+        "priceValue": "40.000000",
+        "originalPrice": "40.000000",
+        "discountRate": "1.000000",
+        "unitCode": "M_TOKENS",
+        "unitName": "M",
+        "unitNameZh": "M",
+        "direction": "OUTPUT",
+        "fixedName": "M Tokens",
+        "fixedNameZh": "百万Tokens"
+      }
+    },
+    "prices": [
+      {
+        "stage": "",
+        "stageText": "",
+        "type": null,
+        "priceCurrency": "CNY",
+        "price": [
+          {
+            "priceCode": "CACHE_WRITE_1HOUR",
+            "priceName": "Cache Write(1 hour)",
+            "priceNameZH": "显式缓存创建（1小时）",
+            "priceValue": "16.000000",
+            "originalPrice": "16.000000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "CACHE_WRITE_5MIN",
+            "priceName": "Cache Write (5 min)",
+            "priceNameZH": "显式缓存创建（5分钟）",
+            "priceValue": "10.000000",
+            "originalPrice": "10.000000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "INPUT",
+            "priceName": "Input",
+            "priceNameZH": "输入",
+            "priceValue": "8.000000",
+            "originalPrice": "8.000000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "OUTPUT",
+            "priceName": "Output",
+            "priceNameZH": "输出",
+            "priceValue": "40.000000",
+            "originalPrice": "40.000000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "OUTPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "INPUT_CACHE_HIT",
+            "priceName": "Input (Cache Hit)",
+            "priceNameZH": "输入（命中缓存）",
+            "priceValue": "0.200000",
+            "originalPrice": "0.200000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          }
+        ]
+      }
+    ]
+  },
+  "publishedTime": "2026-11-11 11:12:19",
+  "offShelfFlag": 0,
+  "offShelfDate": null,
+  "buyTypes": [
+    "BY_AMOUNT"
+  ],
+  "specs": {
+    "inputPrice": "¥0.0000",
+    "inputPriceHint": "每 1K tokens",
+    "outputPrice": "¥0.0000",
+    "outputPriceHint": "每 1K tokens",
+    "contextLength": "1000000",
+    "contextLengthHint": "tokens",
+    "maxOutput": "0",
+    "maxOutputHint": "tokens"
+  },
+  "capabilities": [],
+  "languages": [
+    "文本",
+    "图像",
+    "文件"
+  ],
+  "scenarios": [
+    "文本"
+  ],
+  "modelParameters": [
+    {
+      "type": "slider",
+      "label": "Temperature",
+      "value": 0.3,
+      "min": 0,
+      "max": 2,
+      "step": 0.01,
+      "description": "控制输出的随机性，值越高越随机",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "label": "Presence Penalty",
+      "value": 0.1,
+      "min": -2,
+      "max": 2,
+      "step": 0.01,
+      "description": "存在惩罚，鼓励模型讨论新话题",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "label": "Top P",
+      "value": 0.95,
+      "min": 0,
+      "max": 1,
+      "step": 0.01,
+      "description": "核采样参数，控制候选词汇的范围",
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "label": "Max Tokens",
+      "value": 0,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "单次生成的最大 token 数量",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "label": "Frequency Penalty",
+      "value": 0.1,
+      "min": -2,
+      "max": 2,
+      "step": 0.01,
+      "description": "频率惩罚，减少重复内容的生成",
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "label": "Context Length",
+      "value": 64000,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "支持的最大上下文长度",
+      "thousands": true
+    }
+  ],
+  "usageGuide": {
+    "authIntro": "使用 API Key 进行认证，在请求头中添加 x-api-key 和 anthropic-version：",
+    "authBearerPlaceholder": "<api_key>",
+    "requestIntro": "使用 Anthropic Messages 协议：",
+    "requestExample": "{\n  \"max_tokens\": 1024,\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"你好，请介绍一下自己\"\n    }\n  ],\n  \"model\": \"claude-fable-5-2\"\n}",
+    "responseExample": "{\n  \"role\": \"assistant\",\n  \"usage\": {\n    \"output_tokens\": 12,\n    \"input_tokens\": 9\n  },\n  \"stop_reason\": \"end_turn\",\n  \"model\": \"claude-fable-5-2\",\n  \"id\": \"msg_123\",\n  \"type\": \"message\",\n  \"content\": [\n    {\n      \"text\": \"你好！我是 claude-fable-5-2...\",\n      \"type\": \"text\"\n    }\n  ]\n}",
+    "docUrl": "https://docs.anthropic.com/en/api/messages",
+    "docLabel": "查看完整 API 文档"
+  },
+  "exampleCodes": {
+    "python": {
+      "sectionTitle": "Python 示例",
+      "installLine": "安装依赖：pip install anthropic",
+      "code": "# pip install anthropic\nimport anthropic\n\nclient = anthropic.Anthropic(\n    api_key=\"<api_key>\",\n    base_url=\"http://10.191.0.202\",\n)\n\nmessage = client.messages.create(\n    model=\"claude-fable-5-2\",\n    max_tokens=1024,\n    messages=[{\"role\": \"user\", \"content\": \"What is the meaning of life?\"}],\n)\nprint(message.content)"
+    },
+    "javascript": {
+      "sectionTitle": "JavaScript 示例",
+      "installLine": "无需安装额外依赖（需 Node 18+ 或支持 fetch 的运行环境）",
+      "code": "const response = await fetch(\"http://10.191.0.202/v1/messages\", {\n  method: \"POST\",\n  headers: {\n    \"x-api-key\": \"<api_key>\",\n    \"anthropic-version\": \"2023-06-01\",\n    \"Content-Type\": \"application/json\"\n  },\n  body: JSON.stringify({\n    model: \"claude-fable-5-2\",\n    max_tokens: 1024,\n    messages: [{ role: \"user\", content: \"What is the meaning of life?\" }]\n  })\n});\nconst result = await response.json();\nconsole.log(result.content[0].text);"
+    },
+    "curl": {
+      "sectionTitle": "Curl 示例",
+      "installLine": "说明：macOS / Linux 一般已预装 curl",
+      "code": "curl -X POST \"http://10.191.0.202/v1/messages\" \\\n  -H \"x-api-key: <api_key>\" \\\n  -H \"anthropic-version: 2023-06-01\" \\\n  -H \"content-type: application/json\" \\\n  -d '{\"model\":\"claude-fable-5-2\",\"max_tokens\":1024,\"messages\":[{\"role\":\"user\",\"content\":\"What is the meaning of life?\"}]}'"
+    }
+  },
+  "agentIntegrations": [
+    {
+      "name": "Claude Code",
+      "description": "Use this model through the Anthropic-compatible endpoint.",
+      "zhDescription": "通过 Anthropic 兼容接口在 Claude Code 中使用当前模型。",
+      "fileLabel": "~/.claude/settings.json",
+      "language": "json",
+      "code": "{\n  \"env\": {\n    \"ANTHROPIC_AUTH_TOKEN\": \"YOUR_MAAS_API_KEY\",\n    \"ANTHROPIC_BASE_URL\": \"https://maas-api.computrix.ai/\",\n    \"ANTHROPIC_MODEL\": \"claude-fable-5-2\"\n  }\n}",
+      "guideUrl": "/docs/agent-guides/claude-code"
+    },
+    {
+      "name": "Codex",
+      "description": "Configure MaaS as an OpenAI-compatible model provider.",
+      "zhDescription": "将 MaaS 配置为 Codex 的 OpenAI 兼容模型供应商。",
+      "fileLabel": "~/.codex/config.toml",
+      "language": "toml",
+      "code": "model = \"claude-fable-5-2\"\nmodel_provider = \"maas\"\n\n[model_providers.maas]\nname = \"MaaS\"\nbase_url = \"https://maas-api.computrix.ai/v1\"\nenv_key = \"MAAS_API_KEY\"\nwire_api = \"responses\"",
+      "guideUrl": "/docs/agent-guides/codex"
+    },
+    {
+      "name": "OpenCode",
+      "description": "Add MaaS as a custom provider in OpenCode.",
+      "zhDescription": "在 OpenCode 中添加 MaaS 自定义模型供应商。",
+      "fileLabel": "~/.config/opencode/opencode.json",
+      "language": "json",
+      "code": "{\n  \"$schema\": \"https://opencode.ai/config.json\",\n  \"provider\": {\n    \"maas\": {\n      \"npm\": \"@ai-sdk/openai-compatible\",\n      \"name\": \"MaaS\",\n      \"options\": {\n        \"baseURL\": \"https://maas-api.computrix.ai/v1\",\n        \"apiKey\": \"YOUR_MAAS_API_KEY\"\n      },\n      \"models\": {\n        \"claude-fable-5-2\": {\n          \"name\": \"claude-fable-5-2\"\n        }\n      }\n    }\n  },\n  \"model\": \"maas/claude-fable-5-2\"\n}",
+      "guideUrl": "/docs/agent-guides/opencode"
+    }
+  ],
+  "slug": "sg-modelservice-1794366738678001887",
+  "sourceRegion": "sg",
+  "sourceCatalog": "Computrix",
+  "sourceUrl": "https://computrix.ai/sg/models",
+  "detailVerified": true
+}

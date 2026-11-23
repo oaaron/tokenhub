@@ -1,0 +1,253 @@
+{
+  "uniqueId": "modelservice-1793604168840001989",
+  "name": "lingdt-decision-1.1-4b",
+  "displayName": "LingDT-Decision-1.1-4B",
+  "provider": "AntDigital",
+  "description": "LingDT-Decision is an in-house System One model from Ant Digital Technologies, designed for decision-making tasks across the software development lifecycle. It addresses the fundamental mismatch between traditional LLMs and decision workloads in terms of efficiency, reliability, and cost. In addition to three common decision modes—choice (single-select), bool (binary judgment), and score (scoring)—LingDT-Decision natively supports multi-choice (multi-select). Its confidence scores are carefully calibrated for more reliable and trustworthy outputs. The model supports up to 16K context per question, up to 32 questions per request, and a maximum of 255 options.\nAPI Guide：maas.antdigital.com/docs/lingdt-decision-api-guide",
+  "zhDescription": "蚂蚁数科自研System One 模型LingDT-Decision（4B版本）， 主要用于各种软件研发过程的决策类型任务。基于mid-train技术，模型能更好的对各场景或领域进行适配，从而解决传统大语言模型（LLM）在效率、可靠性和成本上存在的根本性错配问题。除了支持choice（单选）、noul（判断）、score（打分）三种常见决策模式，LingDT-Decision还原生支持multi-choice (多选)。此外，基于强化学习技术，模型在返回的置信度方面实现深度对齐，使得模型更加可靠、可信。模型支持单请求最大64K上下文，单问题最大32K上下文，单次请求最多32个问题，DAG深度为5， 最大支持255个选项。接入指南：maas.antdigital.com/docs/lingdt-decision-api-guide  ",
+  "longDescription": "LingDT-Decision is an in-house System One model from Ant Digital Technologies, designed for decision-making tasks across the software development lifecycle. It addresses the fundamental mismatch between traditional LLMs and decision workloads in terms of efficiency, reliability, and cost. In addition to three common decision modes—choice (single-select), bool (binary judgment), and score (scoring)—LingDT-Decision natively supports multi-choice (multi-select). Its confidence scores are carefully calibrated for more reliable and trustworthy outputs. The model supports up to 16K context per question, up to 32 questions per request, and a maximum of 255 options.\nAPI Guide：maas.antdigital.com/docs/lingdt-decision-api-guide",
+  "zhLongDescription": "蚂蚁数科自研System One 模型LingDT-Decision（4B版本）， 主要用于各种软件研发过程的决策类型任务。基于mid-train技术，模型能更好的对各场景或领域进行适配，从而解决传统大语言模型（LLM）在效率、可靠性和成本上存在的根本性错配问题。除了支持choice（单选）、noul（判断）、score（打分）三种常见决策模式，LingDT-Decision还原生支持multi-choice (多选)。此外，基于强化学习技术，模型在返回的置信度方面实现深度对齐，使得模型更加可靠、可信。模型支持单请求最大64K上下文，单问题最大32K上下文，单次请求最多32个问题，DAG深度为5， 最大支持255个选项。接入指南：maas.antdigital.com/docs/lingdt-decision-api-guide  ",
+  "contextLength": null,
+  "maxCompletionTokens": null,
+  "maxTokens": null,
+  "currency": null,
+  "inPrice": null,
+  "outPrice": null,
+  "inPriceZh": null,
+  "outPriceZh": null,
+  "inHitCachePrice": "¥0.00/M",
+  "inHitCreatePrice": "¥0.00/M",
+  "tagList": [
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    }
+  ],
+  "type": null,
+  "typeList": [],
+  "supportedParametersDefaultValue": {
+    "temperature": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "top_p": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "top_k": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "max_tokens": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "enable_search": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "enable_thinking": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "thinking_budget": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    }
+  },
+  "protocolParameters": [
+    {
+      "protocolName": "System One",
+      "displayName": "System One",
+      "parameters": {
+        "dag": true,
+        "questions": true,
+        "state": true
+      }
+    }
+  ],
+  "modelProtocolCompatibility": {
+    "System One": true,
+    "google video": false,
+    "dashscope": false,
+    "google_gemini": false,
+    "anthropic_message": false,
+    "openai_responses": false,
+    "openai_chat_completions": false
+  },
+  "minDiscountRate": "0.500000",
+  "priceInfo": {
+    "lowestProviderPrice": {
+      "inputPrice": {
+        "priceCode": "INPUT",
+        "priceName": "Input",
+        "priceNameZH": "输入",
+        "priceValue": "0.100000",
+        "originalPrice": "0.200000",
+        "discountRate": "0.500000",
+        "unitCode": "M_TOKENS",
+        "unitName": "M",
+        "unitNameZh": "M",
+        "direction": "INPUT",
+        "fixedName": "M Tokens",
+        "fixedNameZh": "百万Tokens"
+      },
+      "outputPrice": null
+    },
+    "prices": [
+      {
+        "stage": "",
+        "stageText": "",
+        "type": null,
+        "priceCurrency": "CNY",
+        "price": [
+          {
+            "priceCode": "INPUT",
+            "priceName": "Input",
+            "priceNameZH": "输入",
+            "priceValue": "0.100000",
+            "originalPrice": "0.200000",
+            "discountRate": "0.500000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          }
+        ]
+      }
+    ]
+  },
+  "publishedTime": "2026-11-02 15:22:49",
+  "offShelfFlag": 0,
+  "offShelfDate": null,
+  "buyTypes": [
+    "BY_AMOUNT",
+    "BY_CREDIT"
+  ],
+  "providers": [
+    {
+      "providerUid": "channel-1779290799108001040",
+      "providerName": "antdigital",
+      "providerDisplayName": "蚂蚁数字科技",
+      "providerLogo": "https://maas-public.oss-cn-shanghai.aliyuncs.com/maas-admin/image/2026-09-10/image-4cf4a41f-3ae4-42.png"
+    }
+  ],
+  "extInfo": "{\"exampleCodes\":{\"openAI\":[{\"code\":\"#参考文档：https://maas.antdigital.com/docs/lingdt-decision-api-guide\\ncurl --location 'https://maas-api.antdigital.com/v1/systemone' \\\\\\n--header 'Content-Type: application/json' \\\\\\n--header 'Authorization: Bearer $API_KEY' \\\\\\n--data '{\\n  \\\"model\\\": \\\"lingdt-decision-1.1-4b\\\",\\n  \\\"state\\\": {\\\"situation\\\": \\\"同一笔订单被扣款两次,客服承诺 3 个工作日内退款,一周过去仍未到账。\\\",\\n            \\\"order\\\": \\\"SO-10086\\\", \\\"amount\\\": \\\"199元\\\"},\\n  \\\"questions\\\": {\\n    \\\"department\\\": {\\\"type\\\": \\\"choice\\\", \\\"instructions\\\": \\\"应该由哪个部门处理该工单?\\\",\\n                   \\\"criteria\\\": {\\\"billing\\\": \\\"账单、扣款、退款相关问题\\\", \\\"shipping\\\": \\\"物流与配送问题\\\",\\n                                \\\"account\\\": \\\"账号与登录问题\\\", \\\"other\\\": \\\"其他问题\\\"}},\\n    \\\"severity\\\":   {\\\"type\\\": \\\"score\\\",  \\\"instructions\\\": \\\"该客诉的严重程度是几级?\\\",\\n                   \\\"criteria\\\": [\\\"一般\\\", \\\"较严重\\\", \\\"严重\\\", \\\"非常严重\\\"]},\\n    \\\"urgent\\\":     {\\\"type\\\": \\\"noul\\\",   \\\"instructions\\\": \\\"综合 `department` 与 `severity`,对照规则判断:该工单是否需要在 24 小时内优先处理?\\\",\\n                   \\\"criteria\\\": {\\\"true\\\": \\\"资金被实际占用且已超出承诺时限,需 24 小时内人工介入\\\",\\n                                \\\"false\\\": \\\"仍在承诺处理时限内,按常规时限处理即可\\\"}},\\n    \\\"queue\\\":      {\\\"type\\\": \\\"choice\\\", \\\"instructions\\\": \\\"综合 `urgent` 与 `department`,该工单应进入哪条处理队列?\\\",\\n                   \\\"criteria\\\": {\\\"quick_refund\\\": \\\"快速退款通道:已确认的重复扣款且需优先处理\\\",\\n                                \\\"manual_review\\\": \\\"人工复核队列:判定存疑或需要补充证据\\\",\\n                                \\\"normal_track\\\": \\\"常规跟进:一般严重程度,按正常时限处理\\\"}}\\n  },\\n  \\\"options\\\": {\\\"dag\\\": {\\\"edges\\\": {\\n    \\\"urgent\\\": {\\\"depends\\\": [\\\"department\\\", \\\"severity\\\"]},\\n    \\\"queue\\\":  {\\\"depends\\\": [\\\"urgent\\\", \\\"department\\\"]}\\n  }}}\\n}'\\n# edges 的 key 为下游问题 id,depends 为其依赖的上游问题 id 列表;未出现在 edges 中的问题视为无依赖;\\n\\n\\n\\n# 成功返回示例\\n# {\\n#   \\\"model\\\": \\\"<model>\\\",\\n#   \\\"answers\\\": {\\n#     \\\"department\\\": {\\\"type\\\": \\\"choice\\\", \\\"choice\\\": \\\"billing\\\", \\\"probabilities\\\": {...}, \\\"confidence\\\": 0.9968},\\n#     \\\"severity\\\":   {\\\"type\\\": \\\"score\\\",  \\\"score\\\": 1.6359,     \\\"probabilities\\\": {...}, \\\"confidence\\\": 0.8589},\\n#     \\\"urgent\\\":     {\\\"type\\\": \\\"noul\\\",   \\\"noul\\\": 0.9853},\\n#     \\\"queue\\\":      {\\\"type\\\": \\\"choice\\\", \\\"choice\\\": \\\"quick_refund\\\", \\\"probabilities\\\": {...}, \\\"confidence\\\": 0.9887}\\n#   },\\n#   \\\"usage\\\":  {\\\"input_tokens\\\": 557, \\\"output_tokens\\\": 0},\\n#   \\\"errorCode\\\": 0,\\n#   \\\"layers\\\": [\\n#     {\\\"index\\\": 0, \\\"questions\\\": [\\\"department\\\", \\\"severity\\\"], \\\"new_state_keys\\\": [],\\n#      \\\"request\\\": {\\\"state\\\": \\\"...\\\", \\\"questions\\\": {...}}, \\\"answers\\\": {...}, \\\"latencyMs\\\": 176, \\\"attempts\\\": 1, \\\"usage\\\": {...}},\\n#     {\\\"index\\\": 1, \\\"questions\\\": [\\\"urgent\\\"], \\\"new_state_keys\\\": [\\\"department\\\", \\\"severity\\\"],\\n#      \\\"request\\\": {\\\"state\\\": {\\\"case_state\\\": \\\"...\\\", \\\"upstream_answers\\\": {\\\"department\\\": {...}, \\\"severity\\\": {...}}}, \\\"questions\\\": {...}},\\n#      \\\"answers\\\": {...}, \\\"latencyMs\\\": 103, \\\"attempts\\\": 1, \\\"usage\\\": {...}},\\n#     {\\\"index\\\": 2, \\\"questions\\\": [\\\"queue\\\"], \\\"new_state_keys\\\": [\\\"urgent\\\", \\\"department\\\"],\\n#      \\\"request\\\": {...}, \\\"answers\\\": {...}, \\\"latencyMs\\\": 230, \\\"attempts\\\": 1, \\\"usage\\\": {...}}\\n#   ]\\n# }\\n# answers:全部问题的答案平铺,与无依赖并行请求同形;\\n# usage:各层调用 token 之和;\\n# layers[]:逐层证据——每层合并的问题、注入键(new_state_keys)、该层子调用请求原文(request)、延迟与调用次数;\\n\",\"sectionTitle\":\"\",\"name\":\"curl\"}]},\"supportedParametersDefaultValue\":\"\"}",
+  "specs": {
+    "inputPrice": "¥0.0000",
+    "inputPriceHint": "每 1K tokens",
+    "outputPrice": "¥0.0000",
+    "outputPriceHint": "每 1K tokens",
+    "contextLength": null,
+    "contextLengthHint": "tokens",
+    "maxOutput": "0",
+    "maxOutputHint": "tokens"
+  },
+  "capabilities": [],
+  "languages": [
+    "文本"
+  ],
+  "scenarios": [
+    "文本"
+  ],
+  "modelParameters": [
+    {
+      "type": "text",
+      "id": "dag",
+      "label": "dag",
+      "value": "{}",
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "text",
+      "id": "questions",
+      "label": "questions",
+      "value": "{}",
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "text",
+      "id": "state",
+      "label": "state",
+      "value": "{}",
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    }
+  ],
+  "usageGuide": {
+    "authIntro": "使用 API Key 进行认证，在请求头中添加：",
+    "authBearerPlaceholder": "YOUR_API_KEY",
+    "requestIntro": "支持标准的 OpenAI 参数格式：",
+    "requestExample": "{\n  \"max_tokens\": 4096,\n  \"temperature\": 0.5,\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"你好，请介绍一下自己\"\n    }\n  ],\n  \"model\": \"lingdt-decision-1.1-4b\"\n}",
+    "responseExample": "{\n  \"created\": 1795353264,\n  \"usage\": {\n    \"completion_tokens\": 12,\n    \"prompt_tokens\": 9,\n    \"total_tokens\": 21\n  },\n  \"model\": \"lingdt-decision-1.1-4b\",\n  \"id\": \"chatcmpl-123\",\n  \"choices\": [\n    {\n      \"finish_reason\": \"stop\",\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"你好！我是 lingdt-decision-1.1-4b...\"\n      }\n    }\n  ],\n  \"object\": \"chat.completion\"\n}",
+    "docUrl": "https://api-docs.example.com/",
+    "docLabel": "查看完整 API 文档"
+  },
+  "exampleCodes": {
+    "python": {
+      "sectionTitle": "Python 示例",
+      "installLine": "安装依赖：pip install requests",
+      "code": "import requests\nimport json\n\nurl = \"https://api.example.com/v1/chat/completions\"\nheaders = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n}\n\ndata = {\n    \"model\": \"model-name\",\n    \"messages\": [\n        {\n            \"role\": \"user\",\n            \"content\": \"请写一个 Python 函数计算斐波那契数列\"\n        }\n    ],\n    \"temperature\": 0.7,\n    \"max_tokens\": 4096\n}\n\nresponse = requests.post(url, headers=headers, json=data)\nresult = response.json()\nprint(result[\"choices\"][0][\"message\"][\"content\"])"
+    },
+    "javascript": {
+      "sectionTitle": "JavaScript 示例",
+      "installLine": "无需安装额外依赖（需 Node 18+ 或支持 fetch 的运行环境）",
+      "code": "(async () => {\n  const url = \"https://api.example.com/v1/chat/completions\";\n  const headers = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n  };\n  const data = {\n    model: \"model-name\",\n    messages: [\n      {\n        role: \"user\",\n        content: \"请写一个 Python 函数计算斐波那契数列\"\n      }\n    ],\n    temperature: 0.7,\n    max_tokens: 4096\n  };\n  const response = await fetch(url, {\n    method: \"POST\",\n    headers,\n    body: JSON.stringify(data)\n  });\n  const result = await response.json();\n  console.log(result.choices[0].message.content);\n})();"
+    },
+    "curl": {
+      "sectionTitle": "Curl 示例",
+      "installLine": "说明：macOS / Linux 一般已预装 curl",
+      "code": "curl -X POST \"https://api.example.com/v1/chat/completions\" \\\n  -H \"Authorization: Bearer YOUR_API_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"model\":\"model-name\",\"messages\":[{\"role\":\"user\",\"content\":\"请写一个 Python 函数计算斐波那契数列\"}],\"temperature\":0.7,\"max_tokens\":4096}'"
+    }
+  },
+  "agentIntegrations": [
+    {
+      "id": "codex",
+      "name": "Codex",
+      "description": "Configure MaaS as an OpenAI-compatible model provider.",
+      "zhDescription": "将 MaaS 配置为 Codex 的 OpenAI 兼容模型供应商。",
+      "fileLabel": "~/.codex/config.toml",
+      "language": "toml",
+      "code": "model = \"lingdt-decision-1.1-4b\"\nmodel_provider = \"maas\"\n\n[model_providers.maas]\nname = \"MaaS\"\nbase_url = \"https://maas-api.antdigital.com/v1\"\nenv_key = \"MAAS_API_KEY\"\nwire_api = \"responses\"",
+      "guideUrl": "/docs/agent-guides/codex"
+    },
+    {
+      "id": "opencode",
+      "name": "OpenCode",
+      "description": "Add MaaS as a custom provider in OpenCode.",
+      "zhDescription": "在 OpenCode 中添加 MaaS 自定义模型供应商。",
+      "fileLabel": "~/.config/opencode/opencode.json",
+      "language": "json",
+      "code": "{\n  \"$schema\": \"https://opencode.ai/config.json\",\n  \"provider\": {\n    \"maas\": {\n      \"npm\": \"@ai-sdk/openai-compatible\",\n      \"name\": \"MaaS\",\n      \"options\": {\n        \"baseURL\": \"https://maas-api.antdigital.com/v1\",\n        \"apiKey\": \"YOUR_MAAS_API_KEY\"\n      },\n      \"models\": {\n        \"lingdt-decision-1.1-4b\": {\n          \"name\": \"lingdt-decision-1.1-4b\"\n        }\n      }\n    }\n  },\n  \"model\": \"maas/lingdt-decision-1.1-4b\"\n}",
+      "guideUrl": "/docs/agent-guides/opencode"
+    }
+  ],
+  "sourceUrl": "https://maas.antdigital.com/models/modelservice-1793604168840001989",
+  "slug": "modelservice-1793604168840001989"
+}

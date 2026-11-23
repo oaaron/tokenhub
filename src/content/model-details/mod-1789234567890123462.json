@@ -1,0 +1,486 @@
+{
+  "uniqueId": "mod-1789234567890123462",
+  "name": "MiniMax-M2.5",
+  "displayName": "MiniMax-M2.5",
+  "provider": "MiniMax",
+  "description": "MiniMax大语言模型系列，专为强大的多语言和对话能力而设计。支持跨多种语言的无缝交互，具有母语级流畅度。",
+  "zhDescription": "MiniMax大语言模型系列，专为强大的多语言和对话能力而设计。支持跨多种语言的无缝交互，具有母语级流畅度和文化意识。该模型擅长在长时间对话中保持上下文、理解细微的用户意图并生成引人入胜的自然回复。广泛应用于社交娱乐、客户服务和内容创作等多元化全球市场。",
+  "longDescription": "MiniMax大语言模型系列，专为强大的多语言和对话能力而设计。支持跨多种语言的无缝交互，具有母语级流畅度。",
+  "zhLongDescription": "MiniMax大语言模型系列，专为强大的多语言和对话能力而设计。支持跨多种语言的无缝交互，具有母语级流畅度和文化意识。该模型擅长在长时间对话中保持上下文、理解细微的用户意图并生成引人入胜的自然回复。广泛应用于社交娱乐、客户服务和内容创作等多元化全球市场。",
+  "contextLength": "200000",
+  "maxCompletionTokens": 131000,
+  "maxTokens": 131000,
+  "currency": null,
+  "inPrice": null,
+  "outPrice": null,
+  "inPriceZh": null,
+  "outPriceZh": null,
+  "inHitCachePrice": "¥0.00/M",
+  "inHitCreatePrice": "¥0.420000/M",
+  "tagList": [
+    {
+      "type": "MODEL_TYPE",
+      "key": "TEXT_GENERATE",
+      "value": "文本生成"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    }
+  ],
+  "type": "TEXT_GENERATE",
+  "typeList": [
+    "TEXT_GENERATE"
+  ],
+  "supportedParametersDefaultValue": {
+    "temperature": {
+      "enable": true,
+      "defaultValue": 0.7,
+      "forbidDisable": null
+    },
+    "top_p": {
+      "enable": true,
+      "defaultValue": 0.9,
+      "forbidDisable": null
+    },
+    "top_k": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "max_tokens": {
+      "enable": true,
+      "defaultValue": 131000,
+      "forbidDisable": null
+    },
+    "enable_search": {
+      "enable": true,
+      "defaultValue": true,
+      "forbidDisable": null
+    },
+    "enable_thinking": {
+      "enable": true,
+      "defaultValue": true,
+      "forbidDisable": null
+    },
+    "thinking_budget": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    }
+  },
+  "protocolParameters": [
+    {
+      "protocolName": "anthropic_message",
+      "displayName": "Anthropic Message",
+      "parameters": {
+        "metadata": false,
+        "service_tier": false,
+        "stop_sequences": true,
+        "stream": false,
+        "system": true,
+        "temperature": true,
+        "thinking": true,
+        "tool_choice": true,
+        "tools": true,
+        "top_k": false,
+        "top_p": true
+      }
+    },
+    {
+      "protocolName": "openai_responses",
+      "displayName": "OpenAI Responses",
+      "parameters": {
+        "service_tier": false,
+        "user": false,
+        "truncation": false,
+        "top_p": true,
+        "top_logprobs": false,
+        "tools": true,
+        "tool_choice": true,
+        "text": false,
+        "temperature": true,
+        "stream": false,
+        "store": false,
+        "background": false,
+        "reasoning": true,
+        "prompt": false,
+        "previous_response_id": false,
+        "parallel_tool_calls": false,
+        "metadata": false,
+        "max_tool_calls": false,
+        "max_output_tokens": true,
+        "include": false,
+        "conversation": false
+      }
+    },
+    {
+      "protocolName": "openai_chat_completions",
+      "displayName": "OpenAI Chat Completions",
+      "parameters": {
+        "seed": true,
+        "web_search_options": false,
+        "user": false,
+        "top_p": true,
+        "top_logprobs": false,
+        "tools": true,
+        "tool_choice": true,
+        "temperature": true,
+        "stream_options": false,
+        "stream": false,
+        "store": false,
+        "service_tier": false,
+        "audio": false,
+        "response_format": false,
+        "reasoning_effort": true,
+        "presence_penalty": false,
+        "prediction": false,
+        "parallel_tool_calls": false,
+        "n": false,
+        "modalities": false,
+        "metadata": false,
+        "logprobs": false,
+        "logit_bias": false,
+        "frequency_penalty": false
+      }
+    }
+  ],
+  "modelProtocolCompatibility": {
+    "google video": false,
+    "dashscope": false,
+    "google_gemini": false,
+    "anthropic_message": true,
+    "openai_responses": true,
+    "openai_chat_completions": true
+  },
+  "minDiscountRate": "1",
+  "priceInfo": {
+    "lowestProviderPrice": {
+      "inputPrice": {
+        "priceCode": "INPUT",
+        "priceName": "Input",
+        "priceNameZH": "输入",
+        "priceValue": "2.100000",
+        "originalPrice": "2.100000",
+        "discountRate": "1.000000",
+        "unitCode": "M_TOKENS",
+        "unitName": "M",
+        "unitNameZh": "M",
+        "direction": "INPUT",
+        "fixedName": "M Tokens",
+        "fixedNameZh": "百万Tokens"
+      },
+      "outputPrice": {
+        "priceCode": "OUTPUT",
+        "priceName": "Output",
+        "priceNameZH": "输出",
+        "priceValue": "8.400000",
+        "originalPrice": "8.400000",
+        "discountRate": "1.000000",
+        "unitCode": "M_TOKENS",
+        "unitName": "M",
+        "unitNameZh": "M",
+        "direction": "OUTPUT",
+        "fixedName": "M Tokens",
+        "fixedNameZh": "百万Tokens"
+      }
+    },
+    "prices": [
+      {
+        "stage": "输入≤200K",
+        "stageText": "输入≤200K",
+        "type": null,
+        "priceCurrency": "CNY",
+        "price": [
+          {
+            "priceCode": "INPUT",
+            "priceName": "Input",
+            "priceNameZH": "输入",
+            "priceValue": "2.100000",
+            "originalPrice": "2.100000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "OUTPUT",
+            "priceName": "Output",
+            "priceNameZH": "输出",
+            "priceValue": "8.400000",
+            "originalPrice": "8.400000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "OUTPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "INPUT_CACHE_HIT",
+            "priceName": "Input (Cache Hit)",
+            "priceNameZH": "输入（命中缓存）",
+            "priceValue": "0.420000",
+            "originalPrice": "0.420000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          }
+        ]
+      }
+    ]
+  },
+  "publishedTime": "2026-03-30 10:57:05",
+  "offShelfFlag": 0,
+  "offShelfDate": null,
+  "buyTypes": [
+    "BY_AMOUNT",
+    "BY_CREDIT"
+  ],
+  "providers": [
+    {
+      "providerUid": "channel-1779290799108001040",
+      "providerName": "antdigital",
+      "providerDisplayName": "蚂蚁数字科技",
+      "providerLogo": "https://maas-public.oss-cn-shanghai.aliyuncs.com/maas-admin/image/2026-09-10/image-4cf4a41f-3ae4-42.png"
+    }
+  ],
+  "extInfo": "{\"contextLength\":\"200000\",\"exampleCodes\":{\"openAI\":[{\"code\":\"from openai import OpenAI\\n\\nclient = OpenAI(\\n  base_url=\\\"https://maas-api.antdigital.com/v1\\\",\\n  api_key=\\\"<API_KEY>\\\",\\n)\\n\\n# Chat Completion\\ncompletion = client.chat.completions.create(\\n  model=\\\"MiniMax-M2.5\\\",\\n  messages=[\\n    {\\n      \\\"role\\\": \\\"user\\\",\\n      \\\"content\\\": \\\"What is the meaning of life?\\\"\\n    }\\n  ]\\n)\\nprint(completion.choices[0].message.content)\\n\",\"sectionTitle\":\"Basic Chat Completion\",\"name\":\"python\"},{\"code\":\"curl https://maas-api.antdigital.com/v1/chat/completions \\\\\\n-H \\\"Content-Type: application/json\\\" \\\\\\n-H \\\"Authorization: Bearer $API_KEY\\\" \\\\\\n-d '{\\n  \\\"model\\\": \\\"MiniMax-M2.5\\\",\\n  \\\"messages\\\": [ \\n    { \\n      \\\"role\\\": \\\"user\\\",\\n      \\\"content\\\": \\\"What is the meaning of life?\\\"\\n    }\\n  ]\\n}'\",\"sectionTitle\":\"Basic Chat Completion\",\"name\":\"curl\"}],\"anthropic\":[{\"code\":\"import anthropic\\r\\nclient = anthropic.Anthropic(\\r\\n    api_key=\\\"<API_KEY>\\\", \\r\\n    base_url=\\\"https://maas-api.antdigital.com/v1\\\"\\r\\n)\\r\\nmessage = client.messages.create(\\r\\n    model=\\\"MiniMax-M2.5\\\",\\r\\n    max_tokens=1024,\\r\\n    messages=[\\r\\n      {\\\"role\\\": \\\"user\\\", \\\"content\\\": \\\"Hello, Claude\\\"}\\r\\n    ]\\r\\n)\\r\\nprint(message.content)\\r\\n\",\"sectionTitle\":\"\",\"name\":\"python\"},{\"code\":\"curl https://maas-api.antdigital.com/v1/messages \\\\\\r\\n  --header \\\"x-api-key: $API_KEY\\\" \\\\\\r\\n  --header \\\"anthropic-version: 2023-06-01\\\" \\\\\\r\\n  --header \\\"content-type: application/json\\\" \\\\\\r\\n  -d '{ \\r\\n    \\\"model\\\": \\\"MiniMax-M2.5\\\", \\r\\n    \\\"max_tokens\\\": 1024,\\r\\n    \\\"messages\\\": [\\r\\n      {\\\"role\\\": \\\"user\\\", \\\"content\\\": \\\"Hello, world\\\"}\\r\\n    ]\\r\\n  }'\\r\\n\",\"sectionTitle\":\"\",\"name\":\"curl\"}]}}",
+  "specs": {
+    "inputPrice": "¥0.0002",
+    "inputPriceHint": "每 1K tokens",
+    "outputPrice": "¥0.0008",
+    "outputPriceHint": "每 1K tokens",
+    "contextLength": "200000",
+    "contextLengthHint": "tokens",
+    "maxOutput": "0",
+    "maxOutputHint": "tokens"
+  },
+  "capabilities": [],
+  "languages": [
+    "文本"
+  ],
+  "scenarios": [
+    "文本"
+  ],
+  "modelParameters": [
+    {
+      "type": "text",
+      "id": "stop_sequences",
+      "label": "stop_sequences",
+      "value": "NULL",
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "text",
+      "id": "system",
+      "label": "system",
+      "value": "NULL",
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "id": "temperature",
+      "label": "temperature",
+      "value": 0.7,
+      "min": 0,
+      "max": 1,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "text",
+      "id": "thinking",
+      "label": "thinking",
+      "value": "NULL",
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "text",
+      "id": "tool_choice",
+      "label": "tool_choice",
+      "value": "NULL",
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "text",
+      "id": "tools",
+      "label": "tools",
+      "value": "NULL",
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "id": "top_p",
+      "label": "top_p",
+      "value": 0.9,
+      "min": 0,
+      "max": 1,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "text",
+      "id": "reasoning",
+      "label": "reasoning",
+      "value": "null",
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "id": "max_output_tokens",
+      "label": "max_output_tokens",
+      "value": null,
+      "min": 1,
+      "max": 1000000,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "id": "seed",
+      "label": "seed",
+      "value": null,
+      "min": 0,
+      "max": 1000000,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "select",
+      "id": "reasoning_effort",
+      "label": "reasoning_effort",
+      "value": "medium",
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "id": "max_tokens",
+      "label": "max_tokens",
+      "value": 131000,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": null,
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "id": "enable_search",
+      "label": "enable_search",
+      "value": true,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": null,
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "id": "enable_thinking",
+      "label": "enable_thinking",
+      "value": true,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": null,
+      "thousands": null
+    }
+  ],
+  "usageGuide": {
+    "authIntro": "使用 API Key 进行认证，在请求头中添加：",
+    "authBearerPlaceholder": "YOUR_API_KEY",
+    "requestIntro": "支持标准的 OpenAI 参数格式：",
+    "requestExample": "{\n  \"max_tokens\": 4096,\n  \"temperature\": 0.5,\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"你好，请介绍一下自己\"\n    }\n  ],\n  \"model\": \"MiniMax-M2.5\"\n}",
+    "responseExample": "{\n  \"created\": 1795353267,\n  \"usage\": {\n    \"completion_tokens\": 12,\n    \"prompt_tokens\": 9,\n    \"total_tokens\": 21\n  },\n  \"model\": \"MiniMax-M2.5\",\n  \"id\": \"chatcmpl-123\",\n  \"choices\": [\n    {\n      \"finish_reason\": \"stop\",\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"你好！我是 MiniMax-M2.5...\"\n      }\n    }\n  ],\n  \"object\": \"chat.completion\"\n}",
+    "docUrl": "https://api-docs.example.com/",
+    "docLabel": "查看完整 API 文档"
+  },
+  "exampleCodes": {
+    "python": {
+      "sectionTitle": "Python 示例",
+      "installLine": "安装依赖：pip install requests",
+      "code": "import requests\nimport json\n\nurl = \"https://api.example.com/v1/chat/completions\"\nheaders = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n}\n\ndata = {\n    \"model\": \"model-name\",\n    \"messages\": [\n        {\n            \"role\": \"user\",\n            \"content\": \"请写一个 Python 函数计算斐波那契数列\"\n        }\n    ],\n    \"temperature\": 0.7,\n    \"max_tokens\": 4096\n}\n\nresponse = requests.post(url, headers=headers, json=data)\nresult = response.json()\nprint(result[\"choices\"][0][\"message\"][\"content\"])"
+    },
+    "javascript": {
+      "sectionTitle": "JavaScript 示例",
+      "installLine": "无需安装额外依赖（需 Node 18+ 或支持 fetch 的运行环境）",
+      "code": "(async () => {\n  const url = \"https://api.example.com/v1/chat/completions\";\n  const headers = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n  };\n  const data = {\n    model: \"model-name\",\n    messages: [\n      {\n        role: \"user\",\n        content: \"请写一个 Python 函数计算斐波那契数列\"\n      }\n    ],\n    temperature: 0.7,\n    max_tokens: 4096\n  };\n  const response = await fetch(url, {\n    method: \"POST\",\n    headers,\n    body: JSON.stringify(data)\n  });\n  const result = await response.json();\n  console.log(result.choices[0].message.content);\n})();"
+    },
+    "curl": {
+      "sectionTitle": "Curl 示例",
+      "installLine": "说明：macOS / Linux 一般已预装 curl",
+      "code": "curl -X POST \"https://api.example.com/v1/chat/completions\" \\\n  -H \"Authorization: Bearer YOUR_API_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"model\":\"model-name\",\"messages\":[{\"role\":\"user\",\"content\":\"请写一个 Python 函数计算斐波那契数列\"}],\"temperature\":0.7,\"max_tokens\":4096}'"
+    }
+  },
+  "agentIntegrations": [
+    {
+      "id": "codex",
+      "name": "Codex",
+      "description": "Configure MaaS as an OpenAI-compatible model provider.",
+      "zhDescription": "将 MaaS 配置为 Codex 的 OpenAI 兼容模型供应商。",
+      "fileLabel": "~/.codex/config.toml",
+      "language": "toml",
+      "code": "model = \"MiniMax-M2.5\"\nmodel_provider = \"maas\"\n\n[model_providers.maas]\nname = \"MaaS\"\nbase_url = \"https://maas-api.antdigital.com/v1\"\nenv_key = \"MAAS_API_KEY\"\nwire_api = \"responses\"",
+      "guideUrl": "/docs/agent-guides/codex"
+    },
+    {
+      "id": "opencode",
+      "name": "OpenCode",
+      "description": "Add MaaS as a custom provider in OpenCode.",
+      "zhDescription": "在 OpenCode 中添加 MaaS 自定义模型供应商。",
+      "fileLabel": "~/.config/opencode/opencode.json",
+      "language": "json",
+      "code": "{\n  \"$schema\": \"https://opencode.ai/config.json\",\n  \"provider\": {\n    \"maas\": {\n      \"npm\": \"@ai-sdk/openai-compatible\",\n      \"name\": \"MaaS\",\n      \"options\": {\n        \"baseURL\": \"https://maas-api.antdigital.com/v1\",\n        \"apiKey\": \"YOUR_MAAS_API_KEY\"\n      },\n      \"models\": {\n        \"MiniMax-M2.5\": {\n          \"name\": \"MiniMax-M2.5\"\n        }\n      }\n    }\n  },\n  \"model\": \"maas/MiniMax-M2.5\"\n}",
+      "guideUrl": "/docs/agent-guides/opencode"
+    }
+  ],
+  "sourceUrl": "https://maas.antdigital.com/models/mod-1789234567890123462",
+  "slug": "mod-1789234567890123462"
+}

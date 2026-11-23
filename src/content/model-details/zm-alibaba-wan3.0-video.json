@@ -1,0 +1,791 @@
+{
+  "slug": "zm-alibaba-wan3.0-video",
+  "uniqueId": "2635MO3IzveV14613929",
+  "name": "alibaba/wan3.0-video",
+  "displayName": "Alibaba: Wan3.0-Video",
+  "provider": "Alibaba",
+  "manufacturerKey": "alibaba",
+  "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2026/04/29/ClOLXbH/Property-1Alibaba.svg",
+  "zhDescription": "一体化参考视频生成模型，支持文生视频、首帧或首尾帧图生视频和参考素材生成，最长30秒、30fps。",
+  "zhLongDescription": "一体化参考视频生成模型，支持文生视频、首帧或首尾帧图生视频和参考素材生成，最长30秒、30fps。",
+  "description": "一体化参考视频生成模型，支持文生视频、首帧或首尾帧图生视频和参考素材生成，最长30秒、30fps。",
+  "longDescription": "一体化参考视频生成模型，支持文生视频、首帧或首尾帧图生视频和参考素材生成，最长30秒、30fps。",
+  "contextLength": 20000,
+  "maxCompletionTokens": null,
+  "currency": "USD",
+  "tagList": [
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "FILE",
+      "value": "文件"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "AUDIO",
+      "value": "音频"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "VIDEO",
+      "value": "视频"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "VIDEO",
+      "value": "视频"
+    }
+  ],
+  "publishedTime": "2026-08-24",
+  "minDiscountRate": "1",
+  "supportedParams": [
+    "content",
+    "duration",
+    "generate_audio",
+    "model",
+    "ratio",
+    "resolution",
+    "seed",
+    "watermark"
+  ],
+  "supportedProtocols": [
+    "videos"
+  ],
+  "reasoning": 0,
+  "reasoningModes": [
+    0
+  ],
+  "providerNames": [
+    "Alibaba Cloud"
+  ],
+  "providerDetails": [
+    {
+      "name": "Alibaba Cloud",
+      "slug": "alibaba",
+      "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2025/10/15/FGMEmnu/Property-1Alibaba-cloud.svg",
+      "contextLength": 20000,
+      "maxCompletionTokens": null,
+      "supportsStreaming": false,
+      "apiProtocols": {
+        "videos": {
+          "supported_parameters": [
+            "content",
+            "duration",
+            "generate_audio",
+            "ratio",
+            "resolution",
+            "seed",
+            "watermark",
+            "model"
+          ],
+          "supports_reasoning": 0
+        }
+      },
+      "pricingDiscount": "1",
+      "priceInfo": {
+        "prices": [
+          {
+            "stage": "视频分辨率: 480p",
+            "stageText": "视频分辨率: 480p",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "AUDIO_AND_VIDEO",
+                "priceNameZH": "音频和视频生成费用(audio_and_video)",
+                "priceValue": 0.05,
+                "unitCode": "SECOND",
+                "fixedNameZh": "秒",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "audio_and_video",
+                "constraints": [
+                  {
+                    "code": "resolution",
+                    "name": "视频分辨率",
+                    "type": "Select",
+                    "value": "480p"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "视频分辨率: 1080p",
+            "stageText": "视频分辨率: 1080p",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "AUDIO_AND_VIDEO",
+                "priceNameZH": "音频和视频生成费用(audio_and_video)",
+                "priceValue": 0.2,
+                "unitCode": "SECOND",
+                "fixedNameZh": "秒",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "audio_and_video",
+                "constraints": [
+                  {
+                    "code": "resolution",
+                    "name": "视频分辨率",
+                    "type": "Select",
+                    "value": "1080p"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "视频分辨率: 720p",
+            "stageText": "视频分辨率: 720p",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "AUDIO_AND_VIDEO",
+                "priceNameZH": "音频和视频生成费用(audio_and_video)",
+                "priceValue": 0.1,
+                "unitCode": "SECOND",
+                "fixedNameZh": "秒",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "audio_and_video",
+                "constraints": [
+                  {
+                    "code": "resolution",
+                    "name": "视频分辨率",
+                    "type": "Select",
+                    "value": "720p"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "视频分辨率: 480p",
+            "stageText": "视频分辨率: 480p",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "VIDEO",
+                "priceNameZH": "视频生成费用(video)",
+                "priceValue": 0.05,
+                "unitCode": "SECOND",
+                "fixedNameZh": "秒",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "video",
+                "constraints": [
+                  {
+                    "code": "resolution",
+                    "name": "视频分辨率",
+                    "type": "Select",
+                    "value": "480p"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "视频分辨率: 720p",
+            "stageText": "视频分辨率: 720p",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "VIDEO",
+                "priceNameZH": "视频生成费用(video)",
+                "priceValue": 0.1,
+                "unitCode": "SECOND",
+                "fixedNameZh": "秒",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "video",
+                "constraints": [
+                  {
+                    "code": "resolution",
+                    "name": "视频分辨率",
+                    "type": "Select",
+                    "value": "720p"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "视频分辨率: 1080p",
+            "stageText": "视频分辨率: 1080p",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "VIDEO",
+                "priceNameZH": "视频生成费用(video)",
+                "priceValue": 0.2,
+                "unitCode": "SECOND",
+                "fixedNameZh": "秒",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "video",
+                "constraints": [
+                  {
+                    "code": "resolution",
+                    "name": "视频分辨率",
+                    "type": "Select",
+                    "value": "1080p"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "视频分辨率: 1080p",
+            "stageText": "视频分辨率: 1080p",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "VIDEO_INPUT",
+                "priceNameZH": "视频输入费用(video_input)",
+                "priceValue": 0.2,
+                "unitCode": "SECOND",
+                "fixedNameZh": "秒",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "video_input",
+                "constraints": [
+                  {
+                    "code": "resolution",
+                    "name": "视频分辨率",
+                    "type": "Select",
+                    "value": "1080p"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "视频分辨率: 720p",
+            "stageText": "视频分辨率: 720p",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "VIDEO_INPUT",
+                "priceNameZH": "视频输入费用(video_input)",
+                "priceValue": 0.1,
+                "unitCode": "SECOND",
+                "fixedNameZh": "秒",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "video_input",
+                "constraints": [
+                  {
+                    "code": "resolution",
+                    "name": "视频分辨率",
+                    "type": "Select",
+                    "value": "720p"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "视频分辨率: 480p",
+            "stageText": "视频分辨率: 480p",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "VIDEO_INPUT",
+                "priceNameZH": "视频输入费用(video_input)",
+                "priceValue": 0.05,
+                "unitCode": "SECOND",
+                "fixedNameZh": "秒",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "video_input",
+                "constraints": [
+                  {
+                    "code": "resolution",
+                    "name": "视频分辨率",
+                    "type": "Select",
+                    "value": "480p"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "modelProtocolCompatibility": {
+    "videos": true
+  },
+  "supportedParametersDefaultValue": {
+    "content": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "duration": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "generate_audio": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "model": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "ratio": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "resolution": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "seed": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "watermark": {
+      "enable": true,
+      "defaultValue": null
+    }
+  },
+  "priceInfo": {
+    "prices": [
+      {
+        "stage": "视频分辨率: 480p",
+        "stageText": "视频分辨率: 480p",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "AUDIO_AND_VIDEO",
+            "priceNameZH": "音频和视频生成费用(audio_and_video)",
+            "priceValue": 0.05,
+            "unitCode": "SECOND",
+            "fixedNameZh": "秒",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "audio_and_video",
+            "constraints": [
+              {
+                "code": "resolution",
+                "name": "视频分辨率",
+                "type": "Select",
+                "value": "480p"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stage": "视频分辨率: 1080p",
+        "stageText": "视频分辨率: 1080p",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "AUDIO_AND_VIDEO",
+            "priceNameZH": "音频和视频生成费用(audio_and_video)",
+            "priceValue": 0.2,
+            "unitCode": "SECOND",
+            "fixedNameZh": "秒",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "audio_and_video",
+            "constraints": [
+              {
+                "code": "resolution",
+                "name": "视频分辨率",
+                "type": "Select",
+                "value": "1080p"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stage": "视频分辨率: 720p",
+        "stageText": "视频分辨率: 720p",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "AUDIO_AND_VIDEO",
+            "priceNameZH": "音频和视频生成费用(audio_and_video)",
+            "priceValue": 0.1,
+            "unitCode": "SECOND",
+            "fixedNameZh": "秒",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "audio_and_video",
+            "constraints": [
+              {
+                "code": "resolution",
+                "name": "视频分辨率",
+                "type": "Select",
+                "value": "720p"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stage": "视频分辨率: 480p",
+        "stageText": "视频分辨率: 480p",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "VIDEO",
+            "priceNameZH": "视频生成费用(video)",
+            "priceValue": 0.05,
+            "unitCode": "SECOND",
+            "fixedNameZh": "秒",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "video",
+            "constraints": [
+              {
+                "code": "resolution",
+                "name": "视频分辨率",
+                "type": "Select",
+                "value": "480p"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stage": "视频分辨率: 720p",
+        "stageText": "视频分辨率: 720p",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "VIDEO",
+            "priceNameZH": "视频生成费用(video)",
+            "priceValue": 0.1,
+            "unitCode": "SECOND",
+            "fixedNameZh": "秒",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "video",
+            "constraints": [
+              {
+                "code": "resolution",
+                "name": "视频分辨率",
+                "type": "Select",
+                "value": "720p"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stage": "视频分辨率: 1080p",
+        "stageText": "视频分辨率: 1080p",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "VIDEO",
+            "priceNameZH": "视频生成费用(video)",
+            "priceValue": 0.2,
+            "unitCode": "SECOND",
+            "fixedNameZh": "秒",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "video",
+            "constraints": [
+              {
+                "code": "resolution",
+                "name": "视频分辨率",
+                "type": "Select",
+                "value": "1080p"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stage": "视频分辨率: 1080p",
+        "stageText": "视频分辨率: 1080p",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "VIDEO_INPUT",
+            "priceNameZH": "视频输入费用(video_input)",
+            "priceValue": 0.2,
+            "unitCode": "SECOND",
+            "fixedNameZh": "秒",
+            "priceCurrency": "USD",
+            "direction": "INPUT",
+            "sourceFeeCode": "video_input",
+            "constraints": [
+              {
+                "code": "resolution",
+                "name": "视频分辨率",
+                "type": "Select",
+                "value": "1080p"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stage": "视频分辨率: 720p",
+        "stageText": "视频分辨率: 720p",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "VIDEO_INPUT",
+            "priceNameZH": "视频输入费用(video_input)",
+            "priceValue": 0.1,
+            "unitCode": "SECOND",
+            "fixedNameZh": "秒",
+            "priceCurrency": "USD",
+            "direction": "INPUT",
+            "sourceFeeCode": "video_input",
+            "constraints": [
+              {
+                "code": "resolution",
+                "name": "视频分辨率",
+                "type": "Select",
+                "value": "720p"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stage": "视频分辨率: 480p",
+        "stageText": "视频分辨率: 480p",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "VIDEO_INPUT",
+            "priceNameZH": "视频输入费用(video_input)",
+            "priceValue": 0.05,
+            "unitCode": "SECOND",
+            "fixedNameZh": "秒",
+            "priceCurrency": "USD",
+            "direction": "INPUT",
+            "sourceFeeCode": "video_input",
+            "constraints": [
+              {
+                "code": "resolution",
+                "name": "视频分辨率",
+                "type": "Select",
+                "value": "480p"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "pricingDetails": [
+    {
+      "feeItemCode": "audio_and_video",
+      "feeItemName": "音频和视频生成费用(audio_and_video)",
+      "feeRecords": [
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "seconds"
+            },
+            {
+              "code": "resolution",
+              "name": "视频分辨率",
+              "type": "Select",
+              "value": "480p"
+            }
+          ],
+          "feeRate": 0.05
+        },
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "seconds"
+            },
+            {
+              "code": "resolution",
+              "name": "视频分辨率",
+              "type": "Select",
+              "value": "1080p"
+            }
+          ],
+          "feeRate": 0.2
+        },
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "seconds"
+            },
+            {
+              "code": "resolution",
+              "name": "视频分辨率",
+              "type": "Select",
+              "value": "720p"
+            }
+          ],
+          "feeRate": 0.1
+        }
+      ],
+      "selectedConstraint": [
+        "chargeUnit",
+        "resolution"
+      ]
+    },
+    {
+      "feeItemCode": "video",
+      "feeItemName": "视频生成费用(video)",
+      "feeRecords": [
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "seconds"
+            },
+            {
+              "code": "resolution",
+              "name": "视频分辨率",
+              "type": "Select",
+              "value": "480p"
+            }
+          ],
+          "feeRate": 0.05
+        },
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "seconds"
+            },
+            {
+              "code": "resolution",
+              "name": "视频分辨率",
+              "type": "Select",
+              "value": "720p"
+            }
+          ],
+          "feeRate": 0.1
+        },
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "seconds"
+            },
+            {
+              "code": "resolution",
+              "name": "视频分辨率",
+              "type": "Select",
+              "value": "1080p"
+            }
+          ],
+          "feeRate": 0.2
+        }
+      ],
+      "selectedConstraint": [
+        "chargeUnit",
+        "resolution"
+      ]
+    },
+    {
+      "feeItemCode": "video_input",
+      "feeItemName": "视频输入费用(video_input)",
+      "feeRecords": [
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "seconds"
+            },
+            {
+              "code": "resolution",
+              "name": "视频分辨率",
+              "type": "Select",
+              "value": "1080p"
+            }
+          ],
+          "feeRate": 0.2
+        },
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "seconds"
+            },
+            {
+              "code": "resolution",
+              "name": "视频分辨率",
+              "type": "Select",
+              "value": "720p"
+            }
+          ],
+          "feeRate": 0.1
+        },
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "seconds"
+            },
+            {
+              "code": "resolution",
+              "name": "视频分辨率",
+              "type": "Select",
+              "value": "480p"
+            }
+          ],
+          "feeRate": 0.05
+        }
+      ],
+      "selectedConstraint": [
+        "chargeUnit",
+        "resolution"
+      ]
+    }
+  ],
+  "sourcePublishedPrices": {
+    "pricing_completion": "0",
+    "pricing_discount": "1",
+    "pricing_prompt": "0"
+  },
+  "exampleCodes": [],
+  "serviceConfiguration": "服务配置待开通；接入地址、鉴权和可用协议以开通后的服务配置为准。",
+  "sourceRegion": "global",
+  "sourceCatalog": "ZenMux",
+  "sourceUrl": "https://zenmux.ai/alibaba/wan3.0-video",
+  "detailVerified": true,
+  "aliases": [
+    "wan3.0-video"
+  ],
+  "isFree": false
+}

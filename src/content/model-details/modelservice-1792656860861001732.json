@@ -1,0 +1,453 @@
+{
+  "uniqueId": "modelservice-1792656860861001732",
+  "name": "qwen3.8-omni-flash-realtime",
+  "displayName": "Qwen3.8-Omni-Flash-Realtime",
+  "provider": "Qwen",
+  "description": "Qwen3.8-Omni-Flash-Realtime enables full-duplex audio and video interaction through multiple real-time protocols, designed for smart devices, robotics, and real-time interactive agents. It supports multi-channel audio input with multiple channel layouts, while video representations can be configured between fine-grained and aggregated modes to balance accuracy and computational cost. The model supports audio input in over 60 languages and speech output in over 30 languages.\nFor tool use, it supports function calling and MCP service integration, with a complete event flow covering tool discovery, call approval, execution, and conversation continuation with returned results. While maintaining fast real-time responses, it can orchestrate complex business logic, work with over a hundred tools, and generate expressive, diverse voices.",
+  "zhDescription": "Qwen3.8-Omni-Flash-Realtime 通过多种实时协议提供音视频双工交互，面向智能硬件、机器人与实时交互 Agent。支持多通道音频输入与多种通道布局，视频表征可在细粒度与聚合之间按精度与开销选择，支持 60+ 语言音频输入和 30+ 语言语音输出；工具侧支持 Function Call 与 MCP 服务接入，具备工具发现、调用审批与结果续轮的完整事件链。可以在高速实时响应的同时，编排复杂业务逻辑和支持上百个工具的调用，同时拥有生动、多样的声音生成能力。\n\n",
+  "longDescription": "Qwen3.8-Omni-Flash-Realtime enables full-duplex audio and video interaction through multiple real-time protocols, designed for smart devices, robotics, and real-time interactive agents. It supports multi-channel audio input with multiple channel layouts, while video representations can be configured between fine-grained and aggregated modes to balance accuracy and computational cost. The model supports audio input in over 60 languages and speech output in over 30 languages.\nFor tool use, it supports function calling and MCP service integration, with a complete event flow covering tool discovery, call approval, execution, and conversation continuation with returned results. While maintaining fast real-time responses, it can orchestrate complex business logic, work with over a hundred tools, and generate expressive, diverse voices.",
+  "zhLongDescription": "Qwen3.8-Omni-Flash-Realtime 通过多种实时协议提供音视频双工交互，面向智能硬件、机器人与实时交互 Agent。支持多通道音频输入与多种通道布局，视频表征可在细粒度与聚合之间按精度与开销选择，支持 60+ 语言音频输入和 30+ 语言语音输出；工具侧支持 Function Call 与 MCP 服务接入，具备工具发现、调用审批与结果续轮的完整事件链。可以在高速实时响应的同时，编排复杂业务逻辑和支持上百个工具的调用，同时拥有生动、多样的声音生成能力。\n\n",
+  "contextLength": null,
+  "maxCompletionTokens": null,
+  "maxTokens": null,
+  "currency": null,
+  "inPrice": null,
+  "outPrice": null,
+  "inPriceZh": null,
+  "outPriceZh": null,
+  "inHitCachePrice": "¥0.00/M",
+  "inHitCreatePrice": "¥0.00/M",
+  "tagList": [
+    {
+      "type": "MODEL_TYPE",
+      "key": "AUDIO_GENERATE",
+      "value": "音频生成"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "AUDIO",
+      "value": "音频"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "VIDEO",
+      "value": "视频"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "AUDIO",
+      "value": "音频"
+    }
+  ],
+  "type": "AUDIO_GENERATE",
+  "typeList": [
+    "AUDIO_GENERATE"
+  ],
+  "supportedParametersDefaultValue": {
+    "temperature": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "top_p": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "top_k": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "max_tokens": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "enable_search": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "enable_thinking": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "thinking_budget": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    }
+  },
+  "protocolParameters": [],
+  "modelProtocolCompatibility": {
+    "System One": false,
+    "google video": false,
+    "dashscope": false,
+    "google_gemini": false,
+    "anthropic_message": false,
+    "openai_responses": false,
+    "openai_chat_completions": false
+  },
+  "minDiscountRate": "1",
+  "priceInfo": {
+    "lowestProviderPrice": {
+      "inputPrice": {
+        "priceCode": "INPUT_TEXT",
+        "priceName": "Input (Text)",
+        "priceNameZH": "输入（文本）",
+        "priceValue": "1.500000",
+        "originalPrice": "1.500000",
+        "discountRate": "1.000000",
+        "unitCode": "M_TOKENS",
+        "unitName": "M",
+        "unitNameZh": "M",
+        "direction": "INPUT",
+        "fixedName": "M Tokens",
+        "fixedNameZh": "百万Tokens"
+      },
+      "outputPrice": {
+        "priceCode": "OUTPUT_TEXT_TOKENS",
+        "priceName": "Text Output",
+        "priceNameZH": "输出（文本）",
+        "priceValue": "4.500000",
+        "originalPrice": "4.500000",
+        "discountRate": "1.000000",
+        "unitCode": "M_TOKENS",
+        "unitName": "M",
+        "unitNameZh": "M",
+        "direction": "OUTPUT",
+        "fixedName": "M Tokens",
+        "fixedNameZh": "百万Tokens"
+      }
+    },
+    "prices": [
+      {
+        "stage": "输出仅文本",
+        "stageText": "输出仅文本",
+        "type": null,
+        "priceCurrency": "CNY",
+        "price": [
+          {
+            "priceCode": "INPUT_TEXT",
+            "priceName": "Input (Text)",
+            "priceNameZH": "输入（文本）",
+            "priceValue": "1.500000",
+            "originalPrice": "1.500000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": " INPUT_VIDEO",
+            "priceName": "Input（vedio）",
+            "priceNameZH": "输入（视频）",
+            "priceValue": "1.500000",
+            "originalPrice": "1.500000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "INPUT_IMAGE",
+            "priceName": "Input（Image）",
+            "priceNameZH": "输入（图片）",
+            "priceValue": "1.500000",
+            "originalPrice": "1.500000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "OUTPUT_TEXT_TOKENS",
+            "priceName": "Text Output",
+            "priceNameZH": "输出（文本）",
+            "priceValue": "4.500000",
+            "originalPrice": "4.500000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "OUTPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "INPUT_AUDIO",
+            "priceName": "Audio Input",
+            "priceNameZH": "输入（音频）",
+            "priceValue": "6.000000",
+            "originalPrice": "6.000000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          }
+        ]
+      },
+      {
+        "stage": "输出文本+音频",
+        "stageText": "输出文本+音频",
+        "type": null,
+        "priceCurrency": "CNY",
+        "price": [
+          {
+            "priceCode": "INPUT_TEXT",
+            "priceName": "Input (Text)",
+            "priceNameZH": "输入（文本）",
+            "priceValue": "1.500000",
+            "originalPrice": "1.500000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": " INPUT_VIDEO",
+            "priceName": "Input（vedio）",
+            "priceNameZH": "输入（视频）",
+            "priceValue": "1.500000",
+            "originalPrice": "1.500000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "INPUT_IMAGE",
+            "priceName": "Input（Image）",
+            "priceNameZH": "输入（图片）",
+            "priceValue": "1.500000",
+            "originalPrice": "1.500000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "OUTPUT_AUDIO_TOKENS",
+            "priceName": "Audio Output",
+            "priceNameZH": "输出（音频）",
+            "priceValue": "12.000000",
+            "originalPrice": "12.000000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "OUTPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "INPUT_AUDIO",
+            "priceName": "Audio Input",
+            "priceNameZH": "输入（音频）",
+            "priceValue": "6.000000",
+            "originalPrice": "6.000000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          }
+        ]
+      }
+    ]
+  },
+  "publishedTime": "2026-10-22 16:14:21",
+  "offShelfFlag": 0,
+  "offShelfDate": null,
+  "buyTypes": [
+    "BY_AMOUNT"
+  ],
+  "providers": [
+    {
+      "providerUid": "channel-1779290799108001040",
+      "providerName": "antdigital",
+      "providerDisplayName": "蚂蚁数字科技",
+      "providerLogo": "https://maas-public.oss-cn-shanghai.aliyuncs.com/maas-admin/image/2026-09-10/image-4cf4a41f-3ae4-42.png"
+    }
+  ],
+  "extInfo": "{\"supportedParametersDefaultValue\":\"\",\"exampleCodes\":{\"dashscope\":[{\"code\":\"# 依赖：dashscope >= 1.23.9，pyaudio\\nimport os\\nimport json\\nimport sys\\nimport base64\\nimport time\\n\\nimport pyaudio\\nfrom dashscope.audio.qwen_omni import MultiModality, AudioFormat,OmniRealtimeCallback,OmniRealtimeConversation\\nimport dashscope\\n\\n\\nurl = f'wss://maas-api.antdigital.com/api-ws/v1/realtime'\\n# 配置 API Key，若没有设置环境变量，请用 API Key 将下行替换为 dashscope.api_key = \\\"sk-xxx\\\"\\ndashscope.api_key = os.getenv('API_KEY')\\n# 指定音色\\nvoice = 'Tina'\\n# 指定模型\\nmodel = 'qwen3.8-omni-flash-realtime'\\n# 指定模型角色\\ninstructions = \\\"你是个人助理小云，请用幽默风趣的方式回答用户的问题\\\"\\nclass SimpleCallback(OmniRealtimeCallback):\\n    def __init__(self, pya):\\n        self.pya = pya\\n        self.out = None\\n    def on_open(self):\\n        # 初始化音频输出流\\n        self.out = self.pya.open(\\n            format=pyaudio.paInt16,\\n            channels=1,\\n            rate=24000,\\n            output=True\\n        )\\n    def on_close(self, close_status_code, close_msg):\\n        print(f\\\"[Connection closed] code={close_status_code}, reason={close_msg}\\\", file=sys.stderr, flush=True)\\n\\n    def on_event(self, response):\\n        if response['type'] == 'error':\\n            print(json.dumps(response, ensure_ascii=False), file=sys.stderr, flush=True)\\n            return\\n        if response['type'] == 'response.audio.delta':\\n            # 播放音频\\n            self.out.write(base64.b64decode(response['delta']))\\n        elif response['type'] == 'conversation.item.input_audio_transcription.completed':\\n            # 打印转录文本\\n            print(f\\\"[User] {response['transcript']}\\\")\\n        elif response['type'] == 'response.audio_transcript.done':\\n            # 打印助手回复文本\\n            print(f\\\"[LLM] {response['transcript']}\\\")\\n\\n# 1. 初始化音频设备\\npya = pyaudio.PyAudio()\\n# 2. 创建回调函数和会话\\ncallback = SimpleCallback(pya)\\nconv = OmniRealtimeConversation(model=model, callback=callback, url=url)\\n# 3. 建立连接并配置会话\\nconv.connect()\\nconv.update_session(output_modalities=[MultiModality.AUDIO, MultiModality.TEXT], voice=voice, instructions=instructions)\\n# 4. 初始化音频输入流\\nmic = pya.open(format=pyaudio.paInt16, channels=1, rate=16000, input=True)\\n# 5. 主循环处理音频输入\\nprint(\\\"对话已开始，对着麦克风说话 (Ctrl+C 退出)...\\\")\\ntry:\\n    while True:\\n        audio_data = mic.read(3200, exception_on_overflow=False)\\n        conv.append_audio(base64.b64encode(audio_data).decode())\\n        time.sleep(0.01)\\nexcept KeyboardInterrupt:\\n    # 清理资源\\n    conv.close()\\n    mic.close()\\n    callback.out.close()\\n    pya.terminate()\\n    print(\\\"\\\\n对话结束\\\")\",\"sectionTitle\":\"\",\"name\":\"python\"}]}}",
+  "specs": {
+    "inputPrice": "¥0.0000",
+    "inputPriceHint": "每 1K tokens",
+    "outputPrice": "¥0.0000",
+    "outputPriceHint": "每 1K tokens",
+    "contextLength": null,
+    "contextLengthHint": "tokens",
+    "maxOutput": "0",
+    "maxOutputHint": "tokens"
+  },
+  "capabilities": [],
+  "languages": [
+    "文本",
+    "图像",
+    "音频",
+    "视频"
+  ],
+  "scenarios": [
+    "文本",
+    "音频"
+  ],
+  "modelParameters": [
+    {
+      "type": "slider",
+      "id": "temperature",
+      "label": "Temperature",
+      "value": 0.3,
+      "min": 0,
+      "max": 2,
+      "step": 0.01,
+      "description": "控制输出的随机性，值越高越随机",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "id": "presence_penalty",
+      "label": "Presence Penalty",
+      "value": 0.1,
+      "min": -2,
+      "max": 2,
+      "step": 0.01,
+      "description": "存在惩罚，鼓励模型讨论新话题",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "id": "top_p",
+      "label": "Top P",
+      "value": 0.95,
+      "min": 0,
+      "max": 1,
+      "step": 0.01,
+      "description": "核采样参数，控制候选词汇的范围",
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "id": "max_tokens",
+      "label": "Max Tokens",
+      "value": 0,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "单次生成的最大 token 数量",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "id": "frequency_penalty",
+      "label": "Frequency Penalty",
+      "value": 0.1,
+      "min": -2,
+      "max": 2,
+      "step": 0.01,
+      "description": "频率惩罚，减少重复内容的生成",
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "id": "context_length",
+      "label": "Context Length",
+      "value": 64000,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "支持的最大上下文长度",
+      "thousands": true
+    }
+  ],
+  "usageGuide": {
+    "authIntro": "使用 API Key 进行认证，在请求头中添加：",
+    "authBearerPlaceholder": "YOUR_API_KEY",
+    "requestIntro": "支持标准的 OpenAI 参数格式：",
+    "requestExample": "{\n  \"max_tokens\": 4096,\n  \"temperature\": 0.5,\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"你好，请介绍一下自己\"\n    }\n  ],\n  \"model\": \"qwen3.8-omni-flash-realtime\"\n}",
+    "responseExample": "{\n  \"created\": 1795353265,\n  \"usage\": {\n    \"completion_tokens\": 12,\n    \"prompt_tokens\": 9,\n    \"total_tokens\": 21\n  },\n  \"model\": \"qwen3.8-omni-flash-realtime\",\n  \"id\": \"chatcmpl-123\",\n  \"choices\": [\n    {\n      \"finish_reason\": \"stop\",\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"你好！我是 qwen3.8-omni-flash-realtime...\"\n      }\n    }\n  ],\n  \"object\": \"chat.completion\"\n}",
+    "docUrl": "https://api-docs.example.com/",
+    "docLabel": "查看完整 API 文档"
+  },
+  "exampleCodes": {
+    "python": {
+      "sectionTitle": "Python 示例",
+      "installLine": "安装依赖：pip install requests",
+      "code": "import requests\nimport json\n\nurl = \"https://api.example.com/v1/chat/completions\"\nheaders = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n}\n\ndata = {\n    \"model\": \"model-name\",\n    \"messages\": [\n        {\n            \"role\": \"user\",\n            \"content\": \"请写一个 Python 函数计算斐波那契数列\"\n        }\n    ],\n    \"temperature\": 0.7,\n    \"max_tokens\": 4096\n}\n\nresponse = requests.post(url, headers=headers, json=data)\nresult = response.json()\nprint(result[\"choices\"][0][\"message\"][\"content\"])"
+    },
+    "javascript": {
+      "sectionTitle": "JavaScript 示例",
+      "installLine": "无需安装额外依赖（需 Node 18+ 或支持 fetch 的运行环境）",
+      "code": "(async () => {\n  const url = \"https://api.example.com/v1/chat/completions\";\n  const headers = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n  };\n  const data = {\n    model: \"model-name\",\n    messages: [\n      {\n        role: \"user\",\n        content: \"请写一个 Python 函数计算斐波那契数列\"\n      }\n    ],\n    temperature: 0.7,\n    max_tokens: 4096\n  };\n  const response = await fetch(url, {\n    method: \"POST\",\n    headers,\n    body: JSON.stringify(data)\n  });\n  const result = await response.json();\n  console.log(result.choices[0].message.content);\n})();"
+    },
+    "curl": {
+      "sectionTitle": "Curl 示例",
+      "installLine": "说明：macOS / Linux 一般已预装 curl",
+      "code": "curl -X POST \"https://api.example.com/v1/chat/completions\" \\\n  -H \"Authorization: Bearer YOUR_API_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"model\":\"model-name\",\"messages\":[{\"role\":\"user\",\"content\":\"请写一个 Python 函数计算斐波那契数列\"}],\"temperature\":0.7,\"max_tokens\":4096}'"
+    }
+  },
+  "agentIntegrations": [
+    {
+      "id": "codex",
+      "name": "Codex",
+      "description": "Configure MaaS as an OpenAI-compatible model provider.",
+      "zhDescription": "将 MaaS 配置为 Codex 的 OpenAI 兼容模型供应商。",
+      "fileLabel": "~/.codex/config.toml",
+      "language": "toml",
+      "code": "model = \"qwen3.8-omni-flash-realtime\"\nmodel_provider = \"maas\"\n\n[model_providers.maas]\nname = \"MaaS\"\nbase_url = \"https://maas-api.antdigital.com/v1\"\nenv_key = \"MAAS_API_KEY\"\nwire_api = \"responses\"",
+      "guideUrl": "/docs/agent-guides/codex"
+    },
+    {
+      "id": "opencode",
+      "name": "OpenCode",
+      "description": "Add MaaS as a custom provider in OpenCode.",
+      "zhDescription": "在 OpenCode 中添加 MaaS 自定义模型供应商。",
+      "fileLabel": "~/.config/opencode/opencode.json",
+      "language": "json",
+      "code": "{\n  \"$schema\": \"https://opencode.ai/config.json\",\n  \"provider\": {\n    \"maas\": {\n      \"npm\": \"@ai-sdk/openai-compatible\",\n      \"name\": \"MaaS\",\n      \"options\": {\n        \"baseURL\": \"https://maas-api.antdigital.com/v1\",\n        \"apiKey\": \"YOUR_MAAS_API_KEY\"\n      },\n      \"models\": {\n        \"qwen3.8-omni-flash-realtime\": {\n          \"name\": \"qwen3.8-omni-flash-realtime\"\n        }\n      }\n    }\n  },\n  \"model\": \"maas/qwen3.8-omni-flash-realtime\"\n}",
+      "guideUrl": "/docs/agent-guides/opencode"
+    }
+  ],
+  "sourceUrl": "https://maas.antdigital.com/models/modelservice-1792656860861001732",
+  "slug": "modelservice-1792656860861001732"
+}

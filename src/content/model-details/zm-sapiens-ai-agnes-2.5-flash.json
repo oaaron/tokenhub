@@ -1,0 +1,378 @@
+{
+  "slug": "zm-sapiens-ai-agnes-2.5-flash",
+  "uniqueId": "2633MO5jNOtS14613908",
+  "name": "sapiens-ai/agnes-2.5-flash",
+  "displayName": "Sapiens AI: Agnes 2.5 Flash",
+  "provider": "Sapiens AI",
+  "manufacturerKey": "sapiens-ai",
+  "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2026/03/20/pCk0Yb7/Property-1Sapiens-Al.svg",
+  "zhDescription": "Agnes 2.5稳定快速档，强化代码、Agent、工具、多轮对话、推理与图像理解，支持流式输出及图片URL输入。",
+  "zhLongDescription": "Agnes 2.5稳定快速档，强化代码、Agent、工具、多轮对话、推理与图像理解，支持流式输出及图片URL输入。",
+  "description": "Agnes 2.5稳定快速档，强化代码、Agent、工具、多轮对话、推理与图像理解，支持流式输出及图片URL输入。",
+  "longDescription": "Agnes 2.5稳定快速档，强化代码、Agent、工具、多轮对话、推理与图像理解，支持流式输出及图片URL输入。",
+  "contextLength": 524288,
+  "maxCompletionTokens": 65536,
+  "currency": "USD",
+  "tagList": [
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    }
+  ],
+  "publishedTime": "2026-08-10",
+  "minDiscountRate": "0",
+  "supportedParams": [
+    "conversation",
+    "frequency_penalty",
+    "include",
+    "instructions",
+    "max_completion_tokens",
+    "max_output_tokens",
+    "max_tokens",
+    "max_tool_calls",
+    "output_config",
+    "parallel_tool_calls",
+    "presence_penalty",
+    "prompt_cache_key",
+    "prompt_cache_retention",
+    "repetition_penalty",
+    "safety_identifier",
+    "seed",
+    "stop",
+    "system",
+    "temperature",
+    "text",
+    "tool_choice",
+    "tools",
+    "top_logprobs",
+    "top_p",
+    "truncation"
+  ],
+  "supportedProtocols": [
+    "chat.completions",
+    "messages",
+    "responses"
+  ],
+  "reasoning": 1,
+  "reasoningModes": [
+    1
+  ],
+  "providerNames": [
+    "Sapiens AI"
+  ],
+  "providerDetails": [
+    {
+      "name": "Sapiens AI",
+      "slug": "sapiens-ai",
+      "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2026/03/20/pCk0Yb7/Property-1Sapiens-Al.svg",
+      "contextLength": 524288,
+      "maxCompletionTokens": 65536,
+      "supportsStreaming": true,
+      "apiProtocols": {
+        "responses": {
+          "supported_parameters": [
+            "instructions",
+            "max_output_tokens",
+            "temperature",
+            "top_p",
+            "parallel_tool_calls",
+            "tools",
+            "tool_choice",
+            "max_tool_calls",
+            "text",
+            "top_logprobs",
+            "include",
+            "safety_identifier",
+            "truncation",
+            "conversation",
+            "prompt_cache_key",
+            "prompt_cache_retention"
+          ],
+          "supports_reasoning": 1
+        },
+        "messages": {
+          "supported_parameters": [
+            "system",
+            "max_tokens",
+            "temperature",
+            "top_p",
+            "tools",
+            "tool_choice",
+            "output_config"
+          ],
+          "supports_reasoning": 1
+        },
+        "chat.completions": {
+          "supported_parameters": [
+            "temperature",
+            "top_p",
+            "frequency_penalty",
+            "presence_penalty",
+            "repetition_penalty",
+            "seed",
+            "max_tokens",
+            "stop",
+            "max_completion_tokens"
+          ],
+          "supports_reasoning": 1
+        }
+      },
+      "pricingDiscount": "0",
+      "priceInfo": {
+        "prices": [
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "OUTPUT",
+                "priceNameZH": "模型生成输出内容的费用(completion)",
+                "priceValue": 0.15,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "completion",
+                "constraints": []
+              }
+            ]
+          },
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "INPUT",
+                "priceNameZH": "输入提示词的处理费用(prompt)",
+                "priceValue": 0.03,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "prompt",
+                "constraints": []
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "modelProtocolCompatibility": {
+    "chat.completions": true,
+    "messages": true,
+    "responses": true
+  },
+  "supportedParametersDefaultValue": {
+    "conversation": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "frequency_penalty": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "include": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "instructions": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "max_completion_tokens": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "max_output_tokens": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "max_tokens": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "max_tool_calls": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "output_config": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "parallel_tool_calls": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "presence_penalty": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "prompt_cache_key": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "prompt_cache_retention": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "repetition_penalty": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "safety_identifier": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "seed": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "stop": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "system": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "temperature": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "text": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "tool_choice": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "tools": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "top_logprobs": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "top_p": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "truncation": {
+      "enable": true,
+      "defaultValue": null
+    }
+  },
+  "priceInfo": {
+    "prices": [
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "OUTPUT",
+            "priceNameZH": "模型生成输出内容的费用(completion)",
+            "priceValue": 0.15,
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "completion",
+            "constraints": []
+          }
+        ]
+      },
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "INPUT",
+            "priceNameZH": "输入提示词的处理费用(prompt)",
+            "priceValue": 0.03,
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "INPUT",
+            "sourceFeeCode": "prompt",
+            "constraints": []
+          }
+        ]
+      }
+    ]
+  },
+  "pricingDetails": [
+    {
+      "feeItemCode": "completion",
+      "feeItemName": "模型生成输出内容的费用(completion)",
+      "feeRecords": [
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            }
+          ],
+          "feeRate": 0.15
+        }
+      ],
+      "selectedConstraint": [
+        "chargeUnit"
+      ]
+    },
+    {
+      "feeItemCode": "prompt",
+      "feeItemName": "输入提示词的处理费用(prompt)",
+      "feeRecords": [
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            }
+          ],
+          "feeRate": 0.03
+        }
+      ],
+      "selectedConstraint": [
+        "chargeUnit"
+      ]
+    }
+  ],
+  "sourcePublishedPrices": {
+    "pricing_completion": "0.15",
+    "pricing_discount": "0",
+    "pricing_prompt": "0.03"
+  },
+  "exampleCodes": [],
+  "serviceConfiguration": "服务配置待开通；接入地址、鉴权和可用协议以开通后的服务配置为准。",
+  "sourceRegion": "global",
+  "sourceCatalog": "ZenMux",
+  "sourceUrl": "https://zenmux.ai/sapiens-ai/agnes-2.5-flash",
+  "detailVerified": true,
+  "aliases": [
+    "agnes-2.5-flash"
+  ],
+  "isFree": false
+}

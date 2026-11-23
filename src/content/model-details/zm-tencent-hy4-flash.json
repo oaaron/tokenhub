@@ -1,0 +1,378 @@
+{
+  "slug": "zm-tencent-hy4-flash",
+  "uniqueId": "2647MOh8NRqn14614025",
+  "name": "tencent/hy4-flash",
+  "displayName": "Tencent: Hy4 Flash",
+  "provider": "Tencent",
+  "manufacturerKey": "tencent",
+  "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2026/08/24/EPBjJrt/Property-1hunyuan.svg",
+  "zhDescription": "面向高效对话与指令执行的文本模型，支持长上下文、工具调用和流式生成，适用于助手与流程自动化。",
+  "zhLongDescription": "面向高效对话与指令执行的文本模型，支持长上下文、工具调用和流式生成，适用于助手与流程自动化。",
+  "description": "面向高效对话与指令执行的文本模型，支持长上下文、工具调用和流式生成，适用于助手与流程自动化。",
+  "longDescription": "面向高效对话与指令执行的文本模型，支持长上下文、工具调用和流式生成，适用于助手与流程自动化。",
+  "contextLength": 1048576,
+  "maxCompletionTokens": 64000,
+  "currency": "USD",
+  "tagList": [
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    }
+  ],
+  "publishedTime": "2026-11-16",
+  "minDiscountRate": "0.8",
+  "supportedParams": [
+    "input",
+    "instructions",
+    "max_output_tokens",
+    "max_tokens",
+    "messages",
+    "model",
+    "seed",
+    "stop",
+    "stop_sequences",
+    "stream",
+    "system",
+    "temperature",
+    "tool_choice",
+    "tools",
+    "top_p"
+  ],
+  "supportedProtocols": [
+    "chat.completions",
+    "messages",
+    "responses"
+  ],
+  "reasoning": 3,
+  "reasoningModes": [
+    3
+  ],
+  "providerNames": [
+    "TencentCloud"
+  ],
+  "providerDetails": [
+    {
+      "name": "TencentCloud",
+      "slug": "tencent-cloud",
+      "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2026/08/24/EPBjJrt/Property-1hunyuan.svg",
+      "contextLength": 1048576,
+      "maxCompletionTokens": 64000,
+      "supportsStreaming": true,
+      "apiProtocols": {
+        "messages": {
+          "supported_parameters": [
+            "model",
+            "max_tokens",
+            "stop_sequences",
+            "stream",
+            "system",
+            "temperature",
+            "top_p"
+          ],
+          "supports_reasoning": 3
+        },
+        "responses": {
+          "supported_parameters": [
+            "model",
+            "input",
+            "stream",
+            "max_output_tokens",
+            "temperature",
+            "top_p",
+            "tools",
+            "tool_choice",
+            "instructions"
+          ],
+          "supports_reasoning": 3
+        },
+        "chat.completions": {
+          "supported_parameters": [
+            "model",
+            "messages",
+            "stream",
+            "max_tokens",
+            "seed",
+            "stop",
+            "temperature",
+            "top_p",
+            "tools",
+            "tool_choice"
+          ],
+          "supports_reasoning": 3
+        }
+      },
+      "pricingDiscount": "0.8",
+      "priceInfo": {
+        "prices": [
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "OUTPUT",
+                "priceNameZH": "模型生成输出内容的费用(completion)",
+                "priceValue": "0.2810000000",
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "completion",
+                "constraints": []
+              }
+            ]
+          },
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "INPUT_CACHE_READ",
+                "priceNameZH": "缓存读取操作费用(input_cache_read)",
+                "priceValue": "0.0030000000",
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "input_cache_read",
+                "constraints": []
+              }
+            ]
+          },
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "INPUT",
+                "priceNameZH": "输入提示词的处理费用(prompt)",
+                "priceValue": "0.0700000000",
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "prompt",
+                "constraints": []
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "modelProtocolCompatibility": {
+    "chat.completions": true,
+    "messages": true,
+    "responses": true
+  },
+  "supportedParametersDefaultValue": {
+    "input": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "instructions": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "max_output_tokens": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "max_tokens": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "messages": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "model": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "seed": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "stop": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "stop_sequences": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "stream": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "system": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "temperature": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "tool_choice": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "tools": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "top_p": {
+      "enable": true,
+      "defaultValue": null
+    }
+  },
+  "priceInfo": {
+    "prices": [
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "OUTPUT",
+            "priceNameZH": "模型生成输出内容的费用(completion)",
+            "priceValue": "0.2810000000",
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "completion",
+            "constraints": []
+          }
+        ]
+      },
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "INPUT_CACHE_READ",
+            "priceNameZH": "缓存读取操作费用(input_cache_read)",
+            "priceValue": "0.0030000000",
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "INPUT",
+            "sourceFeeCode": "input_cache_read",
+            "constraints": []
+          }
+        ]
+      },
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "INPUT",
+            "priceNameZH": "输入提示词的处理费用(prompt)",
+            "priceValue": "0.0700000000",
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "INPUT",
+            "sourceFeeCode": "prompt",
+            "constraints": []
+          }
+        ]
+      }
+    ]
+  },
+  "pricingDetails": [
+    {
+      "feeItemCode": "completion",
+      "feeItemName": "模型生成输出内容的费用(completion)",
+      "feeRecords": [
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            }
+          ],
+          "feeRate": "0.2810000000"
+        }
+      ],
+      "selectedConstraint": [
+        "chargeUnit"
+      ]
+    },
+    {
+      "feeItemCode": "input_cache_read",
+      "feeItemName": "缓存读取操作费用(input_cache_read)",
+      "feeRecords": [
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            }
+          ],
+          "feeRate": "0.0030000000"
+        }
+      ],
+      "selectedConstraint": [
+        "chargeUnit"
+      ]
+    },
+    {
+      "feeItemCode": "prompt",
+      "feeItemName": "输入提示词的处理费用(prompt)",
+      "feeRecords": [
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            }
+          ],
+          "feeRate": "0.0700000000"
+        }
+      ],
+      "selectedConstraint": [
+        "chargeUnit"
+      ]
+    }
+  ],
+  "sourcePublishedPrices": {
+    "pricing_completion": "0.281",
+    "pricing_discount": "0.8",
+    "pricing_prompt": "0.07"
+  },
+  "exampleCodes": [],
+  "serviceConfiguration": "服务配置待开通；接入地址、鉴权和可用协议以开通后的服务配置为准。",
+  "sourceRegion": "global",
+  "sourceCatalog": "ZenMux",
+  "sourceUrl": "https://zenmux.ai/tencent/hy4-flash",
+  "detailVerified": true,
+  "aliases": [
+    "hy4-flash"
+  ],
+  "isFree": false
+}

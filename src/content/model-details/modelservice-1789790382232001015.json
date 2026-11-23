@@ -1,0 +1,322 @@
+{
+  "uniqueId": "modelservice-1789790382232001015",
+  "name": "kling-v3-video-generation",
+  "displayName": "Kling Video 3.0",
+  "provider": "KlingAI",
+  "description": "Intelligent storyboarding interprets scene transitions in a script and automatically plans camera angles and shot sizes. A native multimodal framework ensures audiovisual consistency. By removing duration constraints, it enables greater creative freedom for multi-shot storytelling.",
+  "zhDescription": "智能分镜可读懂剧本场景流转，自动调度机位和景别。原生多模态框架支持音画一致性。打破时长限制，多镜头故事创作更自由。",
+  "longDescription": "Intelligent storyboarding interprets scene transitions in a script and automatically plans camera angles and shot sizes. A native multimodal framework ensures audiovisual consistency. By removing duration constraints, it enables greater creative freedom for multi-shot storytelling.",
+  "zhLongDescription": "智能分镜可读懂剧本场景流转，自动调度机位和景别。原生多模态框架支持音画一致性。打破时长限制，多镜头故事创作更自由。",
+  "contextLength": null,
+  "maxCompletionTokens": null,
+  "maxTokens": null,
+  "currency": null,
+  "inPrice": null,
+  "outPrice": null,
+  "inPriceZh": null,
+  "outPriceZh": null,
+  "inHitCachePrice": "¥0.00/M",
+  "inHitCreatePrice": "¥0.00/M",
+  "tagList": [
+    {
+      "type": "MODEL_TYPE",
+      "key": "VIDEO_GENERATE",
+      "value": "视频生成"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "VIDEO",
+      "value": "视频"
+    }
+  ],
+  "type": "VIDEO_GENERATE",
+  "typeList": [
+    "VIDEO_GENERATE"
+  ],
+  "supportedParametersDefaultValue": null,
+  "protocolParameters": [],
+  "modelProtocolCompatibility": {
+    "System One": false,
+    "google video": false,
+    "dashscope": false,
+    "google_gemini": false,
+    "anthropic_message": false,
+    "openai_responses": false,
+    "openai_chat_completions": false
+  },
+  "minDiscountRate": "1",
+  "priceInfo": {
+    "lowestProviderPrice": {
+      "inputPrice": null,
+      "outputPrice": {
+        "priceCode": "VIDEO_720_NO_AUDIO",
+        "priceName": "Video 720P (Without Audio)",
+        "priceNameZH": "视频生成（720P/无声）",
+        "priceValue": "0.600000",
+        "originalPrice": "0.600000",
+        "discountRate": "1.000000",
+        "unitCode": "S",
+        "unitName": "s",
+        "unitNameZh": "秒",
+        "direction": "OUTPUT",
+        "fixedName": "Second",
+        "fixedNameZh": "秒"
+      }
+    },
+    "prices": [
+      {
+        "stage": null,
+        "stageText": null,
+        "type": null,
+        "priceCurrency": "CNY",
+        "price": [
+          {
+            "priceCode": "VIDEO_4K",
+            "priceName": "Video 4K",
+            "priceNameZH": "视频生成（4K）",
+            "priceValue": "3.000000",
+            "originalPrice": "3.000000",
+            "discountRate": "1.000000",
+            "unitCode": "S",
+            "unitName": "s",
+            "unitNameZh": "秒",
+            "direction": "OUTPUT",
+            "fixedName": "Second",
+            "fixedNameZh": "秒"
+          },
+          {
+            "priceCode": "VIDEO_720_NO_AUDIO",
+            "priceName": "Video 720P (Without Audio)",
+            "priceNameZH": "视频生成（720P/无声）",
+            "priceValue": "0.600000",
+            "originalPrice": "0.600000",
+            "discountRate": "1.000000",
+            "unitCode": "S",
+            "unitName": "s",
+            "unitNameZh": "秒",
+            "direction": "OUTPUT",
+            "fixedName": "Second",
+            "fixedNameZh": "秒"
+          },
+          {
+            "priceCode": "VIDEO_1080_NO_AUDIO",
+            "priceName": "Video 1080P (Without Audio)",
+            "priceNameZH": "视频生成（1080P/无声）",
+            "priceValue": "0.800000",
+            "originalPrice": "0.800000",
+            "discountRate": "1.000000",
+            "unitCode": "S",
+            "unitName": "s",
+            "unitNameZh": "秒",
+            "direction": "OUTPUT",
+            "fixedName": "Second",
+            "fixedNameZh": "秒"
+          },
+          {
+            "priceCode": "VIDEO_4K_NO_AUDIO",
+            "priceName": "Video 4K (Without Audio)",
+            "priceNameZH": "视频生成（4K/无声）",
+            "priceValue": "3.000000",
+            "originalPrice": "3.000000",
+            "discountRate": "1.000000",
+            "unitCode": "S",
+            "unitName": "s",
+            "unitNameZh": "秒",
+            "direction": "OUTPUT",
+            "fixedName": "Second",
+            "fixedNameZh": "秒"
+          },
+          {
+            "priceCode": "VIDEO_720",
+            "priceName": "Video 720P",
+            "priceNameZH": "视频生成（720P）",
+            "priceValue": "0.900000",
+            "originalPrice": "0.900000",
+            "discountRate": "1.000000",
+            "unitCode": "S",
+            "unitName": "s",
+            "unitNameZh": "秒",
+            "direction": "OUTPUT",
+            "fixedName": "Second",
+            "fixedNameZh": "秒"
+          },
+          {
+            "priceCode": "VIDEO_1080",
+            "priceName": "Video 1080P",
+            "priceNameZH": "视频生成（1080P）",
+            "priceValue": "1.200000",
+            "originalPrice": "1.200000",
+            "discountRate": "1.000000",
+            "unitCode": "S",
+            "unitName": "s",
+            "unitNameZh": "秒",
+            "direction": "OUTPUT",
+            "fixedName": "Second",
+            "fixedNameZh": "秒"
+          }
+        ]
+      }
+    ]
+  },
+  "publishedTime": "2026-09-19 11:59:42",
+  "offShelfFlag": 0,
+  "offShelfDate": null,
+  "buyTypes": [
+    "BY_AMOUNT"
+  ],
+  "providers": [
+    {
+      "providerUid": "channel-1779290799108001040",
+      "providerName": "antdigital",
+      "providerDisplayName": "蚂蚁数字科技",
+      "providerLogo": "https://maas-public.oss-cn-shanghai.aliyuncs.com/maas-admin/image/2026-09-10/image-4cf4a41f-3ae4-42.png"
+    }
+  ],
+  "extInfo": "{\"exampleCodes\":{\"dashscope\":[{\"code\":\"curl -X POST 'https://maas-api.antdigital.com/api/v1/services/aigc/video-generation/video-synthesis' \\\\\\n  -H 'Content-Type: application/json' \\\\\\n  -H 'Authorization: Bearer $API_KEY' \\\\\\n  -H 'X-DashScope-Async: enable' \\\\\\n  -d '{\\n    \\\"model\\\": \\\"kling-v3-video-generation\\\",\\n    \\\"input\\\": {\\n        \\\"prompt\\\": \\\"让视频中的马头人身角色穿上图片中的条纹毛衣\\\",\\n        \\\"media\\\": [\\n            {\\n                \\\"type\\\": \\\"video\\\",\\n                \\\"url\\\": \\\"https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/zh-CN/20260409/dozxak/Wan_Video_Edit_33_1.mp4\\\"\\n            },\\n            {\\n                \\\"type\\\": \\\"reference_image\\\",\\n                \\\"url\\\": \\\"https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/zh-CN/20260415/hynnff/wan-video-edit-clothes.webp\\\"\\n            }\\n        ]\\n    },\\n    \\\"parameters\\\": {\\n        \\\"resolution\\\": \\\"720P\\\",\\n        \\\"ratio\\\": \\\"adaptive\\\",\\n        \\\"duration\\\": 5,\\n        \\\"generate_audio\\\": false\\n    }\\n}'\\n\\n# 查询任务状态（接口完全不变，替换 {任务ID}）\\ncurl --location --request GET 'https://maas-api.antdigital.com/api/v1/tasks/{任务ID}' \\\\\\n--header 'Authorization: Bearer $API_KEY'\",\"sectionTitle\":\"\",\"name\":\"curl\"}]},\"supportedParametersDefaultValue\":{\"desc\":\"1. 模式说明\\n   - 支持多种模式：文生视频 / 图生视频 / 参考视频编辑(reference‑to‑video)，支持参考视频+多张参考图，支持首帧/尾帧图生视频\\n2. 素材限制\\n   - 参考视频：最多5个。格式 MP4/MOV，输入+输出总时长 ≤30s，分辨率 [240, 4096]px，宽高比 1:8~8:1，单文件 ≤100MB\\n   - 参考图像：最多10张。格式 JPEG/JPG/PNG(无透明通道)/BMP/WEBP，分辨率 [240, 8000]px，宽高比 1:8~8:1，单张 ≤20MB\\n3. 生成配置\\n   - 宽高比(ratio)：可选 adaptive(自适应)/16:9/9:16/1:1/4:3/3:4。adaptive为默认，跟随输入素材比例\\n   - 时长：无视频输入[2,30]秒；有参考视频：输入视频时长+输出时长≤30；支持‑1开启智能时长自动判定\\n   - 输出分辨率：480P/720P/1080P（默认1080P）\\n   - 原生支持音频生成，可开关\",\"mode\":{\"text\":{\"enable\":true},\"firstFrame\":{\"enable\":true,\"attachments\":{\"image\":{\"formats\":[\"JPEG\",\"PNG\",\"WEBP\",\"BMP\",\"JPG\"],\"maxCount\":1,\"minCount\":1,\"required\":{\"resolution\":{\"maxHeigh\":8000,\"maxWidth\":8000,\"minHeigh\":240,\"minWidth\":240},\"aspectRatio\":{\"max\":8,\"min\":0.125}},\"roleType\":\"first_frame\",\"maxSizeMB\":20}}},\"firstAndLastFrame\":{\"enable\":true,\"attachments\":{\"image\":{\"formats\":[\"JPEG\",\"PNG\",\"WEBP\",\"BMP\",\"JPG\"],\"maxCount\":2,\"minCount\":2,\"required\":{\"resolution\":{\"maxHeigh\":8000,\"maxWidth\":8000,\"minHeigh\":240,\"minWidth\":240},\"aspectRatio\":{\"max\":8,\"min\":0.125}},\"roleType\":[\"first_frame\",\"last_frame\"],\"maxSizeMB\":20}}},\"example\":{\"enable\":true,\"attachments\":{\"image\":{\"formats\":[\"JPEG\",\"JPG\",\"PNG\",\"WEBP\",\"BMP\"],\"maxCount\":10,\"minCount\":0,\"required\":{\"resolution\":{\"maxHeight\":8000,\"maxWidth\":8000,\"minHeight\":240,\"minWidth\":240},\"aspectRatio\":{\"max\":8,\"min\":0.125}},\"roleType\":\"reference_image\",\"maxSizeMB\":20},\"video\":{\"formats\":[\"MP4\",\"MOV\"],\"maxCount\":5,\"minCount\":0,\"required\":{\"resolution\":{\"maxHeight\":4096,\"maxWidth\":4096,\"minHeight\":240,\"minWidth\":240},\"aspectRatio\":{\"max\":8,\"min\":0.125}},\"roleType\":\"reference_video\",\"maxSizeMB\":100}}}},\"ratio\":{\"default\":\"adaptive\",\"options\":[\"adaptive\",\"16:9\",\"9:16\",\"1:1\",\"4:3\",\"3:4\"],\"supported\":true},\"descEn\":\"1. Mode Description\\n   - Supports multiple modes: text‑to‑video / image‑to‑video / reference‑to‑video, support reference video + multi reference images, first‑frame / last‑frame image‑to‑video\\n2. Material Constraints\\n   - Reference Video: max 5. Formats: MP4/MOV. input+output total duration ≤30s, Res:240‑4096px, Aspect Ratio:1:8‑8:1, Size ≤100MB\\n   - Reference Images: max 10. Formats: JPEG/JPG/PNG(No transparency)/BMP/WEBP, Res:240‑8000px, Aspect Ratio:1:8‑8:1, Size ≤20MB\\n3. Generation Config\\n   - Ratio: adaptive(default)/16:9/9:16/1:1/4:3/3:4. adaptive follow input media aspect ratio\\n   - Duration: no‑video input [2,30]s; with reference video: input video duration + output duration ≤30; set‑1 for smart auto‑duration\\n   - Output Resolution:480P/720P/1080P(Default 1080P)\\n   - Native audio generation supported, toggleable\",\"duration\":{\"max\":30,\"min\":2,\"default\":5,\"supported\":true,\"specialValue\":-1},\"resolution\":{\"default\":\"1080P\",\"options\":[\"480P\",\"720P\",\"1080P\"],\"supported\":true},\"generate_audio\":{\"supported\":true,\"default\":true}}}",
+  "specs": {
+    "inputPrice": "¥0.0000",
+    "inputPriceHint": "每 1K tokens",
+    "outputPrice": "¥0.0000",
+    "outputPriceHint": "每 1K tokens",
+    "contextLength": null,
+    "contextLengthHint": "tokens",
+    "maxOutput": "0",
+    "maxOutputHint": "tokens"
+  },
+  "capabilities": [],
+  "languages": [
+    "文本",
+    "图像"
+  ],
+  "scenarios": [
+    "视频"
+  ],
+  "modelParameters": [
+    {
+      "type": "slider",
+      "id": "temperature",
+      "label": "Temperature",
+      "value": 0.3,
+      "min": 0,
+      "max": 2,
+      "step": 0.01,
+      "description": "控制输出的随机性，值越高越随机",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "id": "presence_penalty",
+      "label": "Presence Penalty",
+      "value": 0.1,
+      "min": -2,
+      "max": 2,
+      "step": 0.01,
+      "description": "存在惩罚，鼓励模型讨论新话题",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "id": "top_p",
+      "label": "Top P",
+      "value": 0.95,
+      "min": 0,
+      "max": 1,
+      "step": 0.01,
+      "description": "核采样参数，控制候选词汇的范围",
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "id": "max_tokens",
+      "label": "Max Tokens",
+      "value": 0,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "单次生成的最大 token 数量",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "id": "frequency_penalty",
+      "label": "Frequency Penalty",
+      "value": 0.1,
+      "min": -2,
+      "max": 2,
+      "step": 0.01,
+      "description": "频率惩罚，减少重复内容的生成",
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "id": "context_length",
+      "label": "Context Length",
+      "value": 64000,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "支持的最大上下文长度",
+      "thousands": true
+    }
+  ],
+  "usageGuide": {
+    "authIntro": "使用 API Key 进行认证，在请求头中添加：",
+    "authBearerPlaceholder": "YOUR_API_KEY",
+    "requestIntro": "支持标准的 OpenAI 参数格式：",
+    "requestExample": "{\n  \"max_tokens\": 4096,\n  \"temperature\": 0.5,\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"你好，请介绍一下自己\"\n    }\n  ],\n  \"model\": \"kling-v3-video-generation\"\n}",
+    "responseExample": "{\n  \"created\": 1795353268,\n  \"usage\": {\n    \"completion_tokens\": 12,\n    \"prompt_tokens\": 9,\n    \"total_tokens\": 21\n  },\n  \"model\": \"kling-v3-video-generation\",\n  \"id\": \"chatcmpl-123\",\n  \"choices\": [\n    {\n      \"finish_reason\": \"stop\",\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"你好！我是 kling-v3-video-generation...\"\n      }\n    }\n  ],\n  \"object\": \"chat.completion\"\n}",
+    "docUrl": "https://api-docs.example.com/",
+    "docLabel": "查看完整 API 文档"
+  },
+  "exampleCodes": {
+    "python": {
+      "sectionTitle": "Python 示例",
+      "installLine": "安装依赖：pip install requests",
+      "code": "import requests\nimport json\n\nurl = \"https://api.example.com/v1/chat/completions\"\nheaders = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n}\n\ndata = {\n    \"model\": \"model-name\",\n    \"messages\": [\n        {\n            \"role\": \"user\",\n            \"content\": \"请写一个 Python 函数计算斐波那契数列\"\n        }\n    ],\n    \"temperature\": 0.7,\n    \"max_tokens\": 4096\n}\n\nresponse = requests.post(url, headers=headers, json=data)\nresult = response.json()\nprint(result[\"choices\"][0][\"message\"][\"content\"])"
+    },
+    "javascript": {
+      "sectionTitle": "JavaScript 示例",
+      "installLine": "无需安装额外依赖（需 Node 18+ 或支持 fetch 的运行环境）",
+      "code": "(async () => {\n  const url = \"https://api.example.com/v1/chat/completions\";\n  const headers = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n  };\n  const data = {\n    model: \"model-name\",\n    messages: [\n      {\n        role: \"user\",\n        content: \"请写一个 Python 函数计算斐波那契数列\"\n      }\n    ],\n    temperature: 0.7,\n    max_tokens: 4096\n  };\n  const response = await fetch(url, {\n    method: \"POST\",\n    headers,\n    body: JSON.stringify(data)\n  });\n  const result = await response.json();\n  console.log(result.choices[0].message.content);\n})();"
+    },
+    "curl": {
+      "sectionTitle": "Curl 示例",
+      "installLine": "说明：macOS / Linux 一般已预装 curl",
+      "code": "curl -X POST \"https://api.example.com/v1/chat/completions\" \\\n  -H \"Authorization: Bearer YOUR_API_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"model\":\"model-name\",\"messages\":[{\"role\":\"user\",\"content\":\"请写一个 Python 函数计算斐波那契数列\"}],\"temperature\":0.7,\"max_tokens\":4096}'"
+    }
+  },
+  "agentIntegrations": [
+    {
+      "id": "codex",
+      "name": "Codex",
+      "description": "Configure MaaS as an OpenAI-compatible model provider.",
+      "zhDescription": "将 MaaS 配置为 Codex 的 OpenAI 兼容模型供应商。",
+      "fileLabel": "~/.codex/config.toml",
+      "language": "toml",
+      "code": "model = \"kling-v3-video-generation\"\nmodel_provider = \"maas\"\n\n[model_providers.maas]\nname = \"MaaS\"\nbase_url = \"https://maas-api.antdigital.com/v1\"\nenv_key = \"MAAS_API_KEY\"\nwire_api = \"responses\"",
+      "guideUrl": "/docs/agent-guides/codex"
+    },
+    {
+      "id": "opencode",
+      "name": "OpenCode",
+      "description": "Add MaaS as a custom provider in OpenCode.",
+      "zhDescription": "在 OpenCode 中添加 MaaS 自定义模型供应商。",
+      "fileLabel": "~/.config/opencode/opencode.json",
+      "language": "json",
+      "code": "{\n  \"$schema\": \"https://opencode.ai/config.json\",\n  \"provider\": {\n    \"maas\": {\n      \"npm\": \"@ai-sdk/openai-compatible\",\n      \"name\": \"MaaS\",\n      \"options\": {\n        \"baseURL\": \"https://maas-api.antdigital.com/v1\",\n        \"apiKey\": \"YOUR_MAAS_API_KEY\"\n      },\n      \"models\": {\n        \"kling-v3-video-generation\": {\n          \"name\": \"kling-v3-video-generation\"\n        }\n      }\n    }\n  },\n  \"model\": \"maas/kling-v3-video-generation\"\n}",
+      "guideUrl": "/docs/agent-guides/opencode"
+    }
+  ],
+  "sourceUrl": "https://maas.antdigital.com/models/modelservice-1789790382232001015",
+  "slug": "modelservice-1789790382232001015"
+}

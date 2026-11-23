@@ -1,0 +1,1775 @@
+{
+  "slug": "zm-openai-gpt-5.2",
+  "uniqueId": "2550MOufwWtX14613682",
+  "name": "openai/gpt-5.2",
+  "displayName": "OpenAI: GPT-5.2",
+  "provider": "OpenAI",
+  "manufacturerKey": "openai",
+  "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2025/10/15/Mm7IePA/Property-1GPT.svg",
+  "zhDescription": "通用前沿模型，采用自适应推理，为简单问题减少思考，为复杂任务分配更多计算。",
+  "zhLongDescription": "通用前沿模型，采用自适应推理，为简单问题减少思考，为复杂任务分配更多计算。",
+  "description": "通用前沿模型，采用自适应推理，为简单问题减少思考，为复杂任务分配更多计算。",
+  "longDescription": "通用前沿模型，采用自适应推理，为简单问题减少思考，为复杂任务分配更多计算。",
+  "contextLength": 400000,
+  "maxCompletionTokens": 128000,
+  "currency": "USD",
+  "tagList": [
+    {
+      "type": "INPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "FILE",
+      "value": "文件"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    }
+  ],
+  "publishedTime": "2025-12-11",
+  "minDiscountRate": "1",
+  "supportedParams": [
+    "conversation",
+    "include",
+    "instructions",
+    "max_completion_tokens",
+    "max_output_tokens",
+    "max_tokens",
+    "max_tool_calls",
+    "output_config",
+    "parallel_tool_calls",
+    "previous_response_id",
+    "prompt",
+    "prompt_cache_key",
+    "prompt_cache_retention",
+    "response_format",
+    "safety_identifier",
+    "system",
+    "temperature",
+    "text",
+    "tool_choice",
+    "tools",
+    "top_logprobs",
+    "top_p",
+    "truncation",
+    "web_search_options"
+  ],
+  "supportedProtocols": [
+    "chat.completions",
+    "messages",
+    "responses"
+  ],
+  "reasoning": 3,
+  "reasoningModes": [
+    3
+  ],
+  "providerNames": [
+    "OpenAI",
+    "Azure"
+  ],
+  "providerDetails": [
+    {
+      "name": "OpenAI",
+      "slug": "openai",
+      "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2025/10/15/Mm7IePA/Property-1GPT.svg",
+      "contextLength": 400000,
+      "maxCompletionTokens": 128000,
+      "supportsStreaming": true,
+      "apiProtocols": {
+        "chat.completions": {
+          "supported_parameters": [
+            "response_format",
+            "tools",
+            "tool_choice",
+            "max_completion_tokens",
+            "web_search_options",
+            "prompt_cache_key",
+            "prompt_cache_retention"
+          ],
+          "supports_reasoning": 3
+        },
+        "responses": {
+          "supported_parameters": [
+            "conversation",
+            "include",
+            "instructions",
+            "max_output_tokens",
+            "max_tool_calls",
+            "previous_response_id",
+            "prompt",
+            "prompt_cache_key",
+            "prompt_cache_retention",
+            "safety_identifier",
+            "temperature",
+            "text",
+            "top_p",
+            "top_logprobs",
+            "truncation",
+            "tools",
+            "tool_choice",
+            "parallel_tool_calls"
+          ],
+          "supports_reasoning": 3
+        },
+        "messages": {
+          "supported_parameters": [
+            "system",
+            "max_tokens",
+            "temperature",
+            "output_config",
+            "top_p",
+            "tools",
+            "tool_choice"
+          ],
+          "supports_reasoning": 3
+        }
+      },
+      "pricingDiscount": "1",
+      "priceInfo": {
+        "prices": [
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "OUTPUT",
+                "priceNameZH": "模型生成输出内容的费用(completion)",
+                "priceValue": 14,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "completion",
+                "constraints": []
+              }
+            ]
+          },
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "INPUT_CACHE_READ",
+                "priceNameZH": "缓存读取操作费用(input_cache_read)",
+                "priceValue": 0.175,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "input_cache_read",
+                "constraints": []
+              }
+            ]
+          },
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "INPUT",
+                "priceNameZH": "输入提示词的处理费用(prompt)",
+                "priceValue": 1.75,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "prompt",
+                "constraints": []
+              }
+            ]
+          },
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "WEB_SEARCH",
+                "priceNameZH": "网络搜索功能调用费用(web_search)",
+                "priceValue": 0.01,
+                "unitCode": "COUNT",
+                "fixedNameZh": "次",
+                "priceCurrency": "USD",
+                "direction": "OTHER",
+                "sourceFeeCode": "web_search",
+                "constraints": []
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Azure",
+      "slug": "azure",
+      "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2025/10/15/thDKBiW/Property-1Azure.svg",
+      "contextLength": 400000,
+      "maxCompletionTokens": 128000,
+      "supportsStreaming": true,
+      "apiProtocols": {
+        "messages": {
+          "supported_parameters": [
+            "system",
+            "max_tokens",
+            "temperature",
+            "output_config",
+            "top_p",
+            "tools",
+            "tool_choice"
+          ],
+          "supports_reasoning": 3
+        },
+        "responses": {
+          "supported_parameters": [
+            "conversation",
+            "include",
+            "instructions",
+            "max_output_tokens",
+            "max_tool_calls",
+            "previous_response_id",
+            "prompt",
+            "prompt_cache_key",
+            "prompt_cache_retention",
+            "safety_identifier",
+            "temperature",
+            "text",
+            "top_p",
+            "top_logprobs",
+            "truncation",
+            "tools",
+            "tool_choice",
+            "parallel_tool_calls"
+          ],
+          "supports_reasoning": 3
+        },
+        "chat.completions": {
+          "supported_parameters": [
+            "response_format",
+            "tools",
+            "tool_choice",
+            "max_completion_tokens",
+            "web_search_options",
+            "prompt_cache_key",
+            "prompt_cache_retention"
+          ],
+          "supports_reasoning": 3
+        }
+      },
+      "pricingDiscount": "1",
+      "priceInfo": {
+        "prices": [
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "OUTPUT",
+                "priceNameZH": "模型生成输出内容的费用(completion)",
+                "priceValue": 14,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "completion",
+                "constraints": []
+              }
+            ]
+          },
+          {
+            "stage": "底层生图模型: gpt-image-2-2026-04-21",
+            "stageText": "底层生图模型: gpt-image-2-2026-04-21",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_INPUT",
+                "priceNameZH": "图像输入费用(image_input)",
+                "priceValue": 8,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "image_input",
+                "constraints": [
+                  {
+                    "code": "imageGenModel",
+                    "name": "底层生图模型",
+                    "type": "Select",
+                    "value": "gpt-image-2-2026-04-21"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "底层生图模型: gpt-image-1.5",
+            "stageText": "底层生图模型: gpt-image-1.5",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_INPUT",
+                "priceNameZH": "图像输入费用(image_input)",
+                "priceValue": 8,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "image_input",
+                "constraints": [
+                  {
+                    "code": "imageGenModel",
+                    "name": "底层生图模型",
+                    "type": "Select",
+                    "value": "gpt-image-1.5"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "底层生图模型: gpt-image-1",
+            "stageText": "底层生图模型: gpt-image-1",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_INPUT",
+                "priceNameZH": "图像输入费用(image_input)",
+                "priceValue": 10,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "image_input",
+                "constraints": [
+                  {
+                    "code": "imageGenModel",
+                    "name": "底层生图模型",
+                    "type": "Select",
+                    "value": "gpt-image-1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "底层生图模型: gpt-image-1-mini",
+            "stageText": "底层生图模型: gpt-image-1-mini",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_INPUT",
+                "priceNameZH": "图像输入费用(image_input)",
+                "priceValue": 2.5,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "image_input",
+                "constraints": [
+                  {
+                    "code": "imageGenModel",
+                    "name": "底层生图模型",
+                    "type": "Select",
+                    "value": "gpt-image-1-mini"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "底层生图模型: gpt-image-2.5-flare",
+            "stageText": "底层生图模型: gpt-image-2.5-flare",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_INPUT",
+                "priceNameZH": "图像输入费用(image_input)",
+                "priceValue": 8,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "image_input",
+                "constraints": [
+                  {
+                    "code": "imageGenModel",
+                    "name": "底层生图模型",
+                    "type": "Select",
+                    "value": "gpt-image-2.5-flare"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "底层生图模型: gpt-image-2.5-sunburst",
+            "stageText": "底层生图模型: gpt-image-2.5-sunburst",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_INPUT",
+                "priceNameZH": "图像输入费用(image_input)",
+                "priceValue": 8,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "image_input",
+                "constraints": [
+                  {
+                    "code": "imageGenModel",
+                    "name": "底层生图模型",
+                    "type": "Select",
+                    "value": "gpt-image-2.5-sunburst"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "底层生图模型: chatgpt-image-latest",
+            "stageText": "底层生图模型: chatgpt-image-latest",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_INPUT",
+                "priceNameZH": "图像输入费用(image_input)",
+                "priceValue": 8,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "image_input",
+                "constraints": [
+                  {
+                    "code": "imageGenModel",
+                    "name": "底层生图模型",
+                    "type": "Select",
+                    "value": "chatgpt-image-latest"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "底层生图模型: gpt-image-2",
+            "stageText": "底层生图模型: gpt-image-2",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_INPUT",
+                "priceNameZH": "图像输入费用(image_input)",
+                "priceValue": 8,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "image_input",
+                "constraints": [
+                  {
+                    "code": "imageGenModel",
+                    "name": "底层生图模型",
+                    "type": "Select",
+                    "value": "gpt-image-2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "底层生图模型: gpt-image-2.5-sunburst",
+            "stageText": "底层生图模型: gpt-image-2.5-sunburst",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_INPUT_CACHE",
+                "priceNameZH": "图像缓存读取操作费用(image_input_cache)",
+                "priceValue": 2,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "image_input_cache",
+                "constraints": [
+                  {
+                    "code": "imageGenModel",
+                    "name": "底层生图模型",
+                    "type": "Select",
+                    "value": "gpt-image-2.5-sunburst"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "底层生图模型: gpt-image-2.5-flare",
+            "stageText": "底层生图模型: gpt-image-2.5-flare",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_INPUT_CACHE",
+                "priceNameZH": "图像缓存读取操作费用(image_input_cache)",
+                "priceValue": 2,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "image_input_cache",
+                "constraints": [
+                  {
+                    "code": "imageGenModel",
+                    "name": "底层生图模型",
+                    "type": "Select",
+                    "value": "gpt-image-2.5-flare"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "底层生图模型: gpt-image-1-mini",
+            "stageText": "底层生图模型: gpt-image-1-mini",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_INPUT_CACHE",
+                "priceNameZH": "图像缓存读取操作费用(image_input_cache)",
+                "priceValue": 0.25,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "image_input_cache",
+                "constraints": [
+                  {
+                    "code": "imageGenModel",
+                    "name": "底层生图模型",
+                    "type": "Select",
+                    "value": "gpt-image-1-mini"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "底层生图模型: gpt-image-1.5",
+            "stageText": "底层生图模型: gpt-image-1.5",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_INPUT_CACHE",
+                "priceNameZH": "图像缓存读取操作费用(image_input_cache)",
+                "priceValue": 2,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "image_input_cache",
+                "constraints": [
+                  {
+                    "code": "imageGenModel",
+                    "name": "底层生图模型",
+                    "type": "Select",
+                    "value": "gpt-image-1.5"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "底层生图模型: gpt-image-1",
+            "stageText": "底层生图模型: gpt-image-1",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_INPUT_CACHE",
+                "priceNameZH": "图像缓存读取操作费用(image_input_cache)",
+                "priceValue": 2.5,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "image_input_cache",
+                "constraints": [
+                  {
+                    "code": "imageGenModel",
+                    "name": "底层生图模型",
+                    "type": "Select",
+                    "value": "gpt-image-1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "底层生图模型: chatgpt-image-latest",
+            "stageText": "底层生图模型: chatgpt-image-latest",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_INPUT_CACHE",
+                "priceNameZH": "图像缓存读取操作费用(image_input_cache)",
+                "priceValue": 2,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "image_input_cache",
+                "constraints": [
+                  {
+                    "code": "imageGenModel",
+                    "name": "底层生图模型",
+                    "type": "Select",
+                    "value": "chatgpt-image-latest"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "底层生图模型: gpt-image-2-2026-04-21",
+            "stageText": "底层生图模型: gpt-image-2-2026-04-21",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_INPUT_CACHE",
+                "priceNameZH": "图像缓存读取操作费用(image_input_cache)",
+                "priceValue": 2,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "image_input_cache",
+                "constraints": [
+                  {
+                    "code": "imageGenModel",
+                    "name": "底层生图模型",
+                    "type": "Select",
+                    "value": "gpt-image-2-2026-04-21"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "底层生图模型: gpt-image-2",
+            "stageText": "底层生图模型: gpt-image-2",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_INPUT_CACHE",
+                "priceNameZH": "图像缓存读取操作费用(image_input_cache)",
+                "priceValue": 2,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "image_input_cache",
+                "constraints": [
+                  {
+                    "code": "imageGenModel",
+                    "name": "底层生图模型",
+                    "type": "Select",
+                    "value": "gpt-image-2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "底层生图模型: gpt-image-2.5-sunburst",
+            "stageText": "底层生图模型: gpt-image-2.5-sunburst",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_OUTPUT",
+                "priceNameZH": "图像输出费用(image_output)",
+                "priceValue": 30,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "image_output",
+                "constraints": [
+                  {
+                    "code": "imageGenModel",
+                    "name": "底层生图模型",
+                    "type": "Select",
+                    "value": "gpt-image-2.5-sunburst"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "底层生图模型: gpt-image-1.5",
+            "stageText": "底层生图模型: gpt-image-1.5",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_OUTPUT",
+                "priceNameZH": "图像输出费用(image_output)",
+                "priceValue": 32,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "image_output",
+                "constraints": [
+                  {
+                    "code": "imageGenModel",
+                    "name": "底层生图模型",
+                    "type": "Select",
+                    "value": "gpt-image-1.5"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "底层生图模型: chatgpt-image-latest",
+            "stageText": "底层生图模型: chatgpt-image-latest",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_OUTPUT",
+                "priceNameZH": "图像输出费用(image_output)",
+                "priceValue": 32,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "image_output",
+                "constraints": [
+                  {
+                    "code": "imageGenModel",
+                    "name": "底层生图模型",
+                    "type": "Select",
+                    "value": "chatgpt-image-latest"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "底层生图模型: gpt-image-2.5-flare",
+            "stageText": "底层生图模型: gpt-image-2.5-flare",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_OUTPUT",
+                "priceNameZH": "图像输出费用(image_output)",
+                "priceValue": 30,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "image_output",
+                "constraints": [
+                  {
+                    "code": "imageGenModel",
+                    "name": "底层生图模型",
+                    "type": "Select",
+                    "value": "gpt-image-2.5-flare"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "底层生图模型: gpt-image-2",
+            "stageText": "底层生图模型: gpt-image-2",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_OUTPUT",
+                "priceNameZH": "图像输出费用(image_output)",
+                "priceValue": 30,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "image_output",
+                "constraints": [
+                  {
+                    "code": "imageGenModel",
+                    "name": "底层生图模型",
+                    "type": "Select",
+                    "value": "gpt-image-2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "底层生图模型: gpt-image-1",
+            "stageText": "底层生图模型: gpt-image-1",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_OUTPUT",
+                "priceNameZH": "图像输出费用(image_output)",
+                "priceValue": 40,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "image_output",
+                "constraints": [
+                  {
+                    "code": "imageGenModel",
+                    "name": "底层生图模型",
+                    "type": "Select",
+                    "value": "gpt-image-1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "底层生图模型: gpt-image-2-2026-04-21",
+            "stageText": "底层生图模型: gpt-image-2-2026-04-21",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_OUTPUT",
+                "priceNameZH": "图像输出费用(image_output)",
+                "priceValue": 30,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "image_output",
+                "constraints": [
+                  {
+                    "code": "imageGenModel",
+                    "name": "底层生图模型",
+                    "type": "Select",
+                    "value": "gpt-image-2-2026-04-21"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "底层生图模型: gpt-image-1-mini",
+            "stageText": "底层生图模型: gpt-image-1-mini",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_OUTPUT",
+                "priceNameZH": "图像输出费用(image_output)",
+                "priceValue": 8,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "image_output",
+                "constraints": [
+                  {
+                    "code": "imageGenModel",
+                    "name": "底层生图模型",
+                    "type": "Select",
+                    "value": "gpt-image-1-mini"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "底层生图模型: gpt-image-1.5",
+            "stageText": "底层生图模型: gpt-image-1.5",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_TEXT_INPUT",
+                "priceNameZH": "生图工具文本输入费用(image_text_input)",
+                "priceValue": 5,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "image_text_input",
+                "constraints": [
+                  {
+                    "code": "imageGenModel",
+                    "name": "底层生图模型",
+                    "type": "Select",
+                    "value": "gpt-image-1.5"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "底层生图模型: gpt-image-1",
+            "stageText": "底层生图模型: gpt-image-1",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_TEXT_INPUT",
+                "priceNameZH": "生图工具文本输入费用(image_text_input)",
+                "priceValue": 5,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "image_text_input",
+                "constraints": [
+                  {
+                    "code": "imageGenModel",
+                    "name": "底层生图模型",
+                    "type": "Select",
+                    "value": "gpt-image-1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "底层生图模型: gpt-image-2.5-flare",
+            "stageText": "底层生图模型: gpt-image-2.5-flare",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_TEXT_INPUT",
+                "priceNameZH": "生图工具文本输入费用(image_text_input)",
+                "priceValue": 5,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "image_text_input",
+                "constraints": [
+                  {
+                    "code": "imageGenModel",
+                    "name": "底层生图模型",
+                    "type": "Select",
+                    "value": "gpt-image-2.5-flare"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "底层生图模型: gpt-image-2.5-sunburst",
+            "stageText": "底层生图模型: gpt-image-2.5-sunburst",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_TEXT_INPUT",
+                "priceNameZH": "生图工具文本输入费用(image_text_input)",
+                "priceValue": 5,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "image_text_input",
+                "constraints": [
+                  {
+                    "code": "imageGenModel",
+                    "name": "底层生图模型",
+                    "type": "Select",
+                    "value": "gpt-image-2.5-sunburst"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "底层生图模型: gpt-image-1-mini",
+            "stageText": "底层生图模型: gpt-image-1-mini",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_TEXT_INPUT",
+                "priceNameZH": "生图工具文本输入费用(image_text_input)",
+                "priceValue": 2,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "image_text_input",
+                "constraints": [
+                  {
+                    "code": "imageGenModel",
+                    "name": "底层生图模型",
+                    "type": "Select",
+                    "value": "gpt-image-1-mini"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "底层生图模型: chatgpt-image-latest",
+            "stageText": "底层生图模型: chatgpt-image-latest",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_TEXT_INPUT",
+                "priceNameZH": "生图工具文本输入费用(image_text_input)",
+                "priceValue": 5,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "image_text_input",
+                "constraints": [
+                  {
+                    "code": "imageGenModel",
+                    "name": "底层生图模型",
+                    "type": "Select",
+                    "value": "chatgpt-image-latest"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "底层生图模型: gpt-image-2",
+            "stageText": "底层生图模型: gpt-image-2",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_TEXT_INPUT",
+                "priceNameZH": "生图工具文本输入费用(image_text_input)",
+                "priceValue": 5,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "image_text_input",
+                "constraints": [
+                  {
+                    "code": "imageGenModel",
+                    "name": "底层生图模型",
+                    "type": "Select",
+                    "value": "gpt-image-2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "底层生图模型: gpt-image-2-2026-04-21",
+            "stageText": "底层生图模型: gpt-image-2-2026-04-21",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_TEXT_INPUT",
+                "priceNameZH": "生图工具文本输入费用(image_text_input)",
+                "priceValue": 5,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "image_text_input",
+                "constraints": [
+                  {
+                    "code": "imageGenModel",
+                    "name": "底层生图模型",
+                    "type": "Select",
+                    "value": "gpt-image-2-2026-04-21"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "底层生图模型: gpt-image-1.5",
+            "stageText": "底层生图模型: gpt-image-1.5",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_TEXT_INPUT_CACHE_READ",
+                "priceNameZH": "生图工具文本输入缓存读取费用(image_text_input_cache_read)",
+                "priceValue": 1.25,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "image_text_input_cache_read",
+                "constraints": [
+                  {
+                    "code": "imageGenModel",
+                    "name": "底层生图模型",
+                    "type": "Select",
+                    "value": "gpt-image-1.5"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "底层生图模型: chatgpt-image-latest",
+            "stageText": "底层生图模型: chatgpt-image-latest",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_TEXT_INPUT_CACHE_READ",
+                "priceNameZH": "生图工具文本输入缓存读取费用(image_text_input_cache_read)",
+                "priceValue": 1.25,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "image_text_input_cache_read",
+                "constraints": [
+                  {
+                    "code": "imageGenModel",
+                    "name": "底层生图模型",
+                    "type": "Select",
+                    "value": "chatgpt-image-latest"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "底层生图模型: gpt-image-2",
+            "stageText": "底层生图模型: gpt-image-2",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_TEXT_INPUT_CACHE_READ",
+                "priceNameZH": "生图工具文本输入缓存读取费用(image_text_input_cache_read)",
+                "priceValue": 1.25,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "image_text_input_cache_read",
+                "constraints": [
+                  {
+                    "code": "imageGenModel",
+                    "name": "底层生图模型",
+                    "type": "Select",
+                    "value": "gpt-image-2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "底层生图模型: gpt-image-1-mini",
+            "stageText": "底层生图模型: gpt-image-1-mini",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_TEXT_INPUT_CACHE_READ",
+                "priceNameZH": "生图工具文本输入缓存读取费用(image_text_input_cache_read)",
+                "priceValue": 0.2,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "image_text_input_cache_read",
+                "constraints": [
+                  {
+                    "code": "imageGenModel",
+                    "name": "底层生图模型",
+                    "type": "Select",
+                    "value": "gpt-image-1-mini"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "底层生图模型: gpt-image-2-2026-04-21",
+            "stageText": "底层生图模型: gpt-image-2-2026-04-21",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_TEXT_INPUT_CACHE_READ",
+                "priceNameZH": "生图工具文本输入缓存读取费用(image_text_input_cache_read)",
+                "priceValue": 1.25,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "image_text_input_cache_read",
+                "constraints": [
+                  {
+                    "code": "imageGenModel",
+                    "name": "底层生图模型",
+                    "type": "Select",
+                    "value": "gpt-image-2-2026-04-21"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "底层生图模型: gpt-image-2.5-sunburst",
+            "stageText": "底层生图模型: gpt-image-2.5-sunburst",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_TEXT_INPUT_CACHE_READ",
+                "priceNameZH": "生图工具文本输入缓存读取费用(image_text_input_cache_read)",
+                "priceValue": 1.25,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "image_text_input_cache_read",
+                "constraints": [
+                  {
+                    "code": "imageGenModel",
+                    "name": "底层生图模型",
+                    "type": "Select",
+                    "value": "gpt-image-2.5-sunburst"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "底层生图模型: gpt-image-2.5-flare",
+            "stageText": "底层生图模型: gpt-image-2.5-flare",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_TEXT_INPUT_CACHE_READ",
+                "priceNameZH": "生图工具文本输入缓存读取费用(image_text_input_cache_read)",
+                "priceValue": 1.25,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "image_text_input_cache_read",
+                "constraints": [
+                  {
+                    "code": "imageGenModel",
+                    "name": "底层生图模型",
+                    "type": "Select",
+                    "value": "gpt-image-2.5-flare"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "底层生图模型: gpt-image-1",
+            "stageText": "底层生图模型: gpt-image-1",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_TEXT_INPUT_CACHE_READ",
+                "priceNameZH": "生图工具文本输入缓存读取费用(image_text_input_cache_read)",
+                "priceValue": 1.25,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "image_text_input_cache_read",
+                "constraints": [
+                  {
+                    "code": "imageGenModel",
+                    "name": "底层生图模型",
+                    "type": "Select",
+                    "value": "gpt-image-1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "底层生图模型: gpt-image-1-mini",
+            "stageText": "底层生图模型: gpt-image-1-mini",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_TEXT_OUTPUT",
+                "priceNameZH": "生图工具文本输出费用(image_text_output)",
+                "priceValue": 0,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "image_text_output",
+                "constraints": [
+                  {
+                    "code": "imageGenModel",
+                    "name": "底层生图模型",
+                    "type": "Select",
+                    "value": "gpt-image-1-mini"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "底层生图模型: gpt-image-2-2026-04-21",
+            "stageText": "底层生图模型: gpt-image-2-2026-04-21",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_TEXT_OUTPUT",
+                "priceNameZH": "生图工具文本输出费用(image_text_output)",
+                "priceValue": 0,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "image_text_output",
+                "constraints": [
+                  {
+                    "code": "imageGenModel",
+                    "name": "底层生图模型",
+                    "type": "Select",
+                    "value": "gpt-image-2-2026-04-21"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "底层生图模型: gpt-image-1.5",
+            "stageText": "底层生图模型: gpt-image-1.5",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_TEXT_OUTPUT",
+                "priceNameZH": "生图工具文本输出费用(image_text_output)",
+                "priceValue": 10,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "image_text_output",
+                "constraints": [
+                  {
+                    "code": "imageGenModel",
+                    "name": "底层生图模型",
+                    "type": "Select",
+                    "value": "gpt-image-1.5"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "底层生图模型: chatgpt-image-latest",
+            "stageText": "底层生图模型: chatgpt-image-latest",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_TEXT_OUTPUT",
+                "priceNameZH": "生图工具文本输出费用(image_text_output)",
+                "priceValue": 10,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "image_text_output",
+                "constraints": [
+                  {
+                    "code": "imageGenModel",
+                    "name": "底层生图模型",
+                    "type": "Select",
+                    "value": "chatgpt-image-latest"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "底层生图模型: gpt-image-2",
+            "stageText": "底层生图模型: gpt-image-2",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_TEXT_OUTPUT",
+                "priceNameZH": "生图工具文本输出费用(image_text_output)",
+                "priceValue": 0,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "image_text_output",
+                "constraints": [
+                  {
+                    "code": "imageGenModel",
+                    "name": "底层生图模型",
+                    "type": "Select",
+                    "value": "gpt-image-2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "底层生图模型: gpt-image-1",
+            "stageText": "底层生图模型: gpt-image-1",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_TEXT_OUTPUT",
+                "priceNameZH": "生图工具文本输出费用(image_text_output)",
+                "priceValue": 0,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "image_text_output",
+                "constraints": [
+                  {
+                    "code": "imageGenModel",
+                    "name": "底层生图模型",
+                    "type": "Select",
+                    "value": "gpt-image-1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "INPUT_CACHE_READ",
+                "priceNameZH": "缓存读取操作费用(input_cache_read)",
+                "priceValue": 0.18,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "input_cache_read",
+                "constraints": []
+              }
+            ]
+          },
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "INPUT",
+                "priceNameZH": "输入提示词的处理费用(prompt)",
+                "priceValue": 1.75,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "prompt",
+                "constraints": []
+              }
+            ]
+          },
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "WEB_SEARCH",
+                "priceNameZH": "网络搜索功能调用费用(web_search)",
+                "priceValue": 0.014,
+                "unitCode": "COUNT",
+                "fixedNameZh": "次",
+                "priceCurrency": "USD",
+                "direction": "OTHER",
+                "sourceFeeCode": "web_search",
+                "constraints": []
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "modelProtocolCompatibility": {
+    "chat.completions": true,
+    "messages": true,
+    "responses": true
+  },
+  "supportedParametersDefaultValue": {
+    "conversation": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "include": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "instructions": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "max_completion_tokens": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "max_output_tokens": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "max_tokens": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "max_tool_calls": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "output_config": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "parallel_tool_calls": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "previous_response_id": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "prompt": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "prompt_cache_key": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "prompt_cache_retention": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "response_format": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "safety_identifier": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "system": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "temperature": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "text": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "tool_choice": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "tools": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "top_logprobs": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "top_p": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "truncation": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "web_search_options": {
+      "enable": true,
+      "defaultValue": null
+    }
+  },
+  "priceInfo": {
+    "prices": [
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "OUTPUT",
+            "priceNameZH": "模型生成输出内容的费用(completion)",
+            "priceValue": 14,
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "completion",
+            "constraints": []
+          }
+        ]
+      },
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "INPUT_CACHE_READ",
+            "priceNameZH": "缓存读取操作费用(input_cache_read)",
+            "priceValue": 0.175,
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "INPUT",
+            "sourceFeeCode": "input_cache_read",
+            "constraints": []
+          }
+        ]
+      },
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "INPUT",
+            "priceNameZH": "输入提示词的处理费用(prompt)",
+            "priceValue": 1.75,
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "INPUT",
+            "sourceFeeCode": "prompt",
+            "constraints": []
+          }
+        ]
+      },
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "WEB_SEARCH",
+            "priceNameZH": "网络搜索功能调用费用(web_search)",
+            "priceValue": 0.01,
+            "unitCode": "COUNT",
+            "fixedNameZh": "次",
+            "priceCurrency": "USD",
+            "direction": "OTHER",
+            "sourceFeeCode": "web_search",
+            "constraints": []
+          }
+        ]
+      }
+    ]
+  },
+  "pricingDetails": [
+    {
+      "feeItemCode": "completion",
+      "feeItemName": "模型生成输出内容的费用(completion)",
+      "selectedConstraint": [
+        "chargeUnit"
+      ],
+      "feeRecords": [
+        {
+          "feeRate": 14,
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "feeItemCode": "input_cache_read",
+      "feeItemName": "缓存读取操作费用(input_cache_read)",
+      "selectedConstraint": [
+        "chargeUnit"
+      ],
+      "feeRecords": [
+        {
+          "feeRate": 0.175,
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "feeItemCode": "prompt",
+      "feeItemName": "输入提示词的处理费用(prompt)",
+      "selectedConstraint": [
+        "chargeUnit"
+      ],
+      "feeRecords": [
+        {
+          "feeRate": 1.75,
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "feeItemCode": "web_search",
+      "feeItemName": "网络搜索功能调用费用(web_search)",
+      "selectedConstraint": [
+        "chargeUnit"
+      ],
+      "feeRecords": [
+        {
+          "feeRate": 0.01,
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "counts"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sourcePublishedPrices": {
+    "pricing_completion": "14",
+    "pricing_discount": "1",
+    "pricing_prompt": "1.75"
+  },
+  "exampleCodes": [],
+  "serviceConfiguration": "服务配置待开通；接入地址、鉴权和可用协议以开通后的服务配置为准。",
+  "sourceRegion": "global",
+  "sourceCatalog": "ZenMux",
+  "sourceUrl": "https://zenmux.ai/openai/gpt-5.2",
+  "detailVerified": true,
+  "aliases": [
+    "gpt-5.2"
+  ],
+  "isFree": false
+}

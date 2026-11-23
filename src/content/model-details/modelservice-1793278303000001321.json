@@ -1,0 +1,320 @@
+{
+  "uniqueId": "modelservice-1793278303000001321",
+  "name": "viggle-h3",
+  "displayName": "Viggle-H3",
+  "provider": "Viggle",
+  "description": "Viggle H3 is a multimodal video generation model optimized by Viggle based on MiniMax H3. It supports text-to-video, image-to-video, first- and last-frame control, and reference-to-video generation, with native audio output.",
+  "zhDescription": "Viggle H3 是 Viggle 基于 MiniMax H3 优化提供的多模态视频生成模型，支持文生视频、图生视频、首尾帧控制及参考生视频，并可生成带原生音频的视频内容。",
+  "longDescription": "Viggle H3 is a multimodal video generation model optimized by Viggle based on MiniMax H3. It supports text-to-video, image-to-video, first- and last-frame control, and reference-to-video generation, with native audio output.",
+  "zhLongDescription": "Viggle H3 是 Viggle 基于 MiniMax H3 优化提供的多模态视频生成模型，支持文生视频、图生视频、首尾帧控制及参考生视频，并可生成带原生音频的视频内容。",
+  "contextLength": null,
+  "maxCompletionTokens": null,
+  "maxTokens": null,
+  "currency": null,
+  "inPrice": null,
+  "outPrice": null,
+  "inPriceZh": null,
+  "outPriceZh": null,
+  "inHitCachePrice": "¥0.00/M",
+  "inHitCreatePrice": "¥0.00/M",
+  "tagList": [
+    {
+      "type": "MODEL_TYPE",
+      "key": "VISUAL_UNDERSTANDING",
+      "value": "视觉理解"
+    },
+    {
+      "type": "MODEL_TYPE",
+      "key": "VIDEO_GENERATE",
+      "value": "视频生成"
+    },
+    {
+      "type": "MODEL_TYPE",
+      "key": "MULTIMODAL",
+      "value": "多模态"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "AUDIO",
+      "value": "音频"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "VIDEO",
+      "value": "视频"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "VIDEO",
+      "value": "视频"
+    }
+  ],
+  "type": "VISUAL_UNDERSTANDING",
+  "typeList": [
+    "VIDEO_GENERATE",
+    "MULTIMODAL",
+    "VISUAL_UNDERSTANDING"
+  ],
+  "supportedParametersDefaultValue": null,
+  "protocolParameters": [],
+  "modelProtocolCompatibility": {
+    "System One": false,
+    "google video": false,
+    "dashscope": false,
+    "google_gemini": false,
+    "anthropic_message": false,
+    "openai_responses": false,
+    "openai_chat_completions": false
+  },
+  "minDiscountRate": "1",
+  "priceInfo": {
+    "lowestProviderPrice": {
+      "inputPrice": null,
+      "outputPrice": {
+        "priceCode": "VIDEO",
+        "priceName": "Video",
+        "priceNameZH": "视频生成",
+        "priceValue": "0.070000",
+        "originalPrice": "0.070000",
+        "discountRate": "1.000000",
+        "unitCode": "S",
+        "unitName": "s",
+        "unitNameZh": "秒",
+        "direction": "OUTPUT",
+        "fixedName": "Second",
+        "fixedNameZh": "秒"
+      }
+    },
+    "prices": [
+      {
+        "stage": "视频生成 · 2K及以下",
+        "stageText": "视频生成 · 2K及以下",
+        "type": null,
+        "priceCurrency": "CNY",
+        "price": [
+          {
+            "priceCode": "VIDEO",
+            "priceName": "Video",
+            "priceNameZH": "视频生成",
+            "priceValue": "0.070000",
+            "originalPrice": "0.070000",
+            "discountRate": "1.000000",
+            "unitCode": "S",
+            "unitName": "s",
+            "unitNameZh": "秒",
+            "direction": "OUTPUT",
+            "fixedName": "Second",
+            "fixedNameZh": "秒"
+          }
+        ]
+      },
+      {
+        "stage": "视频生成 · 4K",
+        "stageText": "视频生成 · 4K",
+        "type": null,
+        "priceCurrency": "CNY",
+        "price": [
+          {
+            "priceCode": "VIDEO",
+            "priceName": "Video",
+            "priceNameZH": "视频生成",
+            "priceValue": "0.350000",
+            "originalPrice": "0.350000",
+            "discountRate": "1.000000",
+            "unitCode": "S",
+            "unitName": "s",
+            "unitNameZh": "秒",
+            "direction": "OUTPUT",
+            "fixedName": "Second",
+            "fixedNameZh": "秒"
+          }
+        ]
+      },
+      {
+        "stage": "视频再生成 · 768p->2K",
+        "stageText": "视频再生成 · 768p->2K",
+        "type": null,
+        "priceCurrency": "CNY",
+        "price": [
+          {
+            "priceCode": "VIDEO",
+            "priceName": "Video",
+            "priceNameZH": "视频生成",
+            "priceValue": "0.070000",
+            "originalPrice": "0.070000",
+            "discountRate": "1.000000",
+            "unitCode": "S",
+            "unitName": "s",
+            "unitNameZh": "秒",
+            "direction": "OUTPUT",
+            "fixedName": "Second",
+            "fixedNameZh": "秒"
+          }
+        ]
+      }
+    ]
+  },
+  "publishedTime": "2026-10-29 20:51:43",
+  "offShelfFlag": 0,
+  "offShelfDate": null,
+  "buyTypes": [
+    "BY_AMOUNT"
+  ],
+  "providers": [
+    {
+      "providerUid": "channel-1793278520152001853",
+      "providerName": "viggle",
+      "providerDisplayName": "Viggle",
+      "providerLogo": "https://maas-public.oss-cn-shanghai.aliyuncs.com/maas-admin/image/2026-11-01/image-fa3b14a3-ed57-42.png"
+    }
+  ],
+  "extInfo": "{\"exampleCodes\":{\"MiniMax\":[{\"code\":\"import json\\r\\nimport os\\r\\nimport urllib.request\\r\\n\\r\\nurl = \\\"https://maas-api.antdigital.com/v2/video_generation\\\"\\r\\npayload = {\\r\\n    \\\"model\\\": \\\"viggle-h3\\\",\\r\\n    \\\"quality\\\": \\\"low\\\",\\r\\n    \\\"content\\\": [\\r\\n        {\\r\\n            \\\"type\\\": \\\"text\\\",\\r\\n            \\\"text\\\": \\\"一只橘猫在窗边缓缓转头，柔和晨光，镜头稳定。\\\"\\r\\n        }\\r\\n    ],\\r\\n    \\\"resolution\\\": \\\"768P\\\",\\r\\n    \\\"duration\\\": 5,\\r\\n    \\\"ratio\\\": \\\"16:9\\\"\\r\\n}\\r\\nrequest = urllib.request.Request(\\r\\n    url,\\r\\n    data=json.dumps(payload).encode(\\\"utf-8\\\"),\\r\\n    headers={\\r\\n        \\\"Content-Type\\\": \\\"application/json\\\",\\r\\n        \\\"Authorization\\\": \\\"Bearer \\\" + os.environ[\\\"API_KEY\\\"],\\r\\n    },\\r\\n    method=\\\"POST\\\",\\r\\n)\\r\\nwith urllib.request.urlopen(request, timeout=600) as response:\\r\\n    result = json.load(response)\\r\\n\\r\\nprint(\\\"task_id:\\\", result[\\\"task_id\\\"])\\r\\n\",\"sectionTitle\":\"\",\"name\":\"python\"},{\"code\":\"curl 'https://maas-api.antdigital.com/v2/video_generation' \\\\\\r\\n  --max-time 600 \\\\\\r\\n  --header 'Content-Type: application/json' \\\\\\r\\n  --header \\\"Authorization: Bearer $API_KEY\\\" \\\\\\r\\n  --data '{\\r\\n  \\\"model\\\": \\\"viggle-h3\\\",\\r\\n  \\\"quality\\\": \\\"low\\\",\\r\\n  \\\"content\\\": [\\r\\n    {\\r\\n      \\\"type\\\": \\\"text\\\",\\r\\n      \\\"text\\\": \\\"一只橘猫在窗边缓缓转头，柔和晨光，镜头稳定。\\\"\\r\\n    }\\r\\n  ],\\r\\n  \\\"resolution\\\": \\\"768P\\\",\\r\\n  \\\"duration\\\": 5,\\r\\n  \\\"ratio\\\": \\\"16:9\\\"\\r\\n}'\",\"sectionTitle\":\"\",\"name\":\"curl\"}]},\"supportedParametersDefaultValue\":{\"quality\":\"low\",\"mode\":{\"text\":{\"enable\":true},\"firstFrame\":{\"enable\":true,\"attachments\":{\"image\":{\"formats\":[\"JPEG\",\"JPG\",\"PNG\",\"WEBP\",\"HEIC\",\"HEIF\"],\"maxSizeMB\":30,\"minCount\":1,\"maxCount\":1,\"roleType\":\"first_frame\"}}},\"firstAndLastFrame\":{\"enable\":true,\"attachments\":{\"image\":{\"formats\":[\"JPEG\",\"JPG\",\"PNG\",\"WEBP\",\"HEIC\",\"HEIF\"],\"maxSizeMB\":30,\"minCount\":2,\"maxCount\":2,\"roleType\":[\"first_frame\",\"last_frame\"]}}},\"example\":{\"enable\":true,\"attachments\":{\"image\":{\"formats\":[\"JPEG\",\"JPG\",\"PNG\",\"WEBP\",\"HEIC\",\"HEIF\"],\"maxSizeMB\":30,\"minCount\":0,\"maxCount\":4,\"roleType\":\"reference_image\"},\"video\":{\"formats\":[\"MP4\",\"MOV\"],\"maxSizeMB\":100,\"minCount\":0,\"maxCount\":1,\"roleType\":\"reference_video\",\"required\":{\"resolution\":{\"minWidth\":64,\"minHeigh\":64},\"durationLimit\":{\"min\":2,\"max\":15},\"totalDurationLimit\":15}},\"audio\":{\"formats\":[\"MP3\",\"WAV\",\"M4A\",\"AAC\",\"FLAC\",\"OGG\",\"MP4\"],\"maxSizeMB\":15,\"minCount\":0,\"maxCount\":1,\"roleType\":\"reference_audio\",\"required\":{\"durationLimit\":{\"min\":2,\"max\":15}}}}}},\"duration\":{\"supported\":true,\"min\":5,\"max\":15,\"default\":5},\"resolution\":{\"supported\":true,\"options\":[\"480P\",\"768P\",\"2K\"],\"default\":\"768P\"},\"ratio\":{\"supported\":true,\"options\":[\"21:9\",\"16:9\",\"4:3\",\"1:1\",\"3:4\",\"9:16\",\"adaptive\"],\"default\":\"16:9\"},\"desc\":\"1. 基础能力\\n   - 支持文生视频、首帧图生视频、首尾帧图生视频、多模态参考生视频\\n   - 支持原生音频生成，可结合参考图片、视频和音频引导创作\\n2. 图片要求\\n   - 格式: JPG、JPEG、PNG、WEBP、HEIC、HEIF\\n   - 大小: <=30MiB/张\\n   - 尺寸: 大尺寸图片会自动等比缩放后处理\\n   - 数量: 首帧最多1张、尾帧最多1张、参考图片最多4张\\n3. 参考视频要求（可选，最多1个）\\n   - 时长: 2~15秒\\n   - 尺寸: 宽高均不小于64px，且必须为偶数\\n   - 大小: <=100MiB/个\\n   - 格式: MP4、MOV等可正常解码的视频格式\\n4. 参考音频要求（可选，最多1个）\\n   - 时长: 2~15秒\\n   - 大小: <=15MiB/个\\n   - 格式: MP3、WAV、M4A、AAC、FLAC、OGG、含音轨的MP4\\n   - 必须同时提供至少1张参考图片或1段参考视频\\n5. 输出参数\\n   - 分辨率: 480p / 768p / 1080p / 2k / 4k，必填\\n   - 宽高比: 21:9、16:9、4:3、1:1、3:4、9:16，支持adaptive自适应\\n   - 时长: 5~15秒，仅支持整数，必填\\n   - 质量: low（快速生成）/ high（完整质量），必填\\n6. 特殊约束\\n   - 提示词必填，每个text项最多7000字符\\n   - 首尾帧模式必须同时提供1张首帧和1张尾帧，不支持仅尾帧输入\\n   - 首尾帧图片不能与参考图片、参考视频或参考音频混用\\n   - 文生视频必须指定具体宽高比，不能使用adaptive\\n   - 首帧及首尾帧生成按首帧自适应比例；参考生成默认adaptive，也可指定具体比例\\n   - 请求体总大小不超过80MiB，大文件建议通过可下载URL传入。\"}}",
+  "specs": {
+    "inputPrice": "¥0.0000",
+    "inputPriceHint": "每 1K tokens",
+    "outputPrice": "¥0.0000",
+    "outputPriceHint": "每 1K tokens",
+    "contextLength": null,
+    "contextLengthHint": "tokens",
+    "maxOutput": "0",
+    "maxOutputHint": "tokens"
+  },
+  "capabilities": [],
+  "languages": [
+    "文本",
+    "图像",
+    "音频",
+    "视频"
+  ],
+  "scenarios": [
+    "视频"
+  ],
+  "modelParameters": [
+    {
+      "type": "slider",
+      "id": "temperature",
+      "label": "Temperature",
+      "value": 0.3,
+      "min": 0,
+      "max": 2,
+      "step": 0.01,
+      "description": "控制输出的随机性，值越高越随机",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "id": "presence_penalty",
+      "label": "Presence Penalty",
+      "value": 0.1,
+      "min": -2,
+      "max": 2,
+      "step": 0.01,
+      "description": "存在惩罚，鼓励模型讨论新话题",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "id": "top_p",
+      "label": "Top P",
+      "value": 0.95,
+      "min": 0,
+      "max": 1,
+      "step": 0.01,
+      "description": "核采样参数，控制候选词汇的范围",
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "id": "max_tokens",
+      "label": "Max Tokens",
+      "value": 0,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "单次生成的最大 token 数量",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "id": "frequency_penalty",
+      "label": "Frequency Penalty",
+      "value": 0.1,
+      "min": -2,
+      "max": 2,
+      "step": 0.01,
+      "description": "频率惩罚，减少重复内容的生成",
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "id": "context_length",
+      "label": "Context Length",
+      "value": 64000,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "支持的最大上下文长度",
+      "thousands": true
+    }
+  ],
+  "usageGuide": {
+    "authIntro": "使用 API Key 进行认证，在请求头中添加：",
+    "authBearerPlaceholder": "YOUR_API_KEY",
+    "requestIntro": "支持标准的 OpenAI 参数格式：",
+    "requestExample": "{\n  \"max_tokens\": 4096,\n  \"temperature\": 0.5,\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"你好，请介绍一下自己\"\n    }\n  ],\n  \"model\": \"viggle-h3\"\n}",
+    "responseExample": "{\n  \"created\": 1795353265,\n  \"usage\": {\n    \"completion_tokens\": 12,\n    \"prompt_tokens\": 9,\n    \"total_tokens\": 21\n  },\n  \"model\": \"viggle-h3\",\n  \"id\": \"chatcmpl-123\",\n  \"choices\": [\n    {\n      \"finish_reason\": \"stop\",\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"你好！我是 viggle-h3...\"\n      }\n    }\n  ],\n  \"object\": \"chat.completion\"\n}",
+    "docUrl": "https://api-docs.example.com/",
+    "docLabel": "查看完整 API 文档"
+  },
+  "exampleCodes": {
+    "python": {
+      "sectionTitle": "Python 示例",
+      "installLine": "安装依赖：pip install requests",
+      "code": "import requests\nimport json\n\nurl = \"https://api.example.com/v1/chat/completions\"\nheaders = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n}\n\ndata = {\n    \"model\": \"model-name\",\n    \"messages\": [\n        {\n            \"role\": \"user\",\n            \"content\": \"请写一个 Python 函数计算斐波那契数列\"\n        }\n    ],\n    \"temperature\": 0.7,\n    \"max_tokens\": 4096\n}\n\nresponse = requests.post(url, headers=headers, json=data)\nresult = response.json()\nprint(result[\"choices\"][0][\"message\"][\"content\"])"
+    },
+    "javascript": {
+      "sectionTitle": "JavaScript 示例",
+      "installLine": "无需安装额外依赖（需 Node 18+ 或支持 fetch 的运行环境）",
+      "code": "(async () => {\n  const url = \"https://api.example.com/v1/chat/completions\";\n  const headers = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n  };\n  const data = {\n    model: \"model-name\",\n    messages: [\n      {\n        role: \"user\",\n        content: \"请写一个 Python 函数计算斐波那契数列\"\n      }\n    ],\n    temperature: 0.7,\n    max_tokens: 4096\n  };\n  const response = await fetch(url, {\n    method: \"POST\",\n    headers,\n    body: JSON.stringify(data)\n  });\n  const result = await response.json();\n  console.log(result.choices[0].message.content);\n})();"
+    },
+    "curl": {
+      "sectionTitle": "Curl 示例",
+      "installLine": "说明：macOS / Linux 一般已预装 curl",
+      "code": "curl -X POST \"https://api.example.com/v1/chat/completions\" \\\n  -H \"Authorization: Bearer YOUR_API_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"model\":\"model-name\",\"messages\":[{\"role\":\"user\",\"content\":\"请写一个 Python 函数计算斐波那契数列\"}],\"temperature\":0.7,\"max_tokens\":4096}'"
+    }
+  },
+  "agentIntegrations": [
+    {
+      "id": "codex",
+      "name": "Codex",
+      "description": "Configure MaaS as an OpenAI-compatible model provider.",
+      "zhDescription": "将 MaaS 配置为 Codex 的 OpenAI 兼容模型供应商。",
+      "fileLabel": "~/.codex/config.toml",
+      "language": "toml",
+      "code": "model = \"viggle-h3\"\nmodel_provider = \"maas\"\n\n[model_providers.maas]\nname = \"MaaS\"\nbase_url = \"https://maas-api.antdigital.com/v1\"\nenv_key = \"MAAS_API_KEY\"\nwire_api = \"responses\"",
+      "guideUrl": "/docs/agent-guides/codex"
+    },
+    {
+      "id": "opencode",
+      "name": "OpenCode",
+      "description": "Add MaaS as a custom provider in OpenCode.",
+      "zhDescription": "在 OpenCode 中添加 MaaS 自定义模型供应商。",
+      "fileLabel": "~/.config/opencode/opencode.json",
+      "language": "json",
+      "code": "{\n  \"$schema\": \"https://opencode.ai/config.json\",\n  \"provider\": {\n    \"maas\": {\n      \"npm\": \"@ai-sdk/openai-compatible\",\n      \"name\": \"MaaS\",\n      \"options\": {\n        \"baseURL\": \"https://maas-api.antdigital.com/v1\",\n        \"apiKey\": \"YOUR_MAAS_API_KEY\"\n      },\n      \"models\": {\n        \"viggle-h3\": {\n          \"name\": \"viggle-h3\"\n        }\n      }\n    }\n  },\n  \"model\": \"maas/viggle-h3\"\n}",
+      "guideUrl": "/docs/agent-guides/opencode"
+    }
+  ],
+  "sourceUrl": "https://maas.antdigital.com/models/modelservice-1793278303000001321",
+  "slug": "modelservice-1793278303000001321"
+}

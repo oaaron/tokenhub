@@ -1,0 +1,782 @@
+{
+  "slug": "zm-x-ai-grok-imagine-image-2.0",
+  "uniqueId": "2636MO7DEcvm14613936",
+  "name": "x-ai/grok-imagine-image-2.0",
+  "displayName": "Grok Imagine Image 2.0",
+  "provider": "xAI",
+  "manufacturerKey": "x-ai",
+  "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2026/04/01/ut4gW3Y/Property-1Grok.svg",
+  "zhDescription": "支持文本生图与参考图编辑，提供低、中质量档，适合按质量需求安排图像创作流程。",
+  "zhLongDescription": "支持文本生图与参考图编辑，提供低、中质量档，适合按质量需求安排图像创作流程。",
+  "description": "支持文本生图与参考图编辑，提供低、中质量档，适合按质量需求安排图像创作流程。",
+  "longDescription": "支持文本生图与参考图编辑，提供低、中质量档，适合按质量需求安排图像创作流程。",
+  "contextLength": 66000,
+  "maxCompletionTokens": null,
+  "currency": "USD",
+  "tagList": [
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    }
+  ],
+  "publishedTime": "2026-08-12",
+  "minDiscountRate": "1",
+  "supportedParams": [
+    "background",
+    "moderation",
+    "n",
+    "output_format",
+    "partial_images",
+    "prompt",
+    "response_format",
+    "size",
+    "stream"
+  ],
+  "supportedProtocols": [
+    "images"
+  ],
+  "reasoning": 0,
+  "reasoningModes": [
+    0
+  ],
+  "providerNames": [
+    "xAI"
+  ],
+  "providerDetails": [
+    {
+      "name": "xAI",
+      "slug": "x-ai",
+      "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2026/07/09/EjzwaI6/Property-1Spacexai.svg",
+      "contextLength": 66000,
+      "maxCompletionTokens": null,
+      "supportsStreaming": true,
+      "apiProtocols": {
+        "images": {
+          "supported_parameters": [
+            "prompt",
+            "background",
+            "n",
+            "moderation",
+            "output_format",
+            "partial_images",
+            "response_format",
+            "size",
+            "stream"
+          ],
+          "supports_reasoning": 0
+        }
+      },
+      "pricingDiscount": "1",
+      "priceInfo": {
+        "prices": [
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_INPUT",
+                "priceNameZH": "图像输入费用(image_input)",
+                "priceValue": "0.0100000000",
+                "unitCode": "COUNT",
+                "fixedNameZh": "次",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "image_input",
+                "constraints": []
+              }
+            ]
+          },
+          {
+            "stage": "图片大小: 2k；图片质量: low",
+            "stageText": "图片大小: 2k；图片质量: low",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_OUTPUT",
+                "priceNameZH": "图像输出费用(image_output)",
+                "priceValue": "0.0600000000",
+                "unitCode": "COUNT",
+                "fixedNameZh": "次",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "image_output",
+                "constraints": [
+                  {
+                    "code": "size",
+                    "name": "图片大小",
+                    "type": "Select",
+                    "value": "2k"
+                  },
+                  {
+                    "code": "quality",
+                    "name": "图片质量",
+                    "type": "Select",
+                    "value": "low"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "图片质量: low；图片大小: 1k",
+            "stageText": "图片质量: low；图片大小: 1k",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_OUTPUT",
+                "priceNameZH": "图像输出费用(image_output)",
+                "priceValue": "0.0400000000",
+                "unitCode": "COUNT",
+                "fixedNameZh": "次",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "image_output",
+                "constraints": [
+                  {
+                    "code": "quality",
+                    "name": "图片质量",
+                    "type": "Select",
+                    "value": "low"
+                  },
+                  {
+                    "code": "size",
+                    "name": "图片大小",
+                    "type": "Select",
+                    "value": "1k"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "图片大小: 1.5k；图片质量: low",
+            "stageText": "图片大小: 1.5k；图片质量: low",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_OUTPUT",
+                "priceNameZH": "图像输出费用(image_output)",
+                "priceValue": "0.0500000000",
+                "unitCode": "COUNT",
+                "fixedNameZh": "次",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "image_output",
+                "constraints": [
+                  {
+                    "code": "size",
+                    "name": "图片大小",
+                    "type": "Select",
+                    "value": "1.5k"
+                  },
+                  {
+                    "code": "quality",
+                    "name": "图片质量",
+                    "type": "Select",
+                    "value": "low"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "图片质量: medium；图片大小: 2k",
+            "stageText": "图片质量: medium；图片大小: 2k",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_OUTPUT",
+                "priceNameZH": "图像输出费用(image_output)",
+                "priceValue": "0.0800000000",
+                "unitCode": "COUNT",
+                "fixedNameZh": "次",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "image_output",
+                "constraints": [
+                  {
+                    "code": "quality",
+                    "name": "图片质量",
+                    "type": "Select",
+                    "value": "medium"
+                  },
+                  {
+                    "code": "size",
+                    "name": "图片大小",
+                    "type": "Select",
+                    "value": "2k"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "图片大小: 1.5k；图片质量: medium",
+            "stageText": "图片大小: 1.5k；图片质量: medium",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_OUTPUT",
+                "priceNameZH": "图像输出费用(image_output)",
+                "priceValue": "0.0700000000",
+                "unitCode": "COUNT",
+                "fixedNameZh": "次",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "image_output",
+                "constraints": [
+                  {
+                    "code": "size",
+                    "name": "图片大小",
+                    "type": "Select",
+                    "value": "1.5k"
+                  },
+                  {
+                    "code": "quality",
+                    "name": "图片质量",
+                    "type": "Select",
+                    "value": "medium"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "图片质量: medium；图片大小: 1k",
+            "stageText": "图片质量: medium；图片大小: 1k",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_OUTPUT",
+                "priceNameZH": "图像输出费用(image_output)",
+                "priceValue": "0.0600000000",
+                "unitCode": "COUNT",
+                "fixedNameZh": "次",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "image_output",
+                "constraints": [
+                  {
+                    "code": "quality",
+                    "name": "图片质量",
+                    "type": "Select",
+                    "value": "medium"
+                  },
+                  {
+                    "code": "size",
+                    "name": "图片大小",
+                    "type": "Select",
+                    "value": "1k"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "REQUEST",
+                "priceNameZH": "API 请求调用的基础费用(request)",
+                "priceValue": "0.0100000000",
+                "unitCode": "COUNT",
+                "fixedNameZh": "次",
+                "priceCurrency": "USD",
+                "direction": "OTHER",
+                "sourceFeeCode": "request",
+                "constraints": []
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "modelProtocolCompatibility": {
+    "images": true
+  },
+  "supportedParametersDefaultValue": {
+    "background": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "moderation": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "n": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "output_format": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "partial_images": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "prompt": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "response_format": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "size": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "stream": {
+      "enable": true,
+      "defaultValue": null
+    }
+  },
+  "priceInfo": {
+    "prices": [
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "IMAGE_INPUT",
+            "priceNameZH": "图像输入费用(image_input)",
+            "priceValue": "0.0100000000",
+            "unitCode": "COUNT",
+            "fixedNameZh": "次",
+            "priceCurrency": "USD",
+            "direction": "INPUT",
+            "sourceFeeCode": "image_input",
+            "constraints": []
+          }
+        ]
+      },
+      {
+        "stage": "图片大小: 2k；图片质量: low",
+        "stageText": "图片大小: 2k；图片质量: low",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "IMAGE_OUTPUT",
+            "priceNameZH": "图像输出费用(image_output)",
+            "priceValue": "0.0600000000",
+            "unitCode": "COUNT",
+            "fixedNameZh": "次",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "image_output",
+            "constraints": [
+              {
+                "code": "size",
+                "name": "图片大小",
+                "type": "Select",
+                "value": "2k"
+              },
+              {
+                "code": "quality",
+                "name": "图片质量",
+                "type": "Select",
+                "value": "low"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stage": "图片质量: low；图片大小: 1k",
+        "stageText": "图片质量: low；图片大小: 1k",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "IMAGE_OUTPUT",
+            "priceNameZH": "图像输出费用(image_output)",
+            "priceValue": "0.0400000000",
+            "unitCode": "COUNT",
+            "fixedNameZh": "次",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "image_output",
+            "constraints": [
+              {
+                "code": "quality",
+                "name": "图片质量",
+                "type": "Select",
+                "value": "low"
+              },
+              {
+                "code": "size",
+                "name": "图片大小",
+                "type": "Select",
+                "value": "1k"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stage": "图片大小: 1.5k；图片质量: low",
+        "stageText": "图片大小: 1.5k；图片质量: low",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "IMAGE_OUTPUT",
+            "priceNameZH": "图像输出费用(image_output)",
+            "priceValue": "0.0500000000",
+            "unitCode": "COUNT",
+            "fixedNameZh": "次",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "image_output",
+            "constraints": [
+              {
+                "code": "size",
+                "name": "图片大小",
+                "type": "Select",
+                "value": "1.5k"
+              },
+              {
+                "code": "quality",
+                "name": "图片质量",
+                "type": "Select",
+                "value": "low"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stage": "图片质量: medium；图片大小: 2k",
+        "stageText": "图片质量: medium；图片大小: 2k",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "IMAGE_OUTPUT",
+            "priceNameZH": "图像输出费用(image_output)",
+            "priceValue": "0.0800000000",
+            "unitCode": "COUNT",
+            "fixedNameZh": "次",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "image_output",
+            "constraints": [
+              {
+                "code": "quality",
+                "name": "图片质量",
+                "type": "Select",
+                "value": "medium"
+              },
+              {
+                "code": "size",
+                "name": "图片大小",
+                "type": "Select",
+                "value": "2k"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stage": "图片大小: 1.5k；图片质量: medium",
+        "stageText": "图片大小: 1.5k；图片质量: medium",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "IMAGE_OUTPUT",
+            "priceNameZH": "图像输出费用(image_output)",
+            "priceValue": "0.0700000000",
+            "unitCode": "COUNT",
+            "fixedNameZh": "次",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "image_output",
+            "constraints": [
+              {
+                "code": "size",
+                "name": "图片大小",
+                "type": "Select",
+                "value": "1.5k"
+              },
+              {
+                "code": "quality",
+                "name": "图片质量",
+                "type": "Select",
+                "value": "medium"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stage": "图片质量: medium；图片大小: 1k",
+        "stageText": "图片质量: medium；图片大小: 1k",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "IMAGE_OUTPUT",
+            "priceNameZH": "图像输出费用(image_output)",
+            "priceValue": "0.0600000000",
+            "unitCode": "COUNT",
+            "fixedNameZh": "次",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "image_output",
+            "constraints": [
+              {
+                "code": "quality",
+                "name": "图片质量",
+                "type": "Select",
+                "value": "medium"
+              },
+              {
+                "code": "size",
+                "name": "图片大小",
+                "type": "Select",
+                "value": "1k"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "REQUEST",
+            "priceNameZH": "API 请求调用的基础费用(request)",
+            "priceValue": "0.0100000000",
+            "unitCode": "COUNT",
+            "fixedNameZh": "次",
+            "priceCurrency": "USD",
+            "direction": "OTHER",
+            "sourceFeeCode": "request",
+            "constraints": []
+          }
+        ]
+      }
+    ]
+  },
+  "pricingDetails": [
+    {
+      "feeItemCode": "image_input",
+      "feeItemName": "图像输入费用(image_input)",
+      "feeRecords": [
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "counts"
+            }
+          ],
+          "feeRate": "0.0100000000"
+        }
+      ],
+      "selectedConstraint": [
+        "chargeUnit"
+      ]
+    },
+    {
+      "feeItemCode": "image_output",
+      "feeItemName": "图像输出费用(image_output)",
+      "feeRecords": [
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "counts"
+            },
+            {
+              "code": "size",
+              "name": "图片大小",
+              "type": "Select",
+              "value": "2k"
+            },
+            {
+              "code": "quality",
+              "name": "图片质量",
+              "type": "Select",
+              "value": "low"
+            }
+          ],
+          "feeRate": "0.0600000000"
+        },
+        {
+          "components": [
+            {
+              "code": "quality",
+              "name": "图片质量",
+              "type": "Select",
+              "value": "low"
+            },
+            {
+              "code": "size",
+              "name": "图片大小",
+              "type": "Select",
+              "value": "1k"
+            },
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "counts"
+            }
+          ],
+          "feeRate": "0.0400000000"
+        },
+        {
+          "components": [
+            {
+              "code": "size",
+              "name": "图片大小",
+              "type": "Select",
+              "value": "1.5k"
+            },
+            {
+              "code": "quality",
+              "name": "图片质量",
+              "type": "Select",
+              "value": "low"
+            },
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "counts"
+            }
+          ],
+          "feeRate": "0.0500000000"
+        },
+        {
+          "components": [
+            {
+              "code": "quality",
+              "name": "图片质量",
+              "type": "Select",
+              "value": "medium"
+            },
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "counts"
+            },
+            {
+              "code": "size",
+              "name": "图片大小",
+              "type": "Select",
+              "value": "2k"
+            }
+          ],
+          "feeRate": "0.0800000000"
+        },
+        {
+          "components": [
+            {
+              "code": "size",
+              "name": "图片大小",
+              "type": "Select",
+              "value": "1.5k"
+            },
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "counts"
+            },
+            {
+              "code": "quality",
+              "name": "图片质量",
+              "type": "Select",
+              "value": "medium"
+            }
+          ],
+          "feeRate": "0.0700000000"
+        },
+        {
+          "components": [
+            {
+              "code": "quality",
+              "name": "图片质量",
+              "type": "Select",
+              "value": "medium"
+            },
+            {
+              "code": "size",
+              "name": "图片大小",
+              "type": "Select",
+              "value": "1k"
+            },
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "counts"
+            }
+          ],
+          "feeRate": "0.0600000000"
+        }
+      ],
+      "selectedConstraint": [
+        "chargeUnit",
+        "size",
+        "quality"
+      ]
+    },
+    {
+      "feeItemCode": "request",
+      "feeItemName": "API 请求调用的基础费用(request)",
+      "feeRecords": [
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "counts"
+            }
+          ],
+          "feeRate": "0.0100000000"
+        }
+      ],
+      "selectedConstraint": [
+        "chargeUnit"
+      ]
+    }
+  ],
+  "sourcePublishedPrices": {
+    "pricing_completion": "0",
+    "pricing_discount": "1",
+    "pricing_prompt": "0"
+  },
+  "exampleCodes": [],
+  "serviceConfiguration": "服务配置待开通；接入地址、鉴权和可用协议以开通后的服务配置为准。",
+  "sourceRegion": "global",
+  "sourceCatalog": "ZenMux",
+  "sourceUrl": "https://zenmux.ai/x-ai/grok-imagine-image-2.0",
+  "detailVerified": true,
+  "aliases": [
+    "grok-imagine-image-2.0"
+  ],
+  "isFree": false
+}

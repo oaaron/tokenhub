@@ -1,0 +1,282 @@
+{
+  "uniqueId": "modelservice-1794215054529001720",
+  "name": "lingdt-tts-cc-2.0",
+  "displayName": "LingDT-TTS-CC-2.0",
+  "provider": "AntDigital",
+  "description": "LingDT-TTS-CC-2.0 is an end-to-end speech synthesis model designed for telephony. It offers more than 20 expressive, human-like voices and delivers low-latency, stable streaming audio generation. The model supports fine-grained controls such as speaking-rate adjustment, breathing pauses, and pronunciation correction using Pinyin, while decoupling speaker timbre from prosody. Trained on large-scale real-world call data, it adapts prosody and emotion to the input text and delivers accurate, consistent pronunciation of numbers, monetary amounts, and business terminology. It is well suited for large-scale customer service, outbound calling, and other telephony voice-generation scenarios.",
+  "zhDescription": "LingDT-TTS-CC-2.0 是面向电话场景的端到端语音合成大模型，不仅拥有二十多种高表现力拟人音色，且能流式低延迟、高稳定地合成音频；同时支持语速控制、呼吸停顿、拼音修复等精细合成能力，并实现说话人音色与韵律的解耦。该模型基于大规模真实通话数据训练，合成音频可根据文本自适应调节韵律与情感，对数字、金额和业务术语等关键信息读音准确一致，适用于客服、外呼等大规模电话语音生成场景。",
+  "longDescription": "LingDT-TTS-CC-2.0 is an end-to-end speech synthesis model designed for telephony. It offers more than 20 expressive, human-like voices and delivers low-latency, stable streaming audio generation. The model supports fine-grained controls such as speaking-rate adjustment, breathing pauses, and pronunciation correction using Pinyin, while decoupling speaker timbre from prosody. Trained on large-scale real-world call data, it adapts prosody and emotion to the input text and delivers accurate, consistent pronunciation of numbers, monetary amounts, and business terminology. It is well suited for large-scale customer service, outbound calling, and other telephony voice-generation scenarios.",
+  "zhLongDescription": "LingDT-TTS-CC-2.0 是面向电话场景的端到端语音合成大模型，不仅拥有二十多种高表现力拟人音色，且能流式低延迟、高稳定地合成音频；同时支持语速控制、呼吸停顿、拼音修复等精细合成能力，并实现说话人音色与韵律的解耦。该模型基于大规模真实通话数据训练，合成音频可根据文本自适应调节韵律与情感，对数字、金额和业务术语等关键信息读音准确一致，适用于客服、外呼等大规模电话语音生成场景。",
+  "contextLength": null,
+  "maxCompletionTokens": null,
+  "maxTokens": null,
+  "currency": null,
+  "inPrice": null,
+  "outPrice": null,
+  "inPriceZh": null,
+  "outPriceZh": null,
+  "inHitCachePrice": "¥0.00/M",
+  "inHitCreatePrice": "¥0.00/M",
+  "tagList": [
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "SPEECH",
+      "value": "语音"
+    },
+    {
+      "type": "MODEL_TYPE",
+      "key": "AUDIO_GENERATE",
+      "value": "音频生成"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    }
+  ],
+  "type": "AUDIO_GENERATE",
+  "typeList": [
+    "AUDIO_GENERATE"
+  ],
+  "supportedParametersDefaultValue": {
+    "temperature": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "top_p": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "top_k": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "max_tokens": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "enable_search": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "enable_thinking": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "thinking_budget": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    }
+  },
+  "protocolParameters": [],
+  "modelProtocolCompatibility": {
+    "System One": false,
+    "google video": false,
+    "dashscope": false,
+    "google_gemini": false,
+    "anthropic_message": false,
+    "openai_responses": false,
+    "openai_chat_completions": false
+  },
+  "minDiscountRate": "0.950000",
+  "priceInfo": {
+    "lowestProviderPrice": {
+      "inputPrice": {
+        "priceCode": "SPEECH_SYNTHESIS",
+        "priceName": "Speech Synthesis",
+        "priceNameZH": "语音合成",
+        "priceValue": "0.950000",
+        "originalPrice": "1.000000",
+        "discountRate": "0.950000",
+        "unitCode": "W_TOKENS",
+        "unitName": "W",
+        "unitNameZh": "万字符",
+        "direction": "INPUT",
+        "fixedName": "W Tokens",
+        "fixedNameZh": "万字符"
+      },
+      "outputPrice": null
+    },
+    "prices": [
+      {
+        "stage": "",
+        "stageText": "",
+        "type": null,
+        "priceCurrency": "CNY",
+        "price": [
+          {
+            "priceCode": "SPEECH_SYNTHESIS",
+            "priceName": "Speech Synthesis",
+            "priceNameZH": "语音合成",
+            "priceValue": "0.950000",
+            "originalPrice": "1.000000",
+            "discountRate": "0.950000",
+            "unitCode": "W_TOKENS",
+            "unitName": "W",
+            "unitNameZh": "万字符",
+            "direction": "INPUT",
+            "fixedName": "W Tokens",
+            "fixedNameZh": "万字符"
+          }
+        ]
+      }
+    ]
+  },
+  "publishedTime": "2026-11-09 17:04:15",
+  "offShelfFlag": 0,
+  "offShelfDate": null,
+  "buyTypes": [
+    "BY_AMOUNT"
+  ],
+  "providers": [
+    {
+      "providerUid": "channel-1779290799108001040",
+      "providerName": "antdigital",
+      "providerDisplayName": "蚂蚁数字科技",
+      "providerLogo": "https://maas-public.oss-cn-shanghai.aliyuncs.com/maas-admin/image/2026-09-10/image-4cf4a41f-3ae4-42.png"
+    }
+  ],
+  "extInfo": "{\"supportedParametersDefaultValue\":\"\",\"exampleCodes\":{\"dashscope\":[{\"code\":\"#!/usr/bin/env python3\\n# -*-  coding: utf-8 -*-\\n\\\"\\\"\\\"\\nlingdt-tts-cc-2.0 实时语音合成最小示例(经 MaaS 网关)\\n\\n端点: wss://maas-api.antdigital.com/api-ws/v1/realtime(WebSocket 流式接口)\\n模型: lingdt-tts-cc-2.0\\n依赖: pip install dashscope\\n\\n注意:\\n  - 服务器返回 PCM 24kHz/单声道/16bit, 客户端自行写 WAV 头保存\\n  - voice 必须在服务 README 的发音人列表中(README 例: maxiaojun_enhanced);\\n    不在列表中的音色(如百炼常用的 Cherry)不会报错, 但返回空音频, 需自检。\\n  - 偶发: 网关对该模型的 WS 连接会 5s 内握手不成功, 重试即可。\\n\\n运行:\\n    python3 tts_example_simple.py\\n\\n输出:\\n    当前目录 output.wav\\n\\\"\\\"\\\"\\n\\nimport base64\\nimport threading\\nimport wave\\n\\nimport dashscope\\nfrom dashscope.audio.qwen_tts_realtime import (\\n    AudioFormat,\\n    QwenTtsRealtime,\\n    QwenTtsRealtimeCallback,\\n)\\n\\nAPI_KEY = \\\"sk-your-maas-api-key\\\"     # ← 替换为你的 MaaS API Key\\nMODEL = \\\"lingdt-tts-cc-2.0\\\"\\nWS_URL = \\\"wss://maas-api.antdigital.com/api-ws/v1/realtime\\\"\\n\\nTEXT = \\\"您好,这是通过 MaaS 网关调用 lingdt-tts-cc-2.0 合成的语音。\\\"\\nVOICE = \\\"maxiaojun_enhanced\\\"         # 发音人 ID, 见 README(区分大小写)\\nOUT_WAV = \\\"output.wav\\\"\\nTIMEOUT_S = 180\\n\\n\\nclass CollectCallback(QwenTtsRealtimeCallback):\\n    \\\"\\\"\\\"收集 PCM 分片, 标记会话结束/错误。\\\"\\\"\\\"\\n\\n    def __init__(self):\\n        self.audio = bytearray()\\n        self.finished = threading.Event()\\n        self.error = None\\n\\n    def on_event(self, event):\\n        et = event.get(\\\"type\\\", \\\"\\\")\\n        if et == \\\"response.audio.delta\\\":\\n            self.audio.extend(base64.b64decode(event[\\\"delta\\\"]))\\n        elif et == \\\"error\\\":\\n            self.error = event\\n            self.finished.set()\\n        elif et == \\\"session.finished\\\":\\n            self.finished.set()\\n\\n\\ndef main():\\n    dashscope.api_key = API_KEY\\n\\n    cb = CollectCallback()\\n    client = QwenTtsRealtime(model=MODEL, callback=cb, url=WS_URL)\\n\\n    try:\\n        client.connect()\\n        client.update_session(\\n            voice=VOICE,\\n            response_format=AudioFormat.PCM_24000HZ_MONO_16BIT,\\n            mode=\\\"server_commit\\\",   # 服务端按句末标点自动断句流式返回\\n        )\\n        client.append_text(TEXT)\\n        client.finish()\\n\\n        if not cb.finished.wait(TIMEOUT_S):\\n            raise TimeoutError(f\\\"{TIMEOUT_S}s 内未收到 session.finished\\\")\\n        if cb.error:\\n            raise RuntimeError(f\\\"服务端返回错误: {cb.error}\\\")\\n        if not cb.audio:\\n            raise RuntimeError(\\n                \\\"未收到音频数据: 请检查 voice 是否在 README 支持的音色列表中\\\"\\n                \\\"(无效音色会静默返回空音频, 不会报错)\\\"\\n            )\\n\\n        with wave.open(OUT_WAV, \\\"wb\\\") as w:\\n            w.setnchannels(1)\\n            w.setsampwidth(2)\\n            w.setframerate(24000)\\n            w.writeframes(bytes(cb.audio))\\n\\n        seconds = len(cb.audio) / (24000 * 2)\\n        print(f\\\"✅ 已保存 {OUT_WAV}({seconds:.2f}s, voice={VOICE})\\\")\\n        print(f\\\"   文本: {TEXT}\\\")\\n    finally:\\n        client.close()\\n\\n\\nif __name__ == \\\"__main__\\\":\\n    main()\\n\",\"sectionTitle\":\"\",\"name\":\"python\"}]}}",
+  "specs": {
+    "inputPrice": "¥0.0000",
+    "inputPriceHint": "每 1K tokens",
+    "outputPrice": "¥0.0000",
+    "outputPriceHint": "每 1K tokens",
+    "contextLength": null,
+    "contextLengthHint": "tokens",
+    "maxOutput": "0",
+    "maxOutputHint": "tokens"
+  },
+  "capabilities": [],
+  "languages": [
+    "文本"
+  ],
+  "scenarios": [
+    "语音"
+  ],
+  "modelParameters": [
+    {
+      "type": "slider",
+      "id": "temperature",
+      "label": "Temperature",
+      "value": 0.3,
+      "min": 0,
+      "max": 2,
+      "step": 0.01,
+      "description": "控制输出的随机性，值越高越随机",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "id": "presence_penalty",
+      "label": "Presence Penalty",
+      "value": 0.1,
+      "min": -2,
+      "max": 2,
+      "step": 0.01,
+      "description": "存在惩罚，鼓励模型讨论新话题",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "id": "top_p",
+      "label": "Top P",
+      "value": 0.95,
+      "min": 0,
+      "max": 1,
+      "step": 0.01,
+      "description": "核采样参数，控制候选词汇的范围",
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "id": "max_tokens",
+      "label": "Max Tokens",
+      "value": 0,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "单次生成的最大 token 数量",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "id": "frequency_penalty",
+      "label": "Frequency Penalty",
+      "value": 0.1,
+      "min": -2,
+      "max": 2,
+      "step": 0.01,
+      "description": "频率惩罚，减少重复内容的生成",
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "id": "context_length",
+      "label": "Context Length",
+      "value": 64000,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "支持的最大上下文长度",
+      "thousands": true
+    }
+  ],
+  "usageGuide": {
+    "authIntro": "使用 API Key 进行认证，在请求头中添加：",
+    "authBearerPlaceholder": "YOUR_API_KEY",
+    "requestIntro": "支持标准的 OpenAI 参数格式：",
+    "requestExample": "{\n  \"max_tokens\": 4096,\n  \"temperature\": 0.5,\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"你好，请介绍一下自己\"\n    }\n  ],\n  \"model\": \"lingdt-tts-cc-2.0\"\n}",
+    "responseExample": "{\n  \"created\": 1795353264,\n  \"usage\": {\n    \"completion_tokens\": 12,\n    \"prompt_tokens\": 9,\n    \"total_tokens\": 21\n  },\n  \"model\": \"lingdt-tts-cc-2.0\",\n  \"id\": \"chatcmpl-123\",\n  \"choices\": [\n    {\n      \"finish_reason\": \"stop\",\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"你好！我是 lingdt-tts-cc-2.0...\"\n      }\n    }\n  ],\n  \"object\": \"chat.completion\"\n}",
+    "docUrl": "https://api-docs.example.com/",
+    "docLabel": "查看完整 API 文档"
+  },
+  "exampleCodes": {
+    "python": {
+      "sectionTitle": "Python 示例",
+      "installLine": "安装依赖：pip install requests",
+      "code": "import requests\nimport json\n\nurl = \"https://api.example.com/v1/chat/completions\"\nheaders = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n}\n\ndata = {\n    \"model\": \"model-name\",\n    \"messages\": [\n        {\n            \"role\": \"user\",\n            \"content\": \"请写一个 Python 函数计算斐波那契数列\"\n        }\n    ],\n    \"temperature\": 0.7,\n    \"max_tokens\": 4096\n}\n\nresponse = requests.post(url, headers=headers, json=data)\nresult = response.json()\nprint(result[\"choices\"][0][\"message\"][\"content\"])"
+    },
+    "javascript": {
+      "sectionTitle": "JavaScript 示例",
+      "installLine": "无需安装额外依赖（需 Node 18+ 或支持 fetch 的运行环境）",
+      "code": "(async () => {\n  const url = \"https://api.example.com/v1/chat/completions\";\n  const headers = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n  };\n  const data = {\n    model: \"model-name\",\n    messages: [\n      {\n        role: \"user\",\n        content: \"请写一个 Python 函数计算斐波那契数列\"\n      }\n    ],\n    temperature: 0.7,\n    max_tokens: 4096\n  };\n  const response = await fetch(url, {\n    method: \"POST\",\n    headers,\n    body: JSON.stringify(data)\n  });\n  const result = await response.json();\n  console.log(result.choices[0].message.content);\n})();"
+    },
+    "curl": {
+      "sectionTitle": "Curl 示例",
+      "installLine": "说明：macOS / Linux 一般已预装 curl",
+      "code": "curl -X POST \"https://api.example.com/v1/chat/completions\" \\\n  -H \"Authorization: Bearer YOUR_API_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"model\":\"model-name\",\"messages\":[{\"role\":\"user\",\"content\":\"请写一个 Python 函数计算斐波那契数列\"}],\"temperature\":0.7,\"max_tokens\":4096}'"
+    }
+  },
+  "agentIntegrations": [
+    {
+      "id": "codex",
+      "name": "Codex",
+      "description": "Configure MaaS as an OpenAI-compatible model provider.",
+      "zhDescription": "将 MaaS 配置为 Codex 的 OpenAI 兼容模型供应商。",
+      "fileLabel": "~/.codex/config.toml",
+      "language": "toml",
+      "code": "model = \"lingdt-tts-cc-2.0\"\nmodel_provider = \"maas\"\n\n[model_providers.maas]\nname = \"MaaS\"\nbase_url = \"https://maas-api.antdigital.com/v1\"\nenv_key = \"MAAS_API_KEY\"\nwire_api = \"responses\"",
+      "guideUrl": "/docs/agent-guides/codex"
+    },
+    {
+      "id": "opencode",
+      "name": "OpenCode",
+      "description": "Add MaaS as a custom provider in OpenCode.",
+      "zhDescription": "在 OpenCode 中添加 MaaS 自定义模型供应商。",
+      "fileLabel": "~/.config/opencode/opencode.json",
+      "language": "json",
+      "code": "{\n  \"$schema\": \"https://opencode.ai/config.json\",\n  \"provider\": {\n    \"maas\": {\n      \"npm\": \"@ai-sdk/openai-compatible\",\n      \"name\": \"MaaS\",\n      \"options\": {\n        \"baseURL\": \"https://maas-api.antdigital.com/v1\",\n        \"apiKey\": \"YOUR_MAAS_API_KEY\"\n      },\n      \"models\": {\n        \"lingdt-tts-cc-2.0\": {\n          \"name\": \"lingdt-tts-cc-2.0\"\n        }\n      }\n    }\n  },\n  \"model\": \"maas/lingdt-tts-cc-2.0\"\n}",
+      "guideUrl": "/docs/agent-guides/opencode"
+    }
+  ],
+  "sourceUrl": "https://maas.antdigital.com/models/modelservice-1794215054529001720",
+  "slug": "modelservice-1794215054529001720"
+}

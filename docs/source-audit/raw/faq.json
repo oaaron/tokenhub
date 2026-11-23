@@ -1,0 +1,86 @@
+[
+  {
+    "title": "购买",
+    "items": [
+      {
+        "question": "可以同时购买多个套餐吗？",
+        "answer": "可以，支持叠加购买多个额度叠加包，额度累加合并使用。"
+      },
+      {
+        "question": "Token Plan for Agent 提供哪些套餐版本？",
+        "answer": "Token Plan for Agent 提供不同档位的额度叠加包，提供的 Credits 额度不同，您可根据团队规模和使用强度选择合适的类型。"
+      },
+      {
+        "question": "套餐是否支持退订？",
+        "answer": "Token Plan for Agent 不支持退款。"
+      },
+      {
+        "question": "套餐如何续订？",
+        "answer": "Token Plan for Agent 按包月形式订阅，可在「Token Plan for Agent」订阅页面续订，额度不足时也可随时新购额度叠加包补充。"
+      },
+      {
+        "question": "套餐到期后未用完的额度会怎样？",
+        "answer": "额度叠加包内的 Credits 按计费周期发放，到期未用完不结转、不退款，新周期自动重置。"
+      }
+    ]
+  },
+  {
+    "title": "计费与额度",
+    "items": [
+      {
+        "question": "Credits 抵扣规则是什么？",
+        "answer": "Token Plan for Agent 使用 Credits 作为统一用量单位，来抵扣不同模型的消耗。实际消耗取决于每个任务中输入 Token、缓存 Token 和输出 Token 的组合。账号下所有 API Key 共享全部额度叠加包的 Credits，额度用尽后服务暂停至下一计费周期或购买额度叠加包补充额度。"
+      },
+      {
+        "question": "为什么订阅了 Token Plan for Agent，仍然产生了按量计费账单？",
+        "answer": "这通常是因为 AI 工具中配置的是按量付费API Key，而非 Token Plan for Agent 专属API Key。系统会将此类调用识别为按量计费请求，不会抵扣套餐额度。请确保配置了订阅专属的 API Key 。"
+      },
+      {
+        "question": "多个 API Key 之间额度怎么共享？",
+        "answer": "同一账号下的所有 API Key 共享全部额度叠加包的额度，无需单独分配，任意 Key 的调用都会从同一额度池抵扣。"
+      },
+      {
+        "question": "单次请求大概消耗多少 Credits？",
+        "answer": "单次消耗由模型类型、Token 用量、思考模式及工具调用等动态决定，实际以账单为准。以 qwen3.6-plus 为例，单次约 3.18 Credits。"
+      },
+      {
+        "question": "视频、生图模型怎么计费？",
+        "answer": "同样按 Credits 统一抵扣，单价更高。例如 happyhorse-1.0-i2v 生成 720P、3 秒视频约 270 Credits；qwen-image-2.0 生成 2 张图片约 40 Credits。实际以账单为准。"
+      }
+    ]
+  },
+  {
+    "title": "接入与配置",
+    "items": [
+      {
+        "question": "什么是 Token Plan for Agent 专属 API Key ？",
+        "answer": "Token Plan for Agent 提供套餐专属的 API Key，用于在 AI 工具中接入模型服务并抵扣套餐额度。您可以在「 API Key」页面中查看和复制 Token Plan for Agent 类型API Key 。请注意：必须使用专属凭证，使用按量付费 API Key 将无法抵扣套餐额度。"
+      },
+      {
+        "question": "Token Plan for Agent 支持使用哪些模型？",
+        "answer": "Token Plan for Agent 支持套餐模型列表中的所有模型，包括Ling、Ring及第三方优秀模型。完整的模型列表可在「Token Plan for Agent」订阅页面查看。"
+      },
+      {
+        "question": "Token Plan for Agent 支持哪些 AI 工具？",
+        "answer": "Token Plan for Agent 兼容所有支持 OpenAI 或 Anthropic 接口协议的工具，包括但不限于 Qwen Code、Claude Code、OpenClaw、OpenCode 等。您可以在帮助文档中查看各工具的配置方法。"
+      },
+      {
+        "question": "如何在多个模型之间切换？",
+        "answer": "在工具中调用时按需指定模型名称即可切换，无需更换凭证，所有模型按 Credits 统一抵扣。"
+      }
+    ]
+  },
+  {
+    "title": "产品功能",
+    "items": [
+      {
+        "question": "Token Plan for Agent 可以生成多个 API Key 吗？",
+        "answer": "可以，同一订阅支持创建多个专属 API Key，所有 Key 共享同一额度池。如果密钥泄漏，可在「Token Plan for Agent」订阅页面单独重置，重置后原密钥立即失效。"
+      },
+      {
+        "question": "如何查看套餐用量？",
+        "answer": "在「Token Plan for Agent」订阅页面可以刷新和查看用量消耗情况。"
+      }
+    ]
+  }
+]

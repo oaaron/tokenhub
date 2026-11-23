@@ -1,0 +1,282 @@
+{
+  "uniqueId": "modelservice-1779376419032001851",
+  "name": "wan2.7-image-pro",
+  "displayName": "Wan2.7-Image-Pro",
+  "provider": "Alibaba",
+  "description": "Wan2.7-Image-Pro is a professional image generation model with multi-resolution support. Generates high-quality images at 512x512 and 1024x1024 resolutions, suitable for professional design, marketing materials, and creative content.",
+  "zhDescription": "Wan2.7-Image-Pro是专业级图像生成模型，支持多分辨率。可生成512x512和1024x1024分辨率的高质量图片，适用于专业设计、营销素材和创意内容。",
+  "longDescription": "Wan2.7-Image-Pro is a professional image generation model with multi-resolution support. Generates high-quality images at 512x512 and 1024x1024 resolutions, suitable for professional design, marketing materials, and creative content.",
+  "zhLongDescription": "Wan2.7-Image-Pro是专业级图像生成模型，支持多分辨率。可生成512x512和1024x1024分辨率的高质量图片，适用于专业设计、营销素材和创意内容。",
+  "contextLength": "0",
+  "maxCompletionTokens": null,
+  "maxTokens": null,
+  "currency": null,
+  "inputPrice": "¥0.00/counts",
+  "outputPrice": "¥0.04/counts",
+  "inPrice": null,
+  "outPrice": null,
+  "inPriceZh": "¥0.00/counts",
+  "outPriceZh": "¥0.04/counts",
+  "inHitCachePrice": "¥0.00/counts",
+  "inHitCreatePrice": "¥0.00/counts",
+  "tagList": [
+    {
+      "type": "MODEL_TYPE",
+      "key": "IMAGE_GENERATE",
+      "value": "图像生成"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    }
+  ],
+  "type": "IMAGE_GENERATE",
+  "typeList": [
+    "IMAGE_GENERATE"
+  ],
+  "supportedParametersDefaultValue": {
+    "n": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "limit": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "size": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "prompt_extend": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "uploadImage": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    }
+  },
+  "protocolParameters": [],
+  "modelProtocolCompatibility": {
+    "dashscope": false,
+    "google_gemini": false,
+    "anthropic_message": false,
+    "openai_responses": false,
+    "openai_chat_completions": false
+  },
+  "minDiscountRate": "1",
+  "priceInfo": {
+    "lowestProviderPrice": {
+      "inputPrice": null,
+      "outputPrice": {
+        "priceCode": "GENERATED_COUNT",
+        "priceName": "Generated Count",
+        "priceNameZH": "图片输出",
+        "priceValue": "0.04",
+        "originalPrice": "0.04",
+        "discountRate": "1",
+        "unitCode": "PIECE",
+        "unitName": "PIECE",
+        "unitNameZh": "张",
+        "direction": "OUTPUT",
+        "fixedName": "Piece",
+        "fixedNameZh": "张"
+      }
+    },
+    "prices": [
+      {
+        "stage": null,
+        "stageText": "",
+        "type": "IMAGE",
+        "priceCurrency": "CNY",
+        "price": [
+          {
+            "priceCode": "GENERATED_COUNT",
+            "priceName": "Generated Count",
+            "priceNameZH": "图片输出",
+            "priceValue": "0.04",
+            "originalPrice": "0.04",
+            "discountRate": "1",
+            "unitCode": "PIECE",
+            "unitName": "PIECE",
+            "unitNameZh": "张",
+            "direction": "OUTPUT",
+            "fixedName": "Piece",
+            "fixedNameZh": "张"
+          },
+          {
+            "priceCode": "GENERATED_COUNT",
+            "priceName": "Generated Count",
+            "priceNameZH": "图片输出",
+            "priceValue": "0.08",
+            "originalPrice": "0.08",
+            "discountRate": "1",
+            "unitCode": "PIECE",
+            "unitName": "PIECE",
+            "unitNameZh": "张",
+            "direction": "OUTPUT",
+            "fixedName": "Piece",
+            "fixedNameZh": "张"
+          }
+        ]
+      }
+    ]
+  },
+  "publishedTime": "2026-05-21 23:13:39",
+  "offShelfFlag": 0,
+  "offShelfDate": null,
+  "buyTypes": [
+    "BY_AMOUNT",
+    "BY_CREDIT"
+  ],
+  "specs": {
+    "inputPrice": "¥0.0000",
+    "inputPriceHint": "每 1K tokens",
+    "outputPrice": "¥0.0000",
+    "outputPriceHint": "每 1K tokens",
+    "contextLength": "0",
+    "contextLengthHint": "tokens",
+    "maxOutput": "0",
+    "maxOutputHint": "tokens"
+  },
+  "capabilities": [],
+  "languages": [
+    "文本"
+  ],
+  "scenarios": [
+    "图像"
+  ],
+  "modelParameters": [
+    {
+      "type": "slider",
+      "label": "Temperature",
+      "value": 0.3,
+      "min": 0,
+      "max": 2,
+      "step": 0.01,
+      "description": "控制输出的随机性，值越高越随机",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "label": "Presence Penalty",
+      "value": 0.1,
+      "min": -2,
+      "max": 2,
+      "step": 0.01,
+      "description": "存在惩罚，鼓励模型讨论新话题",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "label": "Top P",
+      "value": 0.95,
+      "min": 0,
+      "max": 1,
+      "step": 0.01,
+      "description": "核采样参数，控制候选词汇的范围",
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "label": "Max Tokens",
+      "value": 0,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "单次生成的最大 token 数量",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "label": "Frequency Penalty",
+      "value": 0.1,
+      "min": -2,
+      "max": 2,
+      "step": 0.01,
+      "description": "频率惩罚，减少重复内容的生成",
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "label": "Context Length",
+      "value": 64000,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "支持的最大上下文长度",
+      "thousands": true
+    }
+  ],
+  "usageGuide": {
+    "authIntro": "使用 API Key 进行认证，在请求头中添加：",
+    "authBearerPlaceholder": "YOUR_API_KEY",
+    "requestIntro": "支持标准的 OpenAI 参数格式：",
+    "requestExample": "{\n  \"max_tokens\": 4096,\n  \"temperature\": 0.5,\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"你好，请介绍一下自己\"\n    }\n  ],\n  \"model\": \"wan2.7-image-pro\"\n}",
+    "responseExample": "{\n  \"created\": 1795357358,\n  \"usage\": {\n    \"completion_tokens\": 12,\n    \"prompt_tokens\": 9,\n    \"total_tokens\": 21\n  },\n  \"model\": \"wan2.7-image-pro\",\n  \"id\": \"chatcmpl-123\",\n  \"choices\": [\n    {\n      \"finish_reason\": \"stop\",\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"你好！我是 wan2.7-image-pro...\"\n      }\n    }\n  ],\n  \"object\": \"chat.completion\"\n}",
+    "docUrl": "https://api-docs.example.com/",
+    "docLabel": "查看完整 API 文档"
+  },
+  "exampleCodes": {
+    "python": {
+      "sectionTitle": "Python 示例",
+      "installLine": "安装依赖：pip install requests",
+      "code": "import requests\nimport json\n\nurl = \"https://api.example.com/v1/chat/completions\"\nheaders = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n}\n\ndata = {\n    \"model\": \"model-name\",\n    \"messages\": [\n        {\n            \"role\": \"user\",\n            \"content\": \"请写一个 Python 函数计算斐波那契数列\"\n        }\n    ],\n    \"temperature\": 0.7,\n    \"max_tokens\": 4096\n}\n\nresponse = requests.post(url, headers=headers, json=data)\nresult = response.json()\nprint(result[\"choices\"][0][\"message\"][\"content\"])"
+    },
+    "javascript": {
+      "sectionTitle": "JavaScript 示例",
+      "installLine": "无需安装额外依赖（需 Node 18+ 或支持 fetch 的运行环境）",
+      "code": "(async () => {\n  const url = \"https://api.example.com/v1/chat/completions\";\n  const headers = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n  };\n  const data = {\n    model: \"model-name\",\n    messages: [\n      {\n        role: \"user\",\n        content: \"请写一个 Python 函数计算斐波那契数列\"\n      }\n    ],\n    temperature: 0.7,\n    max_tokens: 4096\n  };\n  const response = await fetch(url, {\n    method: \"POST\",\n    headers,\n    body: JSON.stringify(data)\n  });\n  const result = await response.json();\n  console.log(result.choices[0].message.content);\n})();"
+    },
+    "curl": {
+      "sectionTitle": "Curl 示例",
+      "installLine": "说明：macOS / Linux 一般已预装 curl",
+      "code": "curl -X POST \"https://api.example.com/v1/chat/completions\" \\\n  -H \"Authorization: Bearer YOUR_API_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"model\":\"model-name\",\"messages\":[{\"role\":\"user\",\"content\":\"请写一个 Python 函数计算斐波那契数列\"}],\"temperature\":0.7,\"max_tokens\":4096}'"
+    }
+  },
+  "agentIntegrations": [
+    {
+      "name": "Claude Code",
+      "description": "Use this model through the Anthropic-compatible endpoint.",
+      "zhDescription": "通过 Anthropic 兼容接口在 Claude Code 中使用当前模型。",
+      "fileLabel": "~/.claude/settings.json",
+      "language": "json",
+      "code": "{\n  \"env\": {\n    \"ANTHROPIC_AUTH_TOKEN\": \"YOUR_MAAS_API_KEY\",\n    \"ANTHROPIC_BASE_URL\": \"https://maas-api.computrix.ai/\",\n    \"ANTHROPIC_MODEL\": \"wan2.7-image-pro\"\n  }\n}",
+      "guideUrl": "/docs/agent-guides/claude-code"
+    },
+    {
+      "name": "Codex",
+      "description": "Configure MaaS as an OpenAI-compatible model provider.",
+      "zhDescription": "将 MaaS 配置为 Codex 的 OpenAI 兼容模型供应商。",
+      "fileLabel": "~/.codex/config.toml",
+      "language": "toml",
+      "code": "model = \"wan2.7-image-pro\"\nmodel_provider = \"maas\"\n\n[model_providers.maas]\nname = \"MaaS\"\nbase_url = \"https://maas-api.computrix.ai/v1\"\nenv_key = \"MAAS_API_KEY\"\nwire_api = \"responses\"",
+      "guideUrl": "/docs/agent-guides/codex"
+    },
+    {
+      "name": "OpenCode",
+      "description": "Add MaaS as a custom provider in OpenCode.",
+      "zhDescription": "在 OpenCode 中添加 MaaS 自定义模型供应商。",
+      "fileLabel": "~/.config/opencode/opencode.json",
+      "language": "json",
+      "code": "{\n  \"$schema\": \"https://opencode.ai/config.json\",\n  \"provider\": {\n    \"maas\": {\n      \"npm\": \"@ai-sdk/openai-compatible\",\n      \"name\": \"MaaS\",\n      \"options\": {\n        \"baseURL\": \"https://maas-api.computrix.ai/v1\",\n        \"apiKey\": \"YOUR_MAAS_API_KEY\"\n      },\n      \"models\": {\n        \"wan2.7-image-pro\": {\n          \"name\": \"wan2.7-image-pro\"\n        }\n      }\n    }\n  },\n  \"model\": \"maas/wan2.7-image-pro\"\n}",
+      "guideUrl": "/docs/agent-guides/opencode"
+    }
+  ],
+  "slug": "sg-modelservice-1779376419032001851",
+  "sourceRegion": "sg",
+  "sourceCatalog": "Computrix",
+  "sourceUrl": "https://computrix.ai/sg/models",
+  "detailVerified": true
+}

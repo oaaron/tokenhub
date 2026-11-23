@@ -1,0 +1,589 @@
+{
+  "uniqueId": "modelservice-1781592157472001869",
+  "name": "gemini-3.1-flash-lite",
+  "displayName": "Gemini 3.1 Flash Lite",
+  "provider": "Google",
+  "description": "Gemini 3.1 Flash-Lite is Google's most cost-efficient Gemini model, optimized for low latency use cases for high-volume, cost-sensitive LLM traffic. It provides a significant quality increase over Gemini 2.0/2.5 Flash-Lite models, matching Gemini 2.5 Flash performance across key capability areas.",
+  "zhDescription": null,
+  "longDescription": "Gemini 3.1 Flash-Lite is Google's most cost-efficient Gemini model, optimized for low latency use cases for high-volume, cost-sensitive LLM traffic. It provides a significant quality increase over Gemini 2.0/2.5 Flash-Lite models, matching Gemini 2.5 Flash performance across key capability areas.",
+  "zhLongDescription": null,
+  "contextLength": "1050000",
+  "maxCompletionTokens": 65000,
+  "maxTokens": 65000,
+  "currency": null,
+  "inputPrice": "$0.25/M",
+  "outputPrice": "$1.5/M",
+  "inPrice": null,
+  "outPrice": null,
+  "inPriceZh": "$0.25/M",
+  "outPriceZh": "$1.5/M",
+  "inHitCachePrice": "¥0.00/M",
+  "inHitCreatePrice": "$0.025/M",
+  "tagList": [
+    {
+      "type": "MODEL_TYPE",
+      "key": "VISUAL_UNDERSTANDING",
+      "value": "视觉理解"
+    },
+    {
+      "type": "MODEL_TYPE",
+      "key": "TEXT_GENERATE",
+      "value": "文本生成"
+    },
+    {
+      "type": "MODEL_TYPE",
+      "key": "CODE_GENERATE",
+      "value": "代码生成"
+    },
+    {
+      "type": "MODEL_TYPE",
+      "key": "IMAGE_GENERATE",
+      "value": "图像生成"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "VIDEO",
+      "value": "视频"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "FILE",
+      "value": "文件"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    }
+  ],
+  "type": "VISUAL_UNDERSTANDING",
+  "typeList": [
+    "TEXT_GENERATE",
+    "CODE_GENERATE",
+    "IMAGE_GENERATE",
+    "VISUAL_UNDERSTANDING"
+  ],
+  "supportedParametersDefaultValue": {
+    "n": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "limit": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "size": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "prompt_extend": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "uploadImage": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    }
+  },
+  "protocolParameters": [
+    {
+      "protocolName": "google_gemini",
+      "displayName": "Google Gemini",
+      "parameters": {
+        "responseSchema": true,
+        "topP": true,
+        "topK": true,
+        "tools": false,
+        "toolConfig": false,
+        "thinkingConfig": false,
+        "temperature": true,
+        "systemInstruction": false,
+        "stopSequences": true,
+        "seed": false,
+        "safetySettings": true,
+        "cachedContent": false,
+        "responseModalities": false,
+        "responseMimeType": true,
+        "responseLogprobs": true,
+        "presencePenalty": true,
+        "mediaResolution": false,
+        "maxOutputTokens": true,
+        "logprobs": true,
+        "labels": false,
+        "frequencyPenalty": true,
+        "candidateCount": false
+      }
+    },
+    {
+      "protocolName": "anthropic_message",
+      "displayName": "Anthropic Message",
+      "parameters": {
+        "metadata": false,
+        "service_tier": false,
+        "stop_sequences": false,
+        "stream": false,
+        "system": false,
+        "temperature": true,
+        "thinking": false,
+        "tool_choice": false,
+        "tools": false,
+        "top_k": true,
+        "top_p": false
+      }
+    },
+    {
+      "protocolName": "openai_responses",
+      "displayName": "OpenAI Responses",
+      "parameters": {
+        "service_tier": false,
+        "user": false,
+        "truncation": false,
+        "top_p": true,
+        "top_logprobs": false,
+        "tools": false,
+        "tool_choice": false,
+        "text": true,
+        "temperature": true,
+        "stream": false,
+        "store": false,
+        "background": false,
+        "reasoning": false,
+        "prompt": false,
+        "previous_response_id": false,
+        "parallel_tool_calls": false,
+        "metadata": false,
+        "max_tool_calls": false,
+        "max_output_tokens": true,
+        "include": false,
+        "conversation": false
+      }
+    },
+    {
+      "protocolName": "openai_chat_completions",
+      "displayName": "OpenAI Chat Completions",
+      "parameters": {
+        "seed": false,
+        "web_search_options": true,
+        "user": false,
+        "top_p": true,
+        "top_logprobs": false,
+        "tools": false,
+        "tool_choice": false,
+        "temperature": true,
+        "stream_options": false,
+        "stream": false,
+        "store": false,
+        "service_tier": false,
+        "audio": false,
+        "response_format": false,
+        "reasoning_effort": false,
+        "presence_penalty": true,
+        "prediction": false,
+        "parallel_tool_calls": false,
+        "n": false,
+        "modalities": false,
+        "metadata": false,
+        "logprobs": true,
+        "logit_bias": true,
+        "frequency_penalty": true
+      }
+    }
+  ],
+  "modelProtocolCompatibility": {
+    "google video": false,
+    "dashscope": false,
+    "google_gemini": true,
+    "anthropic_message": true,
+    "openai_responses": true,
+    "openai_chat_completions": true
+  },
+  "minDiscountRate": "1",
+  "priceInfo": {
+    "lowestProviderPrice": {
+      "inputPrice": {
+        "priceCode": "INPUT",
+        "priceName": "Input",
+        "priceNameZH": "输入",
+        "priceValue": "0.25",
+        "originalPrice": "0.25",
+        "discountRate": "1",
+        "unitCode": "M_TOKENS",
+        "unitName": "M",
+        "unitNameZh": "M",
+        "direction": "INPUT",
+        "fixedName": "M Tokens",
+        "fixedNameZh": "百万Tokens"
+      },
+      "outputPrice": {
+        "priceCode": "OUTPUT",
+        "priceName": "Output",
+        "priceNameZH": "输出",
+        "priceValue": "1.5",
+        "originalPrice": "1.5",
+        "discountRate": "1",
+        "unitCode": "M_TOKENS",
+        "unitName": "M",
+        "unitNameZh": "M",
+        "direction": "OUTPUT",
+        "fixedName": "M Tokens",
+        "fixedNameZh": "百万Tokens"
+      }
+    },
+    "prices": [
+      {
+        "stage": "",
+        "stageText": "",
+        "type": "TEXT",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "INPUT",
+            "priceName": "Input",
+            "priceNameZH": "输入",
+            "priceValue": "0.25",
+            "originalPrice": "0.25",
+            "discountRate": "1",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "OUTPUT",
+            "priceName": "Output",
+            "priceNameZH": "输出",
+            "priceValue": "1.5",
+            "originalPrice": "1.5",
+            "discountRate": "1",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "OUTPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "INPUT_CACHE_HIT",
+            "priceName": "Input (Cache Hit)",
+            "priceNameZH": "输入（命中缓存）",
+            "priceValue": "0.025",
+            "originalPrice": "0.025",
+            "discountRate": "1",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          }
+        ]
+      }
+    ]
+  },
+  "publishedTime": "2026-06-16 14:42:37",
+  "offShelfFlag": 0,
+  "offShelfDate": null,
+  "buyTypes": [
+    "BY_AMOUNT",
+    "BY_CREDIT"
+  ],
+  "specs": {
+    "inputPrice": "¥0.0000",
+    "inputPriceHint": "每 1K tokens",
+    "outputPrice": "¥0.0000",
+    "outputPriceHint": "每 1K tokens",
+    "contextLength": "1050000",
+    "contextLengthHint": "tokens",
+    "maxOutput": "0",
+    "maxOutputHint": "tokens"
+  },
+  "capabilities": [],
+  "languages": [
+    "文本",
+    "图像",
+    "视频",
+    "文件"
+  ],
+  "scenarios": [
+    "文本"
+  ],
+  "modelParameters": [
+    {
+      "type": "text",
+      "label": "responseSchema",
+      "value": "null",
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "label": "topP",
+      "value": null,
+      "min": 0,
+      "max": 1,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "label": "topK",
+      "value": null,
+      "min": 1,
+      "max": 1000000,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "label": "temperature",
+      "value": null,
+      "min": 0,
+      "max": 1,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "text",
+      "label": "stopSequences",
+      "value": "null",
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "text",
+      "label": "safetySettings",
+      "value": "NULL",
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "text",
+      "label": "responseMimeType",
+      "value": "NULL",
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "switch",
+      "label": "responseLogprobs",
+      "value": true,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "label": "presencePenalty",
+      "value": null,
+      "min": -2,
+      "max": 2,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "label": "maxOutputTokens",
+      "value": null,
+      "min": 0,
+      "max": 1000000,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "label": "logprobs",
+      "value": null,
+      "min": 1,
+      "max": 5,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "label": "frequencyPenalty",
+      "value": null,
+      "min": -2,
+      "max": 2,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "label": "top_k",
+      "value": null,
+      "min": 0,
+      "max": 1000000,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "label": "top_p",
+      "value": null,
+      "min": 0,
+      "max": 1,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "text",
+      "label": "text",
+      "value": "null",
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "label": "max_output_tokens",
+      "value": null,
+      "min": 1,
+      "max": 1000000,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "switch",
+      "label": "web_search_options",
+      "value": true,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "label": "presence_penalty",
+      "value": 0,
+      "min": -2,
+      "max": 2,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "label": "logit_bias",
+      "value": null,
+      "min": -100,
+      "max": 100,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "label": "frequency_penalty",
+      "value": null,
+      "min": -2,
+      "max": 2,
+      "step": null,
+      "description": "",
+      "thousands": null
+    }
+  ],
+  "usageGuide": {
+    "authIntro": "使用 API Key 进行认证，在请求头中添加 x-goog-api-key：",
+    "authBearerPlaceholder": "<api_key>",
+    "requestIntro": "使用 Gemini Generate Content 协议：",
+    "requestExample": "{\n  \"contents\": [\n    {\n      \"role\": \"user\",\n      \"parts\": [\n        {\n          \"text\": \"你好，请介绍一下自己\"\n        }\n      ]\n    }\n  ]\n}",
+    "responseExample": "{\n  \"candidates\": [\n    {\n      \"finishReason\": \"STOP\",\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"你好！我是 Gemini...\"\n          }\n        ]\n      }\n    }\n  ],\n  \"usageMetadata\": {\n    \"candidatesTokenCount\": 12,\n    \"totalTokenCount\": 21,\n    \"promptTokenCount\": 9\n  }\n}",
+    "docUrl": "https://ai.google.dev/api/generate-content",
+    "docLabel": "查看完整 API 文档"
+  },
+  "exampleCodes": {
+    "python": {
+      "sectionTitle": "Python 示例",
+      "installLine": "安装依赖：pip install google-genai",
+      "code": "# pip install google-genai\nfrom google import genai\nfrom google.genai import types\n\nclient = genai.Client(\n    api_key=\"<api_key>\",\n    http_options=types.HttpOptions(base_url=\"http://10.191.0.202\"),\n)\n\nresponse = client.models.generate_content(\n    model=\"gemini-3.1-flash-lite\",\n    contents=\"What is the meaning of life?\",\n)\nprint(response.text)"
+    },
+    "javascript": {
+      "sectionTitle": "JavaScript 示例",
+      "installLine": "无需安装额外依赖（需 Node 18+ 或支持 fetch 的运行环境）",
+      "code": "const response = await fetch(\"http://10.191.0.202/v1beta/models/gemini-3.1-flash-lite:generateContent\", {\n  method: \"POST\",\n  headers: {\n    \"x-goog-api-key\": \"<api_key>\",\n    \"Content-Type\": \"application/json\"\n  },\n  body: JSON.stringify({\n    contents: [{ role: \"user\", parts: [{ text: \"What is the meaning of life?\" }] }]\n  })\n});\nconst result = await response.json();\nconsole.log(result.candidates[0].content.parts[0].text);"
+    },
+    "curl": {
+      "sectionTitle": "Curl 示例",
+      "installLine": "说明：macOS / Linux 一般已预装 curl",
+      "code": "curl -X POST \"http://10.191.0.202/v1beta/models/gemini-3.1-flash-lite:generateContent\" \\\n  -H \"x-goog-api-key: <api_key>\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"contents\":[{\"role\":\"user\",\"parts\":[{\"text\":\"What is the meaning of life?\"}]}]}'"
+    }
+  },
+  "agentIntegrations": [
+    {
+      "name": "Claude Code",
+      "description": "Use this model through the Anthropic-compatible endpoint.",
+      "zhDescription": "通过 Anthropic 兼容接口在 Claude Code 中使用当前模型。",
+      "fileLabel": "~/.claude/settings.json",
+      "language": "json",
+      "code": "{\n  \"env\": {\n    \"ANTHROPIC_AUTH_TOKEN\": \"YOUR_MAAS_API_KEY\",\n    \"ANTHROPIC_BASE_URL\": \"https://maas-api.computrix.ai/\",\n    \"ANTHROPIC_MODEL\": \"gemini-3.1-flash-lite\"\n  }\n}",
+      "guideUrl": "/docs/agent-guides/claude-code"
+    },
+    {
+      "name": "Codex",
+      "description": "Configure MaaS as an OpenAI-compatible model provider.",
+      "zhDescription": "将 MaaS 配置为 Codex 的 OpenAI 兼容模型供应商。",
+      "fileLabel": "~/.codex/config.toml",
+      "language": "toml",
+      "code": "model = \"gemini-3.1-flash-lite\"\nmodel_provider = \"maas\"\n\n[model_providers.maas]\nname = \"MaaS\"\nbase_url = \"https://maas-api.computrix.ai/v1\"\nenv_key = \"MAAS_API_KEY\"\nwire_api = \"responses\"",
+      "guideUrl": "/docs/agent-guides/codex"
+    },
+    {
+      "name": "OpenCode",
+      "description": "Add MaaS as a custom provider in OpenCode.",
+      "zhDescription": "在 OpenCode 中添加 MaaS 自定义模型供应商。",
+      "fileLabel": "~/.config/opencode/opencode.json",
+      "language": "json",
+      "code": "{\n  \"$schema\": \"https://opencode.ai/config.json\",\n  \"provider\": {\n    \"maas\": {\n      \"npm\": \"@ai-sdk/openai-compatible\",\n      \"name\": \"MaaS\",\n      \"options\": {\n        \"baseURL\": \"https://maas-api.computrix.ai/v1\",\n        \"apiKey\": \"YOUR_MAAS_API_KEY\"\n      },\n      \"models\": {\n        \"gemini-3.1-flash-lite\": {\n          \"name\": \"gemini-3.1-flash-lite\"\n        }\n      }\n    }\n  },\n  \"model\": \"maas/gemini-3.1-flash-lite\"\n}",
+      "guideUrl": "/docs/agent-guides/opencode"
+    }
+  ],
+  "slug": "sg-modelservice-1781592157472001869",
+  "sourceRegion": "sg",
+  "sourceCatalog": "Computrix",
+  "sourceUrl": "https://computrix.ai/sg/models",
+  "detailVerified": true
+}

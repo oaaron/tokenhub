@@ -1,0 +1,212 @@
+{
+  "slug": "zm-qwen-qwen-image-2.0",
+  "uniqueId": "2610MOUVCM8p14613760",
+  "name": "qwen/qwen-image-2.0",
+  "displayName": "Qwen: Qwen-Image-2.0",
+  "provider": "Qwen",
+  "manufacturerKey": "qwen",
+  "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2026/11/17/tgp5jXd/Property-1Qwen.svg",
+  "zhDescription": "通义千问图像生成模型，面向文本提示驱动的视觉内容制作；源目录未提供更细的用途说明。",
+  "zhLongDescription": "通义千问图像生成模型，面向文本提示驱动的视觉内容制作；源目录未提供更细的用途说明。",
+  "description": "通义千问图像生成模型，面向文本提示驱动的视觉内容制作；源目录未提供更细的用途说明。",
+  "longDescription": "通义千问图像生成模型，面向文本提示驱动的视觉内容制作；源目录未提供更细的用途说明。",
+  "contextLength": 1024,
+  "maxCompletionTokens": null,
+  "currency": "USD",
+  "tagList": [
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    }
+  ],
+  "publishedTime": "2026-03-03",
+  "minDiscountRate": "1",
+  "supportedParams": [
+    "addWatermark",
+    "aspectRatio",
+    "enhancePrompt",
+    "n",
+    "negativePrompt",
+    "negative_prompt",
+    "prompt_extend",
+    "sampleCount",
+    "seed",
+    "size",
+    "watermark"
+  ],
+  "supportedProtocols": [
+    "imagen"
+  ],
+  "reasoning": 0,
+  "reasoningModes": [
+    0
+  ],
+  "providerNames": [
+    "Alibaba Cloud"
+  ],
+  "providerDetails": [
+    {
+      "name": "Alibaba Cloud",
+      "slug": "alibaba",
+      "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2025/10/15/FGMEmnu/Property-1Alibaba-cloud.svg",
+      "contextLength": 1024,
+      "maxCompletionTokens": null,
+      "supportsStreaming": false,
+      "apiProtocols": {
+        "imagen": {
+          "supported_parameters": [
+            "n",
+            "negative_prompt",
+            "size",
+            "prompt_extend",
+            "watermark",
+            "seed"
+          ],
+          "supports_reasoning": 0
+        }
+      },
+      "pricingDiscount": "1",
+      "priceInfo": {
+        "prices": [
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE",
+                "priceNameZH": "图像处理或生成的费用(image)",
+                "priceValue": 0.0289,
+                "unitCode": "COUNT",
+                "fixedNameZh": "次",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "image",
+                "constraints": []
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "modelProtocolCompatibility": {
+    "imagen": true
+  },
+  "supportedParametersDefaultValue": {
+    "addWatermark": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "aspectRatio": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "enhancePrompt": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "n": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "negativePrompt": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "negative_prompt": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "prompt_extend": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "sampleCount": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "seed": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "size": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "watermark": {
+      "enable": true,
+      "defaultValue": null
+    }
+  },
+  "priceInfo": {
+    "prices": [
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "IMAGE",
+            "priceNameZH": "图像处理或生成的费用(image)",
+            "priceValue": 0.0289,
+            "unitCode": "COUNT",
+            "fixedNameZh": "次",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "image",
+            "constraints": []
+          }
+        ]
+      }
+    ]
+  },
+  "pricingDetails": [
+    {
+      "feeItemCode": "image",
+      "feeItemName": "图像处理或生成的费用(image)",
+      "selectedConstraint": [
+        "chargeUnit"
+      ],
+      "feeRecords": [
+        {
+          "feeRate": 0.0289,
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "counts"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sourcePublishedPrices": {
+    "pricing_completion": "0",
+    "pricing_discount": "1",
+    "pricing_prompt": "0"
+  },
+  "exampleCodes": [],
+  "serviceConfiguration": "服务配置待开通；接入地址、鉴权和可用协议以开通后的服务配置为准。",
+  "sourceRegion": "global",
+  "sourceCatalog": "ZenMux",
+  "sourceUrl": "https://zenmux.ai/qwen/qwen-image-2.0",
+  "detailVerified": true,
+  "aliases": [
+    "qwen-image-2.0"
+  ],
+  "isFree": false
+}

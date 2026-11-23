@@ -1,0 +1,205 @@
+{
+  "slug": "zm-meta-muse-image-1.0",
+  "uniqueId": "2635MOOVjAQd14613933",
+  "name": "meta/muse-image-1.0",
+  "displayName": "Meta: Muse Image 1.0",
+  "provider": "Meta",
+  "manufacturerKey": "meta",
+  "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2025/11/27/peG8J09/Property-1Meta.svg",
+  "zhDescription": "先推理再绘制的图像Agent，支持文字和参考图编辑，可在知识密集型创作中调用搜索以辅助事实准确性。",
+  "zhLongDescription": "先推理再绘制的图像Agent，支持文字和参考图编辑，可在知识密集型创作中调用搜索以辅助事实准确性。",
+  "description": "先推理再绘制的图像Agent，支持文字和参考图编辑，可在知识密集型创作中调用搜索以辅助事实准确性。",
+  "longDescription": "先推理再绘制的图像Agent，支持文字和参考图编辑，可在知识密集型创作中调用搜索以辅助事实准确性。",
+  "contextLength": 66000,
+  "maxCompletionTokens": null,
+  "currency": "USD",
+  "tagList": [
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    }
+  ],
+  "publishedTime": "2026-08-27",
+  "minDiscountRate": "1",
+  "supportedParams": [
+    "background",
+    "moderation",
+    "n",
+    "output_format",
+    "partial_images",
+    "prompt",
+    "response_format",
+    "size",
+    "stream"
+  ],
+  "supportedProtocols": [
+    "images"
+  ],
+  "reasoning": 0,
+  "reasoningModes": [
+    0
+  ],
+  "providerNames": [
+    "Meta"
+  ],
+  "providerDetails": [
+    {
+      "name": "Meta",
+      "slug": "meta",
+      "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2025/11/27/peG8J09/Property-1Meta.svg",
+      "contextLength": 66000,
+      "maxCompletionTokens": null,
+      "supportsStreaming": true,
+      "apiProtocols": {
+        "images": {
+          "supported_parameters": [
+            "prompt",
+            "background",
+            "n",
+            "moderation",
+            "output_format",
+            "partial_images",
+            "response_format",
+            "size",
+            "stream"
+          ],
+          "supports_reasoning": 0
+        }
+      },
+      "pricingDiscount": "1",
+      "priceInfo": {
+        "prices": [
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_OUTPUT",
+                "priceNameZH": "图像输出费用(image_output)",
+                "priceValue": 0.01,
+                "unitCode": "COUNT",
+                "fixedNameZh": "次",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "image_output",
+                "constraints": []
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "modelProtocolCompatibility": {
+    "images": true
+  },
+  "supportedParametersDefaultValue": {
+    "background": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "moderation": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "n": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "output_format": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "partial_images": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "prompt": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "response_format": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "size": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "stream": {
+      "enable": true,
+      "defaultValue": null
+    }
+  },
+  "priceInfo": {
+    "prices": [
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "IMAGE_OUTPUT",
+            "priceNameZH": "图像输出费用(image_output)",
+            "priceValue": 0.01,
+            "unitCode": "COUNT",
+            "fixedNameZh": "次",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "image_output",
+            "constraints": []
+          }
+        ]
+      }
+    ]
+  },
+  "pricingDetails": [
+    {
+      "feeItemCode": "image_output",
+      "feeItemName": "图像输出费用(image_output)",
+      "feeRecords": [
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "counts"
+            }
+          ],
+          "feeRate": 0.01
+        }
+      ],
+      "selectedConstraint": [
+        "chargeUnit"
+      ]
+    }
+  ],
+  "sourcePublishedPrices": {
+    "pricing_completion": "0",
+    "pricing_discount": "1",
+    "pricing_prompt": "0"
+  },
+  "exampleCodes": [],
+  "serviceConfiguration": "服务配置待开通；接入地址、鉴权和可用协议以开通后的服务配置为准。",
+  "sourceRegion": "global",
+  "sourceCatalog": "ZenMux",
+  "sourceUrl": "https://zenmux.ai/meta/muse-image-1.0",
+  "detailVerified": true,
+  "aliases": [
+    "muse-image-1.0"
+  ],
+  "isFree": false
+}

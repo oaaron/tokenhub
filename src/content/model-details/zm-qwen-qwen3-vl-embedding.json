@@ -1,0 +1,292 @@
+{
+  "slug": "zm-qwen-qwen3-vl-embedding",
+  "uniqueId": "2625MOUWdVad14613850",
+  "name": "qwen/qwen3-vl-embedding",
+  "displayName": "Qwen: Qwen3 VL Embedding",
+  "provider": "Qwen",
+  "manufacturerKey": "qwen",
+  "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2026/11/17/tgp5jXd/Property-1Qwen.svg",
+  "zhDescription": "基于Qwen3-VL的多模态向量模型，将文本、图片、截图和视频用于跨模态理解与信息检索。",
+  "zhLongDescription": "基于Qwen3-VL的多模态向量模型，将文本、图片、截图和视频用于跨模态理解与信息检索。",
+  "description": "基于Qwen3-VL的多模态向量模型，将文本、图片、截图和视频用于跨模态理解与信息检索。",
+  "longDescription": "基于Qwen3-VL的多模态向量模型，将文本、图片、截图和视频用于跨模态理解与信息检索。",
+  "contextLength": 8192,
+  "maxCompletionTokens": 8192,
+  "currency": "USD",
+  "tagList": [
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "VIDEO",
+      "value": "视频"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "EMBEDDINGS",
+      "value": "向量嵌入"
+    }
+  ],
+  "publishedTime": "2026-01-08",
+  "minDiscountRate": "1",
+  "supportedParams": [
+    "dimensions",
+    "encoding_format",
+    "input",
+    "user"
+  ],
+  "supportedProtocols": [
+    "embeddings"
+  ],
+  "reasoning": 0,
+  "reasoningModes": [
+    0
+  ],
+  "providerNames": [
+    "Alibaba Cloud"
+  ],
+  "providerDetails": [
+    {
+      "name": "Alibaba Cloud",
+      "slug": "alibaba",
+      "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2025/10/15/FGMEmnu/Property-1Alibaba-cloud.svg",
+      "contextLength": 8192,
+      "maxCompletionTokens": 8192,
+      "supportsStreaming": false,
+      "apiProtocols": {
+        "embeddings": {
+          "supported_parameters": [
+            "input",
+            "dimensions",
+            "encoding_format",
+            "user"
+          ],
+          "supports_reasoning": 0
+        }
+      },
+      "pricingDiscount": "1",
+      "priceInfo": {
+        "prices": [
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "OUTPUT",
+                "priceNameZH": "模型生成输出内容的费用(completion)",
+                "priceValue": 0,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "completion",
+                "constraints": []
+              }
+            ]
+          },
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE_INPUT",
+                "priceNameZH": "图像输入费用(image_input)",
+                "priceValue": 0.258,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "image_input",
+                "constraints": []
+              }
+            ]
+          },
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "INPUT",
+                "priceNameZH": "输入提示词的处理费用(prompt)",
+                "priceValue": 0.1,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "prompt",
+                "constraints": []
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "modelProtocolCompatibility": {
+    "embeddings": true
+  },
+  "supportedParametersDefaultValue": {
+    "dimensions": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "encoding_format": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "input": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "user": {
+      "enable": true,
+      "defaultValue": null
+    }
+  },
+  "priceInfo": {
+    "prices": [
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "OUTPUT",
+            "priceNameZH": "模型生成输出内容的费用(completion)",
+            "priceValue": 0,
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "completion",
+            "constraints": []
+          }
+        ]
+      },
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "IMAGE_INPUT",
+            "priceNameZH": "图像输入费用(image_input)",
+            "priceValue": 0.258,
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "INPUT",
+            "sourceFeeCode": "image_input",
+            "constraints": []
+          }
+        ]
+      },
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "INPUT",
+            "priceNameZH": "输入提示词的处理费用(prompt)",
+            "priceValue": 0.1,
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "INPUT",
+            "sourceFeeCode": "prompt",
+            "constraints": []
+          }
+        ]
+      }
+    ]
+  },
+  "pricingDetails": [
+    {
+      "feeItemCode": "completion",
+      "feeItemName": "模型生成输出内容的费用(completion)",
+      "selectedConstraint": [
+        "chargeUnit"
+      ],
+      "feeRecords": [
+        {
+          "feeRate": 0,
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "feeItemCode": "image_input",
+      "feeItemName": "图像输入费用(image_input)",
+      "selectedConstraint": [
+        "chargeUnit"
+      ],
+      "feeRecords": [
+        {
+          "feeRate": 0.258,
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "feeItemCode": "prompt",
+      "feeItemName": "输入提示词的处理费用(prompt)",
+      "selectedConstraint": [
+        "chargeUnit"
+      ],
+      "feeRecords": [
+        {
+          "feeRate": 0.1,
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sourcePublishedPrices": {
+    "pricing_completion": "0",
+    "pricing_discount": "1",
+    "pricing_prompt": "0.1"
+  },
+  "exampleCodes": [],
+  "serviceConfiguration": "服务配置待开通；接入地址、鉴权和可用协议以开通后的服务配置为准。",
+  "sourceRegion": "global",
+  "sourceCatalog": "ZenMux",
+  "sourceUrl": "https://zenmux.ai/qwen/qwen3-vl-embedding",
+  "detailVerified": true,
+  "aliases": [
+    "qwen3-vl-embedding"
+  ],
+  "isFree": false
+}

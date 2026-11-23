@@ -1,0 +1,239 @@
+{
+  "uniqueId": "modelservice-1788918605869001081",
+  "name": "ming-image-0.1-design",
+  "displayName": "Ming-Image-0.1-Design",
+  "provider": "InclusionAI",
+  "description": "Ming Image 0.1 Design is a text-to-image model from inclusionAI aimed at graphic-design output, with an emphasis on legible text rendering inside the generated image. It generates from a prompt only and does not accept reference images. Output format can be requested as PNG, JPEG, or WebP. Image dimensions are chosen by the model rather than by the request, so explicit sizes and aspect ratios are rejected instead of silently reshaped.",
+  "zhDescription": "Ming-Image-0.1-Design 是一款专为 UI 界面设计与信息图表场景 深度优化的 6B 轻量级图像生成模型。在兼顾通用生图能力的同时，模型针对复杂布局结构、高精度文字排版及超长指令遵循实现了专项突破，致力于打通从设计创意到前端开发的生产力链路。其核心特性包括： 1、6B 轻量化架构，全场景设计流覆盖 针对真实设计工作流专项精调，体积小巧、部署敏捷；广泛覆盖 Web 网页、移动端 App、车载 HMI 及大屏可视化等终端场景，让设计生成、微调修改与开发交付的协同更加顺畅自然。 2、原生 2K–4K 高清直出，告别后处理超分 原生支持 1:1、4:3、16:9 等主流设计画幅比例，可直接输出最高 4K 分辨率的高保真设计稿；无需依赖额外的超分辨率流程，彻底规避伪影与细节模糊，确保界面边缘与图标锐利清晰。 3、8K Token 超长上下文，精准解析复杂 Spec 支持高达 8K Token 的超长需求描述，具备深度的全局理解能力，能够一次性完整解析复杂的多层级布局、组件规范、设计约束与文字内容清单。 4、卓越的中英高密文字渲染，真实还原信息层级 突破传统图像模型的文字生成短板，支持高密度的中英双语精准排版与文字直出，字形工整、层级清晰，真实复原现代数字界面高密度的信息承载需求。",
+  "longDescription": "Ming Image 0.1 Design is a text-to-image model from inclusionAI aimed at graphic-design output, with an emphasis on legible text rendering inside the generated image. It generates from a prompt only and does not accept reference images. Output format can be requested as PNG, JPEG, or WebP. Image dimensions are chosen by the model rather than by the request, so explicit sizes and aspect ratios are rejected instead of silently reshaped.",
+  "zhLongDescription": "Ming-Image-0.1-Design 是一款专为 UI 界面设计与信息图表场景 深度优化的 6B 轻量级图像生成模型。在兼顾通用生图能力的同时，模型针对复杂布局结构、高精度文字排版及超长指令遵循实现了专项突破，致力于打通从设计创意到前端开发的生产力链路。其核心特性包括： 1、6B 轻量化架构，全场景设计流覆盖 针对真实设计工作流专项精调，体积小巧、部署敏捷；广泛覆盖 Web 网页、移动端 App、车载 HMI 及大屏可视化等终端场景，让设计生成、微调修改与开发交付的协同更加顺畅自然。 2、原生 2K–4K 高清直出，告别后处理超分 原生支持 1:1、4:3、16:9 等主流设计画幅比例，可直接输出最高 4K 分辨率的高保真设计稿；无需依赖额外的超分辨率流程，彻底规避伪影与细节模糊，确保界面边缘与图标锐利清晰。 3、8K Token 超长上下文，精准解析复杂 Spec 支持高达 8K Token 的超长需求描述，具备深度的全局理解能力，能够一次性完整解析复杂的多层级布局、组件规范、设计约束与文字内容清单。 4、卓越的中英高密文字渲染，真实还原信息层级 突破传统图像模型的文字生成短板，支持高密度的中英双语精准排版与文字直出，字形工整、层级清晰，真实复原现代数字界面高密度的信息承载需求。",
+  "contextLength": null,
+  "maxCompletionTokens": null,
+  "maxTokens": null,
+  "currency": null,
+  "inPrice": null,
+  "outPrice": null,
+  "inPriceZh": null,
+  "outPriceZh": null,
+  "inHitCachePrice": "¥0.00/M",
+  "inHitCreatePrice": "¥0.00/M",
+  "tagList": [
+    {
+      "type": "MODEL_TYPE",
+      "key": "IMAGE_GENERATE",
+      "value": "图像生成"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    }
+  ],
+  "type": "IMAGE_GENERATE",
+  "typeList": [
+    "IMAGE_GENERATE"
+  ],
+  "supportedParametersDefaultValue": {
+    "n": {
+      "enable": true,
+      "defaultValue": 1,
+      "forbidDisable": null
+    },
+    "limit": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "size": {
+      "enable": true,
+      "defaultValue": "1280*1280",
+      "forbidDisable": null
+    },
+    "prompt_extend": {
+      "enable": true,
+      "defaultValue": true,
+      "forbidDisable": null
+    },
+    "uploadImage": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    }
+  },
+  "protocolParameters": [],
+  "modelProtocolCompatibility": {
+    "System One": false,
+    "google video": false,
+    "dashscope": false,
+    "google_gemini": false,
+    "anthropic_message": false,
+    "openai_responses": false,
+    "openai_chat_completions": false
+  },
+  "minDiscountRate": "0.400000",
+  "priceInfo": {
+    "lowestProviderPrice": {
+      "inputPrice": null,
+      "outputPrice": {
+        "priceCode": "OUTPUT_IMAGE_TOKENS",
+        "priceName": "Image Output",
+        "priceNameZH": "图片输出",
+        "priceValue": "5.000000",
+        "originalPrice": "12.500000",
+        "discountRate": "0.400000",
+        "unitCode": "M_TOKENS",
+        "unitName": "M",
+        "unitNameZh": "M",
+        "direction": "OUTPUT",
+        "fixedName": "M Tokens",
+        "fixedNameZh": "百万Tokens"
+      }
+    },
+    "prices": [
+      {
+        "stage": null,
+        "stageText": null,
+        "type": null,
+        "priceCurrency": "CNY",
+        "price": [
+          {
+            "priceCode": "OUTPUT_IMAGE_TOKENS",
+            "priceName": "Image Output",
+            "priceNameZH": "图片输出",
+            "priceValue": "5.000000",
+            "originalPrice": "12.500000",
+            "discountRate": "0.400000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "OUTPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          }
+        ]
+      }
+    ]
+  },
+  "publishedTime": "2026-09-09 09:50:46",
+  "offShelfFlag": 0,
+  "offShelfDate": null,
+  "buyTypes": [
+    "BY_AMOUNT"
+  ],
+  "providers": [
+    {
+      "providerUid": "channel-1779290799108001040",
+      "providerName": "antdigital",
+      "providerDisplayName": "蚂蚁数字科技",
+      "providerLogo": "https://maas-public.oss-cn-shanghai.aliyuncs.com/maas-admin/image/2026-09-10/image-4cf4a41f-3ae4-42.png"
+    }
+  ],
+  "extInfo": "{\"exampleCodes\":{\"openAI\":[{\"code\":\"  from openai import OpenAI\\n  \\n  client = OpenAI(\\n      base_url=\\\"https://maas-api.antdigital.com/v1\\\",\\n      api_key=\\\"<api_key>\\\",\\n  )\\n  \\n  resp = client.images.generate(\\n      model=\\\"ming-image-0.1-design\\\",\\n      prompt=\\\"生成一个香蕉\\\",\\n  )\\n  \\n  print(resp.data[0].url)\",\"sectionTitle\":\"\",\"name\":\"python\"},{\"code\":\"curl --location --request POST 'https://maas-api.antdigital.com/v1/images/generations' \\\\\\n--header 'Authorization: Bearer <api_key>' \\\\\\n--header 'content-type: application/json' \\\\\\n--data-raw '{\\n  \\\"model\\\": \\\"ming-image-0.1-design\\\",\\n  \\\"prompt\\\": \\\"生成一个香蕉\\\"\\n}'\",\"sectionTitle\":\"\",\"name\":\"curl\"}]},\"supportedParametersDefaultValue\":\"\"}",
+  "specs": {
+    "inputPrice": "¥0.0000",
+    "inputPriceHint": "每 1K tokens",
+    "outputPrice": "¥0.0000",
+    "outputPriceHint": "每 1K tokens",
+    "contextLength": null,
+    "contextLengthHint": "tokens",
+    "maxOutput": "0",
+    "maxOutputHint": "tokens"
+  },
+  "capabilities": [],
+  "languages": [
+    "文本"
+  ],
+  "scenarios": [
+    "图像"
+  ],
+  "modelParameters": [
+    {
+      "type": "number",
+      "id": "n",
+      "label": "n",
+      "value": 1,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": null,
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "id": "size",
+      "label": "size",
+      "value": "1280*1280",
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": null,
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "id": "prompt_extend",
+      "label": "prompt_extend",
+      "value": true,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": null,
+      "thousands": null
+    }
+  ],
+  "usageGuide": {
+    "authIntro": "使用 API Key 进行认证，在请求头中添加：",
+    "authBearerPlaceholder": "YOUR_API_KEY",
+    "requestIntro": "支持标准的 OpenAI 参数格式：",
+    "requestExample": "{\n  \"max_tokens\": 4096,\n  \"temperature\": 0.5,\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"你好，请介绍一下自己\"\n    }\n  ],\n  \"model\": \"ming-image-0.1-design\"\n}",
+    "responseExample": "{\n  \"created\": 1795353265,\n  \"usage\": {\n    \"completion_tokens\": 12,\n    \"prompt_tokens\": 9,\n    \"total_tokens\": 21\n  },\n  \"model\": \"ming-image-0.1-design\",\n  \"id\": \"chatcmpl-123\",\n  \"choices\": [\n    {\n      \"finish_reason\": \"stop\",\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"你好！我是 ming-image-0.1-design...\"\n      }\n    }\n  ],\n  \"object\": \"chat.completion\"\n}",
+    "docUrl": "https://api-docs.example.com/",
+    "docLabel": "查看完整 API 文档"
+  },
+  "exampleCodes": {
+    "python": {
+      "sectionTitle": "Python 示例",
+      "installLine": "安装依赖：pip install requests",
+      "code": "import requests\nimport json\n\nurl = \"https://api.example.com/v1/chat/completions\"\nheaders = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n}\n\ndata = {\n    \"model\": \"model-name\",\n    \"messages\": [\n        {\n            \"role\": \"user\",\n            \"content\": \"请写一个 Python 函数计算斐波那契数列\"\n        }\n    ],\n    \"temperature\": 0.7,\n    \"max_tokens\": 4096\n}\n\nresponse = requests.post(url, headers=headers, json=data)\nresult = response.json()\nprint(result[\"choices\"][0][\"message\"][\"content\"])"
+    },
+    "javascript": {
+      "sectionTitle": "JavaScript 示例",
+      "installLine": "无需安装额外依赖（需 Node 18+ 或支持 fetch 的运行环境）",
+      "code": "(async () => {\n  const url = \"https://api.example.com/v1/chat/completions\";\n  const headers = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n  };\n  const data = {\n    model: \"model-name\",\n    messages: [\n      {\n        role: \"user\",\n        content: \"请写一个 Python 函数计算斐波那契数列\"\n      }\n    ],\n    temperature: 0.7,\n    max_tokens: 4096\n  };\n  const response = await fetch(url, {\n    method: \"POST\",\n    headers,\n    body: JSON.stringify(data)\n  });\n  const result = await response.json();\n  console.log(result.choices[0].message.content);\n})();"
+    },
+    "curl": {
+      "sectionTitle": "Curl 示例",
+      "installLine": "说明：macOS / Linux 一般已预装 curl",
+      "code": "curl -X POST \"https://api.example.com/v1/chat/completions\" \\\n  -H \"Authorization: Bearer YOUR_API_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"model\":\"model-name\",\"messages\":[{\"role\":\"user\",\"content\":\"请写一个 Python 函数计算斐波那契数列\"}],\"temperature\":0.7,\"max_tokens\":4096}'"
+    }
+  },
+  "agentIntegrations": [
+    {
+      "id": "codex",
+      "name": "Codex",
+      "description": "Configure MaaS as an OpenAI-compatible model provider.",
+      "zhDescription": "将 MaaS 配置为 Codex 的 OpenAI 兼容模型供应商。",
+      "fileLabel": "~/.codex/config.toml",
+      "language": "toml",
+      "code": "model = \"ming-image-0.1-design\"\nmodel_provider = \"maas\"\n\n[model_providers.maas]\nname = \"MaaS\"\nbase_url = \"https://maas-api.antdigital.com/v1\"\nenv_key = \"MAAS_API_KEY\"\nwire_api = \"responses\"",
+      "guideUrl": "/docs/agent-guides/codex"
+    },
+    {
+      "id": "opencode",
+      "name": "OpenCode",
+      "description": "Add MaaS as a custom provider in OpenCode.",
+      "zhDescription": "在 OpenCode 中添加 MaaS 自定义模型供应商。",
+      "fileLabel": "~/.config/opencode/opencode.json",
+      "language": "json",
+      "code": "{\n  \"$schema\": \"https://opencode.ai/config.json\",\n  \"provider\": {\n    \"maas\": {\n      \"npm\": \"@ai-sdk/openai-compatible\",\n      \"name\": \"MaaS\",\n      \"options\": {\n        \"baseURL\": \"https://maas-api.antdigital.com/v1\",\n        \"apiKey\": \"YOUR_MAAS_API_KEY\"\n      },\n      \"models\": {\n        \"ming-image-0.1-design\": {\n          \"name\": \"ming-image-0.1-design\"\n        }\n      }\n    }\n  },\n  \"model\": \"maas/ming-image-0.1-design\"\n}",
+      "guideUrl": "/docs/agent-guides/opencode"
+    }
+  ],
+  "sourceUrl": "https://maas.antdigital.com/models/modelservice-1788918605869001081",
+  "slug": "modelservice-1788918605869001081"
+}

@@ -1,0 +1,201 @@
+{
+  "slug": "zm-qwen-qwen3-asr-flash",
+  "uniqueId": "2624MOlbC2r414613844",
+  "name": "qwen/qwen3-asr-flash",
+  "displayName": "Qwen: Qwen3 ASR Flash",
+  "provider": "Qwen",
+  "manufacturerKey": "qwen",
+  "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2026/11/17/tgp5jXd/Property-1Qwen.svg",
+  "zhDescription": "多语言语音识别模型，可自动识别语言，面向准确、稳健的语音转文本应用。",
+  "zhLongDescription": "多语言语音识别模型，可自动识别语言，面向准确、稳健的语音转文本应用。",
+  "description": "多语言语音识别模型，可自动识别语言，面向准确、稳健的语音转文本应用。",
+  "longDescription": "多语言语音识别模型，可自动识别语言，面向准确、稳健的语音转文本应用。",
+  "contextLength": 1000000,
+  "maxCompletionTokens": 65536,
+  "currency": "USD",
+  "tagList": [
+    {
+      "type": "INPUT_TYPE",
+      "key": "AUDIO",
+      "value": "音频"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "TRANSCRIPTION",
+      "value": "transcription"
+    }
+  ],
+  "publishedTime": "2025-09-08",
+  "minDiscountRate": "1",
+  "supportedParams": [
+    "asr_options",
+    "enable_itn",
+    "input_audio",
+    "language",
+    "messages",
+    "model",
+    "stream",
+    "stream_options"
+  ],
+  "supportedProtocols": [
+    "audio.transcriptions",
+    "chat.completions"
+  ],
+  "reasoning": 1,
+  "reasoningModes": [
+    1
+  ],
+  "providerNames": [
+    "Alibaba Cloud"
+  ],
+  "providerDetails": [
+    {
+      "name": "Alibaba Cloud",
+      "slug": "alibaba",
+      "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2025/10/15/FGMEmnu/Property-1Alibaba-cloud.svg",
+      "contextLength": 1000000,
+      "maxCompletionTokens": 65536,
+      "supportsStreaming": true,
+      "apiProtocols": {
+        "audio.transcriptions": {
+          "supported_parameters": [
+            "input_audio",
+            "language",
+            "enable_itn"
+          ],
+          "supports_reasoning": 1
+        },
+        "chat.completions": {
+          "supported_parameters": [
+            "model",
+            "messages",
+            "asr_options",
+            "stream",
+            "stream_options"
+          ],
+          "supports_reasoning": 1
+        }
+      },
+      "pricingDiscount": "1",
+      "priceInfo": {
+        "prices": [
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "AUDIO_INPUT",
+                "priceNameZH": "音频输入费用(audio_input)",
+                "priceValue": 3.5e-05,
+                "unitCode": "SECOND",
+                "fixedNameZh": "秒",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "audio_input",
+                "constraints": []
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "modelProtocolCompatibility": {
+    "audio.transcriptions": true,
+    "chat.completions": true
+  },
+  "supportedParametersDefaultValue": {
+    "asr_options": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "enable_itn": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "input_audio": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "language": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "messages": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "model": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "stream": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "stream_options": {
+      "enable": true,
+      "defaultValue": null
+    }
+  },
+  "priceInfo": {
+    "prices": [
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "AUDIO_INPUT",
+            "priceNameZH": "音频输入费用(audio_input)",
+            "priceValue": 3.5e-05,
+            "unitCode": "SECOND",
+            "fixedNameZh": "秒",
+            "priceCurrency": "USD",
+            "direction": "INPUT",
+            "sourceFeeCode": "audio_input",
+            "constraints": []
+          }
+        ]
+      }
+    ]
+  },
+  "pricingDetails": [
+    {
+      "feeItemCode": "audio_input",
+      "feeItemName": "音频输入费用(audio_input)",
+      "feeRecords": [
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "seconds"
+            }
+          ],
+          "feeRate": 3.5e-05
+        }
+      ],
+      "selectedConstraint": [
+        "chargeUnit"
+      ]
+    }
+  ],
+  "sourcePublishedPrices": {
+    "pricing_completion": "0",
+    "pricing_discount": "1",
+    "pricing_prompt": "0"
+  },
+  "exampleCodes": [],
+  "serviceConfiguration": "服务配置待开通；接入地址、鉴权和可用协议以开通后的服务配置为准。",
+  "sourceRegion": "global",
+  "sourceCatalog": "ZenMux",
+  "sourceUrl": "https://zenmux.ai/qwen/qwen3-asr-flash",
+  "detailVerified": true,
+  "aliases": [
+    "qwen3-asr-flash"
+  ],
+  "isFree": false
+}

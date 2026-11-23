@@ -1,0 +1,508 @@
+{
+  "uniqueId": "modelservice-1788770412937001300",
+  "name": "gpt-6-astra",
+  "displayName": "GPT-6 Astra",
+  "provider": "OpenAI",
+  "description": "GPT-6 Astra is OpenAI’s most capable model for complex reasoning, coding, computer use, research, and document creation, with strong performance on multistep workflows across code, browsers, and professional software. It supports reasoning.effort levels of low, medium, high, xhigh, and max, and achieves strong results while often using fewer output tokens for lower estimated cost per task than earlier models. It is also OpenAI’s most aligned model yet, designed to follow intent carefully, respect task boundaries, adapt to changing requirements, and communicate transparently.",
+  "zhDescription": "GPT-6 Astra 是 OpenAI 面向复杂推理、编程、计算机操作、研究与文档创作推出的旗舰模型，擅长跨代码、浏览器及专业软件执行多步骤工作流。支持 low、medium、high、xhigh 和 max 五档推理强度；相比早期模型，通常能以更少的输出 Token 完成任务，降低单任务预估成本。它也是 OpenAI 迄今对齐能力最强的模型，能够准确遵循用户意图、恪守任务边界、适应需求变化，并保持透明沟通。",
+  "longDescription": "GPT-6 Astra is OpenAI’s most capable model for complex reasoning, coding, computer use, research, and document creation, with strong performance on multistep workflows across code, browsers, and professional software. It supports reasoning.effort levels of low, medium, high, xhigh, and max, and achieves strong results while often using fewer output tokens for lower estimated cost per task than earlier models. It is also OpenAI’s most aligned model yet, designed to follow intent carefully, respect task boundaries, adapt to changing requirements, and communicate transparently.",
+  "zhLongDescription": "GPT-6 Astra 是 OpenAI 面向复杂推理、编程、计算机操作、研究与文档创作推出的旗舰模型，擅长跨代码、浏览器及专业软件执行多步骤工作流。支持 low、medium、high、xhigh 和 max 五档推理强度；相比早期模型，通常能以更少的输出 Token 完成任务，降低单任务预估成本。它也是 OpenAI 迄今对齐能力最强的模型，能够准确遵循用户意图、恪守任务边界、适应需求变化，并保持透明沟通。",
+  "contextLength": "1000000",
+  "maxCompletionTokens": 128000,
+  "maxTokens": 128000,
+  "currency": null,
+  "inputPrice": "$10.000000/M",
+  "outputPrice": "$50.000000/M",
+  "inPrice": null,
+  "outPrice": null,
+  "inPriceZh": "$10.000000/M",
+  "outPriceZh": "$50.000000/M",
+  "inHitCachePrice": "$1.000000/M",
+  "inHitCreatePrice": "$1.000000/M",
+  "tagList": [
+    {
+      "type": "MODEL_TYPE",
+      "key": "TEXT_GENERATE",
+      "value": "文本生成"
+    },
+    {
+      "type": "MODEL_TYPE",
+      "key": "CODE_GENERATE",
+      "value": "代码生成"
+    },
+    {
+      "type": "MODEL_TYPE",
+      "key": "VISUAL_UNDERSTANDING",
+      "value": "视觉理解"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "FILE",
+      "value": "文件"
+    }
+  ],
+  "type": "TEXT_GENERATE",
+  "typeList": [
+    "TEXT_GENERATE",
+    "CODE_GENERATE",
+    "VISUAL_UNDERSTANDING"
+  ],
+  "supportedParametersDefaultValue": {
+    "temperature": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "top_p": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "top_k": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "max_tokens": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "enable_search": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "enable_thinking": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "thinking_budget": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    }
+  },
+  "protocolParameters": [
+    {
+      "protocolName": "openai_responses",
+      "displayName": "OpenAI Responses",
+      "parameters": {
+        "service_tier": false,
+        "user": false,
+        "truncation": false,
+        "top_p": false,
+        "top_logprobs": false,
+        "tools": true,
+        "tool_choice": true,
+        "text": false,
+        "temperature": false,
+        "stream": true,
+        "store": false,
+        "background": false,
+        "reasoning": false,
+        "prompt": false,
+        "previous_response_id": false,
+        "parallel_tool_calls": false,
+        "metadata": false,
+        "max_tool_calls": false,
+        "max_output_tokens": true,
+        "include": false,
+        "conversation": false
+      }
+    },
+    {
+      "protocolName": "openai_chat_completions",
+      "displayName": "OpenAI Chat Completions",
+      "parameters": {
+        "seed": false,
+        "web_search_options": false,
+        "user": false,
+        "top_p": false,
+        "top_logprobs": false,
+        "tools": true,
+        "tool_choice": true,
+        "temperature": false,
+        "stream_options": false,
+        "stream": true,
+        "store": false,
+        "service_tier": false,
+        "audio": false,
+        "response_format": true,
+        "reasoning_effort": false,
+        "presence_penalty": false,
+        "prediction": false,
+        "parallel_tool_calls": false,
+        "n": false,
+        "modalities": false,
+        "metadata": false,
+        "logprobs": true,
+        "logit_bias": false,
+        "frequency_penalty": false
+      }
+    }
+  ],
+  "modelProtocolCompatibility": {
+    "google video": false,
+    "dashscope": false,
+    "google_gemini": false,
+    "anthropic_message": false,
+    "openai_responses": true,
+    "openai_chat_completions": true
+  },
+  "minDiscountRate": "1",
+  "priceInfo": {
+    "lowestProviderPrice": {
+      "inputPrice": {
+        "priceCode": "INPUT",
+        "priceName": "Input",
+        "priceNameZH": "输入",
+        "priceValue": "10.000000",
+        "originalPrice": "10.000000",
+        "discountRate": "1.000000",
+        "unitCode": "M_TOKENS",
+        "unitName": "M",
+        "unitNameZh": "M",
+        "direction": "INPUT",
+        "fixedName": "M Tokens",
+        "fixedNameZh": "百万Tokens"
+      },
+      "outputPrice": {
+        "priceCode": "OUTPUT",
+        "priceName": "Output",
+        "priceNameZH": "输出",
+        "priceValue": "50.000000",
+        "originalPrice": "50.000000",
+        "discountRate": "1.000000",
+        "unitCode": "M_TOKENS",
+        "unitName": "M",
+        "unitNameZh": "M",
+        "direction": "OUTPUT",
+        "fixedName": "M Tokens",
+        "fixedNameZh": "百万Tokens"
+      }
+    },
+    "prices": [
+      {
+        "stage": "输入token ≤ 272K",
+        "stageText": "输入token ≤ 272K",
+        "type": null,
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "INPUT",
+            "priceName": "Input",
+            "priceNameZH": "输入",
+            "priceValue": "10.000000",
+            "originalPrice": "10.000000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "OUTPUT",
+            "priceName": "Output",
+            "priceNameZH": "输出",
+            "priceValue": "50.000000",
+            "originalPrice": "50.000000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "OUTPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "DISPLAY_CACHE_CREATE",
+            "priceName": "Cache Create",
+            "priceNameZH": "缓存创建",
+            "priceValue": "12.500000",
+            "originalPrice": "12.500000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "DISPLAY_CACHE_HIT",
+            "priceName": "Cache Hit",
+            "priceNameZH": "缓存命中",
+            "priceValue": "1.000000",
+            "originalPrice": "1.000000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "INPUT_CACHE_HIT",
+            "priceName": "Input (Cache Hit)",
+            "priceNameZH": "输入（命中缓存）",
+            "priceValue": "1.000000",
+            "originalPrice": "1.000000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          }
+        ]
+      },
+      {
+        "stage": "输入token > 272K",
+        "stageText": "输入token > 272K",
+        "type": null,
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "INPUT",
+            "priceName": "Input",
+            "priceNameZH": "输入",
+            "priceValue": "20.000000",
+            "originalPrice": "20.000000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "OUTPUT",
+            "priceName": "Output",
+            "priceNameZH": "输出",
+            "priceValue": "75.000000",
+            "originalPrice": "75.000000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "OUTPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "DISPLAY_CACHE_CREATE",
+            "priceName": "Cache Create",
+            "priceNameZH": "缓存创建",
+            "priceValue": "25.000000",
+            "originalPrice": "25.000000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "DISPLAY_CACHE_HIT",
+            "priceName": "Cache Hit",
+            "priceNameZH": "缓存命中",
+            "priceValue": "2.000000",
+            "originalPrice": "2.000000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "INPUT_CACHE_HIT",
+            "priceName": "Input (Cache Hit)",
+            "priceNameZH": "输入（命中缓存）",
+            "priceValue": "2.000000",
+            "originalPrice": "2.000000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          }
+        ]
+      }
+    ]
+  },
+  "publishedTime": "2026-09-07 16:40:13",
+  "offShelfFlag": 0,
+  "offShelfDate": null,
+  "buyTypes": [
+    "BY_AMOUNT",
+    "BY_CREDIT"
+  ],
+  "specs": {
+    "inputPrice": "¥0.0000",
+    "inputPriceHint": "每 1K tokens",
+    "outputPrice": "¥0.0000",
+    "outputPriceHint": "每 1K tokens",
+    "contextLength": "1000000",
+    "contextLengthHint": "tokens",
+    "maxOutput": "0",
+    "maxOutputHint": "tokens"
+  },
+  "capabilities": [],
+  "languages": [
+    "文本",
+    "图像",
+    "文件"
+  ],
+  "scenarios": [
+    "文本"
+  ],
+  "modelParameters": [
+    {
+      "type": "switch",
+      "label": "tools",
+      "value": true,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "select",
+      "label": "tool_choice",
+      "value": "auto",
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "switch",
+      "label": "stream",
+      "value": true,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "label": "max_output_tokens",
+      "value": null,
+      "min": 1,
+      "max": 1000000,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "text",
+      "label": "response_format",
+      "value": "text",
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "text / json_object / json_schema",
+      "thousands": null
+    },
+    {
+      "type": "switch",
+      "label": "logprobs",
+      "value": true,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    }
+  ],
+  "usageGuide": {
+    "authIntro": "使用 API Key 进行认证，在请求头中添加 Authorization Bearer：",
+    "authBearerPlaceholder": "<api_key>",
+    "requestIntro": "使用 OpenAI Responses API 参数格式：",
+    "requestExample": "{\n  \"instructions\": \"你是一个有帮助的助手\",\n  \"input\": \"你好，请介绍一下自己\",\n  \"temperature\": 0.5,\n  \"model\": \"gpt-6-astra\",\n  \"max_output_tokens\": 4096\n}",
+    "responseExample": "{\n  \"output\": [\n    {\n      \"role\": \"assistant\",\n      \"type\": \"message\",\n      \"content\": [\n        {\n          \"text\": \"你好！我是 gpt-6-astra...\",\n          \"type\": \"output_text\"\n        }\n      ]\n    }\n  ],\n  \"output_text\": \"你好！我是 gpt-6-astra...\",\n  \"usage\": {\n    \"total_tokens\": 21,\n    \"output_tokens\": 12,\n    \"input_tokens\": 9\n  },\n  \"created_at\": 1778240000,\n  \"model\": \"gpt-6-astra\",\n  \"id\": \"resp_123\",\n  \"object\": \"response\",\n  \"status\": \"completed\"\n}",
+    "docUrl": "https://platform.openai.com/docs/api-reference/responses",
+    "docLabel": "查看完整 API 文档"
+  },
+  "exampleCodes": {
+    "python": {
+      "sectionTitle": "Python 示例",
+      "installLine": "安装依赖：pip install requests",
+      "code": "import requests\n\nurl = \"https://maas-api.antdigital.com/v1/responses\"\nheaders = {\n    \"Authorization\": \"Bearer <api_key>\",\n    \"Content-Type\": \"application/json\"\n}\ndata = {\n    \"model\": \"gpt-6-astra\",\n    \"instructions\": \"You are a helpful assistant.\",\n    \"input\": \"What is the meaning of life?\",\n    \"max_output_tokens\": 1024\n}\nresponse = requests.post(url, headers=headers, json=data)\nprint(response.json()[\"output_text\"])"
+    },
+    "javascript": {
+      "sectionTitle": "JavaScript 示例",
+      "installLine": "无需安装额外依赖（需 Node 18+ 或支持 fetch 的运行环境）",
+      "code": "const response = await fetch(\"https://maas-api.antdigital.com/v1/responses\", {\n  method: \"POST\",\n  headers: {\n    \"Authorization\": \"Bearer <api_key>\",\n    \"Content-Type\": \"application/json\"\n  },\n  body: JSON.stringify({\n    model: \"gpt-6-astra\",\n    instructions: \"You are a helpful assistant.\",\n    input: \"What is the meaning of life?\",\n    max_output_tokens: 1024\n  })\n});\nconst result = await response.json();\nconsole.log(result.output_text);"
+    },
+    "curl": {
+      "sectionTitle": "Curl 示例",
+      "installLine": "说明：macOS / Linux 一般已预装 curl",
+      "code": "curl -X POST \"https://maas-api.antdigital.com/v1/responses\" \\\n  -H \"Authorization: Bearer <api_key>\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"model\":\"gpt-6-astra\",\"instructions\":\"You are a helpful assistant.\",\"input\":\"What is the meaning of life?\",\"max_output_tokens\":1024}'"
+    }
+  },
+  "agentIntegrations": [
+    {
+      "name": "Claude Code",
+      "description": "Use this model through the Anthropic-compatible endpoint.",
+      "zhDescription": "通过 Anthropic 兼容接口在 Claude Code 中使用当前模型。",
+      "fileLabel": "~/.claude/settings.json",
+      "language": "json",
+      "code": "{\n  \"env\": {\n    \"ANTHROPIC_AUTH_TOKEN\": \"YOUR_MAAS_API_KEY\",\n    \"ANTHROPIC_BASE_URL\": \"https://maas-api.computrix.ai/\",\n    \"ANTHROPIC_MODEL\": \"gpt-6-astra\"\n  }\n}",
+      "guideUrl": "/docs/agent-guides/claude-code"
+    },
+    {
+      "name": "Codex",
+      "description": "Configure MaaS as an OpenAI-compatible model provider.",
+      "zhDescription": "将 MaaS 配置为 Codex 的 OpenAI 兼容模型供应商。",
+      "fileLabel": "~/.codex/config.toml",
+      "language": "toml",
+      "code": "model = \"gpt-6-astra\"\nmodel_provider = \"maas\"\n\n[model_providers.maas]\nname = \"MaaS\"\nbase_url = \"https://maas-api.computrix.ai/v1\"\nenv_key = \"MAAS_API_KEY\"\nwire_api = \"responses\"",
+      "guideUrl": "/docs/agent-guides/codex"
+    },
+    {
+      "name": "OpenCode",
+      "description": "Add MaaS as a custom provider in OpenCode.",
+      "zhDescription": "在 OpenCode 中添加 MaaS 自定义模型供应商。",
+      "fileLabel": "~/.config/opencode/opencode.json",
+      "language": "json",
+      "code": "{\n  \"$schema\": \"https://opencode.ai/config.json\",\n  \"provider\": {\n    \"maas\": {\n      \"npm\": \"@ai-sdk/openai-compatible\",\n      \"name\": \"MaaS\",\n      \"options\": {\n        \"baseURL\": \"https://maas-api.computrix.ai/v1\",\n        \"apiKey\": \"YOUR_MAAS_API_KEY\"\n      },\n      \"models\": {\n        \"gpt-6-astra\": {\n          \"name\": \"gpt-6-astra\"\n        }\n      }\n    }\n  },\n  \"model\": \"maas/gpt-6-astra\"\n}",
+      "guideUrl": "/docs/agent-guides/opencode"
+    }
+  ],
+  "slug": "sg-modelservice-1788770412937001300",
+  "sourceRegion": "sg",
+  "sourceCatalog": "Computrix",
+  "sourceUrl": "https://computrix.ai/sg/models",
+  "detailVerified": true
+}

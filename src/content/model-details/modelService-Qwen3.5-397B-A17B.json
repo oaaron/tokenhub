@@ -1,0 +1,368 @@
+{
+  "uniqueId": "modelService-Qwen3.5-397B-A17B",
+  "name": "Qwen3.5-397B-A17B",
+  "displayName": "Qwen3.5-397B-A17B",
+  "provider": "Qwen",
+  "description": "A Qwen3.5 series native vision-language model with 397B total parameters and 17B activated parameters. Built on a hybrid architecture that combines linear attention with a sparse Mixture-of-Experts (MoE) design, it delivers greater inference efficiency. The model achieves performance comparable to leading frontier models across language understanding, logical reasoning, code generation, agentic tasks, image and video understanding, and graphical user interface (GUI) interaction. With strong",
+  "zhDescription": "Qwen3.5系列397B-A17B原生视觉语言模型，基于混合架构设计，融合了线性注意力机制与稀疏混合专家模型，实现了更高的推理效率。在语言理解、逻辑推理、代码生成、智能体任务、图像理解、视频理解、图形用户界面（GUI）等多种任务中，均展现出与当前顶尖前沿模型相媲美的卓越性能。具备强大的代码生成与智能体能力，对于各类智能体场景具有良好的泛化性。",
+  "longDescription": "A Qwen3.5 series native vision-language model with 397B total parameters and 17B activated parameters. Built on a hybrid architecture that combines linear attention with a sparse Mixture-of-Experts (MoE) design, it delivers greater inference efficiency. The model achieves performance comparable to leading frontier models across language understanding, logical reasoning, code generation, agentic tasks, image and video understanding, and graphical user interface (GUI) interaction. With strong",
+  "zhLongDescription": "Qwen3.5系列397B-A17B原生视觉语言模型，基于混合架构设计，融合了线性注意力机制与稀疏混合专家模型，实现了更高的推理效率。在语言理解、逻辑推理、代码生成、智能体任务、图像理解、视频理解、图形用户界面（GUI）等多种任务中，均展现出与当前顶尖前沿模型相媲美的卓越性能。具备强大的代码生成与智能体能力，对于各类智能体场景具有良好的泛化性。",
+  "contextLength": "256000",
+  "maxCompletionTokens": 64000,
+  "maxTokens": 64000,
+  "currency": null,
+  "inPrice": null,
+  "outPrice": null,
+  "inPriceZh": null,
+  "outPriceZh": null,
+  "inHitCachePrice": "¥0.00/M",
+  "inHitCreatePrice": "¥0.00/M",
+  "tagList": [
+    {
+      "type": "MODEL_TYPE",
+      "key": "VISUAL_UNDERSTANDING",
+      "value": "视觉理解"
+    },
+    {
+      "type": "MODEL_TYPE",
+      "key": "CODE_GENERATE",
+      "value": "代码生成"
+    },
+    {
+      "type": "MODEL_TYPE",
+      "key": "TEXT_GENERATE",
+      "value": "文本生成"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "VIDEO",
+      "value": "视频"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    }
+  ],
+  "type": "VISUAL_UNDERSTANDING",
+  "typeList": [
+    "TEXT_GENERATE",
+    "CODE_GENERATE",
+    "VISUAL_UNDERSTANDING"
+  ],
+  "supportedParametersDefaultValue": {
+    "temperature": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "top_p": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "top_k": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "max_tokens": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "enable_search": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "enable_thinking": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "thinking_budget": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    }
+  },
+  "protocolParameters": [],
+  "modelProtocolCompatibility": {
+    "google video": false,
+    "dashscope": false,
+    "google_gemini": false,
+    "anthropic_message": false,
+    "openai_responses": false,
+    "openai_chat_completions": false
+  },
+  "minDiscountRate": "1",
+  "priceInfo": {
+    "lowestProviderPrice": {
+      "inputPrice": {
+        "priceCode": "INPUT",
+        "priceName": "Input",
+        "priceNameZH": "输入",
+        "priceValue": "1.200000",
+        "originalPrice": "1.200000",
+        "discountRate": "1.000000",
+        "unitCode": "M_TOKENS",
+        "unitName": "M",
+        "unitNameZh": "M",
+        "direction": "INPUT",
+        "fixedName": "M Tokens",
+        "fixedNameZh": "百万Tokens"
+      },
+      "outputPrice": {
+        "priceCode": "OUTPUT",
+        "priceName": "Output",
+        "priceNameZH": "输出",
+        "priceValue": "7.200000",
+        "originalPrice": "7.200000",
+        "discountRate": "1.000000",
+        "unitCode": "M_TOKENS",
+        "unitName": "M",
+        "unitNameZh": "M",
+        "direction": "OUTPUT",
+        "fixedName": "M Tokens",
+        "fixedNameZh": "百万Tokens"
+      }
+    },
+    "prices": [
+      {
+        "stage": "输入≤128K",
+        "stageText": "输入≤128K",
+        "type": null,
+        "priceCurrency": "CNY",
+        "price": [
+          {
+            "priceCode": "INPUT",
+            "priceName": "Input",
+            "priceNameZH": "输入",
+            "priceValue": "1.200000",
+            "originalPrice": "1.200000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "OUTPUT",
+            "priceName": "Output",
+            "priceNameZH": "输出",
+            "priceValue": "7.200000",
+            "originalPrice": "7.200000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "OUTPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          }
+        ]
+      },
+      {
+        "stage": "128K<输入≤256K",
+        "stageText": "128K<输入≤256K",
+        "type": null,
+        "priceCurrency": "CNY",
+        "price": [
+          {
+            "priceCode": "INPUT",
+            "priceName": "Input",
+            "priceNameZH": "输入",
+            "priceValue": "3.000000",
+            "originalPrice": "3.000000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "OUTPUT",
+            "priceName": "Output",
+            "priceNameZH": "输出",
+            "priceValue": "18.000000",
+            "originalPrice": "18.000000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "OUTPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          }
+        ]
+      }
+    ]
+  },
+  "publishedTime": "2026-04-25 00:00:00",
+  "offShelfFlag": 0,
+  "offShelfDate": null,
+  "buyTypes": [
+    "BY_AMOUNT"
+  ],
+  "providers": [
+    {
+      "providerUid": "channel-1779290799108001040",
+      "providerName": "antdigital",
+      "providerDisplayName": "蚂蚁数字科技",
+      "providerLogo": "https://maas-public.oss-cn-shanghai.aliyuncs.com/maas-admin/image/2026-09-10/image-4cf4a41f-3ae4-42.png"
+    }
+  ],
+  "extInfo": "{\"exampleCodes\":{\"openAI\":[{\"code\":\"# Chat Completion\\nfrom openai import OpenAI\\n\\nclient = OpenAI(\\n    base_url=\\\"https://maas-api.antdigital.com/v1\\\",\\n    api_key=\\\"<API_KEY>\\\",\\n)\\n\\ncompletion = client.chat.completions.create(\\n    model=\\\"qwen3.5-397b-a17b\\\",\\n    messages=[\\n        {\\n            \\\"role\\\": \\\"user\\\",\\n            \\\"content\\\": \\\"What is the meaning of life?\\\"\\n        }\\n    ]\\n)\\nprint(completion.choices[0].message.content)\\n\\n# Responses API\\nresponses = client.responses.create(\\n    model=\\\"qwen3.5-397b-a17b\\\",\\n    input=\\\"What is the meaning of life?\\\"\\n)\\nprint(responses)\",\"sectionTitle\":\"\",\"name\":\"python\"},{\"code\":\"# Chat Completion\\ncurl https://maas-api.antdigital.com/v1/chat/completions \\\\\\n-H \\\"Content-Type: application/json\\\" \\\\\\n-H \\\"Authorization: Bearer $API_KEY\\\" \\\\\\n-d '{\\n  \\\"model\\\": \\\"qwen3.5-397b-a17b\\\",\\n  \\\"messages\\\": [ \\n    { \\n      \\\"role\\\": \\\"user\\\",\\n      \\\"content\\\": \\\"What is the meaning of life?\\\"\\n    }\\n  ]\\n}'\\n\\n# Responses API\\ncurl https://maas-api.antdigital.com/v1/responses \\\\\\n  -H \\\"Content-Type: application/json\\\" \\\\\\n  -H \\\"Authorization: Bearer $API_KEY\\\" \\\\\\n  -d '{\\n    \\\"model\\\": \\\"qwen3.5-397b-a17b\\\",\\n    \\\"input\\\": \\\"你是谁\\\"\\n  }'\",\"sectionTitle\":\"\",\"name\":\"curl\"}],\"dashscope\":[{\"code\":\"import os\\nfrom dashscope import MultiModalConversation\\nimport dashscope\\ndashscope.base_http_api_url = 'https://maas-api.antdigital.com/api/v1'\\n\\nmessages = [\\n    {\\\"role\\\": \\\"system\\\", \\\"content\\\": [{\\\"text\\\": \\\"You are a helpful assistant.\\\"}]},\\n    {\\\"role\\\": \\\"user\\\", \\\"content\\\": [{\\\"text\\\": \\\"你是谁？\\\"}]},\\n]\\nresponse = MultiModalConversation.call(\\n    api_key=\\\"<API_KEY>\\\",\\n    model=\\\"qwen3.5-397b-a17b\\\",\\n    messages=messages,\\n)\\n\\nif response.status_code == 200:\\n    # 打印思考过程\\n    print(\\\"=\\\" * 20 + \\\"思考过程\\\" + \\\"=\\\" * 20)\\n    print(response.output.choices[0].message.content[0].get(\\\"reasoning\\\", \\\"\\\"))\\n\\n    # 打印回复\\n    print(\\\"=\\\" * 20 + \\\"完整回复\\\" + \\\"=\\\" * 20)\\n    print(response.output.choices[0].message.content[0][\\\"text\\\"])\\nelse:\\n    print(f\\\"HTTP返回码：{response.status_code}\\\")\\n    print(f\\\"错误码：{response.code}\\\")\\n    print(f\\\"错误信息：{response.message}\\\")\",\"sectionTitle\":\"\",\"name\":\"python\"},{\"code\":\"curl -X POST 'https://maas-api.antdigital.com/api/v1/services/aigc/multimodal-generation/generation' \\\\\\n  -H 'Content-Type: application/json' \\\\\\n  -H 'Authorization: Bearer $API_KEY' \\\\\\n  -d '{\\n    \\\"model\\\": \\\"qwen3.5-397b-a17b\\\",\\n    \\\"input\\\": {\\n        \\\"messages\\\": [\\n            {\\n                \\\"role\\\": \\\"system\\\",\\n                \\\"content\\\": [{\\\"text\\\": \\\"You are a helpful assistant.\\\"}]\\n            },\\n            {\\n                \\\"role\\\": \\\"user\\\",\\n                \\\"content\\\": [{\\\"text\\\": \\\"你是谁？\\\"}]\\n            }\\n        ]\\n    }\\n}'\",\"sectionTitle\":\"\",\"name\":\"curl\"}],\"anthropic\":[{\"code\":\"import anthropic\\nclient = anthropic.Anthropic(\\n    api_key=\\\"<API_KEY>\\\", \\n    base_url=\\\"https://maas-api.antdigital.com/v1\\\"\\n)\\nmessage = client.messages.create(\\n    model=\\\"qwen3.5-397b-a17b\\\",\\n    max_tokens=1024,\\n    messages=[\\n      {\\\"role\\\": \\\"user\\\", \\\"content\\\": \\\"Hello, Claude\\\"}\\n    ]\\n)\\nprint(message.content)\",\"sectionTitle\":\"\",\"name\":\"python\"},{\"code\":\"curl https://maas-api.antdigital.com/v1/messages \\\\\\n  --header \\\"x-api-key: $API_KEY\\\" \\\\\\n  --header \\\"anthropic-version: 2023-06-01\\\" \\\\\\n  --header \\\"content-type: application/json\\\" \\\\\\n  -d '{ \\n    \\\"model\\\": \\\"qwen3.5-397b-a17b\\\", \\n    \\\"max_tokens\\\": 1024,\\n    \\\"messages\\\": [\\n      {\\\"role\\\": \\\"user\\\", \\\"content\\\": \\\"Hello, world\\\"}\\n    ]\\n  }'\",\"sectionTitle\":\"\",\"name\":\"curl\"}]},\"contextLength\":\"256000\"}",
+  "specs": {
+    "inputPrice": "¥0.0000",
+    "inputPriceHint": "每 1K tokens",
+    "outputPrice": "¥0.0000",
+    "outputPriceHint": "每 1K tokens",
+    "contextLength": "256000",
+    "contextLengthHint": "tokens",
+    "maxOutput": "0",
+    "maxOutputHint": "tokens"
+  },
+  "capabilities": [],
+  "languages": [
+    "文本",
+    "图像",
+    "视频"
+  ],
+  "scenarios": [
+    "文本"
+  ],
+  "modelParameters": [
+    {
+      "type": "slider",
+      "id": "temperature",
+      "label": "Temperature",
+      "value": 0.3,
+      "min": 0,
+      "max": 2,
+      "step": 0.01,
+      "description": "控制输出的随机性，值越高越随机",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "id": "presence_penalty",
+      "label": "Presence Penalty",
+      "value": 0.1,
+      "min": -2,
+      "max": 2,
+      "step": 0.01,
+      "description": "存在惩罚，鼓励模型讨论新话题",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "id": "top_p",
+      "label": "Top P",
+      "value": 0.95,
+      "min": 0,
+      "max": 1,
+      "step": 0.01,
+      "description": "核采样参数，控制候选词汇的范围",
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "id": "max_tokens",
+      "label": "Max Tokens",
+      "value": 0,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "单次生成的最大 token 数量",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "id": "frequency_penalty",
+      "label": "Frequency Penalty",
+      "value": 0.1,
+      "min": -2,
+      "max": 2,
+      "step": 0.01,
+      "description": "频率惩罚，减少重复内容的生成",
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "id": "context_length",
+      "label": "Context Length",
+      "value": 64000,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "支持的最大上下文长度",
+      "thousands": true
+    }
+  ],
+  "usageGuide": {
+    "authIntro": "使用 API Key 进行认证，在请求头中添加：",
+    "authBearerPlaceholder": "YOUR_API_KEY",
+    "requestIntro": "支持标准的 OpenAI 参数格式：",
+    "requestExample": "{\n  \"max_tokens\": 4096,\n  \"temperature\": 0.5,\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"你好，请介绍一下自己\"\n    }\n  ],\n  \"model\": \"Qwen3.5-397B-A17B\"\n}",
+    "responseExample": "{\n  \"created\": 1795353267,\n  \"usage\": {\n    \"completion_tokens\": 12,\n    \"prompt_tokens\": 9,\n    \"total_tokens\": 21\n  },\n  \"model\": \"Qwen3.5-397B-A17B\",\n  \"id\": \"chatcmpl-123\",\n  \"choices\": [\n    {\n      \"finish_reason\": \"stop\",\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"你好！我是 Qwen3.5-397B-A17B...\"\n      }\n    }\n  ],\n  \"object\": \"chat.completion\"\n}",
+    "docUrl": "https://api-docs.example.com/",
+    "docLabel": "查看完整 API 文档"
+  },
+  "exampleCodes": {
+    "python": {
+      "sectionTitle": "Python 示例",
+      "installLine": "安装依赖：pip install requests",
+      "code": "import requests\nimport json\n\nurl = \"https://api.example.com/v1/chat/completions\"\nheaders = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n}\n\ndata = {\n    \"model\": \"model-name\",\n    \"messages\": [\n        {\n            \"role\": \"user\",\n            \"content\": \"请写一个 Python 函数计算斐波那契数列\"\n        }\n    ],\n    \"temperature\": 0.7,\n    \"max_tokens\": 4096\n}\n\nresponse = requests.post(url, headers=headers, json=data)\nresult = response.json()\nprint(result[\"choices\"][0][\"message\"][\"content\"])"
+    },
+    "javascript": {
+      "sectionTitle": "JavaScript 示例",
+      "installLine": "无需安装额外依赖（需 Node 18+ 或支持 fetch 的运行环境）",
+      "code": "(async () => {\n  const url = \"https://api.example.com/v1/chat/completions\";\n  const headers = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n  };\n  const data = {\n    model: \"model-name\",\n    messages: [\n      {\n        role: \"user\",\n        content: \"请写一个 Python 函数计算斐波那契数列\"\n      }\n    ],\n    temperature: 0.7,\n    max_tokens: 4096\n  };\n  const response = await fetch(url, {\n    method: \"POST\",\n    headers,\n    body: JSON.stringify(data)\n  });\n  const result = await response.json();\n  console.log(result.choices[0].message.content);\n})();"
+    },
+    "curl": {
+      "sectionTitle": "Curl 示例",
+      "installLine": "说明：macOS / Linux 一般已预装 curl",
+      "code": "curl -X POST \"https://api.example.com/v1/chat/completions\" \\\n  -H \"Authorization: Bearer YOUR_API_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"model\":\"model-name\",\"messages\":[{\"role\":\"user\",\"content\":\"请写一个 Python 函数计算斐波那契数列\"}],\"temperature\":0.7,\"max_tokens\":4096}'"
+    }
+  },
+  "agentIntegrations": [
+    {
+      "id": "codex",
+      "name": "Codex",
+      "description": "Configure MaaS as an OpenAI-compatible model provider.",
+      "zhDescription": "将 MaaS 配置为 Codex 的 OpenAI 兼容模型供应商。",
+      "fileLabel": "~/.codex/config.toml",
+      "language": "toml",
+      "code": "model = \"Qwen3.5-397B-A17B\"\nmodel_provider = \"maas\"\n\n[model_providers.maas]\nname = \"MaaS\"\nbase_url = \"https://maas-api.antdigital.com/v1\"\nenv_key = \"MAAS_API_KEY\"\nwire_api = \"responses\"",
+      "guideUrl": "/docs/agent-guides/codex"
+    },
+    {
+      "id": "opencode",
+      "name": "OpenCode",
+      "description": "Add MaaS as a custom provider in OpenCode.",
+      "zhDescription": "在 OpenCode 中添加 MaaS 自定义模型供应商。",
+      "fileLabel": "~/.config/opencode/opencode.json",
+      "language": "json",
+      "code": "{\n  \"$schema\": \"https://opencode.ai/config.json\",\n  \"provider\": {\n    \"maas\": {\n      \"npm\": \"@ai-sdk/openai-compatible\",\n      \"name\": \"MaaS\",\n      \"options\": {\n        \"baseURL\": \"https://maas-api.antdigital.com/v1\",\n        \"apiKey\": \"YOUR_MAAS_API_KEY\"\n      },\n      \"models\": {\n        \"Qwen3.5-397B-A17B\": {\n          \"name\": \"Qwen3.5-397B-A17B\"\n        }\n      }\n    }\n  },\n  \"model\": \"maas/Qwen3.5-397B-A17B\"\n}",
+      "guideUrl": "/docs/agent-guides/opencode"
+    }
+  ],
+  "sourceUrl": "https://maas.antdigital.com/models/modelService-Qwen3.5-397B-A17B",
+  "slug": "modelService-Qwen3.5-397B-A17B"
+}

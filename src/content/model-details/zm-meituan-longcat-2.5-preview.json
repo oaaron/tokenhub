@@ -1,0 +1,354 @@
+{
+  "slug": "zm-meituan-longcat-2.5-preview",
+  "uniqueId": "2641MOIjYVSC14613983",
+  "name": "meituan/longcat-2.5-preview",
+  "displayName": "Meituan: LongCat-2.5-Preview",
+  "provider": "Meituan",
+  "manufacturerKey": "meituan",
+  "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2026/06/30/GLt3mjL/Property-1Long-Cat.svg",
+  "zhDescription": "面向跨模态问答、摘要和视觉推理的预览模型，也强化代码生成与理解，并针对常见Agent开发环境优化。",
+  "zhLongDescription": "面向跨模态问答、摘要和视觉推理的预览模型，也强化代码生成与理解，并针对常见Agent开发环境优化。",
+  "description": "面向跨模态问答、摘要和视觉推理的预览模型，也强化代码生成与理解，并针对常见Agent开发环境优化。",
+  "longDescription": "面向跨模态问答、摘要和视觉推理的预览模型，也强化代码生成与理解，并针对常见Agent开发环境优化。",
+  "contextLength": 1048576,
+  "maxCompletionTokens": 131072,
+  "currency": "USD",
+  "tagList": [
+    {
+      "type": "INPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    }
+  ],
+  "publishedTime": "2026-09-25",
+  "minDiscountRate": "0.4",
+  "supportedParams": [
+    "max_completion_tokens",
+    "max_output_tokens",
+    "max_tokens",
+    "reasoning",
+    "stream",
+    "system",
+    "temperature",
+    "thinking",
+    "tool_choice",
+    "tools",
+    "top_p"
+  ],
+  "supportedProtocols": [
+    "chat.completions",
+    "messages",
+    "responses"
+  ],
+  "reasoning": 1,
+  "reasoningModes": [
+    1
+  ],
+  "providerNames": [
+    "LongCat"
+  ],
+  "providerDetails": [
+    {
+      "name": "LongCat",
+      "slug": "longcat",
+      "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2026/06/30/GLt3mjL/Property-1Long-Cat.svg",
+      "contextLength": 1048576,
+      "maxCompletionTokens": 131072,
+      "supportsStreaming": true,
+      "apiProtocols": {
+        "messages": {
+          "supported_parameters": [
+            "max_tokens",
+            "system",
+            "temperature",
+            "top_p",
+            "stream",
+            "tools",
+            "tool_choice",
+            "thinking"
+          ],
+          "supports_reasoning": 1
+        },
+        "chat.completions": {
+          "supported_parameters": [
+            "max_completion_tokens",
+            "temperature",
+            "top_p",
+            "stream",
+            "tools",
+            "tool_choice",
+            "reasoning"
+          ],
+          "supports_reasoning": 1
+        },
+        "responses": {
+          "supported_parameters": [
+            "max_output_tokens",
+            "temperature",
+            "top_p",
+            "stream",
+            "tools",
+            "tool_choice",
+            "reasoning"
+          ],
+          "supports_reasoning": 1
+        }
+      },
+      "pricingDiscount": "0.4",
+      "priceInfo": {
+        "prices": [
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "OUTPUT",
+                "priceNameZH": "模型生成输出内容的费用(completion)",
+                "priceValue": "2.9500000000",
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "completion",
+                "constraints": []
+              }
+            ]
+          },
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "INPUT_CACHE_READ",
+                "priceNameZH": "缓存读取操作费用(input_cache_read)",
+                "priceValue": "0.0150000000",
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "input_cache_read",
+                "constraints": []
+              }
+            ]
+          },
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "INPUT",
+                "priceNameZH": "输入提示词的处理费用(prompt)",
+                "priceValue": "0.7500000000",
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "prompt",
+                "constraints": []
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "modelProtocolCompatibility": {
+    "chat.completions": true,
+    "messages": true,
+    "responses": true
+  },
+  "supportedParametersDefaultValue": {
+    "max_completion_tokens": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "max_output_tokens": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "max_tokens": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "reasoning": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "stream": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "system": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "temperature": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "thinking": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "tool_choice": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "tools": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "top_p": {
+      "enable": true,
+      "defaultValue": null
+    }
+  },
+  "priceInfo": {
+    "prices": [
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "OUTPUT",
+            "priceNameZH": "模型生成输出内容的费用(completion)",
+            "priceValue": "2.9500000000",
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "completion",
+            "constraints": []
+          }
+        ]
+      },
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "INPUT_CACHE_READ",
+            "priceNameZH": "缓存读取操作费用(input_cache_read)",
+            "priceValue": "0.0150000000",
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "INPUT",
+            "sourceFeeCode": "input_cache_read",
+            "constraints": []
+          }
+        ]
+      },
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "INPUT",
+            "priceNameZH": "输入提示词的处理费用(prompt)",
+            "priceValue": "0.7500000000",
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "INPUT",
+            "sourceFeeCode": "prompt",
+            "constraints": []
+          }
+        ]
+      }
+    ]
+  },
+  "pricingDetails": [
+    {
+      "feeItemCode": "completion",
+      "feeItemName": "模型生成输出内容的费用(completion)",
+      "feeRecords": [
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            }
+          ],
+          "feeRate": "2.9500000000"
+        }
+      ],
+      "selectedConstraint": [
+        "chargeUnit"
+      ]
+    },
+    {
+      "feeItemCode": "input_cache_read",
+      "feeItemName": "缓存读取操作费用(input_cache_read)",
+      "feeRecords": [
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            }
+          ],
+          "feeRate": "0.0150000000"
+        }
+      ],
+      "selectedConstraint": [
+        "chargeUnit"
+      ]
+    },
+    {
+      "feeItemCode": "prompt",
+      "feeItemName": "输入提示词的处理费用(prompt)",
+      "feeRecords": [
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            }
+          ],
+          "feeRate": "0.7500000000"
+        }
+      ],
+      "selectedConstraint": [
+        "chargeUnit"
+      ]
+    }
+  ],
+  "sourcePublishedPrices": {
+    "pricing_completion": "2.95",
+    "pricing_discount": "0.4",
+    "pricing_prompt": "0.75"
+  },
+  "exampleCodes": [],
+  "serviceConfiguration": "服务配置待开通；接入地址、鉴权和可用协议以开通后的服务配置为准。",
+  "sourceRegion": "global",
+  "sourceCatalog": "ZenMux",
+  "sourceUrl": "https://zenmux.ai/meituan/longcat-2.5-preview",
+  "detailVerified": true,
+  "aliases": [
+    "LongCat-2.5-Preview"
+  ],
+  "isFree": false
+}

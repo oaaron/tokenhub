@@ -1,0 +1,257 @@
+{
+  "uniqueId": "modelService-1776180141701001395",
+  "name": "qwen-image-2.0",
+  "displayName": "Qwen-Image-2.0",
+  "provider": "Qwen",
+  "description": "阿里云通义千问图像2.0版本，能够从文本提示生成高质量图像。支持多种艺术风格和详细场景生成，适用于创意应用。",
+  "zhDescription": "阿里云通义千问图像2.0版本，能够从文本提示生成高质量图像。支持多种艺术风格和详细场景生成，适用于创意应用。",
+  "longDescription": "阿里云通义千问图像2.0版本，能够从文本提示生成高质量图像。支持多种艺术风格和详细场景生成，适用于创意应用。",
+  "zhLongDescription": "阿里云通义千问图像2.0版本，能够从文本提示生成高质量图像。支持多种艺术风格和详细场景生成，适用于创意应用。",
+  "contextLength": null,
+  "maxCompletionTokens": null,
+  "maxTokens": null,
+  "currency": null,
+  "inPrice": null,
+  "outPrice": null,
+  "inPriceZh": null,
+  "outPriceZh": null,
+  "inHitCachePrice": "¥0.00/M",
+  "inHitCreatePrice": "¥0.00/M",
+  "tagList": [
+    {
+      "type": "MODEL_TYPE",
+      "key": "IMAGE_GENERATE",
+      "value": "图像生成"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    }
+  ],
+  "type": "IMAGE_GENERATE",
+  "typeList": [
+    "IMAGE_GENERATE"
+  ],
+  "supportedParametersDefaultValue": {
+    "n": {
+      "enable": true,
+      "defaultValue": 1,
+      "forbidDisable": null
+    },
+    "limit": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "size": {
+      "enable": true,
+      "defaultValue": "2048*2048",
+      "forbidDisable": null
+    },
+    "prompt_extend": {
+      "enable": true,
+      "defaultValue": true,
+      "forbidDisable": null
+    },
+    "uploadImage": {
+      "enable": true,
+      "defaultValue": true,
+      "forbidDisable": null
+    }
+  },
+  "protocolParameters": [],
+  "modelProtocolCompatibility": {
+    "System One": false,
+    "google video": false,
+    "dashscope": false,
+    "google_gemini": false,
+    "anthropic_message": false,
+    "openai_responses": false,
+    "openai_chat_completions": false
+  },
+  "minDiscountRate": "1",
+  "priceInfo": {
+    "lowestProviderPrice": {
+      "inputPrice": null,
+      "outputPrice": {
+        "priceCode": "GENERATED_COUNT",
+        "priceName": "Generated Count",
+        "priceNameZH": "图片生成",
+        "priceValue": "0.200000",
+        "originalPrice": "0.200000",
+        "discountRate": "1.000000",
+        "unitCode": "PIECE",
+        "unitName": "PIECE",
+        "unitNameZh": "张",
+        "direction": "OUTPUT",
+        "fixedName": "Piece",
+        "fixedNameZh": "张"
+      }
+    },
+    "prices": [
+      {
+        "stage": null,
+        "stageText": null,
+        "type": null,
+        "priceCurrency": "CNY",
+        "price": [
+          {
+            "priceCode": "GENERATED_COUNT",
+            "priceName": "Generated Count",
+            "priceNameZH": "图片生成",
+            "priceValue": "0.200000",
+            "originalPrice": "0.200000",
+            "discountRate": "1.000000",
+            "unitCode": "PIECE",
+            "unitName": "PIECE",
+            "unitNameZh": "张",
+            "direction": "OUTPUT",
+            "fixedName": "Piece",
+            "fixedNameZh": "张"
+          }
+        ]
+      }
+    ]
+  },
+  "publishedTime": "2026-04-14 23:22:22",
+  "offShelfFlag": 0,
+  "offShelfDate": null,
+  "buyTypes": [
+    "BY_AMOUNT",
+    "BY_CREDIT"
+  ],
+  "providers": [
+    {
+      "providerUid": "channel-1779290799108001040",
+      "providerName": "antdigital",
+      "providerDisplayName": "蚂蚁数字科技",
+      "providerLogo": "https://maas-public.oss-cn-shanghai.aliyuncs.com/maas-admin/image/2026-09-10/image-4cf4a41f-3ae4-42.png"
+    }
+  ],
+  "extInfo": "{\"exampleCodes\":{\"openAI\":[{\"code\":\"import os\\n\\nimport httpx\\nfrom openai import OpenAI\\n\\nAPI_KEY = os.environ.get(\\n    \\\"ANT_MAAS_API_KEY\\\",\\n    \\\"<API_KEY>\\\",\\n)\\nBASE_URL = \\\"https://maas-api.antdigital.com\\\"\\n\\nbody = {\\n    \\\"model\\\": \\\"qwen-image-2.0\\\",\\n    \\\"prompt\\\": \\\"帮我生成一个小女孩抱着小狗的图片\\\",\\n    \\\"size\\\": \\\"1024x1024\\\",\\n    \\\"response_format\\\": \\\"url\\\"\\n}\\n\\nclient = OpenAI(api_key=API_KEY, base_url=BASE_URL)\\n\\nresponse = client.post(\\n    \\\"/v1/images/generations\\\",\\n    body=body,\\n    cast_to=httpx.Response,\\n)\\nprint(response.text)\",\"sectionTitle\":\"Basic Chat Completion\",\"name\":\"python\"},{\"code\":\"curl https://maas-api.antdigital.com/v1/images/generations \\\\\\n  -H \\\"Content-Type: application/json\\\" \\\\\\n  -H \\\"Authorization: Bearer $API_KEY\\\" \\\\\\n  -d '{\\n    \\\"model\\\": \\\"qwen-image-2.0\\\",\\n    \\\"prompt\\\": \\\"帮我生成一个小女孩抱着小狗的图片\\\",\\n    \\\"size\\\": \\\"1024x1024\\\",\\n    \\\"response_format\\\": \\\"url\\\"\\n  }'\",\"sectionTitle\":\"Basic Chat Completion\",\"name\":\"curl\"}]},\"supportedParametersDefaultValue\":\"\"}",
+  "specs": {
+    "inputPrice": "¥0.0000",
+    "inputPriceHint": "每 1K tokens",
+    "outputPrice": "¥0.0000",
+    "outputPriceHint": "每 1K tokens",
+    "contextLength": null,
+    "contextLengthHint": "tokens",
+    "maxOutput": "0",
+    "maxOutputHint": "tokens"
+  },
+  "capabilities": [],
+  "languages": [
+    "文本",
+    "图像"
+  ],
+  "scenarios": [
+    "图像"
+  ],
+  "modelParameters": [
+    {
+      "type": "number",
+      "id": "n",
+      "label": "n",
+      "value": 1,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": null,
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "id": "size",
+      "label": "size",
+      "value": "2048*2048",
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": null,
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "id": "prompt_extend",
+      "label": "prompt_extend",
+      "value": true,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": null,
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "id": "uploadImage",
+      "label": "uploadImage",
+      "value": true,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": null,
+      "thousands": null
+    }
+  ],
+  "usageGuide": {
+    "authIntro": "使用 API Key 进行认证，在请求头中添加：",
+    "authBearerPlaceholder": "YOUR_API_KEY",
+    "requestIntro": "支持标准的 OpenAI 参数格式：",
+    "requestExample": "{\n  \"max_tokens\": 4096,\n  \"temperature\": 0.5,\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"你好，请介绍一下自己\"\n    }\n  ],\n  \"model\": \"qwen-image-2.0\"\n}",
+    "responseExample": "{\n  \"created\": 1795353266,\n  \"usage\": {\n    \"completion_tokens\": 12,\n    \"prompt_tokens\": 9,\n    \"total_tokens\": 21\n  },\n  \"model\": \"qwen-image-2.0\",\n  \"id\": \"chatcmpl-123\",\n  \"choices\": [\n    {\n      \"finish_reason\": \"stop\",\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"你好！我是 qwen-image-2.0...\"\n      }\n    }\n  ],\n  \"object\": \"chat.completion\"\n}",
+    "docUrl": "https://api-docs.example.com/",
+    "docLabel": "查看完整 API 文档"
+  },
+  "exampleCodes": {
+    "python": {
+      "sectionTitle": "Python 示例",
+      "installLine": "安装依赖：pip install requests",
+      "code": "import requests\nimport json\n\nurl = \"https://api.example.com/v1/chat/completions\"\nheaders = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n}\n\ndata = {\n    \"model\": \"model-name\",\n    \"messages\": [\n        {\n            \"role\": \"user\",\n            \"content\": \"请写一个 Python 函数计算斐波那契数列\"\n        }\n    ],\n    \"temperature\": 0.7,\n    \"max_tokens\": 4096\n}\n\nresponse = requests.post(url, headers=headers, json=data)\nresult = response.json()\nprint(result[\"choices\"][0][\"message\"][\"content\"])"
+    },
+    "javascript": {
+      "sectionTitle": "JavaScript 示例",
+      "installLine": "无需安装额外依赖（需 Node 18+ 或支持 fetch 的运行环境）",
+      "code": "(async () => {\n  const url = \"https://api.example.com/v1/chat/completions\";\n  const headers = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n  };\n  const data = {\n    model: \"model-name\",\n    messages: [\n      {\n        role: \"user\",\n        content: \"请写一个 Python 函数计算斐波那契数列\"\n      }\n    ],\n    temperature: 0.7,\n    max_tokens: 4096\n  };\n  const response = await fetch(url, {\n    method: \"POST\",\n    headers,\n    body: JSON.stringify(data)\n  });\n  const result = await response.json();\n  console.log(result.choices[0].message.content);\n})();"
+    },
+    "curl": {
+      "sectionTitle": "Curl 示例",
+      "installLine": "说明：macOS / Linux 一般已预装 curl",
+      "code": "curl -X POST \"https://api.example.com/v1/chat/completions\" \\\n  -H \"Authorization: Bearer YOUR_API_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"model\":\"model-name\",\"messages\":[{\"role\":\"user\",\"content\":\"请写一个 Python 函数计算斐波那契数列\"}],\"temperature\":0.7,\"max_tokens\":4096}'"
+    }
+  },
+  "agentIntegrations": [
+    {
+      "id": "codex",
+      "name": "Codex",
+      "description": "Configure MaaS as an OpenAI-compatible model provider.",
+      "zhDescription": "将 MaaS 配置为 Codex 的 OpenAI 兼容模型供应商。",
+      "fileLabel": "~/.codex/config.toml",
+      "language": "toml",
+      "code": "model = \"qwen-image-2.0\"\nmodel_provider = \"maas\"\n\n[model_providers.maas]\nname = \"MaaS\"\nbase_url = \"https://maas-api.antdigital.com/v1\"\nenv_key = \"MAAS_API_KEY\"\nwire_api = \"responses\"",
+      "guideUrl": "/docs/agent-guides/codex"
+    },
+    {
+      "id": "opencode",
+      "name": "OpenCode",
+      "description": "Add MaaS as a custom provider in OpenCode.",
+      "zhDescription": "在 OpenCode 中添加 MaaS 自定义模型供应商。",
+      "fileLabel": "~/.config/opencode/opencode.json",
+      "language": "json",
+      "code": "{\n  \"$schema\": \"https://opencode.ai/config.json\",\n  \"provider\": {\n    \"maas\": {\n      \"npm\": \"@ai-sdk/openai-compatible\",\n      \"name\": \"MaaS\",\n      \"options\": {\n        \"baseURL\": \"https://maas-api.antdigital.com/v1\",\n        \"apiKey\": \"YOUR_MAAS_API_KEY\"\n      },\n      \"models\": {\n        \"qwen-image-2.0\": {\n          \"name\": \"qwen-image-2.0\"\n        }\n      }\n    }\n  },\n  \"model\": \"maas/qwen-image-2.0\"\n}",
+      "guideUrl": "/docs/agent-guides/opencode"
+    }
+  ],
+  "sourceUrl": "https://maas.antdigital.com/models/modelService-1776180141701001395",
+  "slug": "modelService-1776180141701001395"
+}

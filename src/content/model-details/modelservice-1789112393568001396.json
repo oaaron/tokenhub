@@ -1,0 +1,397 @@
+{
+  "uniqueId": "modelservice-1789112393568001396",
+  "name": "qwen-long",
+  "displayName": "Qwen-Long",
+  "provider": "Qwen",
+  "description": "Qwen-Long is a large language model developed by Qwen for ultra-long-context processing. It supports Chinese, English, and other languages, with a context window of up to 10 million tokens—equivalent to approximately 15 million Chinese characters or 15,000 pages. Together with its document service, it can parse and interact with text files (TXT, DOCX, PDF, XLSX, EPUB, MOBI, MD, and CSV) and image files (BMP, PNG, JPG/JPEG, GIF, and scanned PDFs). Direct HTTP requests support up to 1 million tokens; file-based submission is recommended for longer inputs.",
+  "zhDescription": "Qwen-Long是在通义千问针对超长上下文处理场景的大语言模型，支持中文、英文等不同语言输入，支持最长1000万tokens(约1500万字或1.5万页文档)的超长上下文对话。配合同步上线的文档服务，可支持文本文件（ TXT、DOCX、PDF、XLSX、EPUB、MOBI、MD、CSV）和图片文件（BMP、PNG、JPG/JPEG、GIF 以及PDF扫描件）的解析和对话。说明：通过HTTP直接提交请求，支持1M tokens长度，超过此长度建议通过文件方式提交。",
+  "longDescription": "Qwen-Long is a large language model developed by Qwen for ultra-long-context processing. It supports Chinese, English, and other languages, with a context window of up to 10 million tokens—equivalent to approximately 15 million Chinese characters or 15,000 pages. Together with its document service, it can parse and interact with text files (TXT, DOCX, PDF, XLSX, EPUB, MOBI, MD, and CSV) and image files (BMP, PNG, JPG/JPEG, GIF, and scanned PDFs). Direct HTTP requests support up to 1 million tokens; file-based submission is recommended for longer inputs.",
+  "zhLongDescription": "Qwen-Long是在通义千问针对超长上下文处理场景的大语言模型，支持中文、英文等不同语言输入，支持最长1000万tokens(约1500万字或1.5万页文档)的超长上下文对话。配合同步上线的文档服务，可支持文本文件（ TXT、DOCX、PDF、XLSX、EPUB、MOBI、MD、CSV）和图片文件（BMP、PNG、JPG/JPEG、GIF 以及PDF扫描件）的解析和对话。说明：通过HTTP直接提交请求，支持1M tokens长度，超过此长度建议通过文件方式提交。",
+  "contextLength": "10000000",
+  "maxCompletionTokens": 8000,
+  "maxTokens": 8000,
+  "currency": null,
+  "inPrice": null,
+  "outPrice": null,
+  "inPriceZh": null,
+  "outPriceZh": null,
+  "inHitCachePrice": "¥0.00/M",
+  "inHitCreatePrice": "¥0.00/M",
+  "tagList": [
+    {
+      "type": "MODEL_TYPE",
+      "key": "TEXT_GENERATE",
+      "value": "文本生成"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    }
+  ],
+  "type": "TEXT_GENERATE",
+  "typeList": [
+    "TEXT_GENERATE"
+  ],
+  "supportedParametersDefaultValue": {
+    "temperature": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "top_p": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "top_k": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "max_tokens": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "enable_search": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "enable_thinking": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "thinking_budget": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    }
+  },
+  "protocolParameters": [
+    {
+      "protocolName": "dashscope",
+      "displayName": "Dashscope",
+      "parameters": {
+        "result_format": false,
+        "top_p": false,
+        "top_logprobs": false,
+        "top_k": false,
+        "tools": false,
+        "tool_stream": false,
+        "tool_choice": false,
+        "thinking_budget": false,
+        "temperature": false,
+        "stream": true,
+        "seed": true,
+        "search_options": false,
+        "enable_code_interpreter": false,
+        "response_format": false,
+        "repetition_penalty": false,
+        "reasoning_effort": false,
+        "preserve_thinking": false,
+        "presence_penalty": true,
+        "parallel_tool_calls": false,
+        "n": false,
+        "logprobs": false,
+        "incremental_output": true,
+        "enable_thinking": false,
+        "enable_search": false
+      }
+    },
+    {
+      "protocolName": "openai_chat_completions",
+      "displayName": "OpenAI Chat Completions",
+      "parameters": {
+        "seed": false,
+        "web_search_options": false,
+        "user": false,
+        "top_p": true,
+        "top_logprobs": false,
+        "tools": false,
+        "tool_choice": false,
+        "temperature": true,
+        "stream_options": true,
+        "stream": true,
+        "store": false,
+        "service_tier": false,
+        "audio": false,
+        "response_format": false,
+        "reasoning_effort": false,
+        "presence_penalty": true,
+        "prediction": false,
+        "parallel_tool_calls": false,
+        "n": false,
+        "modalities": false,
+        "metadata": false,
+        "logprobs": false,
+        "logit_bias": false,
+        "frequency_penalty": true
+      }
+    }
+  ],
+  "modelProtocolCompatibility": {
+    "google video": false,
+    "dashscope": true,
+    "google_gemini": false,
+    "anthropic_message": false,
+    "openai_responses": false,
+    "openai_chat_completions": true
+  },
+  "minDiscountRate": "1",
+  "priceInfo": {
+    "lowestProviderPrice": {
+      "inputPrice": {
+        "priceCode": "INPUT",
+        "priceName": "Input",
+        "priceNameZH": "输入",
+        "priceValue": "0.500000",
+        "originalPrice": "0.500000",
+        "discountRate": "1.000000",
+        "unitCode": "M_TOKENS",
+        "unitName": "M",
+        "unitNameZh": "M",
+        "direction": "INPUT",
+        "fixedName": "M Tokens",
+        "fixedNameZh": "百万Tokens"
+      },
+      "outputPrice": {
+        "priceCode": "OUTPUT",
+        "priceName": "Output",
+        "priceNameZH": "输出",
+        "priceValue": "2.000000",
+        "originalPrice": "2.000000",
+        "discountRate": "1.000000",
+        "unitCode": "M_TOKENS",
+        "unitName": "M",
+        "unitNameZh": "M",
+        "direction": "OUTPUT",
+        "fixedName": "M Tokens",
+        "fixedNameZh": "百万Tokens"
+      }
+    },
+    "prices": [
+      {
+        "stage": "",
+        "stageText": "",
+        "type": null,
+        "priceCurrency": "CNY",
+        "price": [
+          {
+            "priceCode": "INPUT",
+            "priceName": "Input",
+            "priceNameZH": "输入",
+            "priceValue": "0.500000",
+            "originalPrice": "0.500000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "OUTPUT",
+            "priceName": "Output",
+            "priceNameZH": "输出",
+            "priceValue": "2.000000",
+            "originalPrice": "2.000000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "OUTPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "INPUT_BATCH_FILE",
+            "priceName": "Input (Batch File)",
+            "priceNameZH": "输入（Batch File）",
+            "priceValue": "0.250000",
+            "originalPrice": "0.250000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "OUTPUT_BATCH_FILE",
+            "priceName": "Output (Batch File)",
+            "priceNameZH": "输出（Batch File）",
+            "priceValue": "1.000000",
+            "originalPrice": "1.000000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "OUTPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          }
+        ]
+      }
+    ]
+  },
+  "publishedTime": "2026-09-11 15:39:54",
+  "offShelfFlag": 0,
+  "offShelfDate": null,
+  "buyTypes": [
+    "BY_AMOUNT"
+  ],
+  "providers": [
+    {
+      "providerUid": "channel-1779290799108001040",
+      "providerName": "antdigital",
+      "providerDisplayName": "蚂蚁数字科技",
+      "providerLogo": "https://maas-public.oss-cn-shanghai.aliyuncs.com/maas-admin/image/2026-09-10/image-4cf4a41f-3ae4-42.png"
+    }
+  ],
+  "extInfo": "{\"contextLength\":\"10000000\",\"exampleCodes\":{\"openAI\":[{\"code\":\"from openai import OpenAI\\n\\nclient = OpenAI(\\n    # 若没有配置环境变量，请用API Key将下行替换为：api_key=\\\"sk-xxx\\\",\\n    api_key=os.getenv(\\\"API_KEY\\\"),\\n    base_url=\\\"https://maas-api.antdigital.com/v1\\\",\\n)\\ncompletion = client.chat.completions.create(\\n    model=\\\"qwen-long\\\",\\n    messages=[\\n        {\\\"role\\\": \\\"system\\\", \\\"content\\\": \\\"You are a helpful assistant.\\\"},\\n        {\\\"role\\\": \\\"user\\\", \\\"content\\\": \\\"你是谁？\\\"},\\n    ],\\n    stream=True\\n)\\nfor chunk in completion:\\n    print(chunk.choices[0].delta.content, end=\\\"\\\", flush=True)\",\"sectionTitle\":\"\",\"name\":\"python\"},{\"code\":\"curl https://maas-api.antdigital.com/v1/chat/completions \\\\\\n-H \\\"Content-Type: application/json\\\" \\\\\\n-H \\\"Authorization: Bearer $API_KEY\\\" \\\\\\n-d '{\\n  \\\"model\\\": \\\"qwen-long\\\",\\n  \\\"messages\\\": [ \\n    { \\n      \\\"role\\\": \\\"user\\\",\\n      \\\"content\\\": \\\"What is the meaning of life?\\\"\\n    }\\n  ]\\n}'\",\"sectionTitle\":\"\",\"name\":\"curl\"}],\"dashscope\":[{\"code\":\"from dashscope import Generation\\nimport dashscope\\n\\ndashscope.base_http_api_url = 'https://maas-api.antdigital.com/api/v1'\\n\\nmessages = [\\n    {\\\"role\\\": \\\"system\\\", \\\"content\\\": \\\"You are a helpful assistant.\\\"},\\n    {\\\"role\\\": \\\"user\\\", \\\"content\\\": \\\"你是谁？\\\"},\\n]\\nresponse = Generation.call(\\n    # 若没有配置环境变量，请用API Key将下行替换为：api_key = \\\"sk-xxx\\\",\\n    api_key=os.getenv(\\\"API_KEY\\\"),\\n    model=\\\"qwen-long\\\",\\n    messages=messages,\\n    result_format=\\\"message\\\",\\n)\\n\\nprint(response.output.choices[0].message.content)\",\"sectionTitle\":\"\",\"name\":\"python\"},{\"code\":\"curl -X POST 'https://maas-api.antdigital.com/api/v1/services/aigc/text-generation/generation' \\\\\\r\\n  -H 'Content-Type: application/json' \\\\\\r\\n  -H 'Authorization: $API_KEY' \\\\\\r\\n  -d '{\\r\\n    \\\"model\\\": \\\"qwen-long\\\",\\r\\n    \\\"input\\\":{\\r\\n        \\\"messages\\\":[      \\r\\n            {\\r\\n                \\\"role\\\": \\\"system\\\",\\r\\n                \\\"content\\\": \\\"You are a helpful assistant.\\\"\\r\\n            },\\r\\n            {\\r\\n                \\\"role\\\": \\\"user\\\",\\r\\n                \\\"content\\\": \\\"你是谁？\\\"\\r\\n            }\\r\\n        ]\\r\\n    }\\r\\n}'\",\"sectionTitle\":\"\",\"name\":\"curl\"}]}}",
+  "specs": {
+    "inputPrice": "¥0.0000",
+    "inputPriceHint": "每 1K tokens",
+    "outputPrice": "¥0.0000",
+    "outputPriceHint": "每 1K tokens",
+    "contextLength": "10000000",
+    "contextLengthHint": "tokens",
+    "maxOutput": "0",
+    "maxOutputHint": "tokens"
+  },
+  "capabilities": [],
+  "languages": [
+    "文本"
+  ],
+  "scenarios": [
+    "文本"
+  ],
+  "modelParameters": [
+    {
+      "type": "switch",
+      "id": "stream",
+      "label": "stream",
+      "value": false,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "是否流式输出回复",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "id": "seed",
+      "label": "seed",
+      "value": 1234,
+      "min": 0,
+      "max": 2147483647,
+      "step": 1,
+      "description": "随机数种子。用于确保在相同输入和参数下生成结果可复现",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "id": "presence_penalty",
+      "label": "presence_penalty",
+      "value": 1,
+      "min": -2,
+      "max": 2,
+      "step": 0.1,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "switch",
+      "id": "incremental_output",
+      "label": "incremental_output",
+      "value": true,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "在流式输出模式下是否开启增量输出",
+      "thousands": null
+    },
+    {
+      "type": "switch",
+      "id": "stream_options",
+      "label": "stream_options",
+      "value": true,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "id": "frequency_penalty",
+      "label": "frequency_penalty",
+      "value": null,
+      "min": -2,
+      "max": 2,
+      "step": null,
+      "description": "",
+      "thousands": null
+    }
+  ],
+  "usageGuide": {
+    "authIntro": "使用 API Key 进行认证，在请求头中添加：",
+    "authBearerPlaceholder": "YOUR_API_KEY",
+    "requestIntro": "支持标准的 OpenAI 参数格式：",
+    "requestExample": "{\n  \"max_tokens\": 4096,\n  \"temperature\": 0.5,\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"你好，请介绍一下自己\"\n    }\n  ],\n  \"model\": \"qwen-long\"\n}",
+    "responseExample": "{\n  \"created\": 1795353268,\n  \"usage\": {\n    \"completion_tokens\": 12,\n    \"prompt_tokens\": 9,\n    \"total_tokens\": 21\n  },\n  \"model\": \"qwen-long\",\n  \"id\": \"chatcmpl-123\",\n  \"choices\": [\n    {\n      \"finish_reason\": \"stop\",\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"你好！我是 qwen-long...\"\n      }\n    }\n  ],\n  \"object\": \"chat.completion\"\n}",
+    "docUrl": "https://api-docs.example.com/",
+    "docLabel": "查看完整 API 文档"
+  },
+  "exampleCodes": {
+    "python": {
+      "sectionTitle": "Python 示例",
+      "installLine": "安装依赖：pip install requests",
+      "code": "import requests\nimport json\n\nurl = \"https://api.example.com/v1/chat/completions\"\nheaders = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n}\n\ndata = {\n    \"model\": \"model-name\",\n    \"messages\": [\n        {\n            \"role\": \"user\",\n            \"content\": \"请写一个 Python 函数计算斐波那契数列\"\n        }\n    ],\n    \"temperature\": 0.7,\n    \"max_tokens\": 4096\n}\n\nresponse = requests.post(url, headers=headers, json=data)\nresult = response.json()\nprint(result[\"choices\"][0][\"message\"][\"content\"])"
+    },
+    "javascript": {
+      "sectionTitle": "JavaScript 示例",
+      "installLine": "无需安装额外依赖（需 Node 18+ 或支持 fetch 的运行环境）",
+      "code": "(async () => {\n  const url = \"https://api.example.com/v1/chat/completions\";\n  const headers = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n  };\n  const data = {\n    model: \"model-name\",\n    messages: [\n      {\n        role: \"user\",\n        content: \"请写一个 Python 函数计算斐波那契数列\"\n      }\n    ],\n    temperature: 0.7,\n    max_tokens: 4096\n  };\n  const response = await fetch(url, {\n    method: \"POST\",\n    headers,\n    body: JSON.stringify(data)\n  });\n  const result = await response.json();\n  console.log(result.choices[0].message.content);\n})();"
+    },
+    "curl": {
+      "sectionTitle": "Curl 示例",
+      "installLine": "说明：macOS / Linux 一般已预装 curl",
+      "code": "curl -X POST \"https://api.example.com/v1/chat/completions\" \\\n  -H \"Authorization: Bearer YOUR_API_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"model\":\"model-name\",\"messages\":[{\"role\":\"user\",\"content\":\"请写一个 Python 函数计算斐波那契数列\"}],\"temperature\":0.7,\"max_tokens\":4096}'"
+    }
+  },
+  "agentIntegrations": [
+    {
+      "id": "codex",
+      "name": "Codex",
+      "description": "Configure MaaS as an OpenAI-compatible model provider.",
+      "zhDescription": "将 MaaS 配置为 Codex 的 OpenAI 兼容模型供应商。",
+      "fileLabel": "~/.codex/config.toml",
+      "language": "toml",
+      "code": "model = \"qwen-long\"\nmodel_provider = \"maas\"\n\n[model_providers.maas]\nname = \"MaaS\"\nbase_url = \"https://maas-api.antdigital.com/v1\"\nenv_key = \"MAAS_API_KEY\"\nwire_api = \"responses\"",
+      "guideUrl": "/docs/agent-guides/codex"
+    },
+    {
+      "id": "opencode",
+      "name": "OpenCode",
+      "description": "Add MaaS as a custom provider in OpenCode.",
+      "zhDescription": "在 OpenCode 中添加 MaaS 自定义模型供应商。",
+      "fileLabel": "~/.config/opencode/opencode.json",
+      "language": "json",
+      "code": "{\n  \"$schema\": \"https://opencode.ai/config.json\",\n  \"provider\": {\n    \"maas\": {\n      \"npm\": \"@ai-sdk/openai-compatible\",\n      \"name\": \"MaaS\",\n      \"options\": {\n        \"baseURL\": \"https://maas-api.antdigital.com/v1\",\n        \"apiKey\": \"YOUR_MAAS_API_KEY\"\n      },\n      \"models\": {\n        \"qwen-long\": {\n          \"name\": \"qwen-long\"\n        }\n      }\n    }\n  },\n  \"model\": \"maas/qwen-long\"\n}",
+      "guideUrl": "/docs/agent-guides/opencode"
+    }
+  ],
+  "sourceUrl": "https://maas.antdigital.com/models/modelservice-1789112393568001396",
+  "slug": "modelservice-1789112393568001396"
+}

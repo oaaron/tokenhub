@@ -1,0 +1,256 @@
+{
+  "uniqueId": "modelservice-1788923727244001352",
+  "name": "ming-image-0.1-design-layer",
+  "displayName": "Ming-Image-0.1-Design-Layer",
+  "provider": "InclusionAI",
+  "description": "Ming-Image-0.1-Design-Layer is a 6.15B-parameter layer decomposition model from inclusionAI. It can split a flattened design image into a specified number of standalone RGBA PNG layers based on a layer plan. The layers can be recombined to reconstruct the original design, making the model well suited for graphic asset decomposition, transparent-layer extraction, and downstream editing and reuse.",
+  "zhDescription": "Ming-Image-0.1-Design-Layer 可将扁平化的平面设计转化为 2 至 9 个独立可编辑的 RGBA 图层，适用于海报、演示文稿、UI/UX 布局、信息图表及其他设计素材。它通过语义指令分离文本、卡片、主体与背景，重建被遮挡的区域，并保持清晰的 Alpha 边界和重组后的视觉保真度。生成的图层可在 PSD、PPT 和 Figma 等工作流中独立移动、重新着色、替换并重复使用。",
+  "longDescription": "Ming-Image-0.1-Design-Layer is a 6.15B-parameter layer decomposition model from inclusionAI. It can split a flattened design image into a specified number of standalone RGBA PNG layers based on a layer plan. The layers can be recombined to reconstruct the original design, making the model well suited for graphic asset decomposition, transparent-layer extraction, and downstream editing and reuse.",
+  "zhLongDescription": "Ming-Image-0.1-Design-Layer 可将扁平化的平面设计转化为 2 至 9 个独立可编辑的 RGBA 图层，适用于海报、演示文稿、UI/UX 布局、信息图表及其他设计素材。它通过语义指令分离文本、卡片、主体与背景，重建被遮挡的区域，并保持清晰的 Alpha 边界和重组后的视觉保真度。生成的图层可在 PSD、PPT 和 Figma 等工作流中独立移动、重新着色、替换并重复使用。",
+  "contextLength": null,
+  "maxCompletionTokens": null,
+  "maxTokens": null,
+  "currency": null,
+  "inPrice": null,
+  "outPrice": null,
+  "inPriceZh": null,
+  "outPriceZh": null,
+  "inHitCachePrice": "¥0.00/M",
+  "inHitCreatePrice": "¥0.00/M",
+  "tagList": [
+    {
+      "type": "MODEL_TYPE",
+      "key": "IMAGE_GENERATE",
+      "value": "图像生成"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    }
+  ],
+  "type": "IMAGE_GENERATE",
+  "typeList": [
+    "IMAGE_GENERATE"
+  ],
+  "supportedParametersDefaultValue": {
+    "n": {
+      "enable": true,
+      "defaultValue": 1,
+      "forbidDisable": null
+    },
+    "limit": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "size": {
+      "enable": true,
+      "defaultValue": "1280*1280",
+      "forbidDisable": null
+    },
+    "prompt_extend": {
+      "enable": true,
+      "defaultValue": true,
+      "forbidDisable": null
+    },
+    "uploadImage": {
+      "enable": true,
+      "defaultValue": true,
+      "forbidDisable": null
+    }
+  },
+  "protocolParameters": [],
+  "modelProtocolCompatibility": {
+    "System One": false,
+    "google video": false,
+    "dashscope": false,
+    "google_gemini": false,
+    "anthropic_message": false,
+    "openai_responses": false,
+    "openai_chat_completions": false
+  },
+  "minDiscountRate": "0.400000",
+  "priceInfo": {
+    "lowestProviderPrice": {
+      "inputPrice": null,
+      "outputPrice": {
+        "priceCode": "OUTPUT_IMAGE_TOKENS",
+        "priceName": "Image Output",
+        "priceNameZH": "图片输出",
+        "priceValue": "5.000000",
+        "originalPrice": "12.500000",
+        "discountRate": "0.400000",
+        "unitCode": "M_TOKENS",
+        "unitName": "M",
+        "unitNameZh": "M",
+        "direction": "OUTPUT",
+        "fixedName": "M Tokens",
+        "fixedNameZh": "百万Tokens"
+      }
+    },
+    "prices": [
+      {
+        "stage": null,
+        "stageText": null,
+        "type": null,
+        "priceCurrency": "CNY",
+        "price": [
+          {
+            "priceCode": "OUTPUT_IMAGE_TOKENS",
+            "priceName": "Image Output",
+            "priceNameZH": "图片输出",
+            "priceValue": "5.000000",
+            "originalPrice": "12.500000",
+            "discountRate": "0.400000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "OUTPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          }
+        ]
+      }
+    ]
+  },
+  "publishedTime": "2026-09-09 11:17:15",
+  "offShelfFlag": 0,
+  "offShelfDate": null,
+  "buyTypes": [
+    "BY_AMOUNT"
+  ],
+  "providers": [
+    {
+      "providerUid": "channel-1779290799108001040",
+      "providerName": "antdigital",
+      "providerDisplayName": "蚂蚁数字科技",
+      "providerLogo": "https://maas-public.oss-cn-shanghai.aliyuncs.com/maas-admin/image/2026-09-10/image-4cf4a41f-3ae4-42.png"
+    }
+  ],
+  "extInfo": "{\"exampleCodes\":{\"openAI\":[{\"code\":\"# pip install openai\\nfrom openai import OpenAI\\n\\nclient = OpenAI(\\n    base_url=\\\"https://maas-api.antdigital.com/v1\\\",\\n    api_key=\\\"$API_KEY\\\",\\n)\\n\\nresponse = client.images.edit(\\n    model=\\\"ming-image-0.1-design-layer\\\",\\n    prompt=\\\"分三层\\\",\\n    image=open(\\\"/Users/edy/Desktop/test-image.png\\\", \\\"rb\\\"),\\n    size=\\\"1024x1024\\\"\\n)\\n\\nprint(response.data[0].b64_json)\\n\",\"sectionTitle\":\"\",\"name\":\"python\"},{\"code\":\"curl --location --request POST 'https://maas-api.antdigital.com/v1/images/edits' \\\\\\n--header 'Authorization: Bearer $API_KEY' \\\\\\n--form 'model=\\\"ming-image-0.1-design-layer\\\"' \\\\\\n--form 'prompt=\\\"分三层\\\"' \\\\\\n--form 'image[]=@\\\"/Users/edy/Desktop/test-image.png\\\"' \\\\\\n--form 'size=\\\"1024x1024\\\"'\",\"sectionTitle\":\"\",\"name\":\"curl\"}]},\"supportedParametersDefaultValue\":\"\"}",
+  "specs": {
+    "inputPrice": "¥0.0000",
+    "inputPriceHint": "每 1K tokens",
+    "outputPrice": "¥0.0000",
+    "outputPriceHint": "每 1K tokens",
+    "contextLength": null,
+    "contextLengthHint": "tokens",
+    "maxOutput": "0",
+    "maxOutputHint": "tokens"
+  },
+  "capabilities": [],
+  "languages": [
+    "文本",
+    "图像"
+  ],
+  "scenarios": [
+    "图像"
+  ],
+  "modelParameters": [
+    {
+      "type": "number",
+      "id": "n",
+      "label": "n",
+      "value": 1,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": null,
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "id": "size",
+      "label": "size",
+      "value": "1280*1280",
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": null,
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "id": "prompt_extend",
+      "label": "prompt_extend",
+      "value": true,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": null,
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "id": "uploadImage",
+      "label": "uploadImage",
+      "value": true,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": null,
+      "thousands": null
+    }
+  ],
+  "usageGuide": {
+    "authIntro": "使用 API Key 进行认证，在请求头中添加：",
+    "authBearerPlaceholder": "YOUR_API_KEY",
+    "requestIntro": "支持标准的 OpenAI 参数格式：",
+    "requestExample": "{\n  \"max_tokens\": 4096,\n  \"temperature\": 0.5,\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"你好，请介绍一下自己\"\n    }\n  ],\n  \"model\": \"ming-image-0.1-design-layer\"\n}",
+    "responseExample": "{\n  \"created\": 1795353265,\n  \"usage\": {\n    \"completion_tokens\": 12,\n    \"prompt_tokens\": 9,\n    \"total_tokens\": 21\n  },\n  \"model\": \"ming-image-0.1-design-layer\",\n  \"id\": \"chatcmpl-123\",\n  \"choices\": [\n    {\n      \"finish_reason\": \"stop\",\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"你好！我是 ming-image-0.1-design-layer...\"\n      }\n    }\n  ],\n  \"object\": \"chat.completion\"\n}",
+    "docUrl": "https://api-docs.example.com/",
+    "docLabel": "查看完整 API 文档"
+  },
+  "exampleCodes": {
+    "python": {
+      "sectionTitle": "Python 示例",
+      "installLine": "安装依赖：pip install requests",
+      "code": "import requests\nimport json\n\nurl = \"https://api.example.com/v1/chat/completions\"\nheaders = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n}\n\ndata = {\n    \"model\": \"model-name\",\n    \"messages\": [\n        {\n            \"role\": \"user\",\n            \"content\": \"请写一个 Python 函数计算斐波那契数列\"\n        }\n    ],\n    \"temperature\": 0.7,\n    \"max_tokens\": 4096\n}\n\nresponse = requests.post(url, headers=headers, json=data)\nresult = response.json()\nprint(result[\"choices\"][0][\"message\"][\"content\"])"
+    },
+    "javascript": {
+      "sectionTitle": "JavaScript 示例",
+      "installLine": "无需安装额外依赖（需 Node 18+ 或支持 fetch 的运行环境）",
+      "code": "(async () => {\n  const url = \"https://api.example.com/v1/chat/completions\";\n  const headers = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n  };\n  const data = {\n    model: \"model-name\",\n    messages: [\n      {\n        role: \"user\",\n        content: \"请写一个 Python 函数计算斐波那契数列\"\n      }\n    ],\n    temperature: 0.7,\n    max_tokens: 4096\n  };\n  const response = await fetch(url, {\n    method: \"POST\",\n    headers,\n    body: JSON.stringify(data)\n  });\n  const result = await response.json();\n  console.log(result.choices[0].message.content);\n})();"
+    },
+    "curl": {
+      "sectionTitle": "Curl 示例",
+      "installLine": "说明：macOS / Linux 一般已预装 curl",
+      "code": "curl -X POST \"https://api.example.com/v1/chat/completions\" \\\n  -H \"Authorization: Bearer YOUR_API_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"model\":\"model-name\",\"messages\":[{\"role\":\"user\",\"content\":\"请写一个 Python 函数计算斐波那契数列\"}],\"temperature\":0.7,\"max_tokens\":4096}'"
+    }
+  },
+  "agentIntegrations": [
+    {
+      "id": "codex",
+      "name": "Codex",
+      "description": "Configure MaaS as an OpenAI-compatible model provider.",
+      "zhDescription": "将 MaaS 配置为 Codex 的 OpenAI 兼容模型供应商。",
+      "fileLabel": "~/.codex/config.toml",
+      "language": "toml",
+      "code": "model = \"ming-image-0.1-design-layer\"\nmodel_provider = \"maas\"\n\n[model_providers.maas]\nname = \"MaaS\"\nbase_url = \"https://maas-api.antdigital.com/v1\"\nenv_key = \"MAAS_API_KEY\"\nwire_api = \"responses\"",
+      "guideUrl": "/docs/agent-guides/codex"
+    },
+    {
+      "id": "opencode",
+      "name": "OpenCode",
+      "description": "Add MaaS as a custom provider in OpenCode.",
+      "zhDescription": "在 OpenCode 中添加 MaaS 自定义模型供应商。",
+      "fileLabel": "~/.config/opencode/opencode.json",
+      "language": "json",
+      "code": "{\n  \"$schema\": \"https://opencode.ai/config.json\",\n  \"provider\": {\n    \"maas\": {\n      \"npm\": \"@ai-sdk/openai-compatible\",\n      \"name\": \"MaaS\",\n      \"options\": {\n        \"baseURL\": \"https://maas-api.antdigital.com/v1\",\n        \"apiKey\": \"YOUR_MAAS_API_KEY\"\n      },\n      \"models\": {\n        \"ming-image-0.1-design-layer\": {\n          \"name\": \"ming-image-0.1-design-layer\"\n        }\n      }\n    }\n  },\n  \"model\": \"maas/ming-image-0.1-design-layer\"\n}",
+      "guideUrl": "/docs/agent-guides/opencode"
+    }
+  ],
+  "sourceUrl": "https://maas.antdigital.com/models/modelservice-1788923727244001352",
+  "slug": "modelservice-1788923727244001352"
+}

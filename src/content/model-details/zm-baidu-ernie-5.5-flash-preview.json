@@ -1,0 +1,690 @@
+{
+  "slug": "zm-baidu-ernie-5.5-flash-preview",
+  "uniqueId": "2646MOrwr8mR14614015",
+  "name": "baidu/ernie-5.5-flash-preview",
+  "displayName": "Baidu: ERNIE-5.5-Flash-Preview",
+  "provider": "Baidu",
+  "manufacturerKey": "baidu",
+  "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2025/11/13/eLQ426w/Property-1Variant28.svg",
+  "zhDescription": "文心系列预览模型，聚焦代码、Agent、知识工作与深度研究；采用总参数280B、每Token激活14B的架构，支持百万Token上下文。",
+  "zhLongDescription": "文心系列预览模型，聚焦代码、Agent、知识工作与深度研究；采用总参数280B、每Token激活14B的架构，支持百万Token上下文。",
+  "description": "文心系列预览模型，聚焦代码、Agent、知识工作与深度研究；采用总参数280B、每Token激活14B的架构，支持百万Token上下文。",
+  "longDescription": "文心系列预览模型，聚焦代码、Agent、知识工作与深度研究；采用总参数280B、每Token激活14B的架构，支持百万Token上下文。",
+  "contextLength": 1000000,
+  "maxCompletionTokens": 1000000,
+  "currency": "USD",
+  "tagList": [
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    }
+  ],
+  "publishedTime": "2026-11-11",
+  "minDiscountRate": "1",
+  "supportedParams": [
+    "enable_thinking",
+    "max_completion_tokens",
+    "max_output_tokens",
+    "max_tokens",
+    "messages",
+    "metadata",
+    "model",
+    "output_config",
+    "parallel_tool_calls",
+    "penalty_score",
+    "response_format",
+    "seed",
+    "stop",
+    "stop_sequences",
+    "stream",
+    "stream_options",
+    "temperature",
+    "thinking",
+    "thinking_budget",
+    "tool_choice",
+    "tools",
+    "top_p",
+    "user",
+    "web_search"
+  ],
+  "supportedProtocols": [
+    "chat.completions",
+    "messages",
+    "responses"
+  ],
+  "reasoning": 2,
+  "reasoningModes": [
+    2
+  ],
+  "providerNames": [
+    "Baidu"
+  ],
+  "providerDetails": [
+    {
+      "name": "Baidu",
+      "slug": "baidu",
+      "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2025/11/13/LK82ONM/Property-1baidu.svg",
+      "contextLength": 1000000,
+      "maxCompletionTokens": 1000000,
+      "supportsStreaming": true,
+      "apiProtocols": {
+        "chat.completions": {
+          "supported_parameters": [
+            "model",
+            "messages",
+            "stream",
+            "stream_options",
+            "penalty_score",
+            "max_tokens",
+            "max_completion_tokens",
+            "seed",
+            "stop",
+            "tools",
+            "tool_choice",
+            "parallel_tool_calls",
+            "web_search",
+            "response_format",
+            "metadata",
+            "enable_thinking",
+            "thinking_budget",
+            "user"
+          ],
+          "supports_reasoning": 2
+        },
+        "messages": {
+          "supported_parameters": [
+            "model",
+            "messages",
+            "stream",
+            "temperature",
+            "top_p",
+            "max_tokens",
+            "stop_sequences",
+            "tools",
+            "tool_choice",
+            "output_config",
+            "metadata",
+            "thinking"
+          ],
+          "supports_reasoning": 2
+        },
+        "responses": {
+          "supported_parameters": [
+            "max_output_tokens",
+            "tools",
+            "tool_choice",
+            "parallel_tool_calls"
+          ],
+          "supports_reasoning": 2
+        }
+      },
+      "pricingDiscount": "1",
+      "priceInfo": {
+        "prices": [
+          {
+            "stage": "业务分钟数（阶梯定价）: {\"lowerLimit\":\"850\",\"upperLimit\":\"1000000000\",\"includeLowerLimit\":true,\"includeUpperLimit\":true}",
+            "stageText": "业务分钟数（阶梯定价）: {\"lowerLimit\":\"850\",\"upperLimit\":\"1000000000\",\"includeLowerLimit\":true,\"includeUpperLimit\":true}",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "OUTPUT",
+                "priceNameZH": "模型生成输出内容的费用(completion)",
+                "priceValue": "0.6000000000",
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "completion",
+                "constraints": [
+                  {
+                    "code": "bizMinute",
+                    "name": "业务分钟数（阶梯定价）",
+                    "type": "NumberRange",
+                    "value": "{\"lowerLimit\":\"850\",\"upperLimit\":\"1000000000\",\"includeLowerLimit\":true,\"includeUpperLimit\":true}"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "业务分钟数（阶梯定价）: {\"lowerLimit\":\"0\",\"upperLimit\":\"850\",\"includeLowerLimit\":true,\"includeUpperLimit\":false}",
+            "stageText": "业务分钟数（阶梯定价）: {\"lowerLimit\":\"0\",\"upperLimit\":\"850\",\"includeLowerLimit\":true,\"includeUpperLimit\":false}",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "OUTPUT",
+                "priceNameZH": "模型生成输出内容的费用(completion)",
+                "priceValue": "1.2000000000",
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "completion",
+                "constraints": [
+                  {
+                    "code": "bizMinute",
+                    "name": "业务分钟数（阶梯定价）",
+                    "type": "NumberRange",
+                    "value": "{\"lowerLimit\":\"0\",\"upperLimit\":\"850\",\"includeLowerLimit\":true,\"includeUpperLimit\":false}"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "业务分钟数（阶梯定价）: {\"lowerLimit\":\"850\",\"upperLimit\":\"1000000000\",\"includeLowerLimit\":true,\"includeUpperLimit\":true}",
+            "stageText": "业务分钟数（阶梯定价）: {\"lowerLimit\":\"850\",\"upperLimit\":\"1000000000\",\"includeLowerLimit\":true,\"includeUpperLimit\":true}",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "INPUT_CACHE_READ",
+                "priceNameZH": "缓存读取操作费用(input_cache_read)",
+                "priceValue": "0.0150000000",
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "input_cache_read",
+                "constraints": [
+                  {
+                    "code": "bizMinute",
+                    "name": "业务分钟数（阶梯定价）",
+                    "type": "NumberRange",
+                    "value": "{\"lowerLimit\":\"850\",\"upperLimit\":\"1000000000\",\"includeLowerLimit\":true,\"includeUpperLimit\":true}"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "业务分钟数（阶梯定价）: {\"lowerLimit\":\"0\",\"upperLimit\":\"850\",\"includeLowerLimit\":true,\"includeUpperLimit\":false}",
+            "stageText": "业务分钟数（阶梯定价）: {\"lowerLimit\":\"0\",\"upperLimit\":\"850\",\"includeLowerLimit\":true,\"includeUpperLimit\":false}",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "INPUT_CACHE_READ",
+                "priceNameZH": "缓存读取操作费用(input_cache_read)",
+                "priceValue": "0.0300000000",
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "input_cache_read",
+                "constraints": [
+                  {
+                    "code": "bizMinute",
+                    "name": "业务分钟数（阶梯定价）",
+                    "type": "NumberRange",
+                    "value": "{\"lowerLimit\":\"0\",\"upperLimit\":\"850\",\"includeLowerLimit\":true,\"includeUpperLimit\":false}"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "业务分钟数（阶梯定价）: {\"lowerLimit\":\"840\",\"upperLimit\":\"1000000000\",\"includeLowerLimit\":true,\"includeUpperLimit\":true}",
+            "stageText": "业务分钟数（阶梯定价）: {\"lowerLimit\":\"840\",\"upperLimit\":\"1000000000\",\"includeLowerLimit\":true,\"includeUpperLimit\":true}",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "INPUT",
+                "priceNameZH": "输入提示词的处理费用(prompt)",
+                "priceValue": "0.1500000000",
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "prompt",
+                "constraints": [
+                  {
+                    "code": "bizMinute",
+                    "name": "业务分钟数（阶梯定价）",
+                    "type": "NumberRange",
+                    "value": "{\"lowerLimit\":\"840\",\"upperLimit\":\"1000000000\",\"includeLowerLimit\":true,\"includeUpperLimit\":true}"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "业务分钟数（阶梯定价）: {\"lowerLimit\":\"0\",\"upperLimit\":\"840\",\"includeLowerLimit\":true,\"includeUpperLimit\":false}",
+            "stageText": "业务分钟数（阶梯定价）: {\"lowerLimit\":\"0\",\"upperLimit\":\"840\",\"includeLowerLimit\":true,\"includeUpperLimit\":false}",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "INPUT",
+                "priceNameZH": "输入提示词的处理费用(prompt)",
+                "priceValue": "0.3000000000",
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "prompt",
+                "constraints": [
+                  {
+                    "code": "bizMinute",
+                    "name": "业务分钟数（阶梯定价）",
+                    "type": "NumberRange",
+                    "value": "{\"lowerLimit\":\"0\",\"upperLimit\":\"840\",\"includeLowerLimit\":true,\"includeUpperLimit\":false}"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "modelProtocolCompatibility": {
+    "chat.completions": true,
+    "messages": true,
+    "responses": true
+  },
+  "supportedParametersDefaultValue": {
+    "enable_thinking": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "max_completion_tokens": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "max_output_tokens": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "max_tokens": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "messages": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "metadata": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "model": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "output_config": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "parallel_tool_calls": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "penalty_score": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "response_format": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "seed": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "stop": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "stop_sequences": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "stream": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "stream_options": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "temperature": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "thinking": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "thinking_budget": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "tool_choice": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "tools": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "top_p": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "user": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "web_search": {
+      "enable": true,
+      "defaultValue": null
+    }
+  },
+  "priceInfo": {
+    "prices": [
+      {
+        "stage": "业务分钟数（阶梯定价）: {\"lowerLimit\":\"850\",\"upperLimit\":\"1000000000\",\"includeLowerLimit\":true,\"includeUpperLimit\":true}",
+        "stageText": "业务分钟数（阶梯定价）: {\"lowerLimit\":\"850\",\"upperLimit\":\"1000000000\",\"includeLowerLimit\":true,\"includeUpperLimit\":true}",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "OUTPUT",
+            "priceNameZH": "模型生成输出内容的费用(completion)",
+            "priceValue": "0.6000000000",
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "completion",
+            "constraints": [
+              {
+                "code": "bizMinute",
+                "name": "业务分钟数（阶梯定价）",
+                "type": "NumberRange",
+                "value": "{\"lowerLimit\":\"850\",\"upperLimit\":\"1000000000\",\"includeLowerLimit\":true,\"includeUpperLimit\":true}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stage": "业务分钟数（阶梯定价）: {\"lowerLimit\":\"0\",\"upperLimit\":\"850\",\"includeLowerLimit\":true,\"includeUpperLimit\":false}",
+        "stageText": "业务分钟数（阶梯定价）: {\"lowerLimit\":\"0\",\"upperLimit\":\"850\",\"includeLowerLimit\":true,\"includeUpperLimit\":false}",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "OUTPUT",
+            "priceNameZH": "模型生成输出内容的费用(completion)",
+            "priceValue": "1.2000000000",
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "completion",
+            "constraints": [
+              {
+                "code": "bizMinute",
+                "name": "业务分钟数（阶梯定价）",
+                "type": "NumberRange",
+                "value": "{\"lowerLimit\":\"0\",\"upperLimit\":\"850\",\"includeLowerLimit\":true,\"includeUpperLimit\":false}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stage": "业务分钟数（阶梯定价）: {\"lowerLimit\":\"850\",\"upperLimit\":\"1000000000\",\"includeLowerLimit\":true,\"includeUpperLimit\":true}",
+        "stageText": "业务分钟数（阶梯定价）: {\"lowerLimit\":\"850\",\"upperLimit\":\"1000000000\",\"includeLowerLimit\":true,\"includeUpperLimit\":true}",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "INPUT_CACHE_READ",
+            "priceNameZH": "缓存读取操作费用(input_cache_read)",
+            "priceValue": "0.0150000000",
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "INPUT",
+            "sourceFeeCode": "input_cache_read",
+            "constraints": [
+              {
+                "code": "bizMinute",
+                "name": "业务分钟数（阶梯定价）",
+                "type": "NumberRange",
+                "value": "{\"lowerLimit\":\"850\",\"upperLimit\":\"1000000000\",\"includeLowerLimit\":true,\"includeUpperLimit\":true}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stage": "业务分钟数（阶梯定价）: {\"lowerLimit\":\"0\",\"upperLimit\":\"850\",\"includeLowerLimit\":true,\"includeUpperLimit\":false}",
+        "stageText": "业务分钟数（阶梯定价）: {\"lowerLimit\":\"0\",\"upperLimit\":\"850\",\"includeLowerLimit\":true,\"includeUpperLimit\":false}",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "INPUT_CACHE_READ",
+            "priceNameZH": "缓存读取操作费用(input_cache_read)",
+            "priceValue": "0.0300000000",
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "INPUT",
+            "sourceFeeCode": "input_cache_read",
+            "constraints": [
+              {
+                "code": "bizMinute",
+                "name": "业务分钟数（阶梯定价）",
+                "type": "NumberRange",
+                "value": "{\"lowerLimit\":\"0\",\"upperLimit\":\"850\",\"includeLowerLimit\":true,\"includeUpperLimit\":false}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stage": "业务分钟数（阶梯定价）: {\"lowerLimit\":\"840\",\"upperLimit\":\"1000000000\",\"includeLowerLimit\":true,\"includeUpperLimit\":true}",
+        "stageText": "业务分钟数（阶梯定价）: {\"lowerLimit\":\"840\",\"upperLimit\":\"1000000000\",\"includeLowerLimit\":true,\"includeUpperLimit\":true}",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "INPUT",
+            "priceNameZH": "输入提示词的处理费用(prompt)",
+            "priceValue": "0.1500000000",
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "INPUT",
+            "sourceFeeCode": "prompt",
+            "constraints": [
+              {
+                "code": "bizMinute",
+                "name": "业务分钟数（阶梯定价）",
+                "type": "NumberRange",
+                "value": "{\"lowerLimit\":\"840\",\"upperLimit\":\"1000000000\",\"includeLowerLimit\":true,\"includeUpperLimit\":true}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stage": "业务分钟数（阶梯定价）: {\"lowerLimit\":\"0\",\"upperLimit\":\"840\",\"includeLowerLimit\":true,\"includeUpperLimit\":false}",
+        "stageText": "业务分钟数（阶梯定价）: {\"lowerLimit\":\"0\",\"upperLimit\":\"840\",\"includeLowerLimit\":true,\"includeUpperLimit\":false}",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "INPUT",
+            "priceNameZH": "输入提示词的处理费用(prompt)",
+            "priceValue": "0.3000000000",
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "INPUT",
+            "sourceFeeCode": "prompt",
+            "constraints": [
+              {
+                "code": "bizMinute",
+                "name": "业务分钟数（阶梯定价）",
+                "type": "NumberRange",
+                "value": "{\"lowerLimit\":\"0\",\"upperLimit\":\"840\",\"includeLowerLimit\":true,\"includeUpperLimit\":false}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "pricingDetails": [
+    {
+      "feeItemCode": "completion",
+      "feeItemName": "模型生成输出内容的费用(completion)",
+      "feeRecords": [
+        {
+          "components": [
+            {
+              "code": "bizMinute",
+              "name": "业务分钟数（阶梯定价）",
+              "type": "NumberRange",
+              "value": "{\"lowerLimit\":\"850\",\"upperLimit\":\"1000000000\",\"includeLowerLimit\":true,\"includeUpperLimit\":true}"
+            },
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            }
+          ],
+          "feeRate": "0.6000000000"
+        },
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            },
+            {
+              "code": "bizMinute",
+              "name": "业务分钟数（阶梯定价）",
+              "type": "NumberRange",
+              "value": "{\"lowerLimit\":\"0\",\"upperLimit\":\"850\",\"includeLowerLimit\":true,\"includeUpperLimit\":false}"
+            }
+          ],
+          "feeRate": "1.2000000000"
+        }
+      ],
+      "selectedConstraint": [
+        "bizMinute",
+        "chargeUnit"
+      ]
+    },
+    {
+      "feeItemCode": "input_cache_read",
+      "feeItemName": "缓存读取操作费用(input_cache_read)",
+      "feeRecords": [
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            },
+            {
+              "code": "bizMinute",
+              "name": "业务分钟数（阶梯定价）",
+              "type": "NumberRange",
+              "value": "{\"lowerLimit\":\"850\",\"upperLimit\":\"1000000000\",\"includeLowerLimit\":true,\"includeUpperLimit\":true}"
+            }
+          ],
+          "feeRate": "0.0150000000"
+        },
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            },
+            {
+              "code": "bizMinute",
+              "name": "业务分钟数（阶梯定价）",
+              "type": "NumberRange",
+              "value": "{\"lowerLimit\":\"0\",\"upperLimit\":\"850\",\"includeLowerLimit\":true,\"includeUpperLimit\":false}"
+            }
+          ],
+          "feeRate": "0.0300000000"
+        }
+      ],
+      "selectedConstraint": [
+        "chargeUnit",
+        "bizMinute"
+      ]
+    },
+    {
+      "feeItemCode": "prompt",
+      "feeItemName": "输入提示词的处理费用(prompt)",
+      "feeRecords": [
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            },
+            {
+              "code": "bizMinute",
+              "name": "业务分钟数（阶梯定价）",
+              "type": "NumberRange",
+              "value": "{\"lowerLimit\":\"840\",\"upperLimit\":\"1000000000\",\"includeLowerLimit\":true,\"includeUpperLimit\":true}"
+            }
+          ],
+          "feeRate": "0.1500000000"
+        },
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            },
+            {
+              "code": "bizMinute",
+              "name": "业务分钟数（阶梯定价）",
+              "type": "NumberRange",
+              "value": "{\"lowerLimit\":\"0\",\"upperLimit\":\"840\",\"includeLowerLimit\":true,\"includeUpperLimit\":false}"
+            }
+          ],
+          "feeRate": "0.3000000000"
+        }
+      ],
+      "selectedConstraint": [
+        "chargeUnit",
+        "bizMinute"
+      ]
+    }
+  ],
+  "sourcePublishedPrices": {
+    "pricing_completion": "0.6",
+    "pricing_discount": "1",
+    "pricing_prompt": "0.15"
+  },
+  "exampleCodes": [],
+  "serviceConfiguration": "服务配置待开通；接入地址、鉴权和可用协议以开通后的服务配置为准。",
+  "sourceRegion": "global",
+  "sourceCatalog": "ZenMux",
+  "sourceUrl": "https://zenmux.ai/baidu/ernie-5.5-flash-preview",
+  "detailVerified": true,
+  "aliases": [
+    "ernie-5.5-flash-preview"
+  ],
+  "isFree": false
+}

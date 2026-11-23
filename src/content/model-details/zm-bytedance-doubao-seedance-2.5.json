@@ -1,0 +1,1590 @@
+{
+  "slug": "zm-bytedance-doubao-seedance-2.5",
+  "uniqueId": "2632MOGgqKVo14613906",
+  "name": "bytedance/doubao-seedance-2.5",
+  "displayName": "ByteDance: Doubao-Seedance-2.5",
+  "provider": "ByteDance",
+  "manufacturerKey": "bytedance",
+  "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2026/04/08/YSFtnJU/Property-1Bytedance.svg",
+  "zhDescription": "面向工业化视频创作，强调长叙事、参考素材一致性、精确编辑和多语言视频生成。",
+  "zhLongDescription": "面向工业化视频创作，强调长叙事、参考素材一致性、精确编辑和多语言视频生成。",
+  "description": "面向工业化视频创作，强调长叙事、参考素材一致性、精确编辑和多语言视频生成。",
+  "longDescription": "面向工业化视频创作，强调长叙事、参考素材一致性、精确编辑和多语言视频生成。",
+  "contextLength": 12800,
+  "maxCompletionTokens": null,
+  "currency": "USD",
+  "tagList": [
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "AUDIO",
+      "value": "音频"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "VIDEO",
+      "value": "视频"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "VIDEO",
+      "value": "视频"
+    }
+  ],
+  "publishedTime": "2026-08-07",
+  "minDiscountRate": "1",
+  "supportedParams": [
+    "aspectRatio",
+    "callback_url",
+    "content",
+    "duration",
+    "durationSeconds",
+    "frames",
+    "generateAudio",
+    "generate_audio",
+    "lastFrame",
+    "ratio",
+    "referenceImages",
+    "resolution",
+    "return_last_frame",
+    "seed",
+    "tools",
+    "watermark"
+  ],
+  "supportedProtocols": [
+    "veo",
+    "videos"
+  ],
+  "reasoning": 0,
+  "reasoningModes": [
+    0
+  ],
+  "providerNames": [
+    "Volcengine"
+  ],
+  "providerDetails": [
+    {
+      "name": "Volcengine",
+      "slug": "volcengine",
+      "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2025/10/15/95ujcDV/Property-1huoshan.svg",
+      "contextLength": 12800,
+      "maxCompletionTokens": null,
+      "supportsStreaming": false,
+      "apiProtocols": {
+        "veo": {
+          "supported_parameters": [
+            "seed",
+            "durationSeconds",
+            "aspectRatio",
+            "generateAudio",
+            "referenceImages",
+            "lastFrame",
+            "resolution"
+          ],
+          "supports_reasoning": 0
+        },
+        "videos": {
+          "supported_parameters": [
+            "callback_url",
+            "content",
+            "duration",
+            "frames",
+            "generate_audio",
+            "ratio",
+            "resolution",
+            "return_last_frame",
+            "seed",
+            "tools",
+            "watermark"
+          ],
+          "supports_reasoning": 0
+        }
+      },
+      "pricingDiscount": "1",
+      "priceInfo": {
+        "prices": [
+          {
+            "stage": "视频分辨率: 480p；输入视频: include",
+            "stageText": "视频分辨率: 480p；输入视频: include",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "AUDIO_AND_VIDEO",
+                "priceNameZH": "音频和视频生成费用(audio_and_video)",
+                "priceValue": "6.4000000000",
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "audio_and_video",
+                "constraints": [
+                  {
+                    "code": "resolution",
+                    "name": "视频分辨率",
+                    "type": "Select",
+                    "value": "480p"
+                  },
+                  {
+                    "code": "videoInput",
+                    "name": "输入视频",
+                    "type": "Select",
+                    "value": "include"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "视频分辨率: 720p；输入视频: exclude",
+            "stageText": "视频分辨率: 720p；输入视频: exclude",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "AUDIO_AND_VIDEO",
+                "priceNameZH": "音频和视频生成费用(audio_and_video)",
+                "priceValue": "10.7000000000",
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "audio_and_video",
+                "constraints": [
+                  {
+                    "code": "resolution",
+                    "name": "视频分辨率",
+                    "type": "Select",
+                    "value": "720p"
+                  },
+                  {
+                    "code": "videoInput",
+                    "name": "输入视频",
+                    "type": "Select",
+                    "value": "exclude"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "输入视频: include；视频分辨率: 4k",
+            "stageText": "输入视频: include；视频分辨率: 4k",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "AUDIO_AND_VIDEO",
+                "priceNameZH": "音频和视频生成费用(audio_and_video)",
+                "priceValue": "2.8500000000",
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "audio_and_video",
+                "constraints": [
+                  {
+                    "code": "videoInput",
+                    "name": "输入视频",
+                    "type": "Select",
+                    "value": "include"
+                  },
+                  {
+                    "code": "resolution",
+                    "name": "视频分辨率",
+                    "type": "Select",
+                    "value": "4k"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "视频分辨率: 720p；输入视频: include",
+            "stageText": "视频分辨率: 720p；输入视频: include",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "AUDIO_AND_VIDEO",
+                "priceNameZH": "音频和视频生成费用(audio_and_video)",
+                "priceValue": "6.4000000000",
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "audio_and_video",
+                "constraints": [
+                  {
+                    "code": "resolution",
+                    "name": "视频分辨率",
+                    "type": "Select",
+                    "value": "720p"
+                  },
+                  {
+                    "code": "videoInput",
+                    "name": "输入视频",
+                    "type": "Select",
+                    "value": "include"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "输入视频: exclude；视频分辨率: 4k",
+            "stageText": "输入视频: exclude；视频分辨率: 4k",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "AUDIO_AND_VIDEO",
+                "priceNameZH": "音频和视频生成费用(audio_and_video)",
+                "priceValue": "4.6500000000",
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "audio_and_video",
+                "constraints": [
+                  {
+                    "code": "videoInput",
+                    "name": "输入视频",
+                    "type": "Select",
+                    "value": "exclude"
+                  },
+                  {
+                    "code": "resolution",
+                    "name": "视频分辨率",
+                    "type": "Select",
+                    "value": "4k"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "视频分辨率: 1080p；输入视频: include",
+            "stageText": "视频分辨率: 1080p；输入视频: include",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "AUDIO_AND_VIDEO",
+                "priceNameZH": "音频和视频生成费用(audio_and_video)",
+                "priceValue": "7.0000000000",
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "audio_and_video",
+                "constraints": [
+                  {
+                    "code": "resolution",
+                    "name": "视频分辨率",
+                    "type": "Select",
+                    "value": "1080p"
+                  },
+                  {
+                    "code": "videoInput",
+                    "name": "输入视频",
+                    "type": "Select",
+                    "value": "include"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "输入视频: exclude；视频分辨率: 480p",
+            "stageText": "输入视频: exclude；视频分辨率: 480p",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "AUDIO_AND_VIDEO",
+                "priceNameZH": "音频和视频生成费用(audio_and_video)",
+                "priceValue": "10.7000000000",
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "audio_and_video",
+                "constraints": [
+                  {
+                    "code": "videoInput",
+                    "name": "输入视频",
+                    "type": "Select",
+                    "value": "exclude"
+                  },
+                  {
+                    "code": "resolution",
+                    "name": "视频分辨率",
+                    "type": "Select",
+                    "value": "480p"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "视频分辨率: 1080p；输入视频: exclude",
+            "stageText": "视频分辨率: 1080p；输入视频: exclude",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "AUDIO_AND_VIDEO",
+                "priceNameZH": "音频和视频生成费用(audio_and_video)",
+                "priceValue": "11.7000000000",
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "audio_and_video",
+                "constraints": [
+                  {
+                    "code": "resolution",
+                    "name": "视频分辨率",
+                    "type": "Select",
+                    "value": "1080p"
+                  },
+                  {
+                    "code": "videoInput",
+                    "name": "输入视频",
+                    "type": "Select",
+                    "value": "exclude"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "视频分辨率: 480p；输入视频: include",
+            "stageText": "视频分辨率: 480p；输入视频: include",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "VIDEO",
+                "priceNameZH": "视频生成费用(video)",
+                "priceValue": "6.4000000000",
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "video",
+                "constraints": [
+                  {
+                    "code": "resolution",
+                    "name": "视频分辨率",
+                    "type": "Select",
+                    "value": "480p"
+                  },
+                  {
+                    "code": "videoInput",
+                    "name": "输入视频",
+                    "type": "Select",
+                    "value": "include"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "输入视频: include；视频分辨率: 4k",
+            "stageText": "输入视频: include；视频分辨率: 4k",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "VIDEO",
+                "priceNameZH": "视频生成费用(video)",
+                "priceValue": "2.8500000000",
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "video",
+                "constraints": [
+                  {
+                    "code": "videoInput",
+                    "name": "输入视频",
+                    "type": "Select",
+                    "value": "include"
+                  },
+                  {
+                    "code": "resolution",
+                    "name": "视频分辨率",
+                    "type": "Select",
+                    "value": "4k"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "视频分辨率: 1080p；输入视频: exclude",
+            "stageText": "视频分辨率: 1080p；输入视频: exclude",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "VIDEO",
+                "priceNameZH": "视频生成费用(video)",
+                "priceValue": "11.7000000000",
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "video",
+                "constraints": [
+                  {
+                    "code": "resolution",
+                    "name": "视频分辨率",
+                    "type": "Select",
+                    "value": "1080p"
+                  },
+                  {
+                    "code": "videoInput",
+                    "name": "输入视频",
+                    "type": "Select",
+                    "value": "exclude"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "输入视频: include；视频分辨率: 720p",
+            "stageText": "输入视频: include；视频分辨率: 720p",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "VIDEO",
+                "priceNameZH": "视频生成费用(video)",
+                "priceValue": "6.4000000000",
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "video",
+                "constraints": [
+                  {
+                    "code": "videoInput",
+                    "name": "输入视频",
+                    "type": "Select",
+                    "value": "include"
+                  },
+                  {
+                    "code": "resolution",
+                    "name": "视频分辨率",
+                    "type": "Select",
+                    "value": "720p"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "输入视频: exclude；视频分辨率: 480p",
+            "stageText": "输入视频: exclude；视频分辨率: 480p",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "VIDEO",
+                "priceNameZH": "视频生成费用(video)",
+                "priceValue": "10.7000000000",
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "video",
+                "constraints": [
+                  {
+                    "code": "videoInput",
+                    "name": "输入视频",
+                    "type": "Select",
+                    "value": "exclude"
+                  },
+                  {
+                    "code": "resolution",
+                    "name": "视频分辨率",
+                    "type": "Select",
+                    "value": "480p"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "视频分辨率: 1080p；输入视频: include",
+            "stageText": "视频分辨率: 1080p；输入视频: include",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "VIDEO",
+                "priceNameZH": "视频生成费用(video)",
+                "priceValue": "7.0000000000",
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "video",
+                "constraints": [
+                  {
+                    "code": "resolution",
+                    "name": "视频分辨率",
+                    "type": "Select",
+                    "value": "1080p"
+                  },
+                  {
+                    "code": "videoInput",
+                    "name": "输入视频",
+                    "type": "Select",
+                    "value": "include"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "视频分辨率: 4k；输入视频: exclude",
+            "stageText": "视频分辨率: 4k；输入视频: exclude",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "VIDEO",
+                "priceNameZH": "视频生成费用(video)",
+                "priceValue": "4.6500000000",
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "video",
+                "constraints": [
+                  {
+                    "code": "resolution",
+                    "name": "视频分辨率",
+                    "type": "Select",
+                    "value": "4k"
+                  },
+                  {
+                    "code": "videoInput",
+                    "name": "输入视频",
+                    "type": "Select",
+                    "value": "exclude"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "视频分辨率: 720p；输入视频: exclude",
+            "stageText": "视频分辨率: 720p；输入视频: exclude",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "VIDEO",
+                "priceNameZH": "视频生成费用(video)",
+                "priceValue": "10.7000000000",
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "video",
+                "constraints": [
+                  {
+                    "code": "resolution",
+                    "name": "视频分辨率",
+                    "type": "Select",
+                    "value": "720p"
+                  },
+                  {
+                    "code": "videoInput",
+                    "name": "输入视频",
+                    "type": "Select",
+                    "value": "exclude"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "modelProtocolCompatibility": {
+    "veo": true,
+    "videos": true
+  },
+  "supportedParametersDefaultValue": {
+    "aspectRatio": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "callback_url": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "content": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "duration": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "durationSeconds": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "frames": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "generateAudio": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "generate_audio": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "lastFrame": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "ratio": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "referenceImages": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "resolution": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "return_last_frame": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "seed": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "tools": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "watermark": {
+      "enable": true,
+      "defaultValue": null
+    }
+  },
+  "priceInfo": {
+    "prices": [
+      {
+        "stage": "视频分辨率: 480p；输入视频: include",
+        "stageText": "视频分辨率: 480p；输入视频: include",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "AUDIO_AND_VIDEO",
+            "priceNameZH": "音频和视频生成费用(audio_and_video)",
+            "priceValue": "6.4000000000",
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "audio_and_video",
+            "constraints": [
+              {
+                "code": "resolution",
+                "name": "视频分辨率",
+                "type": "Select",
+                "value": "480p"
+              },
+              {
+                "code": "videoInput",
+                "name": "输入视频",
+                "type": "Select",
+                "value": "include"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stage": "视频分辨率: 720p；输入视频: exclude",
+        "stageText": "视频分辨率: 720p；输入视频: exclude",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "AUDIO_AND_VIDEO",
+            "priceNameZH": "音频和视频生成费用(audio_and_video)",
+            "priceValue": "10.7000000000",
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "audio_and_video",
+            "constraints": [
+              {
+                "code": "resolution",
+                "name": "视频分辨率",
+                "type": "Select",
+                "value": "720p"
+              },
+              {
+                "code": "videoInput",
+                "name": "输入视频",
+                "type": "Select",
+                "value": "exclude"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stage": "输入视频: include；视频分辨率: 4k",
+        "stageText": "输入视频: include；视频分辨率: 4k",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "AUDIO_AND_VIDEO",
+            "priceNameZH": "音频和视频生成费用(audio_and_video)",
+            "priceValue": "2.8500000000",
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "audio_and_video",
+            "constraints": [
+              {
+                "code": "videoInput",
+                "name": "输入视频",
+                "type": "Select",
+                "value": "include"
+              },
+              {
+                "code": "resolution",
+                "name": "视频分辨率",
+                "type": "Select",
+                "value": "4k"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stage": "视频分辨率: 720p；输入视频: include",
+        "stageText": "视频分辨率: 720p；输入视频: include",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "AUDIO_AND_VIDEO",
+            "priceNameZH": "音频和视频生成费用(audio_and_video)",
+            "priceValue": "6.4000000000",
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "audio_and_video",
+            "constraints": [
+              {
+                "code": "resolution",
+                "name": "视频分辨率",
+                "type": "Select",
+                "value": "720p"
+              },
+              {
+                "code": "videoInput",
+                "name": "输入视频",
+                "type": "Select",
+                "value": "include"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stage": "输入视频: exclude；视频分辨率: 4k",
+        "stageText": "输入视频: exclude；视频分辨率: 4k",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "AUDIO_AND_VIDEO",
+            "priceNameZH": "音频和视频生成费用(audio_and_video)",
+            "priceValue": "4.6500000000",
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "audio_and_video",
+            "constraints": [
+              {
+                "code": "videoInput",
+                "name": "输入视频",
+                "type": "Select",
+                "value": "exclude"
+              },
+              {
+                "code": "resolution",
+                "name": "视频分辨率",
+                "type": "Select",
+                "value": "4k"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stage": "视频分辨率: 1080p；输入视频: include",
+        "stageText": "视频分辨率: 1080p；输入视频: include",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "AUDIO_AND_VIDEO",
+            "priceNameZH": "音频和视频生成费用(audio_and_video)",
+            "priceValue": "7.0000000000",
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "audio_and_video",
+            "constraints": [
+              {
+                "code": "resolution",
+                "name": "视频分辨率",
+                "type": "Select",
+                "value": "1080p"
+              },
+              {
+                "code": "videoInput",
+                "name": "输入视频",
+                "type": "Select",
+                "value": "include"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stage": "输入视频: exclude；视频分辨率: 480p",
+        "stageText": "输入视频: exclude；视频分辨率: 480p",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "AUDIO_AND_VIDEO",
+            "priceNameZH": "音频和视频生成费用(audio_and_video)",
+            "priceValue": "10.7000000000",
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "audio_and_video",
+            "constraints": [
+              {
+                "code": "videoInput",
+                "name": "输入视频",
+                "type": "Select",
+                "value": "exclude"
+              },
+              {
+                "code": "resolution",
+                "name": "视频分辨率",
+                "type": "Select",
+                "value": "480p"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stage": "视频分辨率: 1080p；输入视频: exclude",
+        "stageText": "视频分辨率: 1080p；输入视频: exclude",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "AUDIO_AND_VIDEO",
+            "priceNameZH": "音频和视频生成费用(audio_and_video)",
+            "priceValue": "11.7000000000",
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "audio_and_video",
+            "constraints": [
+              {
+                "code": "resolution",
+                "name": "视频分辨率",
+                "type": "Select",
+                "value": "1080p"
+              },
+              {
+                "code": "videoInput",
+                "name": "输入视频",
+                "type": "Select",
+                "value": "exclude"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stage": "视频分辨率: 480p；输入视频: include",
+        "stageText": "视频分辨率: 480p；输入视频: include",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "VIDEO",
+            "priceNameZH": "视频生成费用(video)",
+            "priceValue": "6.4000000000",
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "video",
+            "constraints": [
+              {
+                "code": "resolution",
+                "name": "视频分辨率",
+                "type": "Select",
+                "value": "480p"
+              },
+              {
+                "code": "videoInput",
+                "name": "输入视频",
+                "type": "Select",
+                "value": "include"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stage": "输入视频: include；视频分辨率: 4k",
+        "stageText": "输入视频: include；视频分辨率: 4k",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "VIDEO",
+            "priceNameZH": "视频生成费用(video)",
+            "priceValue": "2.8500000000",
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "video",
+            "constraints": [
+              {
+                "code": "videoInput",
+                "name": "输入视频",
+                "type": "Select",
+                "value": "include"
+              },
+              {
+                "code": "resolution",
+                "name": "视频分辨率",
+                "type": "Select",
+                "value": "4k"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stage": "视频分辨率: 1080p；输入视频: exclude",
+        "stageText": "视频分辨率: 1080p；输入视频: exclude",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "VIDEO",
+            "priceNameZH": "视频生成费用(video)",
+            "priceValue": "11.7000000000",
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "video",
+            "constraints": [
+              {
+                "code": "resolution",
+                "name": "视频分辨率",
+                "type": "Select",
+                "value": "1080p"
+              },
+              {
+                "code": "videoInput",
+                "name": "输入视频",
+                "type": "Select",
+                "value": "exclude"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stage": "输入视频: include；视频分辨率: 720p",
+        "stageText": "输入视频: include；视频分辨率: 720p",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "VIDEO",
+            "priceNameZH": "视频生成费用(video)",
+            "priceValue": "6.4000000000",
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "video",
+            "constraints": [
+              {
+                "code": "videoInput",
+                "name": "输入视频",
+                "type": "Select",
+                "value": "include"
+              },
+              {
+                "code": "resolution",
+                "name": "视频分辨率",
+                "type": "Select",
+                "value": "720p"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stage": "输入视频: exclude；视频分辨率: 480p",
+        "stageText": "输入视频: exclude；视频分辨率: 480p",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "VIDEO",
+            "priceNameZH": "视频生成费用(video)",
+            "priceValue": "10.7000000000",
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "video",
+            "constraints": [
+              {
+                "code": "videoInput",
+                "name": "输入视频",
+                "type": "Select",
+                "value": "exclude"
+              },
+              {
+                "code": "resolution",
+                "name": "视频分辨率",
+                "type": "Select",
+                "value": "480p"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stage": "视频分辨率: 1080p；输入视频: include",
+        "stageText": "视频分辨率: 1080p；输入视频: include",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "VIDEO",
+            "priceNameZH": "视频生成费用(video)",
+            "priceValue": "7.0000000000",
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "video",
+            "constraints": [
+              {
+                "code": "resolution",
+                "name": "视频分辨率",
+                "type": "Select",
+                "value": "1080p"
+              },
+              {
+                "code": "videoInput",
+                "name": "输入视频",
+                "type": "Select",
+                "value": "include"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stage": "视频分辨率: 4k；输入视频: exclude",
+        "stageText": "视频分辨率: 4k；输入视频: exclude",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "VIDEO",
+            "priceNameZH": "视频生成费用(video)",
+            "priceValue": "4.6500000000",
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "video",
+            "constraints": [
+              {
+                "code": "resolution",
+                "name": "视频分辨率",
+                "type": "Select",
+                "value": "4k"
+              },
+              {
+                "code": "videoInput",
+                "name": "输入视频",
+                "type": "Select",
+                "value": "exclude"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stage": "视频分辨率: 720p；输入视频: exclude",
+        "stageText": "视频分辨率: 720p；输入视频: exclude",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "VIDEO",
+            "priceNameZH": "视频生成费用(video)",
+            "priceValue": "10.7000000000",
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "video",
+            "constraints": [
+              {
+                "code": "resolution",
+                "name": "视频分辨率",
+                "type": "Select",
+                "value": "720p"
+              },
+              {
+                "code": "videoInput",
+                "name": "输入视频",
+                "type": "Select",
+                "value": "exclude"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "pricingDetails": [
+    {
+      "feeItemCode": "audio_and_video",
+      "feeItemName": "音频和视频生成费用(audio_and_video)",
+      "feeRecords": [
+        {
+          "components": [
+            {
+              "code": "resolution",
+              "name": "视频分辨率",
+              "type": "Select",
+              "value": "480p"
+            },
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            },
+            {
+              "code": "videoInput",
+              "name": "输入视频",
+              "type": "Select",
+              "value": "include"
+            }
+          ],
+          "feeRate": "6.4000000000"
+        },
+        {
+          "components": [
+            {
+              "code": "resolution",
+              "name": "视频分辨率",
+              "type": "Select",
+              "value": "720p"
+            },
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            },
+            {
+              "code": "videoInput",
+              "name": "输入视频",
+              "type": "Select",
+              "value": "exclude"
+            }
+          ],
+          "feeRate": "10.7000000000"
+        },
+        {
+          "components": [
+            {
+              "code": "videoInput",
+              "name": "输入视频",
+              "type": "Select",
+              "value": "include"
+            },
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            },
+            {
+              "code": "resolution",
+              "name": "视频分辨率",
+              "type": "Select",
+              "value": "4k"
+            }
+          ],
+          "feeRate": "2.8500000000"
+        },
+        {
+          "components": [
+            {
+              "code": "resolution",
+              "name": "视频分辨率",
+              "type": "Select",
+              "value": "720p"
+            },
+            {
+              "code": "videoInput",
+              "name": "输入视频",
+              "type": "Select",
+              "value": "include"
+            },
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            }
+          ],
+          "feeRate": "6.4000000000"
+        },
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            },
+            {
+              "code": "videoInput",
+              "name": "输入视频",
+              "type": "Select",
+              "value": "exclude"
+            },
+            {
+              "code": "resolution",
+              "name": "视频分辨率",
+              "type": "Select",
+              "value": "4k"
+            }
+          ],
+          "feeRate": "4.6500000000"
+        },
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            },
+            {
+              "code": "resolution",
+              "name": "视频分辨率",
+              "type": "Select",
+              "value": "1080p"
+            },
+            {
+              "code": "videoInput",
+              "name": "输入视频",
+              "type": "Select",
+              "value": "include"
+            }
+          ],
+          "feeRate": "7.0000000000"
+        },
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            },
+            {
+              "code": "videoInput",
+              "name": "输入视频",
+              "type": "Select",
+              "value": "exclude"
+            },
+            {
+              "code": "resolution",
+              "name": "视频分辨率",
+              "type": "Select",
+              "value": "480p"
+            }
+          ],
+          "feeRate": "10.7000000000"
+        },
+        {
+          "components": [
+            {
+              "code": "resolution",
+              "name": "视频分辨率",
+              "type": "Select",
+              "value": "1080p"
+            },
+            {
+              "code": "videoInput",
+              "name": "输入视频",
+              "type": "Select",
+              "value": "exclude"
+            },
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            }
+          ],
+          "feeRate": "11.7000000000"
+        }
+      ],
+      "selectedConstraint": [
+        "resolution",
+        "chargeUnit",
+        "videoInput"
+      ]
+    },
+    {
+      "feeItemCode": "video",
+      "feeItemName": "视频生成费用(video)",
+      "feeRecords": [
+        {
+          "components": [
+            {
+              "code": "resolution",
+              "name": "视频分辨率",
+              "type": "Select",
+              "value": "480p"
+            },
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            },
+            {
+              "code": "videoInput",
+              "name": "输入视频",
+              "type": "Select",
+              "value": "include"
+            }
+          ],
+          "feeRate": "6.4000000000"
+        },
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            },
+            {
+              "code": "videoInput",
+              "name": "输入视频",
+              "type": "Select",
+              "value": "include"
+            },
+            {
+              "code": "resolution",
+              "name": "视频分辨率",
+              "type": "Select",
+              "value": "4k"
+            }
+          ],
+          "feeRate": "2.8500000000"
+        },
+        {
+          "components": [
+            {
+              "code": "resolution",
+              "name": "视频分辨率",
+              "type": "Select",
+              "value": "1080p"
+            },
+            {
+              "code": "videoInput",
+              "name": "输入视频",
+              "type": "Select",
+              "value": "exclude"
+            },
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            }
+          ],
+          "feeRate": "11.7000000000"
+        },
+        {
+          "components": [
+            {
+              "code": "videoInput",
+              "name": "输入视频",
+              "type": "Select",
+              "value": "include"
+            },
+            {
+              "code": "resolution",
+              "name": "视频分辨率",
+              "type": "Select",
+              "value": "720p"
+            },
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            }
+          ],
+          "feeRate": "6.4000000000"
+        },
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            },
+            {
+              "code": "videoInput",
+              "name": "输入视频",
+              "type": "Select",
+              "value": "exclude"
+            },
+            {
+              "code": "resolution",
+              "name": "视频分辨率",
+              "type": "Select",
+              "value": "480p"
+            }
+          ],
+          "feeRate": "10.7000000000"
+        },
+        {
+          "components": [
+            {
+              "code": "resolution",
+              "name": "视频分辨率",
+              "type": "Select",
+              "value": "1080p"
+            },
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            },
+            {
+              "code": "videoInput",
+              "name": "输入视频",
+              "type": "Select",
+              "value": "include"
+            }
+          ],
+          "feeRate": "7.0000000000"
+        },
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            },
+            {
+              "code": "resolution",
+              "name": "视频分辨率",
+              "type": "Select",
+              "value": "4k"
+            },
+            {
+              "code": "videoInput",
+              "name": "输入视频",
+              "type": "Select",
+              "value": "exclude"
+            }
+          ],
+          "feeRate": "4.6500000000"
+        },
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            },
+            {
+              "code": "resolution",
+              "name": "视频分辨率",
+              "type": "Select",
+              "value": "720p"
+            },
+            {
+              "code": "videoInput",
+              "name": "输入视频",
+              "type": "Select",
+              "value": "exclude"
+            }
+          ],
+          "feeRate": "10.7000000000"
+        }
+      ],
+      "selectedConstraint": [
+        "resolution",
+        "chargeUnit",
+        "videoInput"
+      ]
+    }
+  ],
+  "sourcePublishedPrices": {
+    "pricing_completion": "0",
+    "pricing_discount": "1",
+    "pricing_prompt": "0"
+  },
+  "exampleCodes": [],
+  "serviceConfiguration": "服务配置待开通；接入地址、鉴权和可用协议以开通后的服务配置为准。",
+  "sourceRegion": "global",
+  "sourceCatalog": "ZenMux",
+  "sourceUrl": "https://zenmux.ai/bytedance/doubao-seedance-2.5",
+  "detailVerified": true,
+  "aliases": [],
+  "isFree": false
+}

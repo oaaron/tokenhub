@@ -1,0 +1,45 @@
+.tokenhub-site .maker-section {
+  border: 0;
+  background: transparent;
+  padding: 0 0 24px;
+}
+.maker-section .maker-logo-loop {
+  min-width: 0;
+  width: 100%;
+  margin: 0;
+}
+.maker-logo-loop .logoloop {
+  padding-block: 15px;
+  min-height: 64px;
+}
+.maker-logo-loop .logoloop__label {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ds-muted);
+  line-height: 1.4;
+}
+.maker-logo-loop .logoloop__content {
+  min-height: 40px;
+}
+.maker-logo-loop .logoloop__content:hover .logoloop__label,
+.maker-logo-loop .logoloop__content:focus-visible .logoloop__label {
+  color: var(--ds-text);
+}
+.maker-logo-loop .logoloop__item {
+  font-size: 30px;
+}
+.maker-logo-loop .logoloop__list {
+  gap: 0;
+}
+@media (max-width: 600px) {
+  .maker-section .maker-logo-loop {
+    margin: 0;
+  }
+  .maker-logo-loop .logoloop {
+    --logoloop-gap: 32px !important;
+    --logoloop-logoHeight: 26px !important;
+  }
+  .maker-logo-loop .logoloop__label {
+    font-size: 16px;
+  }
+}

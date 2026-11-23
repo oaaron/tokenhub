@@ -1,0 +1,449 @@
+{
+  "slug": "zm-google-gemini-2.5-flash-image",
+  "uniqueId": "2542MOORy1T214642286",
+  "name": "google/gemini-2.5-flash-image",
+  "displayName": "Google: Gemini 2.5 Flash Image (Nano Banana)",
+  "provider": "Google",
+  "manufacturerKey": "google",
+  "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2026/04/13/QgpuHH0/Property-1Gemini.svg",
+  "zhDescription": "又称Nano Banana的图像模型，支持上下文理解、图像生成、编辑与多轮对话。",
+  "zhLongDescription": "又称Nano Banana的图像模型，支持上下文理解、图像生成、编辑与多轮对话。",
+  "description": "又称Nano Banana的图像模型，支持上下文理解、图像生成、编辑与多轮对话。",
+  "longDescription": "又称Nano Banana的图像模型，支持上下文理解、图像生成、编辑与多轮对话。",
+  "contextLength": 32768,
+  "maxCompletionTokens": 8192,
+  "currency": "USD",
+  "tagList": [
+    {
+      "type": "INPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    }
+  ],
+  "publishedTime": "2025-10-07",
+  "minDiscountRate": "1",
+  "supportedParams": [
+    "frequencyPenalty",
+    "imageConfig",
+    "logprobs",
+    "maxOutputTokens",
+    "max_tokens",
+    "mediaResolution",
+    "presencePenalty",
+    "responseJsonSchema",
+    "responseLogprobs",
+    "responseMimeType",
+    "responseSchema",
+    "response_format",
+    "safetySettings",
+    "seed",
+    "stopSequences",
+    "temperature",
+    "toolConfig",
+    "tools",
+    "topK",
+    "topP",
+    "top_p"
+  ],
+  "supportedProtocols": [
+    "gemini",
+    "generate"
+  ],
+  "reasoning": 0,
+  "reasoningModes": [
+    0
+  ],
+  "providerNames": [
+    "Google Vertex"
+  ],
+  "providerDetails": [
+    {
+      "name": "Google Vertex",
+      "slug": "google-vertex",
+      "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2025/11/18/5g87V7y/Property-1Google.svg",
+      "contextLength": 32768,
+      "maxCompletionTokens": 8192,
+      "supportsStreaming": false,
+      "apiProtocols": {
+        "gemini": {
+          "supported_parameters": [
+            "temperature",
+            "topP",
+            "topK",
+            "maxOutputTokens",
+            "stopSequences",
+            "responseLogprobs",
+            "logprobs",
+            "presencePenalty",
+            "frequencyPenalty",
+            "seed",
+            "responseMimeType",
+            "responseSchema",
+            "responseJsonSchema",
+            "safetySettings",
+            "mediaResolution",
+            "tools",
+            "toolConfig",
+            "imageConfig"
+          ],
+          "supports_reasoning": 0
+        }
+      },
+      "pricingDiscount": "1",
+      "priceInfo": {
+        "prices": [
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "OUTPUT",
+                "priceNameZH": "模型生成输出内容的费用(completion)",
+                "priceValue": 2.5,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "completion",
+                "constraints": []
+              }
+            ]
+          },
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "IMAGE",
+                "priceNameZH": "图像处理或生成的费用(image)",
+                "priceValue": 30,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "image",
+                "constraints": []
+              }
+            ]
+          },
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "INPUT_CACHE_READ",
+                "priceNameZH": "缓存读取操作费用(input_cache_read)",
+                "priceValue": 0.03,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "input_cache_read",
+                "constraints": []
+              }
+            ]
+          },
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "INPUT",
+                "priceNameZH": "输入提示词的处理费用(prompt)",
+                "priceValue": 0.3,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "prompt",
+                "constraints": []
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "modelProtocolCompatibility": {
+    "gemini": true,
+    "generate": true
+  },
+  "supportedParametersDefaultValue": {
+    "frequencyPenalty": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "imageConfig": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "logprobs": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "maxOutputTokens": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "max_tokens": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "mediaResolution": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "presencePenalty": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "responseJsonSchema": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "responseLogprobs": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "responseMimeType": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "responseSchema": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "response_format": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "safetySettings": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "seed": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "stopSequences": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "temperature": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "toolConfig": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "tools": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "topK": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "topP": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "top_p": {
+      "enable": true,
+      "defaultValue": null
+    }
+  },
+  "priceInfo": {
+    "prices": [
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "OUTPUT",
+            "priceNameZH": "模型生成输出内容的费用(completion)",
+            "priceValue": 2.5,
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "completion",
+            "constraints": []
+          }
+        ]
+      },
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "IMAGE",
+            "priceNameZH": "图像处理或生成的费用(image)",
+            "priceValue": 30,
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "image",
+            "constraints": []
+          }
+        ]
+      },
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "INPUT_CACHE_READ",
+            "priceNameZH": "缓存读取操作费用(input_cache_read)",
+            "priceValue": 0.03,
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "INPUT",
+            "sourceFeeCode": "input_cache_read",
+            "constraints": []
+          }
+        ]
+      },
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "INPUT",
+            "priceNameZH": "输入提示词的处理费用(prompt)",
+            "priceValue": 0.3,
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "INPUT",
+            "sourceFeeCode": "prompt",
+            "constraints": []
+          }
+        ]
+      }
+    ]
+  },
+  "pricingDetails": [
+    {
+      "feeItemCode": "completion",
+      "feeItemName": "模型生成输出内容的费用(completion)",
+      "selectedConstraint": [
+        "chargeUnit"
+      ],
+      "feeRecords": [
+        {
+          "feeRate": 2.5,
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "feeItemCode": "image",
+      "feeItemName": "图像处理或生成的费用(image)",
+      "selectedConstraint": [
+        "chargeUnit"
+      ],
+      "feeRecords": [
+        {
+          "feeRate": 30,
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "feeItemCode": "input_cache_read",
+      "feeItemName": "缓存读取操作费用(input_cache_read)",
+      "selectedConstraint": [
+        "chargeUnit"
+      ],
+      "feeRecords": [
+        {
+          "feeRate": 0.03,
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "feeItemCode": "prompt",
+      "feeItemName": "输入提示词的处理费用(prompt)",
+      "selectedConstraint": [
+        "chargeUnit"
+      ],
+      "feeRecords": [
+        {
+          "feeRate": 0.3,
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sourcePublishedPrices": {
+    "pricing_completion": "2.5",
+    "pricing_discount": "1",
+    "pricing_prompt": "0.3"
+  },
+  "exampleCodes": [],
+  "serviceConfiguration": "服务配置待开通；接入地址、鉴权和可用协议以开通后的服务配置为准。",
+  "sourceRegion": "global",
+  "sourceCatalog": "ZenMux",
+  "sourceUrl": "https://zenmux.ai/google/gemini-2.5-flash-image",
+  "detailVerified": true,
+  "aliases": [
+    "gemini-2.5-flash-image"
+  ],
+  "isFree": false
+}

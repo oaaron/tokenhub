@@ -1,0 +1,285 @@
+{
+  "slug": "zm-qwen-qwen-audio-3.1-tts-next",
+  "uniqueId": "2645MO701Lsi14614003",
+  "name": "qwen/qwen-audio-3.1-tts-next",
+  "displayName": "Qwen-Audio-3.1-TTS-Next",
+  "provider": "Qwen",
+  "manufacturerKey": "qwen",
+  "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2026/11/17/tgp5jXd/Property-1Qwen.svg",
+  "zhDescription": "统一音频生成模型，可结合文本、时间戳和参考音频一次生成语音、音效与环境声，而不只限于普通文本转语音。",
+  "zhLongDescription": "统一音频生成模型，可结合文本、时间戳和参考音频一次生成语音、音效与环境声，而不只限于普通文本转语音。",
+  "description": "统一音频生成模型，可结合文本、时间戳和参考音频一次生成语音、音效与环境声，而不只限于普通文本转语音。",
+  "longDescription": "统一音频生成模型，可结合文本、时间戳和参考音频一次生成语音、音效与环境声，而不只限于普通文本转语音。",
+  "contextLength": null,
+  "maxCompletionTokens": null,
+  "currency": "USD",
+  "tagList": [
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "AUDIO",
+      "value": "音频"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "SPEECH",
+      "value": "speech"
+    }
+  ],
+  "publishedTime": "2026-11-04",
+  "minDiscountRate": "1",
+  "supportedParams": [
+    "bit_rate",
+    "channels",
+    "enable_aigc_tag",
+    "enable_cbr",
+    "input",
+    "model",
+    "quality",
+    "references",
+    "response_format",
+    "sample_rate",
+    "seed",
+    "speed",
+    "volume"
+  ],
+  "supportedProtocols": [
+    "audio.speech"
+  ],
+  "reasoning": 0,
+  "reasoningModes": [
+    0
+  ],
+  "providerNames": [
+    "Alibaba Cloud"
+  ],
+  "providerDetails": [
+    {
+      "name": "Alibaba Cloud",
+      "slug": "alibaba",
+      "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2025/10/15/FGMEmnu/Property-1Alibaba-cloud.svg",
+      "contextLength": null,
+      "maxCompletionTokens": null,
+      "supportsStreaming": false,
+      "apiProtocols": {
+        "audio.speech": {
+          "supported_parameters": [
+            "input",
+            "response_format",
+            "speed",
+            "model",
+            "references",
+            "sample_rate",
+            "channels",
+            "volume",
+            "enable_cbr",
+            "bit_rate",
+            "quality",
+            "seed",
+            "enable_aigc_tag"
+          ],
+          "supports_reasoning": 0
+        }
+      },
+      "pricingDiscount": "1",
+      "priceInfo": {
+        "prices": [
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "OUTPUT",
+                "priceNameZH": "模型生成输出内容的费用(completion)",
+                "priceValue": "1.8700000000",
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "completion",
+                "constraints": []
+              }
+            ]
+          },
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "INPUT",
+                "priceNameZH": "输入提示词的处理费用(prompt)",
+                "priceValue": "0.9300000000",
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "prompt",
+                "constraints": []
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "modelProtocolCompatibility": {
+    "audio.speech": true
+  },
+  "supportedParametersDefaultValue": {
+    "bit_rate": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "channels": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "enable_aigc_tag": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "enable_cbr": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "input": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "model": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "quality": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "references": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "response_format": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "sample_rate": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "seed": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "speed": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "volume": {
+      "enable": true,
+      "defaultValue": null
+    }
+  },
+  "priceInfo": {
+    "prices": [
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "OUTPUT",
+            "priceNameZH": "模型生成输出内容的费用(completion)",
+            "priceValue": "1.8700000000",
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "completion",
+            "constraints": []
+          }
+        ]
+      },
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "INPUT",
+            "priceNameZH": "输入提示词的处理费用(prompt)",
+            "priceValue": "0.9300000000",
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "INPUT",
+            "sourceFeeCode": "prompt",
+            "constraints": []
+          }
+        ]
+      }
+    ]
+  },
+  "pricingDetails": [
+    {
+      "feeItemCode": "completion",
+      "feeItemName": "模型生成输出内容的费用(completion)",
+      "feeRecords": [
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            }
+          ],
+          "feeRate": "1.8700000000"
+        }
+      ],
+      "selectedConstraint": [
+        "chargeUnit"
+      ]
+    },
+    {
+      "feeItemCode": "prompt",
+      "feeItemName": "输入提示词的处理费用(prompt)",
+      "feeRecords": [
+        {
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            }
+          ],
+          "feeRate": "0.9300000000"
+        }
+      ],
+      "selectedConstraint": [
+        "chargeUnit"
+      ]
+    }
+  ],
+  "sourcePublishedPrices": {
+    "pricing_completion": "1.87",
+    "pricing_discount": "1",
+    "pricing_prompt": "0.93"
+  },
+  "exampleCodes": [],
+  "serviceConfiguration": "服务配置待开通；接入地址、鉴权和可用协议以开通后的服务配置为准。",
+  "sourceRegion": "global",
+  "sourceCatalog": "ZenMux",
+  "sourceUrl": "https://zenmux.ai/qwen/qwen-audio-3.1-tts-next",
+  "detailVerified": true,
+  "aliases": [
+    "qwen-audio-3.1-tts-next"
+  ],
+  "isFree": false
+}

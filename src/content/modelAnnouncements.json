@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Qwen4-Max 全新上线",
+    "description": "Qwen 新一代旗舰多模态模型",
+    "to": "/models/modelservice-1794800520231001850"
+  },
+  {
+    "title": "LingDT-Decision-1.0 系列上新",
+    "description": "🎉27B 与 4B 双版本上线，原生支持多选与 DAG 决策！限时免费自10月30日延长至11月11日。",
+    "to": "/models/modelservice-1792325631780001741"
+  },
+  {
+    "title": "Qwen-Image-3.0 系列模型上线",
+    "description": "Qwen-Image-3.0、Qwen-Image-3.0-Pro，支持图像生成与编辑，精准呈现文字与复杂版式！",
+    "to": "/models/modelservice-1785985872362001597"
+  },
+  {
+    "title": "MiMo-V2.6 系列上新",
+    "description": "Pro/Flash/Pro-Ultraspeed，全模态旗舰、高效推理与超高速模式同步上线！",
+    "to": "/models/modelservice-1790045504686001648"
+  }
+]

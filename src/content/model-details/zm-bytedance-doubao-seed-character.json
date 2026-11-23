@@ -1,0 +1,624 @@
+{
+  "slug": "zm-bytedance-doubao-seed-character",
+  "uniqueId": "2626MOpwtJPK14613860",
+  "name": "bytedance/doubao-seed-character",
+  "displayName": "ByteDance: Doubao-Seed-Character",
+  "provider": "ByteDance",
+  "manufacturerKey": "bytedance",
+  "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2026/04/08/YSFtnJU/Property-1Bytedance.svg",
+  "zhDescription": "为沉浸式角色扮演设计的高效开源语言模型，可对齐自定义、虚构或现实角色，强调多轮人设一致性。",
+  "zhLongDescription": "为沉浸式角色扮演设计的高效开源语言模型，可对齐自定义、虚构或现实角色，强调多轮人设一致性。",
+  "description": "为沉浸式角色扮演设计的高效开源语言模型，可对齐自定义、虚构或现实角色，强调多轮人设一致性。",
+  "longDescription": "为沉浸式角色扮演设计的高效开源语言模型，可对齐自定义、虚构或现实角色，强调多轮人设一致性。",
+  "contextLength": 128000,
+  "maxCompletionTokens": 32000,
+  "currency": "USD",
+  "tagList": [
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "VIDEO",
+      "value": "视频"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    }
+  ],
+  "publishedTime": "2026-06-23",
+  "minDiscountRate": "1",
+  "supportedParams": [
+    "frequency_penalty",
+    "max_completion_tokens",
+    "max_tokens",
+    "output_config",
+    "parallel_tool_calls",
+    "presence_penalty",
+    "reasoning",
+    "response_format",
+    "stream",
+    "system",
+    "temperature",
+    "thinking",
+    "tool_choice",
+    "tools",
+    "top_p"
+  ],
+  "supportedProtocols": [
+    "chat.completions",
+    "messages",
+    "responses"
+  ],
+  "reasoning": 3,
+  "reasoningModes": [
+    3
+  ],
+  "providerNames": [
+    "Volcengine"
+  ],
+  "providerDetails": [
+    {
+      "name": "Volcengine",
+      "slug": "volcengine",
+      "iconUrl": "https://cdn.marmot-cloud.com/storage/zenmux/2025/10/15/95ujcDV/Property-1huoshan.svg",
+      "contextLength": 128000,
+      "maxCompletionTokens": 32000,
+      "supportsStreaming": true,
+      "apiProtocols": {
+        "messages": {
+          "supported_parameters": [
+            "tools",
+            "top_p",
+            "temperature",
+            "max_tokens",
+            "thinking",
+            "stream",
+            "output_config",
+            "tool_choice",
+            "system"
+          ],
+          "supports_reasoning": 3
+        },
+        "chat.completions": {
+          "supported_parameters": [
+            "tools",
+            "top_p",
+            "temperature",
+            "max_completion_tokens",
+            "reasoning",
+            "stream",
+            "response_format",
+            "tool_choice",
+            "system",
+            "parallel_tool_calls"
+          ],
+          "supports_reasoning": 3
+        }
+      },
+      "pricingDiscount": "1",
+      "priceInfo": {
+        "prices": [
+          {
+            "stage": "千Token数（阶梯定价）: {\"includeLowerLimit\":true,\"includeUpperLimit\":true,\"lowerLimit\":0,\"upperLimit\":32}",
+            "stageText": "千Token数（阶梯定价）: {\"includeLowerLimit\":true,\"includeUpperLimit\":true,\"lowerLimit\":0,\"upperLimit\":32}",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "OUTPUT",
+                "priceNameZH": "模型生成输出内容的费用(completion)",
+                "priceValue": 0.2947,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "completion",
+                "constraints": [
+                  {
+                    "code": "promptKToken",
+                    "name": "千Token数（阶梯定价）",
+                    "type": "NumberRange",
+                    "value": "{\"includeLowerLimit\":true,\"includeUpperLimit\":true,\"lowerLimit\":0,\"upperLimit\":32}"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "千Token数（阶梯定价）: {\"includeLowerLimit\":false,\"includeUpperLimit\":true,\"lowerLimit\":32,\"upperLimit\":1000000}",
+            "stageText": "千Token数（阶梯定价）: {\"includeLowerLimit\":false,\"includeUpperLimit\":true,\"lowerLimit\":32,\"upperLimit\":1000000}",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "OUTPUT",
+                "priceNameZH": "模型生成输出内容的费用(completion)",
+                "priceValue": 0.8842,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "OUTPUT",
+                "sourceFeeCode": "completion",
+                "constraints": [
+                  {
+                    "code": "promptKToken",
+                    "name": "千Token数（阶梯定价）",
+                    "type": "NumberRange",
+                    "value": "{\"includeLowerLimit\":false,\"includeUpperLimit\":true,\"lowerLimit\":32,\"upperLimit\":1000000}"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "千Token数（阶梯定价）: {\"includeLowerLimit\":true,\"includeUpperLimit\":true,\"lowerLimit\":0,\"upperLimit\":1000000}",
+            "stageText": "千Token数（阶梯定价）: {\"includeLowerLimit\":true,\"includeUpperLimit\":true,\"lowerLimit\":0,\"upperLimit\":1000000}",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "INPUT_CACHE_READ",
+                "priceNameZH": "缓存读取操作费用(input_cache_read)",
+                "priceValue": 0.0236,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "input_cache_read",
+                "constraints": [
+                  {
+                    "code": "promptKToken",
+                    "name": "千Token数（阶梯定价）",
+                    "type": "NumberRange",
+                    "value": "{\"includeLowerLimit\":true,\"includeUpperLimit\":true,\"lowerLimit\":0,\"upperLimit\":1000000}"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "",
+            "stageText": "",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "INPUT_CACHE_WRITE_1_H",
+                "priceNameZH": "1h缓存写入操作费用(input_cache_write_1_h)",
+                "priceValue": 0.0025,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "input_cache_write_1_h",
+                "constraints": []
+              }
+            ]
+          },
+          {
+            "stage": "千Token数（阶梯定价）: {\"includeLowerLimit\":false,\"includeUpperLimit\":true,\"lowerLimit\":32,\"upperLimit\":1000000}",
+            "stageText": "千Token数（阶梯定价）: {\"includeLowerLimit\":false,\"includeUpperLimit\":true,\"lowerLimit\":32,\"upperLimit\":1000000}",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "INPUT",
+                "priceNameZH": "输入提示词的处理费用(prompt)",
+                "priceValue": 0.1768,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "prompt",
+                "constraints": [
+                  {
+                    "code": "promptKToken",
+                    "name": "千Token数（阶梯定价）",
+                    "type": "NumberRange",
+                    "value": "{\"includeLowerLimit\":false,\"includeUpperLimit\":true,\"lowerLimit\":32,\"upperLimit\":1000000}"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "stage": "千Token数（阶梯定价）: {\"includeLowerLimit\":true,\"includeUpperLimit\":true,\"lowerLimit\":0,\"upperLimit\":32}",
+            "stageText": "千Token数（阶梯定价）: {\"includeLowerLimit\":true,\"includeUpperLimit\":true,\"lowerLimit\":0,\"upperLimit\":32}",
+            "priceCurrency": "USD",
+            "price": [
+              {
+                "priceCode": "INPUT",
+                "priceNameZH": "输入提示词的处理费用(prompt)",
+                "priceValue": 0.1179,
+                "unitCode": "M_TOKENS",
+                "fixedNameZh": "百万Tokens",
+                "priceCurrency": "USD",
+                "direction": "INPUT",
+                "sourceFeeCode": "prompt",
+                "constraints": [
+                  {
+                    "code": "promptKToken",
+                    "name": "千Token数（阶梯定价）",
+                    "type": "NumberRange",
+                    "value": "{\"includeLowerLimit\":true,\"includeUpperLimit\":true,\"lowerLimit\":0,\"upperLimit\":32}"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "modelProtocolCompatibility": {
+    "chat.completions": true,
+    "messages": true,
+    "responses": true
+  },
+  "supportedParametersDefaultValue": {
+    "frequency_penalty": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "max_completion_tokens": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "max_tokens": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "output_config": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "parallel_tool_calls": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "presence_penalty": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "reasoning": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "response_format": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "stream": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "system": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "temperature": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "thinking": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "tool_choice": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "tools": {
+      "enable": true,
+      "defaultValue": null
+    },
+    "top_p": {
+      "enable": true,
+      "defaultValue": null
+    }
+  },
+  "priceInfo": {
+    "prices": [
+      {
+        "stage": "千Token数（阶梯定价）: {\"includeLowerLimit\":true,\"includeUpperLimit\":true,\"lowerLimit\":0,\"upperLimit\":32}",
+        "stageText": "千Token数（阶梯定价）: {\"includeLowerLimit\":true,\"includeUpperLimit\":true,\"lowerLimit\":0,\"upperLimit\":32}",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "OUTPUT",
+            "priceNameZH": "模型生成输出内容的费用(completion)",
+            "priceValue": 0.2947,
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "completion",
+            "constraints": [
+              {
+                "code": "promptKToken",
+                "name": "千Token数（阶梯定价）",
+                "type": "NumberRange",
+                "value": "{\"includeLowerLimit\":true,\"includeUpperLimit\":true,\"lowerLimit\":0,\"upperLimit\":32}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stage": "千Token数（阶梯定价）: {\"includeLowerLimit\":false,\"includeUpperLimit\":true,\"lowerLimit\":32,\"upperLimit\":1000000}",
+        "stageText": "千Token数（阶梯定价）: {\"includeLowerLimit\":false,\"includeUpperLimit\":true,\"lowerLimit\":32,\"upperLimit\":1000000}",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "OUTPUT",
+            "priceNameZH": "模型生成输出内容的费用(completion)",
+            "priceValue": 0.8842,
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "OUTPUT",
+            "sourceFeeCode": "completion",
+            "constraints": [
+              {
+                "code": "promptKToken",
+                "name": "千Token数（阶梯定价）",
+                "type": "NumberRange",
+                "value": "{\"includeLowerLimit\":false,\"includeUpperLimit\":true,\"lowerLimit\":32,\"upperLimit\":1000000}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stage": "千Token数（阶梯定价）: {\"includeLowerLimit\":true,\"includeUpperLimit\":true,\"lowerLimit\":0,\"upperLimit\":1000000}",
+        "stageText": "千Token数（阶梯定价）: {\"includeLowerLimit\":true,\"includeUpperLimit\":true,\"lowerLimit\":0,\"upperLimit\":1000000}",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "INPUT_CACHE_READ",
+            "priceNameZH": "缓存读取操作费用(input_cache_read)",
+            "priceValue": 0.0236,
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "INPUT",
+            "sourceFeeCode": "input_cache_read",
+            "constraints": [
+              {
+                "code": "promptKToken",
+                "name": "千Token数（阶梯定价）",
+                "type": "NumberRange",
+                "value": "{\"includeLowerLimit\":true,\"includeUpperLimit\":true,\"lowerLimit\":0,\"upperLimit\":1000000}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stage": "",
+        "stageText": "",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "INPUT_CACHE_WRITE_1_H",
+            "priceNameZH": "1h缓存写入操作费用(input_cache_write_1_h)",
+            "priceValue": 0.0025,
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "INPUT",
+            "sourceFeeCode": "input_cache_write_1_h",
+            "constraints": []
+          }
+        ]
+      },
+      {
+        "stage": "千Token数（阶梯定价）: {\"includeLowerLimit\":false,\"includeUpperLimit\":true,\"lowerLimit\":32,\"upperLimit\":1000000}",
+        "stageText": "千Token数（阶梯定价）: {\"includeLowerLimit\":false,\"includeUpperLimit\":true,\"lowerLimit\":32,\"upperLimit\":1000000}",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "INPUT",
+            "priceNameZH": "输入提示词的处理费用(prompt)",
+            "priceValue": 0.1768,
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "INPUT",
+            "sourceFeeCode": "prompt",
+            "constraints": [
+              {
+                "code": "promptKToken",
+                "name": "千Token数（阶梯定价）",
+                "type": "NumberRange",
+                "value": "{\"includeLowerLimit\":false,\"includeUpperLimit\":true,\"lowerLimit\":32,\"upperLimit\":1000000}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stage": "千Token数（阶梯定价）: {\"includeLowerLimit\":true,\"includeUpperLimit\":true,\"lowerLimit\":0,\"upperLimit\":32}",
+        "stageText": "千Token数（阶梯定价）: {\"includeLowerLimit\":true,\"includeUpperLimit\":true,\"lowerLimit\":0,\"upperLimit\":32}",
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "INPUT",
+            "priceNameZH": "输入提示词的处理费用(prompt)",
+            "priceValue": 0.1179,
+            "unitCode": "M_TOKENS",
+            "fixedNameZh": "百万Tokens",
+            "priceCurrency": "USD",
+            "direction": "INPUT",
+            "sourceFeeCode": "prompt",
+            "constraints": [
+              {
+                "code": "promptKToken",
+                "name": "千Token数（阶梯定价）",
+                "type": "NumberRange",
+                "value": "{\"includeLowerLimit\":true,\"includeUpperLimit\":true,\"lowerLimit\":0,\"upperLimit\":32}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "pricingDetails": [
+    {
+      "feeItemCode": "completion",
+      "feeItemName": "模型生成输出内容的费用(completion)",
+      "selectedConstraint": [
+        "chargeUnit",
+        "promptKToken"
+      ],
+      "feeRecords": [
+        {
+          "feeRate": 0.2947,
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            },
+            {
+              "code": "promptKToken",
+              "name": "千Token数（阶梯定价）",
+              "type": "NumberRange",
+              "value": "{\"includeLowerLimit\":true,\"includeUpperLimit\":true,\"lowerLimit\":0,\"upperLimit\":32}"
+            }
+          ]
+        },
+        {
+          "feeRate": 0.8842,
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            },
+            {
+              "code": "promptKToken",
+              "name": "千Token数（阶梯定价）",
+              "type": "NumberRange",
+              "value": "{\"includeLowerLimit\":false,\"includeUpperLimit\":true,\"lowerLimit\":32,\"upperLimit\":1000000}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "feeItemCode": "input_cache_read",
+      "feeItemName": "缓存读取操作费用(input_cache_read)",
+      "selectedConstraint": [
+        "chargeUnit",
+        "promptKToken"
+      ],
+      "feeRecords": [
+        {
+          "feeRate": 0.0236,
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            },
+            {
+              "code": "promptKToken",
+              "name": "千Token数（阶梯定价）",
+              "type": "NumberRange",
+              "value": "{\"includeLowerLimit\":true,\"includeUpperLimit\":true,\"lowerLimit\":0,\"upperLimit\":1000000}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "feeItemCode": "input_cache_write_1_h",
+      "feeItemName": "1h缓存写入操作费用(input_cache_write_1_h)",
+      "selectedConstraint": [
+        "chargeUnit"
+      ],
+      "feeRecords": [
+        {
+          "feeRate": 0.0025,
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "feeItemCode": "prompt",
+      "feeItemName": "输入提示词的处理费用(prompt)",
+      "selectedConstraint": [
+        "chargeUnit",
+        "promptKToken"
+      ],
+      "feeRecords": [
+        {
+          "feeRate": 0.1768,
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            },
+            {
+              "code": "promptKToken",
+              "name": "千Token数（阶梯定价）",
+              "type": "NumberRange",
+              "value": "{\"includeLowerLimit\":false,\"includeUpperLimit\":true,\"lowerLimit\":32,\"upperLimit\":1000000}"
+            }
+          ]
+        },
+        {
+          "feeRate": 0.1179,
+          "components": [
+            {
+              "code": "chargeUnit",
+              "name": "计价单位",
+              "type": "Select",
+              "value": "millionTokens"
+            },
+            {
+              "code": "promptKToken",
+              "name": "千Token数（阶梯定价）",
+              "type": "NumberRange",
+              "value": "{\"includeLowerLimit\":true,\"includeUpperLimit\":true,\"lowerLimit\":0,\"upperLimit\":32}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sourcePublishedPrices": {
+    "pricing_completion": "0.2947",
+    "pricing_discount": "1",
+    "pricing_prompt": "0.1179"
+  },
+  "exampleCodes": [],
+  "serviceConfiguration": "服务配置待开通；接入地址、鉴权和可用协议以开通后的服务配置为准。",
+  "sourceRegion": "global",
+  "sourceCatalog": "ZenMux",
+  "sourceUrl": "https://zenmux.ai/bytedance/doubao-seed-character",
+  "detailVerified": true,
+  "aliases": [
+    "doubao-seed-character-260628"
+  ],
+  "isFree": false
+}

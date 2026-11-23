@@ -1,0 +1,509 @@
+{
+  "uniqueId": "modelservice-1786959834449001317",
+  "name": "minimax-h3",
+  "displayName": "MiniMax-H3",
+  "provider": "MiniMax",
+  "description": "MiniMax H3 is a lightweight, open-weights video generation model from MiniMax. It is designed for precise multimodal editing and controlled content generation, including instruction-guided edits, text and brand rendering, and video-to-video motion transfer.The model is suited for commercial creative workflows across advertising, e-commerce, gaming, and interface design, with native audiovisual output for reference-driven generation.",
+  "zhDescription": "MiniMax H3 是 MiniMax 推出的轻量级开放权重视频生成模型，专为精细化多模态编辑与可控内容生成而设计，支持指令驱动编辑、文字与品牌元素渲染，以及视频到视频的动作迁移。该模型适用于广告、电商、游戏和界面设计等商业创意工作流，支持基于参考素材进行生成，并可原生输出音画内容。",
+  "longDescription": "MiniMax H3 is a lightweight, open-weights video generation model from MiniMax. It is designed for precise multimodal editing and controlled content generation, including instruction-guided edits, text and brand rendering, and video-to-video motion transfer.The model is suited for commercial creative workflows across advertising, e-commerce, gaming, and interface design, with native audiovisual output for reference-driven generation.",
+  "zhLongDescription": "MiniMax H3 是 MiniMax 推出的轻量级开放权重视频生成模型，专为精细化多模态编辑与可控内容生成而设计，支持指令驱动编辑、文字与品牌元素渲染，以及视频到视频的动作迁移。该模型适用于广告、电商、游戏和界面设计等商业创意工作流，支持基于参考素材进行生成，并可原生输出音画内容。",
+  "contextLength": null,
+  "maxCompletionTokens": null,
+  "maxTokens": null,
+  "currency": null,
+  "inPrice": null,
+  "outPrice": null,
+  "inPriceZh": null,
+  "outPriceZh": null,
+  "inHitCachePrice": "¥0.00/M",
+  "inHitCreatePrice": "¥0.00/M",
+  "tagList": [
+    {
+      "type": "MODEL_TYPE",
+      "key": "VIDEO_GENERATE",
+      "value": "视频生成"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "AUDIO",
+      "value": "音频"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "VIDEO",
+      "value": "视频"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "VIDEO",
+      "value": "视频"
+    }
+  ],
+  "type": "VIDEO_GENERATE",
+  "typeList": [
+    "VIDEO_GENERATE"
+  ],
+  "supportedParametersDefaultValue": {
+    "temperature": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "top_p": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "top_k": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "max_tokens": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "enable_search": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "enable_thinking": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "thinking_budget": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    }
+  },
+  "protocolParameters": [
+    {
+      "protocolName": "dashscope",
+      "displayName": "Dashscope",
+      "parameters": {
+        "result_format": false,
+        "top_p": false,
+        "top_logprobs": false,
+        "top_k": false,
+        "tools": false,
+        "tool_stream": false,
+        "tool_choice": false,
+        "thinking_budget": false,
+        "temperature": false,
+        "stream": false,
+        "seed": false,
+        "search_options": false,
+        "enable_code_interpreter": false,
+        "response_format": false,
+        "repetition_penalty": false,
+        "reasoning_effort": false,
+        "preserve_thinking": false,
+        "presence_penalty": false,
+        "parallel_tool_calls": false,
+        "n": false,
+        "logprobs": false,
+        "incremental_output": false,
+        "enable_thinking": false,
+        "enable_search": false
+      }
+    }
+  ],
+  "modelProtocolCompatibility": {
+    "System One": false,
+    "google video": false,
+    "dashscope": false,
+    "google_gemini": false,
+    "anthropic_message": false,
+    "openai_responses": false,
+    "openai_chat_completions": false
+  },
+  "minDiscountRate": "0.900000",
+  "priceInfo": {
+    "lowestProviderPrice": {
+      "inputPrice": {
+        "priceCode": "VIDEO_INPUT",
+        "priceName": "Input（video）",
+        "priceNameZH": "视频输入",
+        "priceValue": "0.270000",
+        "originalPrice": "0.300000",
+        "discountRate": "0.900000",
+        "unitCode": "S",
+        "unitName": "s",
+        "unitNameZh": "秒",
+        "direction": "INPUT",
+        "fixedName": "Second",
+        "fixedNameZh": "秒"
+      },
+      "outputPrice": {
+        "priceCode": "VIDEO",
+        "priceName": "Video",
+        "priceNameZH": "视频生成",
+        "priceValue": "0.270000",
+        "originalPrice": "0.300000",
+        "discountRate": "0.900000",
+        "unitCode": "S",
+        "unitName": "s",
+        "unitNameZh": "秒",
+        "direction": "OUTPUT",
+        "fixedName": "Second",
+        "fixedNameZh": "秒"
+      }
+    },
+    "prices": [
+      {
+        "stage": "2K",
+        "stageText": "2K",
+        "type": null,
+        "priceCurrency": "CNY",
+        "price": [
+          {
+            "priceCode": "VIDEO",
+            "priceName": "Video",
+            "priceNameZH": "视频生成",
+            "priceValue": "0.720000",
+            "originalPrice": "0.800000",
+            "discountRate": "0.900000",
+            "unitCode": "S",
+            "unitName": "s",
+            "unitNameZh": "秒",
+            "direction": "OUTPUT",
+            "fixedName": "Second",
+            "fixedNameZh": "秒"
+          },
+          {
+            "priceCode": "INPUT_IMAGE_PIECE",
+            "priceName": "Input（Image）",
+            "priceNameZH": "输入图片",
+            "priceValue": "0.180000",
+            "originalPrice": "0.200000",
+            "discountRate": "0.900000",
+            "unitCode": "PIECE",
+            "unitName": "PIECE",
+            "unitNameZh": "张",
+            "direction": "INPUT",
+            "fixedName": "Piece",
+            "fixedNameZh": "张"
+          },
+          {
+            "priceCode": "VIDEO_INPUT",
+            "priceName": "Input（video）",
+            "priceNameZH": "视频输入",
+            "priceValue": "0.720000",
+            "originalPrice": "0.800000",
+            "discountRate": "0.900000",
+            "unitCode": "S",
+            "unitName": "s",
+            "unitNameZh": "秒",
+            "direction": "INPUT",
+            "fixedName": "Second",
+            "fixedNameZh": "秒"
+          }
+        ]
+      },
+      {
+        "stage": "768p",
+        "stageText": "768p",
+        "type": null,
+        "priceCurrency": "CNY",
+        "price": [
+          {
+            "priceCode": "VIDEO",
+            "priceName": "Video",
+            "priceNameZH": "视频生成",
+            "priceValue": "0.450000",
+            "originalPrice": "0.500000",
+            "discountRate": "0.900000",
+            "unitCode": "S",
+            "unitName": "s",
+            "unitNameZh": "秒",
+            "direction": "OUTPUT",
+            "fixedName": "Second",
+            "fixedNameZh": "秒"
+          },
+          {
+            "priceCode": "INPUT_IMAGE_PIECE",
+            "priceName": "Input（Image）",
+            "priceNameZH": "输入图片",
+            "priceValue": "0.180000",
+            "originalPrice": "0.200000",
+            "discountRate": "0.900000",
+            "unitCode": "PIECE",
+            "unitName": "PIECE",
+            "unitNameZh": "张",
+            "direction": "INPUT",
+            "fixedName": "Piece",
+            "fixedNameZh": "张"
+          },
+          {
+            "priceCode": "VIDEO_INPUT",
+            "priceName": "Input（video）",
+            "priceNameZH": "视频输入",
+            "priceValue": "0.450000",
+            "originalPrice": "0.500000",
+            "discountRate": "0.900000",
+            "unitCode": "S",
+            "unitName": "s",
+            "unitNameZh": "秒",
+            "direction": "INPUT",
+            "fixedName": "Second",
+            "fixedNameZh": "秒"
+          }
+        ]
+      },
+      {
+        "stage": "768p->2K",
+        "stageText": "768p->2K",
+        "type": null,
+        "priceCurrency": "CNY",
+        "price": [
+          {
+            "priceCode": "VIDEO",
+            "priceName": "Video",
+            "priceNameZH": "视频生成",
+            "priceValue": "0.270000",
+            "originalPrice": "0.300000",
+            "discountRate": "0.900000",
+            "unitCode": "S",
+            "unitName": "s",
+            "unitNameZh": "秒",
+            "direction": "OUTPUT",
+            "fixedName": "Second",
+            "fixedNameZh": "秒"
+          },
+          {
+            "priceCode": "INPUT_IMAGE_PIECE",
+            "priceName": "Input（Image）",
+            "priceNameZH": "输入图片",
+            "priceValue": "0.135000",
+            "originalPrice": "0.150000",
+            "discountRate": "0.900000",
+            "unitCode": "PIECE",
+            "unitName": "PIECE",
+            "unitNameZh": "张",
+            "direction": "INPUT",
+            "fixedName": "Piece",
+            "fixedNameZh": "张"
+          },
+          {
+            "priceCode": "VIDEO_INPUT",
+            "priceName": "Input（video）",
+            "priceNameZH": "视频输入",
+            "priceValue": "0.270000",
+            "originalPrice": "0.300000",
+            "discountRate": "0.900000",
+            "unitCode": "S",
+            "unitName": "s",
+            "unitNameZh": "秒",
+            "direction": "INPUT",
+            "fixedName": "Second",
+            "fixedNameZh": "秒"
+          }
+        ]
+      },
+      {
+        "stage": "H3-Context-IR",
+        "stageText": "H3-Context-IR",
+        "type": null,
+        "priceCurrency": "CNY",
+        "price": [
+          {
+            "priceCode": "INPUT",
+            "priceName": "Input",
+            "priceNameZH": "输入",
+            "priceValue": "5.220000",
+            "originalPrice": "5.800000",
+            "discountRate": "0.900000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "OUTPUT",
+            "priceName": "Output",
+            "priceNameZH": "输出",
+            "priceValue": "20.700000",
+            "originalPrice": "23.000000",
+            "discountRate": "0.900000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "OUTPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          }
+        ]
+      }
+    ]
+  },
+  "publishedTime": "2026-08-17 17:43:54",
+  "offShelfFlag": 0,
+  "offShelfDate": null,
+  "buyTypes": [
+    "BY_AMOUNT",
+    "BY_CREDIT"
+  ],
+  "providers": [
+    {
+      "providerUid": "channel-1780500414271001961",
+      "providerName": "minimax",
+      "providerDisplayName": "MiniMax",
+      "providerLogo": "https://maas-public.oss-cn-shanghai.aliyuncs.com/maas-admin/image/2026-09-10/image-96c73dd0-5e2b-45.png"
+    }
+  ],
+  "extInfo": "{\"exampleCodes\":{\"MiniMax\":[{\"code\":\"curl --request POST \\\\\\r\\n  --url https://maas-api.antdigital.com/v2/video_generation \\\\\\r\\n  --header 'Authorization: Bearer $API_KEY' \\\\\\r\\n  --header 'Content-Type: application/json' \\\\\\r\\n  --data '{\\r\\n    \\\"model\\\": \\\"minimax-h3\\\",\\r\\n    \\\"content\\\": [\\r\\n      {\\r\\n        \\\"type\\\": \\\"text\\\",\\r\\n        \\\"text\\\": \\\"史诗级太空歌剧院线预告：女舰长独自站在巨大观景窗前，最后一支舰队正在集结并跃迁离去，强光爆闪、舰桥震动，她被留在原地。\\\"\\r\\n      }\\r\\n    ],\\r\\n    \\\"resolution\\\": \\\"2K\\\",\\r\\n    \\\"duration\\\": 5,\\r\\n    \\\"ratio\\\": \\\"16:9\\\"\\r\\n}'\",\"sectionTitle\":\"\",\"name\":\"curl\"}]},\"supportedParametersDefaultValue\":{\"desc\":\"1. 基础能力\\n   - 支持文生视频、首帧/尾帧生视频、多模态参考生视频\\n   - 注意：当前版本音频生成功能已关闭 (generate_audio: false)\\n2. 图片要求\\n   - 格式: JPG、JPEG、PNG、WEBP、HEIC、HEIF\\n   - 尺寸: 256px ~ 5760px\\n   - 宽高比: 0.4 ~ 2.5\\n   - 大小: < 30MB/张\\n3. 参考视频要求（可选，最多3个）\\n   - 单视频时长: 2~15秒，总时长<=15秒\\n   - 分辨率: 480p/720p/1080p\\n   - 帧率: 24~60fps\\n   - 大小: < 50MB/个\\n   - 格式: MP4, MOV\\n4. 参考音频要求（可选，最多3个）\\n   - 大小: < 15MB/个 (配置中限制为15MB)\\n   - 格式: MP3, WAV\\n5. 输出参数\\n   - 分辨率: 768P / 2K (默认 768P)\\n   - 宽高比: 21:9, 16:9, 4:3, 1:1, 3:4, 9:16 \\n   - 时长: 4~15秒 (默认 5)\\n6. 特殊约束\\n   - 首尾帧模式: 必须1张首帧 + 1张尾帧（共2张）\",\"mode\":{\"text\":{\"enable\":true},\"example\":{\"enable\":true,\"attachments\":{\"audio\":{\"formats\":[\"MP3\",\"WAV\"],\"maxCount\":3,\"minCount\":0,\"required\":{\"durationLimit\":{\"max\":15,\"min\":2},\"totalDurationLimit\":15},\"roleType\":\"reference_audio\",\"maxSizeMB\":15},\"image\":{\"formats\":[\"JPEG\",\"PNG\",\"WEBP\",\"JPG\",\"HEIC\",\"HEIF\"],\"maxCount\":9,\"minCount\":0,\"required\":{\"resolution\":{\"maxHeigh\":5760,\"maxWidth\":5760,\"minHeigh\":256,\"minWidth\":256},\"aspectRatio\":{\"max\":2.5,\"min\":0.4}},\"roleType\":\"reference_image\",\"maxSizeMB\":30},\"video\":{\"formats\":[\"MP4\",\"MOV\"],\"maxCount\":3,\"minCount\":0,\"required\":{\"fps\":{\"max\":60,\"min\":24},\"resolution\":{\"maxHeigh\":5760,\"maxWidth\":5760,\"minHeigh\":256,\"minWidth\":256},\"totalRatio\":{\"max\":33177600,\"min\":65536},\"aspectRatio\":{\"max\":2.5,\"min\":0.4},\"durationLimit\":{\"max\":15,\"min\":2},\"totalDurationLimit\":15},\"roleType\":\"reference_video\",\"maxSizeMB\":50}}},\"firstFrame\":{\"enable\":true,\"attachments\":{\"image\":{\"formats\":[\"JPEG\",\"PNG\",\"WEBP\",\"JPG\",\"HEIC\",\"HEIF\"],\"maxCount\":1,\"minCount\":1,\"required\":{\"resolution\":{\"maxHeigh\":5760,\"maxWidth\":5760,\"minHeigh\":256,\"minWidth\":256},\"aspectRatio\":{\"max\":2.5,\"min\":0.4}},\"roleType\":\"first_frame\",\"maxSizeMB\":30}}},\"firstAndLastFrame\":{\"enable\":true,\"attachments\":{\"image\":{\"formats\":[\"JPEG\",\"PNG\",\"WEBP\",\"JPG\",\"HEIC\",\"HEIF\"],\"maxCount\":2,\"minCount\":2,\"required\":{\"resolution\":{\"maxHeigh\":5760,\"maxWidth\":5760,\"minHeigh\":256,\"minWidth\":256},\"aspectRatio\":{\"max\":2.5,\"min\":0.4}},\"roleType\":[\"first_frame\",\"last_frame\"],\"maxSizeMB\":30}}}},\"ratio\":{\"default\":\"16:9\",\"options\":[\"16:9\",\"4:3\",\"1:1\",\"3:4\",\"9:16\",\"21:9\"],\"supported\":true},\"descEn\":\"1. Capabilities\\n   - Text/First Frame/Last Frame/Example video generation\\n   - Note: Audio generation is currently disabled in this config (generate_audio: false)\\n2. Image Requirements\\n   - Format: JPG, JPEG, PNG, WEBP, HEIC, HEIF\\n   - Dimensions: 256px ~ 5760px\\n   - Aspect Ratio: 0.4 ~ 2.5\\n   - Size: < 30MB per image\\n3. Reference Video (Optional, Max 3)\\n   - Duration: 2~15s per video, total <= 15s\\n   - Resolution: 480p/720p/1080p\\n   - FPS: 24~60\\n   - Size: < 50MB per video\\n   - Format: MP4, MOV\\n4. Reference Audio (Optional, Max 3)\\n   - Size: < 15MB per audio (based on config limit)\\n   - Format: MP3, WAV\\n5. Output Parameters\\n   - Resolution: 768P / 2K (default 768P)\\n   - Aspect Ratio: 21:9, 16:9, 4:3, 1:1, 3:4, 9:16 \\n   - Duration: 4~15s (default 5)\\n6. Special Constraints\\n   - First & Last Frame Mode: Requires exactly 1 start frame and 1 end frame image (Total 2)\",\"duration\":{\"max\":15,\"min\":4,\"default\":5,\"supported\":true},\"resolution\":{\"default\":\"768P\",\"options\":[\"768P\",\"2K\"],\"supported\":true},\"generate_audio\":{\"supported\":false}}}",
+  "specs": {
+    "inputPrice": "¥0.0000",
+    "inputPriceHint": "每 1K tokens",
+    "outputPrice": "¥0.0000",
+    "outputPriceHint": "每 1K tokens",
+    "contextLength": null,
+    "contextLengthHint": "tokens",
+    "maxOutput": "0",
+    "maxOutputHint": "tokens"
+  },
+  "capabilities": [],
+  "languages": [
+    "文本",
+    "图像",
+    "音频",
+    "视频"
+  ],
+  "scenarios": [
+    "视频"
+  ],
+  "modelParameters": [
+    {
+      "type": "slider",
+      "id": "temperature",
+      "label": "Temperature",
+      "value": 0.3,
+      "min": 0,
+      "max": 2,
+      "step": 0.01,
+      "description": "控制输出的随机性，值越高越随机",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "id": "presence_penalty",
+      "label": "Presence Penalty",
+      "value": 0.1,
+      "min": -2,
+      "max": 2,
+      "step": 0.01,
+      "description": "存在惩罚，鼓励模型讨论新话题",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "id": "top_p",
+      "label": "Top P",
+      "value": 0.95,
+      "min": 0,
+      "max": 1,
+      "step": 0.01,
+      "description": "核采样参数，控制候选词汇的范围",
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "id": "max_tokens",
+      "label": "Max Tokens",
+      "value": 0,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "单次生成的最大 token 数量",
+      "thousands": null
+    },
+    {
+      "type": "slider",
+      "id": "frequency_penalty",
+      "label": "Frequency Penalty",
+      "value": 0.1,
+      "min": -2,
+      "max": 2,
+      "step": 0.01,
+      "description": "频率惩罚，减少重复内容的生成",
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "id": "context_length",
+      "label": "Context Length",
+      "value": 64000,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "支持的最大上下文长度",
+      "thousands": true
+    }
+  ],
+  "usageGuide": {
+    "authIntro": "使用 API Key 进行认证，在请求头中添加：",
+    "authBearerPlaceholder": "YOUR_API_KEY",
+    "requestIntro": "支持标准的 OpenAI 参数格式：",
+    "requestExample": "{\n  \"max_tokens\": 4096,\n  \"temperature\": 0.5,\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"你好，请介绍一下自己\"\n    }\n  ],\n  \"model\": \"minimax-h3\"\n}",
+    "responseExample": "{\n  \"created\": 1795353266,\n  \"usage\": {\n    \"completion_tokens\": 12,\n    \"prompt_tokens\": 9,\n    \"total_tokens\": 21\n  },\n  \"model\": \"minimax-h3\",\n  \"id\": \"chatcmpl-123\",\n  \"choices\": [\n    {\n      \"finish_reason\": \"stop\",\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"你好！我是 minimax-h3...\"\n      }\n    }\n  ],\n  \"object\": \"chat.completion\"\n}",
+    "docUrl": "https://api-docs.example.com/",
+    "docLabel": "查看完整 API 文档"
+  },
+  "exampleCodes": {
+    "python": {
+      "sectionTitle": "Python 示例",
+      "installLine": "安装依赖：pip install requests",
+      "code": "import requests\nimport json\n\nurl = \"https://api.example.com/v1/chat/completions\"\nheaders = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n}\n\ndata = {\n    \"model\": \"model-name\",\n    \"messages\": [\n        {\n            \"role\": \"user\",\n            \"content\": \"请写一个 Python 函数计算斐波那契数列\"\n        }\n    ],\n    \"temperature\": 0.7,\n    \"max_tokens\": 4096\n}\n\nresponse = requests.post(url, headers=headers, json=data)\nresult = response.json()\nprint(result[\"choices\"][0][\"message\"][\"content\"])"
+    },
+    "javascript": {
+      "sectionTitle": "JavaScript 示例",
+      "installLine": "无需安装额外依赖（需 Node 18+ 或支持 fetch 的运行环境）",
+      "code": "(async () => {\n  const url = \"https://api.example.com/v1/chat/completions\";\n  const headers = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n  };\n  const data = {\n    model: \"model-name\",\n    messages: [\n      {\n        role: \"user\",\n        content: \"请写一个 Python 函数计算斐波那契数列\"\n      }\n    ],\n    temperature: 0.7,\n    max_tokens: 4096\n  };\n  const response = await fetch(url, {\n    method: \"POST\",\n    headers,\n    body: JSON.stringify(data)\n  });\n  const result = await response.json();\n  console.log(result.choices[0].message.content);\n})();"
+    },
+    "curl": {
+      "sectionTitle": "Curl 示例",
+      "installLine": "说明：macOS / Linux 一般已预装 curl",
+      "code": "curl -X POST \"https://api.example.com/v1/chat/completions\" \\\n  -H \"Authorization: Bearer YOUR_API_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"model\":\"model-name\",\"messages\":[{\"role\":\"user\",\"content\":\"请写一个 Python 函数计算斐波那契数列\"}],\"temperature\":0.7,\"max_tokens\":4096}'"
+    }
+  },
+  "agentIntegrations": [
+    {
+      "id": "codex",
+      "name": "Codex",
+      "description": "Configure MaaS as an OpenAI-compatible model provider.",
+      "zhDescription": "将 MaaS 配置为 Codex 的 OpenAI 兼容模型供应商。",
+      "fileLabel": "~/.codex/config.toml",
+      "language": "toml",
+      "code": "model = \"minimax-h3\"\nmodel_provider = \"maas\"\n\n[model_providers.maas]\nname = \"MaaS\"\nbase_url = \"https://maas-api.antdigital.com/v1\"\nenv_key = \"MAAS_API_KEY\"\nwire_api = \"responses\"",
+      "guideUrl": "/docs/agent-guides/codex"
+    },
+    {
+      "id": "opencode",
+      "name": "OpenCode",
+      "description": "Add MaaS as a custom provider in OpenCode.",
+      "zhDescription": "在 OpenCode 中添加 MaaS 自定义模型供应商。",
+      "fileLabel": "~/.config/opencode/opencode.json",
+      "language": "json",
+      "code": "{\n  \"$schema\": \"https://opencode.ai/config.json\",\n  \"provider\": {\n    \"maas\": {\n      \"npm\": \"@ai-sdk/openai-compatible\",\n      \"name\": \"MaaS\",\n      \"options\": {\n        \"baseURL\": \"https://maas-api.antdigital.com/v1\",\n        \"apiKey\": \"YOUR_MAAS_API_KEY\"\n      },\n      \"models\": {\n        \"minimax-h3\": {\n          \"name\": \"minimax-h3\"\n        }\n      }\n    }\n  },\n  \"model\": \"maas/minimax-h3\"\n}",
+      "guideUrl": "/docs/agent-guides/opencode"
+    }
+  ],
+  "sourceUrl": "https://maas.antdigital.com/models/modelservice-1786959834449001317",
+  "slug": "modelservice-1786959834449001317"
+}

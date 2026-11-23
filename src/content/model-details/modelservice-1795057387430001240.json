@@ -1,0 +1,268 @@
+{
+  "uniqueId": "modelservice-1795057387430001240",
+  "name": "lingdt-decision-fast-1.0",
+  "displayName": "LingDT-Decision-Fast-1.0",
+  "provider": "AntDigital",
+  "description": "LingDT-Decision (Ling version) is an in-house System One model developed by Ant Digital Technologies for decision-making tasks across the software development lifecycle. It addresses the fundamental mismatch between traditional large language models (LLMs) and decision workloads in efficiency, reliability, and cost. The model supports three common decision modes—choice (single-select), bool (binary judgment), and score (scoring)—along with native multi-select and information extraction capabilities. Its output confidence scores are carefully calibrated for greater reliability and trustworthiness. LingDT-Decision has been validated in industry AI applications across customer service, risk management, finance, and other domains.",
+  "zhDescription": "蚂蚁数科自研System One模型LingDT-Decision（Ling 版）， 主要用于各种软件研发过程的决策类型任务。能解决传统大语言模型（LLM）在效率、可靠性和成本上存在的根本性错配问题。目前LingDT-Decision模型支持choice（单选）、noul（判断）、score（打分）三种常见决策模式， 还原生支持多选和信息抽取功能。此外，模型在返回的置信度方面实现深度对齐，使得模型更加可靠、可信，目前LingDT-Decision已经在客服、风控、金融等多个产业AI场景应用验证。",
+  "longDescription": "LingDT-Decision (Ling version) is an in-house System One model developed by Ant Digital Technologies for decision-making tasks across the software development lifecycle. It addresses the fundamental mismatch between traditional large language models (LLMs) and decision workloads in efficiency, reliability, and cost. The model supports three common decision modes—choice (single-select), bool (binary judgment), and score (scoring)—along with native multi-select and information extraction capabilities. Its output confidence scores are carefully calibrated for greater reliability and trustworthiness. LingDT-Decision has been validated in industry AI applications across customer service, risk management, finance, and other domains.",
+  "zhLongDescription": "蚂蚁数科自研System One模型LingDT-Decision（Ling 版）， 主要用于各种软件研发过程的决策类型任务。能解决传统大语言模型（LLM）在效率、可靠性和成本上存在的根本性错配问题。目前LingDT-Decision模型支持choice（单选）、noul（判断）、score（打分）三种常见决策模式， 还原生支持多选和信息抽取功能。此外，模型在返回的置信度方面实现深度对齐，使得模型更加可靠、可信，目前LingDT-Decision已经在客服、风控、金融等多个产业AI场景应用验证。",
+  "contextLength": null,
+  "maxCompletionTokens": null,
+  "maxTokens": null,
+  "currency": null,
+  "inPrice": null,
+  "outPrice": null,
+  "inPriceZh": null,
+  "outPriceZh": null,
+  "inHitCachePrice": "¥0.00/M",
+  "inHitCreatePrice": "¥0.00/M",
+  "tagList": [
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    }
+  ],
+  "type": null,
+  "typeList": [],
+  "supportedParametersDefaultValue": {
+    "temperature": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "top_p": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "top_k": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "max_tokens": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "enable_search": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "enable_thinking": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "thinking_budget": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    }
+  },
+  "protocolParameters": [
+    {
+      "protocolName": "System One",
+      "displayName": "System One",
+      "parameters": {
+        "dag": false,
+        "questions": true,
+        "state": true
+      }
+    }
+  ],
+  "modelProtocolCompatibility": {
+    "System One": true,
+    "google video": false,
+    "dashscope": false,
+    "google_gemini": false,
+    "anthropic_message": false,
+    "openai_responses": false,
+    "openai_chat_completions": false
+  },
+  "minDiscountRate": "0.000000",
+  "priceInfo": {
+    "lowestProviderPrice": {
+      "inputPrice": {
+        "priceCode": "INPUT",
+        "priceName": "Input",
+        "priceNameZH": "输入",
+        "priceValue": "0.000000",
+        "originalPrice": "0.200000",
+        "discountRate": "0.000000",
+        "unitCode": "M_TOKENS",
+        "unitName": "M",
+        "unitNameZh": "M",
+        "direction": "INPUT",
+        "fixedName": "M Tokens",
+        "fixedNameZh": "百万Tokens"
+      },
+      "outputPrice": {
+        "priceCode": "OUTPUT",
+        "priceName": "Output",
+        "priceNameZH": "输出",
+        "priceValue": "0.000000",
+        "originalPrice": "0.000000",
+        "discountRate": "0.000000",
+        "unitCode": "M_TOKENS",
+        "unitName": "M",
+        "unitNameZh": "M",
+        "direction": "OUTPUT",
+        "fixedName": "M Tokens",
+        "fixedNameZh": "百万Tokens"
+      }
+    },
+    "prices": [
+      {
+        "stage": "",
+        "stageText": "",
+        "type": null,
+        "priceCurrency": "CNY",
+        "price": [
+          {
+            "priceCode": "INPUT",
+            "priceName": "Input",
+            "priceNameZH": "输入",
+            "priceValue": "0.000000",
+            "originalPrice": "0.200000",
+            "discountRate": "0.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "OUTPUT",
+            "priceName": "Output",
+            "priceNameZH": "输出",
+            "priceValue": "0.000000",
+            "originalPrice": "0.000000",
+            "discountRate": "0.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "OUTPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          }
+        ]
+      }
+    ]
+  },
+  "publishedTime": "2026-11-19 11:03:07",
+  "offShelfFlag": 0,
+  "offShelfDate": null,
+  "buyTypes": [
+    "BY_AMOUNT"
+  ],
+  "providers": [
+    {
+      "providerUid": "channel-1779290799108001040",
+      "providerName": "antdigital",
+      "providerDisplayName": "蚂蚁数字科技",
+      "providerLogo": "https://maas-public.oss-cn-shanghai.aliyuncs.com/maas-admin/image/2026-09-10/image-4cf4a41f-3ae4-42.png"
+    }
+  ],
+  "extInfo": "{\"supportedParametersDefaultValue\":\"\",\"exampleCodes\":{\"SystemOne\":[{\"code\":\"# choice(单选)\\ncurl -s --location 'https://maas-api.antdigital.com/v1/systemone' \\\\\\n  -H 'Content-Type: application/json' \\\\\\n  -H 'Authorization: Bearer $API_KEY' \\\\\\n  --data '{\\n    \\\"model\\\": \\\"lingdt-decision-fast-1.0\\\",\\n    \\\"state\\\": {\\n      \\\"situation\\\": \\\"同一笔订单被扣款两次，客服承诺 3 个工作日内退款，一周过去仍未到账。\\\",\\n      \\\"order\\\": \\\"SO-10086\\\",\\n      \\\"amount\\\": \\\"199元\\\"\\n    },\\n    \\\"questions\\\": {\\n      \\\"department\\\": {\\n        \\\"type\\\": \\\"choice\\\",\\n        \\\"instructions\\\": \\\"该工单应由哪个部门处理？\\\",\\n        \\\"criteria\\\": {\\n          \\\"billing\\\": \\\"账单、扣款、退款问题\\\",\\n          \\\"shipping\\\": \\\"物流与配送问题\\\",\\n          \\\"account\\\": \\\"账号与登录问题\\\",\\n          \\\"other\\\": \\\"以上均不匹配或信息不足\\\"\\n        }\\n      }\\n    }\\n  }'\\n\\n  # noul(判断)\\n  curl -s --location 'https://maas-api.antdigital.com/v1/systemone' \\\\\\n  -H 'Content-Type: application/json' \\\\\\n  -H 'Authorization: Bearer $API_KEY' \\\\\\n  --data '{\\n    \\\"model\\\": \\\"lingdt-decision-fast-1.0\\\",\\n    \\\"state\\\": [\\n      \\\"客户：同一笔订单被扣款两次。\\\",\\n      \\\"客服：3 个工作日内退款。\\\",\\n      \\\"客户：一周过去仍未到账。\\\"\\n    ],\\n    \\\"questions\\\": {\\n      \\\"refund\\\": {\\n        \\\"type\\\": \\\"noul\\\",\\n        \\\"instructions\\\": \\\"是否存在应退未退的款项？\\\",\\n        \\\"criteria\\\": {\\n          \\\"false\\\": \\\"款项已退或无需退款\\\",\\n          \\\"true\\\": \\\"存在应退未退的款项\\\"\\n        }\\n      }\\n    }\\n  }'\\n\\n  # score(打分)\\n  curl -s --location 'https://maas-api.antdigital.com/v1/systemone' \\\\\\n  -H 'Content-Type: application/json' \\\\\\n  -H 'Authorization: Bearer $API_KEY' \\\\\\n  --data '{\\n    \\\"model\\\": \\\"lingdt-decision-fast-1.0\\\",\\n    \\\"state\\\": {\\n      \\\"situation\\\": \\\"同一笔订单被扣款两次，多扣了我199元，客服承诺 3 个工作日内退款，一周过去仍未到账。\\\",\\n      \\\"order\\\": \\\"SO-10086\\\",\\n      \\\"amount\\\": \\\"199元\\\"\\n    },\\n    \\\"questions\\\": {\\n      \\\"severity\\\": {\\n        \\\"type\\\": \\\"score\\\",\\n        \\\"instructions\\\": \\\"该客诉的严重程度属于哪一档？\\\",\\n        \\\"criteria\\\": [\\n          \\\"一般：咨询问题，未造成实际资金损失\\\",\\n          \\\"较严重：款项异常，仍在承诺处理时限内\\\",\\n          \\\"严重：资金被占用，且已超过承诺处理时限\\\",\\n          \\\"非常严重：大范围资金异常或造成业务中断\\\"\\n        ]\\n      }\\n    }\\n  }'\\n\\n  # multi-choice(多选)\\n  curl -s --location 'https://maas-api.antdigital.com/v1/systemone' \\\\\\n  -H 'Content-Type: application/json' \\\\\\n  -H 'Authorization: Bearer $API_KEY' \\\\\\n  --data '{\\n    \\\"model\\\": \\\"lingdt-decision-fast-1.0\\\",\\n    \\\"state\\\": {\\n      \\\"situation\\\": \\\"同一笔订单被扣款两次，多扣了我199元，客服承诺 3 个工作日内退款，一周过去仍未到账。\\\",\\n      \\\"order\\\": \\\"SO-10086\\\",\\n      \\\"amount\\\": \\\"199元\\\"\\n    },\\n    \\\"questions\\\": {\\n      \\\"tags\\\": {\\n        \\\"type\\\": \\\"multi-choice\\\",\\n        \\\"instructions\\\": \\\"选择工单描述中有明确证据支持的所有标签。\\\",\\n        \\\"criteria\\\": {\\n          \\\"overcharge\\\": \\\"重复扣款或多收款\\\",\\n          \\\"refund_delay\\\": \\\"超过承诺的退款时限仍未到账\\\",\\n          \\\"vip\\\": \\\"明确提及重要或高级客户身份\\\",\\n          \\\"fraud_risk\\\": \\\"明确提及盗刷、诈骗或欺诈线索\\\"\\n        }\\n      }\\n    }\\n  }'\\n\\n  \\n#slot\\ncurl -s -i --location 'https://maas-api.antdigital.com/v1/systemone' \\\\\\n  -H 'Content-Type: application/json' \\\\\\n  -H 'Authorization: Bearer $API_KEY' \\\\\\n  --data '{\\n  \\\"model\\\": \\\"lingdt-decision-fast-1.0\\\",\\n  \\\"state\\\": \\\"明天从北京去上海，订单被重复扣款199元，客户申请退款。\\\",\\n  \\\"fields\\\": {\\n    \\\"travel_date\\\": {\\n      \\\"type\\\": \\\"text\\\",\\n      \\\"instructions\\\": \\\"The exact contiguous wording in the query that fills the slot 'travel_date'. Copy the characters verbatim from the query; do not paraphrase, normalise or add punctuation. If the query does not state it, leave it empty.\\\"\\n    },\\n    \\\"fromloc.city_name\\\": {\\n      \\\"type\\\": \\\"text\\\",\\n      \\\"instructions\\\": \\\"The exact contiguous wording in the query that fills the slot 'fromloc.city_name'. Copy the characters verbatim from the query; do not paraphrase, normalise or add punctuation. If the query does not state it, leave it empty.\\\"\\n    },\\n    \\\"toloc.city_name\\\": {\\n      \\\"type\\\": \\\"text\\\",\\n      \\\"instructions\\\": \\\"The exact contiguous wording in the query that fills the slot 'toloc.city_name'. Copy the characters verbatim from the query; do not paraphrase, normalise or add punctuation. If the query does not state it, leave it empty.\\\"\\n    },\\n    \\\"overcharge_amount\\\": {\\n      \\\"type\\\": \\\"text\\\",\\n      \\\"instructions\\\": \\\"The exact contiguous wording in the query that fills the slot 'overcharge_amount'. Copy the characters verbatim from the query; do not paraphrase, normalise or add punctuation. If the query does not state it, leave it empty.\\\"\\n    },\\n    \\\"order_id\\\": {\\n      \\\"type\\\": \\\"text\\\",\\n      \\\"instructions\\\": \\\"The exact contiguous wording in the query that fills the slot 'order_id'. Copy the characters verbatim from the query; do not paraphrase, normalise or add punctuation. If the query does not state it, leave it empty.\\\"\\n    }\\n  }\\n}'\",\"sectionTitle\":\"\",\"name\":\"curl\"}]}}",
+  "specs": {
+    "inputPrice": "¥0.0000",
+    "inputPriceHint": "每 1K tokens",
+    "outputPrice": "¥0.0000",
+    "outputPriceHint": "每 1K tokens",
+    "contextLength": null,
+    "contextLengthHint": "tokens",
+    "maxOutput": "0",
+    "maxOutputHint": "tokens"
+  },
+  "capabilities": [],
+  "languages": [
+    "文本"
+  ],
+  "scenarios": [
+    "文本"
+  ],
+  "modelParameters": [
+    {
+      "type": "text",
+      "id": "questions",
+      "label": "questions",
+      "value": "{}",
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    },
+    {
+      "type": "text",
+      "id": "state",
+      "label": "state",
+      "value": "{}",
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": "",
+      "thousands": null
+    }
+  ],
+  "usageGuide": {
+    "authIntro": "使用 API Key 进行认证，在请求头中添加：",
+    "authBearerPlaceholder": "YOUR_API_KEY",
+    "requestIntro": "支持标准的 OpenAI 参数格式：",
+    "requestExample": "{\n  \"max_tokens\": 4096,\n  \"temperature\": 0.5,\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"你好，请介绍一下自己\"\n    }\n  ],\n  \"model\": \"lingdt-decision-fast-1.0\"\n}",
+    "responseExample": "{\n  \"created\": 1795353264,\n  \"usage\": {\n    \"completion_tokens\": 12,\n    \"prompt_tokens\": 9,\n    \"total_tokens\": 21\n  },\n  \"model\": \"lingdt-decision-fast-1.0\",\n  \"id\": \"chatcmpl-123\",\n  \"choices\": [\n    {\n      \"finish_reason\": \"stop\",\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"你好！我是 lingdt-decision-fast-1.0...\"\n      }\n    }\n  ],\n  \"object\": \"chat.completion\"\n}",
+    "docUrl": "https://api-docs.example.com/",
+    "docLabel": "查看完整 API 文档"
+  },
+  "exampleCodes": {
+    "python": {
+      "sectionTitle": "Python 示例",
+      "installLine": "安装依赖：pip install requests",
+      "code": "import requests\nimport json\n\nurl = \"https://api.example.com/v1/chat/completions\"\nheaders = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n}\n\ndata = {\n    \"model\": \"model-name\",\n    \"messages\": [\n        {\n            \"role\": \"user\",\n            \"content\": \"请写一个 Python 函数计算斐波那契数列\"\n        }\n    ],\n    \"temperature\": 0.7,\n    \"max_tokens\": 4096\n}\n\nresponse = requests.post(url, headers=headers, json=data)\nresult = response.json()\nprint(result[\"choices\"][0][\"message\"][\"content\"])"
+    },
+    "javascript": {
+      "sectionTitle": "JavaScript 示例",
+      "installLine": "无需安装额外依赖（需 Node 18+ 或支持 fetch 的运行环境）",
+      "code": "(async () => {\n  const url = \"https://api.example.com/v1/chat/completions\";\n  const headers = {\n    \"Authorization\": \"Bearer YOUR_API_KEY\",\n    \"Content-Type\": \"application/json\"\n  };\n  const data = {\n    model: \"model-name\",\n    messages: [\n      {\n        role: \"user\",\n        content: \"请写一个 Python 函数计算斐波那契数列\"\n      }\n    ],\n    temperature: 0.7,\n    max_tokens: 4096\n  };\n  const response = await fetch(url, {\n    method: \"POST\",\n    headers,\n    body: JSON.stringify(data)\n  });\n  const result = await response.json();\n  console.log(result.choices[0].message.content);\n})();"
+    },
+    "curl": {
+      "sectionTitle": "Curl 示例",
+      "installLine": "说明：macOS / Linux 一般已预装 curl",
+      "code": "curl -X POST \"https://api.example.com/v1/chat/completions\" \\\n  -H \"Authorization: Bearer YOUR_API_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"model\":\"model-name\",\"messages\":[{\"role\":\"user\",\"content\":\"请写一个 Python 函数计算斐波那契数列\"}],\"temperature\":0.7,\"max_tokens\":4096}'"
+    }
+  },
+  "agentIntegrations": [
+    {
+      "id": "codex",
+      "name": "Codex",
+      "description": "Configure MaaS as an OpenAI-compatible model provider.",
+      "zhDescription": "将 MaaS 配置为 Codex 的 OpenAI 兼容模型供应商。",
+      "fileLabel": "~/.codex/config.toml",
+      "language": "toml",
+      "code": "model = \"lingdt-decision-fast-1.0\"\nmodel_provider = \"maas\"\n\n[model_providers.maas]\nname = \"MaaS\"\nbase_url = \"https://maas-api.antdigital.com/v1\"\nenv_key = \"MAAS_API_KEY\"\nwire_api = \"responses\"",
+      "guideUrl": "/docs/agent-guides/codex"
+    },
+    {
+      "id": "opencode",
+      "name": "OpenCode",
+      "description": "Add MaaS as a custom provider in OpenCode.",
+      "zhDescription": "在 OpenCode 中添加 MaaS 自定义模型供应商。",
+      "fileLabel": "~/.config/opencode/opencode.json",
+      "language": "json",
+      "code": "{\n  \"$schema\": \"https://opencode.ai/config.json\",\n  \"provider\": {\n    \"maas\": {\n      \"npm\": \"@ai-sdk/openai-compatible\",\n      \"name\": \"MaaS\",\n      \"options\": {\n        \"baseURL\": \"https://maas-api.antdigital.com/v1\",\n        \"apiKey\": \"YOUR_MAAS_API_KEY\"\n      },\n      \"models\": {\n        \"lingdt-decision-fast-1.0\": {\n          \"name\": \"lingdt-decision-fast-1.0\"\n        }\n      }\n    }\n  },\n  \"model\": \"maas/lingdt-decision-fast-1.0\"\n}",
+      "guideUrl": "/docs/agent-guides/opencode"
+    }
+  ],
+  "sourceUrl": "https://maas.antdigital.com/models/modelservice-1795057387430001240",
+  "slug": "modelservice-1795057387430001240"
+}

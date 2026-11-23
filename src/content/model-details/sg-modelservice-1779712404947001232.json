@@ -1,0 +1,318 @@
+{
+  "uniqueId": "modelservice-1779712404947001232",
+  "name": "gpt-image-2",
+  "displayName": "GPT-Image-2",
+  "provider": "OpenAI",
+  "description": "OpenAI's advanced image generation model capable of creating high-quality images from text prompts. Supports multiple resolutions and artistic styles with precise text rendering and detailed compositions.",
+  "zhDescription": "OpenAI的高级图像生成模型，能够从文本提示创建高质量图像。支持多种分辨率和艺术风格，具有精确的文本渲染和详细的构图能力。",
+  "longDescription": "OpenAI's advanced image generation model capable of creating high-quality images from text prompts. Supports multiple resolutions and artistic styles with precise text rendering and detailed compositions.",
+  "zhLongDescription": "OpenAI的高级图像生成模型，能够从文本提示创建高质量图像。支持多种分辨率和艺术风格，具有精确的文本渲染和详细的构图能力。",
+  "contextLength": "10000",
+  "maxCompletionTokens": null,
+  "maxTokens": null,
+  "currency": null,
+  "inputPrice": "$5.000000/M",
+  "outputPrice": "¥0.00/M",
+  "inPrice": null,
+  "outPrice": null,
+  "inPriceZh": "$5.000000/M",
+  "outPriceZh": "¥0.00/M",
+  "inHitCachePrice": "$1.250000/M",
+  "inHitCreatePrice": "$1.250000/M",
+  "tagList": [
+    {
+      "type": "MODEL_TYPE",
+      "key": "IMAGE_GENERATE",
+      "value": "图像生成"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "TEXT",
+      "value": "文本"
+    },
+    {
+      "type": "INPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    },
+    {
+      "type": "OUTPUT_TYPE",
+      "key": "IMAGE",
+      "value": "图像"
+    }
+  ],
+  "type": "IMAGE_GENERATE",
+  "typeList": [
+    "IMAGE_GENERATE"
+  ],
+  "supportedParametersDefaultValue": {
+    "n": {
+      "enable": true,
+      "defaultValue": 8,
+      "forbidDisable": null
+    },
+    "limit": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "size": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "prompt_extend": {
+      "enable": false,
+      "defaultValue": null,
+      "forbidDisable": null
+    },
+    "uploadImage": {
+      "enable": true,
+      "defaultValue": true,
+      "forbidDisable": null
+    }
+  },
+  "protocolParameters": [],
+  "modelProtocolCompatibility": {
+    "google video": false,
+    "dashscope": false,
+    "google_gemini": false,
+    "anthropic_message": false,
+    "openai_responses": false,
+    "openai_chat_completions": false
+  },
+  "minDiscountRate": "1",
+  "priceInfo": {
+    "lowestProviderPrice": {
+      "inputPrice": {
+        "priceCode": "DISPLAY_CACHE_HIT",
+        "priceName": "Cache Hit",
+        "priceNameZH": "缓存命中",
+        "priceValue": "1.250000",
+        "originalPrice": "1.250000",
+        "discountRate": "1.000000",
+        "unitCode": "M_TOKENS",
+        "unitName": "M",
+        "unitNameZh": "M",
+        "direction": "INPUT",
+        "fixedName": "M Tokens",
+        "fixedNameZh": "百万Tokens"
+      },
+      "outputPrice": {
+        "priceCode": "OUT_IMAGE",
+        "priceName": "Out Image",
+        "priceNameZH": "图片输出",
+        "priceValue": "30.000000",
+        "originalPrice": "30.000000",
+        "discountRate": "1.000000",
+        "unitCode": "M_TOKENS",
+        "unitName": "M",
+        "unitNameZh": "M",
+        "direction": "OUTPUT",
+        "fixedName": "M Tokens",
+        "fixedNameZh": "百万Tokens"
+      }
+    },
+    "prices": [
+      {
+        "stage": null,
+        "stageText": null,
+        "type": null,
+        "priceCurrency": "USD",
+        "price": [
+          {
+            "priceCode": "INPUT",
+            "priceName": "Input",
+            "priceNameZH": "输入",
+            "priceValue": "5.000000",
+            "originalPrice": "5.000000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "DISPLAY_CACHE_HIT",
+            "priceName": "Cache Hit",
+            "priceNameZH": "缓存命中",
+            "priceValue": "1.250000",
+            "originalPrice": "1.250000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "INPUT_CACHE_HIT",
+            "priceName": "Input (Cache Hit)",
+            "priceNameZH": "输入（命中缓存）",
+            "priceValue": "1.250000",
+            "originalPrice": "1.250000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "INPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "OUT_IMAGE",
+            "priceName": "Out Image",
+            "priceNameZH": "图片输出",
+            "priceValue": "30.000000",
+            "originalPrice": "30.000000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": "OUTPUT",
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "IMAGE_INPUT",
+            "priceName": "Image Input",
+            "priceNameZH": "图片输入",
+            "priceValue": "8.000000",
+            "originalPrice": "8.000000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": null,
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          },
+          {
+            "priceCode": "IMAGE_CACHE_HIT",
+            "priceName": "Image Cache Hit",
+            "priceNameZH": "图片命中缓存",
+            "priceValue": "2.000000",
+            "originalPrice": "2.000000",
+            "discountRate": "1.000000",
+            "unitCode": "M_TOKENS",
+            "unitName": "M",
+            "unitNameZh": "M",
+            "direction": null,
+            "fixedName": "M Tokens",
+            "fixedNameZh": "百万Tokens"
+          }
+        ]
+      }
+    ]
+  },
+  "publishedTime": "2026-05-25 20:33:25",
+  "offShelfFlag": 0,
+  "offShelfDate": null,
+  "buyTypes": [
+    "BY_AMOUNT",
+    "BY_CREDIT"
+  ],
+  "specs": {
+    "inputPrice": "¥0.0000",
+    "inputPriceHint": "每 1K tokens",
+    "outputPrice": "¥0.0000",
+    "outputPriceHint": "每 1K tokens",
+    "contextLength": "10000",
+    "contextLengthHint": "tokens",
+    "maxOutput": "0",
+    "maxOutputHint": "tokens"
+  },
+  "capabilities": [],
+  "languages": [
+    "文本",
+    "图像"
+  ],
+  "scenarios": [
+    "图像"
+  ],
+  "modelParameters": [
+    {
+      "type": "number",
+      "label": "n",
+      "value": 8,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": null,
+      "thousands": null
+    },
+    {
+      "type": "number",
+      "label": "uploadImage",
+      "value": true,
+      "min": null,
+      "max": null,
+      "step": null,
+      "description": null,
+      "thousands": null
+    }
+  ],
+  "usageGuide": {
+    "authIntro": "使用 API Key 进行认证，在请求头中添加 Authorization Bearer：",
+    "authBearerPlaceholder": "<api_key>",
+    "requestIntro": "使用 OpenAI Responses API 参数格式：",
+    "requestExample": "{\n  \"instructions\": \"你是一个有帮助的助手\",\n  \"input\": \"你好，请介绍一下自己\",\n  \"temperature\": 0.5,\n  \"model\": \"gpt-image-2\",\n  \"max_output_tokens\": 4096\n}",
+    "responseExample": "{\n  \"output\": [\n    {\n      \"role\": \"assistant\",\n      \"type\": \"message\",\n      \"content\": [\n        {\n          \"text\": \"你好！我是 gpt-image-2...\",\n          \"type\": \"output_text\"\n        }\n      ]\n    }\n  ],\n  \"output_text\": \"你好！我是 gpt-image-2...\",\n  \"usage\": {\n    \"total_tokens\": 21,\n    \"output_tokens\": 12,\n    \"input_tokens\": 9\n  },\n  \"created_at\": 1778240000,\n  \"model\": \"gpt-image-2\",\n  \"id\": \"resp_123\",\n  \"object\": \"response\",\n  \"status\": \"completed\"\n}",
+    "docUrl": "https://platform.openai.com/docs/api-reference/responses",
+    "docLabel": "查看完整 API 文档"
+  },
+  "exampleCodes": {
+    "python": {
+      "sectionTitle": "Python 示例",
+      "installLine": "安装依赖：pip install requests",
+      "code": "import requests\n\nurl = \"http://10.191.0.202/v1/responses\"\nheaders = {\n    \"Authorization\": \"Bearer <api_key>\",\n    \"Content-Type\": \"application/json\"\n}\ndata = {\n    \"model\": \"gpt-image-2\",\n    \"instructions\": \"You are a helpful assistant.\",\n    \"input\": \"What is the meaning of life?\",\n    \"max_output_tokens\": 1024\n}\nresponse = requests.post(url, headers=headers, json=data)\nprint(response.json()[\"output_text\"])"
+    },
+    "javascript": {
+      "sectionTitle": "JavaScript 示例",
+      "installLine": "无需安装额外依赖（需 Node 18+ 或支持 fetch 的运行环境）",
+      "code": "const response = await fetch(\"http://10.191.0.202/v1/responses\", {\n  method: \"POST\",\n  headers: {\n    \"Authorization\": \"Bearer <api_key>\",\n    \"Content-Type\": \"application/json\"\n  },\n  body: JSON.stringify({\n    model: \"gpt-image-2\",\n    instructions: \"You are a helpful assistant.\",\n    input: \"What is the meaning of life?\",\n    max_output_tokens: 1024\n  })\n});\nconst result = await response.json();\nconsole.log(result.output_text);"
+    },
+    "curl": {
+      "sectionTitle": "Curl 示例",
+      "installLine": "说明：macOS / Linux 一般已预装 curl",
+      "code": "curl -X POST \"http://10.191.0.202/v1/responses\" \\\n  -H \"Authorization: Bearer <api_key>\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"model\":\"gpt-image-2\",\"instructions\":\"You are a helpful assistant.\",\"input\":\"What is the meaning of life?\",\"max_output_tokens\":1024}'"
+    }
+  },
+  "agentIntegrations": [
+    {
+      "name": "Claude Code",
+      "description": "Use this model through the Anthropic-compatible endpoint.",
+      "zhDescription": "通过 Anthropic 兼容接口在 Claude Code 中使用当前模型。",
+      "fileLabel": "~/.claude/settings.json",
+      "language": "json",
+      "code": "{\n  \"env\": {\n    \"ANTHROPIC_AUTH_TOKEN\": \"YOUR_MAAS_API_KEY\",\n    \"ANTHROPIC_BASE_URL\": \"https://maas-api.computrix.ai/\",\n    \"ANTHROPIC_MODEL\": \"gpt-image-2\"\n  }\n}",
+      "guideUrl": "/docs/agent-guides/claude-code"
+    },
+    {
+      "name": "Codex",
+      "description": "Configure MaaS as an OpenAI-compatible model provider.",
+      "zhDescription": "将 MaaS 配置为 Codex 的 OpenAI 兼容模型供应商。",
+      "fileLabel": "~/.codex/config.toml",
+      "language": "toml",
+      "code": "model = \"gpt-image-2\"\nmodel_provider = \"maas\"\n\n[model_providers.maas]\nname = \"MaaS\"\nbase_url = \"https://maas-api.computrix.ai/v1\"\nenv_key = \"MAAS_API_KEY\"\nwire_api = \"responses\"",
+      "guideUrl": "/docs/agent-guides/codex"
+    },
+    {
+      "name": "OpenCode",
+      "description": "Add MaaS as a custom provider in OpenCode.",
+      "zhDescription": "在 OpenCode 中添加 MaaS 自定义模型供应商。",
+      "fileLabel": "~/.config/opencode/opencode.json",
+      "language": "json",
+      "code": "{\n  \"$schema\": \"https://opencode.ai/config.json\",\n  \"provider\": {\n    \"maas\": {\n      \"npm\": \"@ai-sdk/openai-compatible\",\n      \"name\": \"MaaS\",\n      \"options\": {\n        \"baseURL\": \"https://maas-api.computrix.ai/v1\",\n        \"apiKey\": \"YOUR_MAAS_API_KEY\"\n      },\n      \"models\": {\n        \"gpt-image-2\": {\n          \"name\": \"gpt-image-2\"\n        }\n      }\n    }\n  },\n  \"model\": \"maas/gpt-image-2\"\n}",
+      "guideUrl": "/docs/agent-guides/opencode"
+    }
+  ],
+  "slug": "sg-modelservice-1779712404947001232",
+  "sourceRegion": "sg",
+  "sourceCatalog": "Computrix",
+  "sourceUrl": "https://computrix.ai/sg/models",
+  "detailVerified": true
+}
